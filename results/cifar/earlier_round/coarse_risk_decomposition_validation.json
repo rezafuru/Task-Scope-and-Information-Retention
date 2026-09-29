@@ -1,0 +1,38 @@
+{
+  "codec_early_early_b0.1_s17": {
+    "images": 5000,
+    "teacher_correct_decoder_wrong": 313,
+    "teacher_wrong_decoder_correct": 107,
+    "both_wrong_different_predictions": 144,
+    "teacher_disagreements": 564,
+    "original_accuracy": 0.8568,
+    "decoded_accuracy": 0.8156
+  },
+  "codec_early_family_b0.1_s17": {
+    "images": 5000,
+    "teacher_correct_decoder_wrong": 753,
+    "teacher_wrong_decoder_correct": 156,
+    "both_wrong_different_predictions": 238,
+    "teacher_disagreements": 1147,
+    "original_accuracy": 0.8568,
+    "decoded_accuracy": 0.7374
+  },
+  "codec_early_late_b0.1_s17": {
+    "images": 5000,
+    "teacher_correct_decoder_wrong": 1130,
+    "teacher_wrong_decoder_correct": 146,
+    "both_wrong_different_predictions": 285,
+    "teacher_disagreements": 1561,
+    "original_accuracy": 0.8568,
+    "decoded_accuracy": 0.66
+  },
+  "codec_late_family_b0.1_s17": {
+    "images": 5000,
+    "teacher_correct_decoder_wrong": 248,
+    "teacher_wrong_decoder_correct": 82,
+    "both_wrong_different_predictions": 183,
+    "teacher_disagreements": 513,
+    "original_accuracy": 0.8568,
+    "decoded_accuracy": 0.8236
+  }
+}

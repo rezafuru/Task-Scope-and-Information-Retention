@@ -1,0 +1,33 @@
+{
+  "train": {
+    "archive": "<IMAGENET_ROOT>/ILSVRC2012_img_train.tar",
+    "archive_bytes": 147897477120,
+    "archive_md5": "1d675b47d978889d74fa0da5fadfb00e",
+    "images": 307828,
+    "classes": 1000,
+    "index_sha256": "f8aaf419bd18a60b6a55c4a5b0a3105da8c6e93951ae738fea3ea8ac0c9fed9b",
+    "offset_convention": "Absolute byte offset of image data within the original outer tar",
+    "split": "train",
+    "split_seed": 20260912,
+    "per_class_limit": null,
+    "membership_sha256": "18851361975c2b3ec33d34bf46e67f0ba012ecbf15798a69921b27c9d4f71fc2"
+  },
+  "validation": {
+    "meta_sha256": "e159ee2fe4bcc4d03e7429e7ff35e6ec553b2a901018b559f400a2b0ae117a30",
+    "ground_truth_sha256": "88d44095bd81cb785618db8e72eeb025fa1f646adf359d9b0efbf625244e0df3",
+    "split": "validation",
+    "split_seed": 20260912,
+    "images": 6000,
+    "per_class_limit": null,
+    "membership_sha256": "749d9f920b1ec384dcacfdb903205a417b136a90fe868f732f04d02ab9aadba0"
+  },
+  "test": {
+    "meta_sha256": "e159ee2fe4bcc4d03e7429e7ff35e6ec553b2a901018b559f400a2b0ae117a30",
+    "ground_truth_sha256": "88d44095bd81cb785618db8e72eeb025fa1f646adf359d9b0efbf625244e0df3",
+    "split": "test",
+    "split_seed": 20260912,
+    "images": 6000,
+    "per_class_limit": null,
+    "membership_sha256": "d590171e84c71dd85d48539b5225f5e449fe42ab8c02acfc288ad89399bf4f94"
+  }
+}

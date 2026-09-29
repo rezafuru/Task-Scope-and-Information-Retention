@@ -1,0 +1,32 @@
+{
+  "output": "results/strengthening/mechanism/confirmation_seed17",
+  "length": 16,
+  "bits": [
+    9,
+    11,
+    13
+  ],
+  "access": [
+    "full"
+  ],
+  "condition": "expanded",
+  "seed": 27182818,
+  "rounds": 12,
+  "train_count": 131072,
+  "dev_count": 32768,
+  "assessment_count": 2097152,
+  "primary_weight": 0.0,
+  "additional_tolerance": 0.499,
+  "confirm_codebook": "results/strengthening/mechanism/profile_n16_b13/full_b13_codebook.npz",
+  "safety_margin": 0.001,
+  "device": "cuda:1",
+  "threads": 4,
+  "source_sha256": "459d2db47d51051a57d661827be92b04490797aefc06b6393cb2644e491dce7c",
+  "codebook_sha256": "a95d45582f0fd73abf117fc9fbad39d6eb1abbe1c9709a800c3bb653ad434d82",
+  "assessment_seed": 27482818,
+  "tolerances": [
+    0.35,
+    0.499
+  ],
+  "statistical_bound": "Simultaneous one-sided Hoeffding at failure probability 0.01."
+}

@@ -1,0 +1,121 @@
+{
+  "test_used": false,
+  "pairs": [
+    {
+      "seed": 17,
+      "beta": 0.03,
+      "matched": true,
+      "common_args": {
+        "initialization": "results/imagenet/feature_initialization_s17_5000/last.pt",
+        "data_root": "<IMAGENET_ROOT>",
+        "mapping": "results/imagenet/mapping.json",
+        "device": "cuda:0",
+        "seed": 17,
+        "epochs": 3,
+        "max_steps": 5000,
+        "batch_size": 128,
+        "workers": 8,
+        "calibration_batches": 32,
+        "lr": 0.0001,
+        "beta": 0.03,
+        "fine_weight": 1.0
+      },
+      "image_exposures": 639976,
+      "initial_state_sha256": "a83e61327168c3a9dfd7857e6ea166bf1becc3aecc885c9ecd5dc7a1c556ed38",
+      "fit_json_sha256": {
+        "results/imagenet/warm_coarse_b0.03_s17_5000/fit.json": "7b022dac6457cd92c223d8b34e567b79518b07f615f0af8b7866830f450c2c9e",
+        "results/imagenet/warm_added_fine_b0.03_s17_5000/fit.json": "2a70a5747cef11f548ce23e792da40530e49a629454797e7f915717bde999170"
+      }
+    },
+    {
+      "seed": 17,
+      "beta": 0.3,
+      "matched": true,
+      "common_args": {
+        "initialization": "results/imagenet/feature_initialization_s17_5000/last.pt",
+        "data_root": "<IMAGENET_ROOT>",
+        "mapping": "results/imagenet/mapping.json",
+        "device": "cuda:0",
+        "seed": 17,
+        "epochs": 3,
+        "max_steps": 5000,
+        "batch_size": 128,
+        "workers": 8,
+        "calibration_batches": 32,
+        "lr": 0.0001,
+        "beta": 0.3,
+        "fine_weight": 1.0
+      },
+      "image_exposures": 639976,
+      "initial_state_sha256": "a83e61327168c3a9dfd7857e6ea166bf1becc3aecc885c9ecd5dc7a1c556ed38",
+      "fit_json_sha256": {
+        "results/imagenet/warm_coarse_b0.3_s17_5000/fit.json": "1670a5ed3e4084fb19b6a97fe00643a8105c672e904d17a503b8cb54385a8995",
+        "results/imagenet/warm_added_fine_b0.3_s17_5000/fit.json": "65ca677591213de8d688935f8f3410c9abd9b091d5c968ebdf8aace01f75a9d4"
+      }
+    },
+    {
+      "seed": 23,
+      "beta": 0.03,
+      "matched": true,
+      "common_args": {
+        "initialization": "results/imagenet/feature_initialization_s17_5000/last.pt",
+        "data_root": "<IMAGENET_ROOT>",
+        "mapping": "results/imagenet/mapping.json",
+        "device": "cuda:0",
+        "seed": 23,
+        "epochs": 3,
+        "max_steps": 5000,
+        "batch_size": 128,
+        "workers": 8,
+        "calibration_batches": 32,
+        "lr": 0.0001,
+        "beta": 0.03,
+        "fine_weight": 1.0
+      },
+      "image_exposures": 639976,
+      "initial_state_sha256": "a83e61327168c3a9dfd7857e6ea166bf1becc3aecc885c9ecd5dc7a1c556ed38",
+      "fit_json_sha256": {
+        "results/imagenet/warm_coarse_b0.03_s23_5000/fit.json": "7f17a8d2e34b7bb8ab69a40ac9b96bddb6121cb268bd883f9404b1ec13b588dc",
+        "results/imagenet/warm_added_fine_b0.03_s23_5000/fit.json": "9e2a4ee9f42e5842b6c0b2b0443250e73c079bd0e4c8f548208c0d72f4574bdf"
+      }
+    },
+    {
+      "seed": 23,
+      "beta": 0.3,
+      "matched": true,
+      "common_args": {
+        "initialization": "results/imagenet/feature_initialization_s17_5000/last.pt",
+        "data_root": "<IMAGENET_ROOT>",
+        "mapping": "results/imagenet/mapping.json",
+        "device": "cuda:0",
+        "seed": 23,
+        "epochs": 3,
+        "max_steps": 5000,
+        "batch_size": 128,
+        "workers": 8,
+        "calibration_batches": 32,
+        "lr": 0.0001,
+        "beta": 0.3,
+        "fine_weight": 1.0
+      },
+      "image_exposures": 639976,
+      "initial_state_sha256": "a83e61327168c3a9dfd7857e6ea166bf1becc3aecc885c9ecd5dc7a1c556ed38",
+      "fit_json_sha256": {
+        "results/imagenet/warm_coarse_b0.3_s23_5000/fit.json": "a8ac13500b446bcb50d06b06542a51491118e0dd0bf4cb8ac0f4f7f6fb0db4ee",
+        "results/imagenet/warm_added_fine_b0.3_s23_5000/fit.json": "b0df0b0ad66618352c2f09419954c5c6ddbc03695ca78a80e496bc100f1fbe6d"
+      }
+    }
+  ],
+  "all_pair_metadata_match": true,
+  "checked_keys": [
+    "image_exposures",
+    "initial_state_sha256",
+    "initialization",
+    "training",
+    "mapping_sha256",
+    "provenance",
+    "teacher",
+    "all arguments except objective and output"
+  ],
+  "shared_initial_state_across_all_pairs": true
+}

@@ -1,0 +1,46 @@
+{
+  "output": "results/strengthening/mechanism/replication_seed23",
+  "length": 16,
+  "bits": [
+    13
+  ],
+  "access": [
+    "full"
+  ],
+  "condition": "expanded",
+  "seed": 23,
+  "rounds": 3,
+  "train_count": 131072,
+  "dev_count": 32768,
+  "assessment_count": 2097152,
+  "primary_weight": 0.0,
+  "additional_tolerance": 0.499,
+  "confirm_codebook": null,
+  "safety_margin": 0.001,
+  "device": "cuda:1",
+  "threads": 4,
+  "source_sha256": "459d2db47d51051a57d661827be92b04490797aefc06b6393cb2644e491dce7c",
+  "interpreter": ".venv/bin/python",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "split_seeds": {
+    "training": 100023,
+    "development": 200023,
+    "assessment": 300023
+  },
+  "prediction_tuples": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "model_accounting": "Codebooks are shared models. Every packet includes its 32-byte model hash."
+}

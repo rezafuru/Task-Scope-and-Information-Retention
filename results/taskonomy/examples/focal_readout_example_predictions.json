@@ -1,0 +1,215 @@
+{
+  "selection": "first validation example from each of the five fixed buildings, before visual inspection",
+  "keys": [
+    "wiconisco/point_100_view_7",
+    "corozal/point_1009_view_11",
+    "collierville/point_101_view_2",
+    "markleeville/point_1007_view_12",
+    "darden/point_1008_view_2"
+  ],
+  "roles": {
+    "d30": "D lambda30",
+    "ds3": "DS lambda3",
+    "de3": "DE lambda3"
+  },
+  "decoding": "actual entropy decoding with the fixed primary validation-selected task heads",
+  "sources": {
+    "d30": {
+      "selection": {
+        "selection_split": "val",
+        "validation_images": 500,
+        "codec_checkpoint": "results/round2_task_family/codec_d_r30/best.pt",
+        "heads": {
+          "depth": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_d_r30/best.pt",
+            "validation_source": "results/round2_task_family/probe_d_r30/best_validation.json",
+            "validation_step": 23000,
+            "validation_risk": 0.08282276396080851
+          },
+          "semantic": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_d_r30/last.pt",
+            "validation_source": "results/round2_task_family/probe_d_r30/validation.jsonl",
+            "validation_step": 24000,
+            "validation_risk": 1.1692670873999595
+          },
+          "edge": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_d_r30/best.pt",
+            "validation_source": "results/round2_task_family/probe_d_r30/best_validation.json",
+            "validation_step": 23000,
+            "validation_risk": 0.04052590950392187
+          }
+        },
+        "selection_policy": "native plus retained fresh width-48 best and last heads",
+        "selection_basis": "lowest existing quantized-forward validation risk per task",
+        "eligible_sources": [
+          {
+            "checkpoint": "results/round2_task_family/codec_d_r30/best.pt",
+            "validation_source": "results/round2_task_family/codec_d_r30/best_validation.json",
+            "validation_step": 19500,
+            "losses": {
+              "depth": 0.0852249611672014
+            }
+          },
+          {
+            "checkpoint": "results/round2_task_family/probe_d_r30/best.pt",
+            "validation_source": "results/round2_task_family/probe_d_r30/best_validation.json",
+            "validation_step": 23000,
+            "losses": {
+              "depth": 0.08282276396080851,
+              "semantic": 1.172642558798194,
+              "edge": 0.04052590950392187
+            }
+          },
+          {
+            "checkpoint": "results/round2_task_family/probe_d_r30/last.pt",
+            "validation_source": "results/round2_task_family/probe_d_r30/validation.jsonl",
+            "validation_step": 24000,
+            "losses": {
+              "depth": 0.08459546487405896,
+              "semantic": 1.1692670873999595,
+              "edge": 0.04114525674283504
+            }
+          }
+        ]
+      },
+      "evaluation_source": "results/taskonomy/available_heads/d_r30/evaluation.json",
+      "validation_images": 500,
+      "actual_mean_bpp": 0.0072509765625
+    },
+    "ds3": {
+      "selection": {
+        "selection_split": "val",
+        "validation_images": 500,
+        "codec_checkpoint": "results/round2_task_family/codec_ds_r3/best.pt",
+        "heads": {
+          "depth": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+            "validation_step": 17500,
+            "validation_risk": 0.07004834003187715
+          },
+          "semantic": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+            "validation_step": 17500,
+            "validation_risk": 0.7339926457889379
+          },
+          "edge": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+            "validation_step": 17500,
+            "validation_risk": 0.03141428892395925
+          }
+        },
+        "selection_policy": "native plus retained fresh width-48 best and last heads",
+        "selection_basis": "lowest existing quantized-forward validation risk per task",
+        "eligible_sources": [
+          {
+            "checkpoint": "results/round2_task_family/codec_ds_r3/best.pt",
+            "validation_source": "results/round2_task_family/codec_ds_r3/best_validation.json",
+            "validation_step": 21500,
+            "losses": {
+              "depth": 0.07290985198039561,
+              "semantic": 0.7376636774614453
+            }
+          },
+          {
+            "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+            "validation_step": 17500,
+            "losses": {
+              "depth": 0.07004834003187715,
+              "semantic": 0.7339926457889379,
+              "edge": 0.03141428892395925
+            }
+          },
+          {
+            "checkpoint": "results/round2_task_family/probe_ds_r3/last.pt",
+            "validation_source": "results/round2_task_family/probe_ds_r3/validation.jsonl",
+            "validation_step": 24000,
+            "losses": {
+              "depth": 0.07022118608467282,
+              "semantic": 0.7678636389118619,
+              "edge": 0.03203627627779497
+            }
+          }
+        ]
+      },
+      "evaluation_source": "results/taskonomy/available_heads/ds_r3/evaluation.json",
+      "validation_images": 500,
+      "actual_mean_bpp": 0.0337626953125
+    },
+    "de3": {
+      "selection": {
+        "selection_split": "val",
+        "validation_images": 500,
+        "codec_checkpoint": "results/round2_task_family/codec_de_r3/best.pt",
+        "heads": {
+          "depth": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_de_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_de_r3/best_validation.json",
+            "validation_step": 17500,
+            "validation_risk": 0.06929539657384157
+          },
+          "semantic": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_de_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_de_r3/best_validation.json",
+            "validation_step": 17500,
+            "validation_risk": 0.9364140452221036
+          },
+          "edge": {
+            "kind": "latent",
+            "checkpoint": "results/round2_task_family/probe_de_r3/last.pt",
+            "validation_source": "results/round2_task_family/probe_de_r3/validation.jsonl",
+            "validation_step": 24000,
+            "validation_risk": 0.0069458463267656045
+          }
+        },
+        "selection_policy": "native plus retained fresh width-48 best and last heads",
+        "selection_basis": "lowest existing quantized-forward validation risk per task",
+        "eligible_sources": [
+          {
+            "checkpoint": "results/round2_task_family/codec_de_r3/best.pt",
+            "validation_source": "results/round2_task_family/codec_de_r3/best_validation.json",
+            "validation_step": 22000,
+            "losses": {
+              "depth": 0.07199731078743934,
+              "edge": 0.007151729016099125
+            }
+          },
+          {
+            "checkpoint": "results/round2_task_family/probe_de_r3/best.pt",
+            "validation_source": "results/round2_task_family/probe_de_r3/best_validation.json",
+            "validation_step": 17500,
+            "losses": {
+              "depth": 0.06929539657384157,
+              "semantic": 0.9364140452221036,
+              "edge": 0.007051898226956837
+            }
+          },
+          {
+            "checkpoint": "results/round2_task_family/probe_de_r3/last.pt",
+            "validation_source": "results/round2_task_family/probe_de_r3/validation.jsonl",
+            "validation_step": 24000,
+            "losses": {
+              "depth": 0.07004208445455878,
+              "semantic": 0.9451396012417972,
+              "edge": 0.0069458463267656045
+            }
+          }
+        ]
+      },
+      "evaluation_source": "results/taskonomy/available_heads/de_r3/evaluation.json",
+      "validation_images": 500,
+      "actual_mean_bpp": 0.03123046875
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "scope": "base-seed matched fresh width96 banks, separate from replicated primary native/best/last width48 policy",
+  "excluded": "Original failed DS3 coded_val500 and unintended cuDNN-disabled coded_val500_stable_entropy are excluded from selected capacity evidence",
+  "rows": [
+    {
+      "setting": "D_lambda30",
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 96,
+      "actual_bpp": 0.0072509765625,
+      "losses": {
+        "depth": 0.08307844611629844,
+        "semantic": 1.1530133900493384,
+        "edge": 0.04022165264375508
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2075286946488275,
+        "semantic_object_miou": 0.005226470995694399
+      },
+      "checkpoint": "results/round2_task_family/probe_d_r30_w96/best.pt",
+      "checkpoint_step": 20000,
+      "source": "results/round2_task_family/probe_d_r30_w96/coded_val500/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_d_r30_w96/coded_val500/coded_rates.jsonl",
+      "baseline_source": "results/round2_task_family/probe_d_r30/coded_val500/evaluation.json",
+      "loss_difference_from_matched_width48": {
+        "depth": 0.0003366503706201951,
+        "semantic": -0.019615971058607018,
+        "edge": -0.00029868225008249094
+      },
+      "entropy_convolution_policy": "deterministic cuDNN with benchmarking disabled during entropy coding"
+    },
+    {
+      "setting": "DS_lambda3",
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 96,
+      "actual_bpp": 0.0337607421875,
+      "losses": {
+        "depth": 0.07052385566197336,
+        "semantic": 0.7349043067935854,
+        "edge": 0.030936735998897347
+      },
+      "metrics": {
+        "depth_rmse_m": 1.0815560278460572,
+        "semantic_object_miou": 0.16929402947425842
+      },
+      "checkpoint": "results/round2_task_family/probe_ds_r3_w96/best.pt",
+      "checkpoint_step": 18000,
+      "source": "results/round2_task_family/probe_ds_r3_w96/coded_val500_deterministic_cudnn/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_ds_r3_w96/coded_val500_deterministic_cudnn/coded_rates.jsonl",
+      "baseline_source": "results/round2_task_family/probe_ds_r3/coded_val500/evaluation.json",
+      "loss_difference_from_matched_width48": {
+        "depth": 0.00047742900997400917,
+        "semantic": 0.000884897736832535,
+        "edge": -0.00047839937475509936
+      },
+      "entropy_convolution_policy": "deterministic cuDNN with benchmarking disabled during entropy coding"
+    },
+    {
+      "setting": "DE_lambda3",
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 96,
+      "actual_bpp": 0.031228515625,
+      "losses": {
+        "depth": 0.06815225072391332,
+        "semantic": 0.9144495731517672,
+        "edge": 0.0068628519843332465
+      },
+      "metrics": {
+        "depth_rmse_m": 1.0549124917269261,
+        "semantic_object_miou": 0.06426713615655899
+      },
+      "checkpoint": "results/round2_task_family/probe_de_r3_w96/best.pt",
+      "checkpoint_step": 20000,
+      "source": "results/round2_task_family/probe_de_r3_w96/coded_val500/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_de_r3_w96/coded_val500/coded_rates.jsonl",
+      "baseline_source": "results/round2_task_family/probe_de_r3/coded_val500/evaluation.json",
+      "loss_difference_from_matched_width48": {
+        "depth": -0.0011318806353956407,
+        "semantic": -0.022007711682468734,
+        "edge": -0.00018761696567526093
+      },
+      "entropy_convolution_policy": "deterministic cuDNN with benchmarking disabled during entropy coding",
+      "retained_final_assessment": "results/round2_task_family/capacity_de_r3_retained_selection.json"
+    }
+  ]
+}

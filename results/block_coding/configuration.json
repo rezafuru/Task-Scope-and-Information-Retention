@@ -1,0 +1,32 @@
+{
+  "description": "Configuration of the run that produced the retained block-coding evidence. The fitted stage drew samples at offset 1000000, and the rescoring stage repeated validation and assessment at offset 2000000 after rounding every fitted state score to five decimals.",
+  "seeds": [
+    11,
+    12,
+    13
+  ],
+  "lengths": [
+    12,
+    16
+  ],
+  "laws": "two_tau_0,two_tau_0.125,two_tau_0.5,three",
+  "min_rate": 0.3,
+  "max_rate": 0.8,
+  "rounds": 8,
+  "train_count": 65536,
+  "validation_count": 65536,
+  "assessment_count": 131072,
+  "score_steps": 250,
+  "safety_margin": 0.0015,
+  "run_sample_seed_offset": 1000000,
+  "rescore_sample_seed_offset": 2000000,
+  "score_decimals": 5,
+  "correction": "Round every fitted score vector at a fixed precision before hard selection",
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device": "cuda"
+  },
+  "rescore_elapsed_seconds": 453.42975759506226,
+  "identical_reference_encoders": 624
+}

@@ -1,0 +1,151 @@
+{
+  "selected": {
+    "full": {
+      "risks": [
+        0.25111931562423706,
+        0.4975475350135583
+      ],
+      "risk_se": [
+        4.92192610534614e-05,
+        1.1317153543305684e-05
+      ],
+      "prediction_frequency": [
+        0.31080955266952515,
+        0.31187373399734497,
+        0.3773167133331299
+      ],
+      "state_count": [
+        5872848,
+        5875342,
+        5868734,
+        5868872,
+        10068636
+      ],
+      "state_error": [
+        0.4321077269495141,
+        0.12397337891138933,
+        0.4298766991313629,
+        0.12215396757673365,
+        0.1907248409814398
+      ],
+      "transmitted_rate": 0.8125114440917969,
+      "message_bytes": 3407920,
+      "source_symbols": 33554432,
+      "packet_count": 1,
+      "framing_bytes": 48,
+      "risk_upper_99_normal": [
+        0.25124610444071077,
+        0.49757668800108584
+      ],
+      "risk_upper_99_hoeffding": [
+        0.25224324502511664,
+        0.49822329756583716
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "name": "full_b13",
+      "access": "full",
+      "bits": 13,
+      "length": 16,
+      "condition": "expanded",
+      "seed": 31,
+      "fit_seconds": 0.8106758957728744,
+      "history": [
+        {
+          "iteration": 0,
+          "training_objective": 0.4976430809497833,
+          "occupied_codewords": 8192
+        },
+        {
+          "iteration": 1,
+          "training_objective": 0.49729866325855254,
+          "occupied_codewords": 8192
+        },
+        {
+          "iteration": 2,
+          "training_objective": 0.49722823619842527,
+          "occupied_codewords": 8192
+        },
+        {
+          "iteration": 3,
+          "training_objective": 0.4972169232368469,
+          "occupied_codewords": 8192
+        }
+      ],
+      "development": {
+        "risks": [
+          0.25111961364746094,
+          0.4974939616521193
+        ],
+        "risk_se": [
+          0.0003927090411342588,
+          9.029494604465147e-05
+        ],
+        "prediction_frequency": [
+          0.3103008270263672,
+          0.3120136260986328,
+          0.377685546875
+        ],
+        "state_count": [
+          91480,
+          91609,
+          91848,
+          92017,
+          157334
+        ],
+        "state_error": [
+          0.43329689549628336,
+          0.12258620877861345,
+          0.429394216531661,
+          0.12467261484290947,
+          0.18991444951504444
+        ],
+        "message_bytes": 53296,
+        "header_bytes": 48,
+        "transmitted_rate": 0.813232421875,
+        "index_bits": 13,
+        "used_codewords": 7866
+      },
+      "codebook_bytes": 31592,
+      "codebook_sha256": "845b36e7cd48915c70790538ff1599e4aac9983eac3df5352af010a5abecc953",
+      "assessment": {
+        "risks": [
+          0.25111931562423706,
+          0.4975475350135583
+        ],
+        "risk_se": [
+          4.92192610534614e-05,
+          1.1317153543305684e-05
+        ],
+        "prediction_frequency": [
+          0.31080955266952515,
+          0.31187373399734497,
+          0.3773167133331299
+        ],
+        "state_count": [
+          5872848,
+          5875342,
+          5868734,
+          5868872,
+          10068636
+        ],
+        "state_error": [
+          0.4321077269495141,
+          0.12397337891138933,
+          0.4298766991313629,
+          0.12215396757673365,
+          0.1907248409814398
+        ],
+        "message_bytes": 3407920,
+        "header_bytes": 48,
+        "transmitted_rate": 0.8125114440917969,
+        "index_bits": 13,
+        "used_codewords": 8192
+      }
+    }
+  ],
+  "elapsed_seconds": 18.477519924752414,
+  "peak_cuda_memory_bytes": 93454848
+}

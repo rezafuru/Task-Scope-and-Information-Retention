@@ -1,0 +1,22 @@
+{
+  "tolerances": [
+    0.35,
+    0.499
+  ],
+  "safety_margin": 0.001,
+  "selections": {
+    "full": {
+      "names": [
+        "full_b13"
+      ],
+      "block_counts": [
+        2097152
+      ],
+      "development_risks_after_rounding": [
+        0.25058555603027344,
+        0.4976511136690755
+      ],
+      "public_schedule": "Consecutive block groups in the listed order, fixed before assessment."
+    }
+  }
+}

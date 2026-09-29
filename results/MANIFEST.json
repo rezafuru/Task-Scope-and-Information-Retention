@@ -1,0 +1,1110 @@
+{
+  "files": 184,
+  "bytes": 18710105,
+  "entries": [
+    {
+      "path": "results/block_coding/before_score_rounding/manuscript_table.csv",
+      "bytes": 35156,
+      "sha256": "3a9fb6caf79ffae4d38a8398484caf6a8af7c9d0a33b6eb7cb079ec773c76a94",
+      "supports": "Selected policies from the run before score rounding, including the original cyclic-family rates."
+    },
+    {
+      "path": "results/block_coding/before_score_rounding/precision_audit.json",
+      "bytes": 1754,
+      "sha256": "16eff9cc226a0438cc5d0dd100a3ab241226c3868159d1f09713a7fc7518fa3a",
+      "supports": "Validation assignment changes and risk shifts caused by near-tied fitted scores before rounding."
+    },
+    {
+      "path": "results/block_coding/codebook_origin_audit.json",
+      "bytes": 47667,
+      "sha256": "82f2b020caad169a89dfc1ff6afd8b79697218fb55e854b499c228ee8e00b84d",
+      "supports": "Bit differences between each confidence-fitted codebook and the matching reduced-fitted codebook."
+    },
+    {
+      "path": "results/block_coding/configuration.json",
+      "bytes": 975,
+      "sha256": "d1f84d298e7bfa11f6f5dcc53e2d991b685fdeac79a084fb0a24a24a7a380eb0",
+      "supports": "Parameters of the run that produced this evidence, including the score-rounding correction."
+    },
+    {
+      "path": "results/block_coding/correction_timing.json",
+      "bytes": 323,
+      "sha256": "3f8b2dc175817f3081ef1a7a738a126eb9f120436c5fb1580e89d41431a47fa5",
+      "supports": "When the corrected configuration was written and how many reference encoders were identical."
+    },
+    {
+      "path": "results/block_coding/fixed_codebook_comparisons.csv",
+      "bytes": 2650320,
+      "sha256": "e5603d6693ae962cee5a8104b8a3f8728685d09f2ce1a52b380815f515cecac4",
+      "supports": "Range across fits of the component risks under both observations, their paired difference, and the block standard error, aggregated from the per-block comparison grid."
+    },
+    {
+      "path": "results/block_coding/forecasts.json",
+      "bytes": 254649,
+      "sha256": "d7959072db6bb916dee733e2dac1961fafb735c6197c4138fe6320a3c097b4a5",
+      "supports": "Additional-task risks predicted on calibration blocks and assessed on independent blocks without refitting."
+    },
+    {
+      "path": "results/block_coding/manuscript_table.csv",
+      "bytes": 35153,
+      "sha256": "c5d59a0d6098d800287ae27474cf6aae013c15f298e34c4a80b40131a535eade",
+      "supports": "Flat view of the selected policies: complete rate, asymptotic rate, excess, and component risks."
+    },
+    {
+      "path": "results/block_coding/predictions.json",
+      "bytes": 7926,
+      "sha256": "b44463ee4180fe3c6840557a95c7c6b586c56d23f8dec9f16d011ca83eae10b4",
+      "supports": "Requirement families and their asymptotic full- and reduced-observation rates."
+    },
+    {
+      "path": "results/block_coding/summary.json",
+      "bytes": 582791,
+      "sha256": "375bbf90dae6f039cc2936e41e67764fe81a1da09f55c8e42c176b348c3a2098",
+      "supports": "Selected policy per requirement family, fit, block length, observation, and encoder, with complete rates, component risks, and joint assessment intervals."
+    },
+    {
+      "path": "results/cifar/earlier_round/coarse_risk_decomposition_validation.json",
+      "bytes": 1147,
+      "sha256": "1945237e7699e4a851ae5ec441ed599ba09ec2489c6ad9568c8acbd6e681f641",
+      "supports": "Validation coarse accuracy of the less favourable cold logit-loss fit against its reference."
+    },
+    {
+      "path": "results/cifar/earlier_round/focal_uncertainty.json",
+      "bytes": 42968,
+      "sha256": "cd045949c0f0af3b326847fec8b0f62d1c21754c6d7c875279c9ae0daa472997",
+      "supports": "Observation and cold-fit controls from the preceding study: refitted fine accuracy and rates for the early and logit observations and the near-rate preservation settings."
+    },
+    {
+      "path": "results/cifar/earlier_round/test_fidelity_group_means.json",
+      "bytes": 3992,
+      "sha256": "a082099d440e073a3416db4ef2f5293ffcb6e5523875b3582c64eea282f32bc4",
+      "supports": "Normalized early-feature error of the cheaper logit-preserving reconstruction against the early-preserving one."
+    },
+    {
+      "path": "results/cifar/test_extension_rows.csv",
+      "bytes": 4068,
+      "sha256": "84b3bed4603645444bcfab9fff5369c9d7e03a379f993b174573b0727237b623",
+      "supports": "Flat per-codec-fit view of the test evidence, including header, hyperlatent, and main-latent bytes."
+    },
+    {
+      "path": "results/cifar/test_extension_summary.json",
+      "bytes": 30780,
+      "sha256": "71aa23cd0fb6f46e0466ebab58179b1065b85338df5c4d2a0f6a94223ec29f6b",
+      "supports": "Test assessment of the frozen selections and the three lower-rate neighbours, with paired image intervals, complete byte breakdowns, and uncompressed references."
+    },
+    {
+      "path": "results/cifar/validation_extension_rows.csv",
+      "bytes": 7101,
+      "sha256": "489a3b6af69f1550b92c7782eef23d432082d2a8ef6a5ee626d342c610c091d6",
+      "supports": "Flat per-codec-fit view of the validation evidence."
+    },
+    {
+      "path": "results/cifar/validation_selection_frozen.json",
+      "bytes": 45371,
+      "sha256": "ac439745d7a709cd0eae5b1372f7e826d275f0920f036a22c1def71b8650a22c",
+      "supports": "Validation candidates, paired means, and the six frozen selections. Bound by hash to the test evidence."
+    },
+    {
+      "path": "results/exact/profile_numerical_checks.json",
+      "bytes": 22807,
+      "sha256": "83ba12781fc60e9e1a5c3b0d73efc99bf67c6489a45958c3c7bec49d264a49e4",
+      "supports": "Conditional-error-profile criterion checked against a free joint-action optimization, including the successive three-state rates."
+    },
+    {
+      "path": "results/exact/rate_curves.csv",
+      "bytes": 91608,
+      "sha256": "02100ae403114b23ff6fc9cfd2c02f90bd00a60e2000d2b032eedb7f7c6fd956",
+      "supports": "Rate grids for the overlapping-threshold and confidence families. Input to the exact-rate figure."
+    },
+    {
+      "path": "results/exact/summary.json",
+      "bytes": 2468,
+      "sha256": "fe289b486bd203079963e9f4691d953c381e94ece531e672fdeaf7d9db51e03f",
+      "supports": "Threshold baseline gap, confidence rates at tolerated risk 0.30, and the single-task channel's second-task risk, with the free-channel verification."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s17/test/predictions.npz",
+      "bytes": 77746,
+      "sha256": "7e797b6da344a602b8488ed942b734f75d355ae52d16c46ea81b992692b8d8f8",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each held-out message."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s17/test/readout_s17_predictions.npy",
+      "bytes": 96128,
+      "sha256": "41d1bd5a6a0d0df72178afe67004443bcf30cf2dcf29b892ac8767de31f255b4",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s17/test/readout_s23_predictions.npy",
+      "bytes": 96128,
+      "sha256": "60436c0fa001f02f2a83ad92a5d9acc3d128f299f59eaca4631e723742123d65",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s17/test/sealed.json",
+      "bytes": 7623,
+      "sha256": "3e3f5d1976b62ac45a60849842cb8797f11ea7d86e53adbc66784e2a51867a05",
+      "supports": "Held-out seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s17/test_summary.json",
+      "bytes": 9234,
+      "sha256": "48ac22d3ded33e3c23d42a540fd774a0baae015af391055a6a066c9df75289a5",
+      "supports": "Held-out coarse and fine accuracy of one assessed codec through its frozen route, with the inherited seal and both adapted readouts."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s23/test/predictions.npz",
+      "bytes": 77757,
+      "sha256": "cf0ae99cf4042770a5ed32967ba48b3309e91d583b0a5194801e8bfd5980075f",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each held-out message."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s23/test/readout_s17_predictions.npy",
+      "bytes": 96128,
+      "sha256": "e988d07562e0dfce0567753c6a3f3fa7cb4ab120051a78f08ebf10dafae0a34d",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s23/test/readout_s23_predictions.npy",
+      "bytes": 96128,
+      "sha256": "ff05f95c39bd91305bbfe87891abc82536289252fdf7aec6445fec1bad99af77",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s23/test/sealed.json",
+      "bytes": 7612,
+      "sha256": "14789a9c4be11ce6cc5c4e1577ef1485bf0cb72ef046b60802136c5e95f271d0",
+      "supports": "Held-out seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/assessment_added_fine_b0.3_s23/test_summary.json",
+      "bytes": 9188,
+      "sha256": "76688ef9bd111a6036593bcb963fcffd6cf9a2e0c8edc45d1f579e9e7b25684b",
+      "supports": "Held-out coarse and fine accuracy of one assessed codec through its frozen route, with the inherited seal and both adapted readouts."
+    },
+    {
+      "path": "results/imagenet/assessment_artifact_hashes.json",
+      "bytes": 4750,
+      "sha256": "d86658085293978c9b8ca41b4ea057916b2baa4cea22264111e85ddda6859152",
+      "supports": "Digests of the selection, the assessed seals, summaries, and prediction arrays behind the held-out numbers, including the packet streams that stay external."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s17/test/predictions.npz",
+      "bytes": 77561,
+      "sha256": "86e833237b3a02b161aba53f8f4e1c2e6e77465bdac52d263420dab70786e04e",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each held-out message."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s17/test/readout_s17_predictions.npy",
+      "bytes": 96128,
+      "sha256": "e2fc18d3b13152ca4be43e7f7b7605119edbbfbefe10a52333e005eca3334700",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s17/test/readout_s23_predictions.npy",
+      "bytes": 96128,
+      "sha256": "f8a90c96e19596196d062f1303be7f1db8736ae42ef3f25c7da6443d07171cfe",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s17/test/sealed.json",
+      "bytes": 7621,
+      "sha256": "e40151ab5cb04a43b2c97571d6171681c3ed69777c8b003fb1d9fb13fbdb9e1d",
+      "supports": "Held-out seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s17/test_summary.json",
+      "bytes": 9246,
+      "sha256": "7ecfd0ee6d8ab86bb171860d7272b1e7a3dbdfe80cec8f011b6f44fcdb9614a3",
+      "supports": "Held-out coarse and fine accuracy of one assessed codec through its frozen route, with the inherited seal and both adapted readouts."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s23/test/predictions.npz",
+      "bytes": 77634,
+      "sha256": "ccbaf9dc8e9a7c525d27a01f8b75c06712c470021dd1d90970ee5de6a37d0475",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each held-out message."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s23/test/readout_s17_predictions.npy",
+      "bytes": 96128,
+      "sha256": "c202f6e55a7ac4fde15e5d2ced4e0c00ed501413b124c3dcb75769310c2205ed",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s23/test/readout_s23_predictions.npy",
+      "bytes": 96128,
+      "sha256": "7207c1f77fb2c7e7f8a9c2aac8b5d9f87f05248e6306b9feffe7e02cdb77f20e",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s23/test/sealed.json",
+      "bytes": 7611,
+      "sha256": "50d158fa6b200ca2b09081cb70253fc857c8e018e553e846955617f0519121e9",
+      "supports": "Held-out seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/assessment_coarse_b0.3_s23/test_summary.json",
+      "bytes": 9187,
+      "sha256": "b38e82831f1d95b3f08e4455ab6ef0536bfad5eadae6c2fdb24a71bb6c52ae0d",
+      "supports": "Held-out coarse and fine accuracy of one assessed codec through its frozen route, with the inherited seal and both adapted readouts."
+    },
+    {
+      "path": "results/imagenet/assessment_raw/test/predictions.npz",
+      "bytes": 65073,
+      "sha256": "711f72bcf8218f04d48d4fae6d17a2146663fef008f7e66a6a287aa64719af0a",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each held-out message."
+    },
+    {
+      "path": "results/imagenet/assessment_raw/test/readout_s17_predictions.npy",
+      "bytes": 96128,
+      "sha256": "d3aaa0ae39261d47449e0435a1774454cdb7d7bd50aeaebbf59ed15fafe3e246",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_raw/test/readout_s23_predictions.npy",
+      "bytes": 96128,
+      "sha256": "3b23147eaebe9d24aac38d9429dde72019140e1740809322137d9ca4e8280c86",
+      "supports": "Per-image adapted readout predictions on the held-out split, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/assessment_raw/test/sealed.json",
+      "bytes": 7482,
+      "sha256": "50455f8337933d67d48867c36dc570ba085a30690932f91216f978108ff924f4",
+      "supports": "Held-out seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/assessment_raw/test_summary.json",
+      "bytes": 9095,
+      "sha256": "35283f18aa7a4a60f52fe2d44b3be6631c5c4286128ef075b564e3300896c187",
+      "supports": "Held-out coarse and fine accuracy of one assessed codec through its frozen route, with the inherited seal and both adapted readouts."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s17_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "edd56b338e1f469185e1931e1acbbdc9ab0ba592d49a7f7d66f92fa43f2b85fb",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s17_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "924bfc2edd88cde0afbf92c78e9ea3cf59a433c68437de05b0919f5da8fb22ca",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s17_5000/readouts.json",
+      "bytes": 769,
+      "sha256": "5694b6cfc121ec80be937cb220f620e42c6f0e6a6468f6aa654899fd82fb39de",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s17_5000/validation/predictions.npz",
+      "bytes": 77726,
+      "sha256": "7c0911eb8b4cf728776b2b81958ef62433255bfe155336584e0213f3c6dc26fc",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s17_5000/validation/sealed.json",
+      "bytes": 7620,
+      "sha256": "3c232e1ddd76a8f37b25bd156604e67066d4fde744ea13b36d706a8721bc0931",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s23_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "f9e8f78fb04a7096b4f93e6c436fd660fdb4bd6ed95c707faa1fb12020e90120",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s23_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "a98759ad59be7bd13fba744b5f19dbed75a5ab42fd3a09739a46fab125a7a1cc",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s23_5000/readouts.json",
+      "bytes": 745,
+      "sha256": "7915a181e1bb36eb592a30140c57b35e20e34d3d1093aac6a1baeb803d976a01",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s23_5000/validation/predictions.npz",
+      "bytes": 77589,
+      "sha256": "f6983ca050c8b9b1e6da0a6314c953acb0cc17c63ff92f1745659b4d405c359c",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.03_s23_5000/validation/sealed.json",
+      "bytes": 7656,
+      "sha256": "a1403f1d52271f22481d7889399760c602c6bc8bad3a04ffc05ce79035828e70",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s17_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "76a467b4432f1aee7aed8556eded160d48d130c5d115e93d7eec55831c2e6d8d",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s17_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "6759c98581ce788537d937c53b80cfe09495bcbe91e133089bb4478080f2bfd4",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s17_5000/readouts.json",
+      "bytes": 770,
+      "sha256": "1f2f6de19b98ed1198779a54878585ea228a42908faed949aea59be5dce10dc5",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s17_5000/validation/predictions.npz",
+      "bytes": 77627,
+      "sha256": "08fb47da34573bbc058f3a90c6395c63c19cf64bf6c91af9b4018f71f6d5eb0f",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s17_5000/validation/sealed.json",
+      "bytes": 7642,
+      "sha256": "545dfcdc68298574c9e408bf6ae5454fe079b64afd30b91182de35e000b3dfb1",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s23_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "b80567b2d722b9f347ed6d5d25273be1ac67bb92c41f62860eddfb3eb38b64c9",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s23_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "5c82798ea7619a410147a446839d30733111a059e43ed90f45f46e9ce79a0bba",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s23_5000/readouts.json",
+      "bytes": 757,
+      "sha256": "4fcb4e38801fccd3c7e03e48804599a528b397db69affccbc14237e4015d86fb",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s23_5000/validation/predictions.npz",
+      "bytes": 77616,
+      "sha256": "c6fc3381c21ec5534032d913635a03b548fcc05b2e83f5ab2c76d66c1da1a081",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_added_fine_b0.3_s23_5000/validation/sealed.json",
+      "bytes": 7656,
+      "sha256": "a26242bcb52ff54d190f927fc29d66e6a6e020529a2866be969d46c133181667",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s17_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "0fed405060f99a4b21ad61632ae64ebbe9d1db974f55be14b078ca22b7e79c1f",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s17_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "52b2cd415156d3b67d4036a29e3b0b06ad753feba0c5450cbcd6c656dde35d11",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s17_5000/readouts.json",
+      "bytes": 783,
+      "sha256": "fa594377935da4178231e3fdec93ee8465977473bb5bb46ea5a8a8c15fef5eea",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s17_5000/validation/predictions.npz",
+      "bytes": 77705,
+      "sha256": "cb4ecbf1258e5024bcb91a3209cda641e961856f13b0b2a51f229b4048469b1b",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s17_5000/validation/sealed.json",
+      "bytes": 7657,
+      "sha256": "6fe1087134836e42b927367f8a764c73b431be539d121f326ed94a4d48e2956a",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s23_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "dadcd62e3d18354a086ba09f7bf461eafd64e30a038bb208fa9b6dae2cde75a9",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s23_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "a2e03372ab352d4592124c402a02835dc7c063d89109d77f44abf03a8aa411de",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s23_5000/readouts.json",
+      "bytes": 756,
+      "sha256": "8537b802738d5e764c7b393d16730cb1d08337fe7297f87d0241d12eb60b9aed",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s23_5000/validation/predictions.npz",
+      "bytes": 77737,
+      "sha256": "16cf05844f1c4fd23db90428143d471fba6563a927e25d393cc387c2ea10a0da",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.03_s23_5000/validation/sealed.json",
+      "bytes": 7631,
+      "sha256": "35ca449fdcb5587c2a3614bfb467b4ebd8041f37e7bdf6b9d53a1f9eed3420bc",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s17_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "f44aa71a111f93abd1da627c07ac10e22846991feee42eb40f32c69c9797111f",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s17_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "720e037b4bb470be6229f8e7b87fbe3e5c11836797e752be1384596a9158d1fe",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s17_5000/readouts.json",
+      "bytes": 769,
+      "sha256": "69465cf19def58edb349ed4b1e243f449d0782b4b0cac94abfaa2cd5871a3a49",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s17_5000/validation/predictions.npz",
+      "bytes": 77521,
+      "sha256": "c747d35284d953aaa910c0c7da54be8e15fcd58d8fcfce9ac5cbdd5dfe6f79f5",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s17_5000/validation/sealed.json",
+      "bytes": 7629,
+      "sha256": "36cbc8176368f6a55d09fe448f4d29c227dfcb479b970d5e9a1c0ed43ba3a3b6",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s23_5000/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "7e3d8c2256e23853ea9fd0d76d0db147731e06e97833adab9e10753650a2855a",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s23_5000/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "2b99c1bacd416d0e429e5ca4724ee34529c69fcbdceeb0731fcb9f391171a17a",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s23_5000/readouts.json",
+      "bytes": 770,
+      "sha256": "0de680de282dab74d21e6955ab8372315e2e6ce0f5bf164984a57d971d468a6b",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s23_5000/validation/predictions.npz",
+      "bytes": 77425,
+      "sha256": "e09c2323c51c2195759b4e1ed5ba534a43d06f1f9e3eb25ed2cfc7b1c82100f0",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/coded_warm_coarse_b0.3_s23_5000/validation/sealed.json",
+      "bytes": 7655,
+      "sha256": "0abc648d91bbe4ef2900d0a5adf55bb5858ae5787a2b81de1b6e4b4c59156611",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/data_audit.json",
+      "bytes": 1355,
+      "sha256": "63411927dc744155dfea4894399c140418880a1d42bea215d6be3a409d8172e3",
+      "supports": "Archive identity, split seed, image counts, and membership digests of the training, validation, and test splits."
+    },
+    {
+      "path": "results/imagenet/feature_initialization_s17_5000/fit.json",
+      "bytes": 7842,
+      "sha256": "facbb159fd735a2b1167fceb7fe646af6903f96d20c930dde51c75c0ef6727cd",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/hierarchy/breeds_helpers_reference.py",
+      "bytes": 23310,
+      "sha256": "5fa8b32d10bdc55b020653b93ce45e6aa4fcb6d4ff7535754601f63b7732cb72",
+      "supports": "BREEDS hierarchy input mirrored so that mapping.json can be rebuilt without the dataset."
+    },
+    {
+      "path": "results/imagenet/hierarchy/class_hierarchy.txt",
+      "bytes": 26318,
+      "sha256": "039cfaddf9732855b93f7899ba4b5ba6d80f8dbe15cfaad566f575b6c8ce0216",
+      "supports": "BREEDS hierarchy input mirrored so that mapping.json can be rebuilt without the dataset."
+    },
+    {
+      "path": "results/imagenet/hierarchy/dataset_class_info.json",
+      "bytes": 44565,
+      "sha256": "be90503d57a001f95e094a81dc4de90772bfc58546ca58061d6474799829afd0",
+      "supports": "BREEDS hierarchy input mirrored so that mapping.json can be rebuilt without the dataset."
+    },
+    {
+      "path": "results/imagenet/hierarchy/node_names.txt",
+      "bytes": 40652,
+      "sha256": "322af45711ed69a7b199f11225bd964c7dae71df3c586498bef2f7c9e031dedb",
+      "supports": "BREEDS hierarchy input mirrored so that mapping.json can be rebuilt without the dataset."
+    },
+    {
+      "path": "results/imagenet/matched_fit_check.json",
+      "bytes": 4207,
+      "sha256": "f2756a12dde8c8b8c7f20a37dd193fab3f18dc4714631cada24f1a13cca50ed6",
+      "supports": "Confirmation that each coarse-only and added-fine pair shares one initializer state, one training exposure, and identical fitting arguments apart from the objective."
+    },
+    {
+      "path": "results/imagenet/reference_suffix96/readout_s17_validation.npy",
+      "bytes": 96128,
+      "sha256": "9478b728308fa4069605513fdd0e7994bedba9ed55ca5e34adf1cb185cec39ac",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/reference_suffix96/readout_s23_validation.npy",
+      "bytes": 96128,
+      "sha256": "d44a866656702579b53376859b6bbe4852166a498b3b7cb8ccd783d690567f18",
+      "supports": "Per-image adapted readout predictions on validation, one file per readout seed."
+    },
+    {
+      "path": "results/imagenet/reference_suffix96/readouts.json",
+      "bytes": 771,
+      "sha256": "33d73131a73986c21a2bce9c0619980d15afd17e415bec5516d8ad05f6927cc1",
+      "supports": "Selected epoch, validation accuracies, and fitting budget of both adapted readouts for one candidate."
+    },
+    {
+      "path": "results/imagenet/reference_suffix96/validation/predictions.npz",
+      "bytes": 65053,
+      "sha256": "aa239235630226c973416f889f8cd0b8bf68a126ff7277ff07a73de83cf784ae",
+      "supports": "Per-image identifiers, targets, inherited and uncompressed-reference predictions, and the four byte components of each validation message."
+    },
+    {
+      "path": "results/imagenet/reference_suffix96/validation/sealed.json",
+      "bytes": 7490,
+      "sha256": "417018de265fc0a0f960c05ad1a5f08b56284f7fb49968e33fb876a78cdccd82",
+      "supports": "Validation seal: complete byte components, inherited accuracies, and the digests of what the coding stage wrote."
+    },
+    {
+      "path": "results/imagenet/selection_frozen/selection.json",
+      "bytes": 23871,
+      "sha256": "8b8ce137da30bf02d941c656efd9c34f252f8b826de0a0aeb1a769003934ca75",
+      "supports": "Validation candidates, their paired group means, the frozen decoding route per task, and the rate-minimal selection per fitting objective. Bound by hash to every assessment."
+    },
+    {
+      "path": "results/imagenet/upstream_mapping_check.json",
+      "bytes": 347,
+      "sha256": "6e15edce2e880baff6b0bb79077de8d8c989b388de8bd3b739b9253b958611eb",
+      "supports": "Comparison of the rebuilt ENTITY-30 mapping against the pinned upstream generator, over superclass order, every fine index, and the class names."
+    },
+    {
+      "path": "results/imagenet/warm_added_fine_b0.03_s17_5000/fit.json",
+      "bytes": 8702,
+      "sha256": "30261ea1cdcf0173e5f7e6dfc55f576ba1b0a3b5c7fbe10e672638bbdcbc89a3",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_added_fine_b0.03_s23_5000/fit.json",
+      "bytes": 8702,
+      "sha256": "2103301b397149aa0e0e3efd57f08a2184f1dd5e082e3e0be7185f495255ad63",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_added_fine_b0.3_s17_5000/fit.json",
+      "bytes": 8700,
+      "sha256": "48a5ba8b3bc7ef4c95beaec57862a336a4968bc5615387f13ab082c9b6546537",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_added_fine_b0.3_s23_5000/fit.json",
+      "bytes": 8700,
+      "sha256": "db451c5523cb6415adbdce6ad1da02b1da35e72a67661df107ef3a45a963bd13",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_coarse_b0.03_s17_5000/fit.json",
+      "bytes": 8694,
+      "sha256": "f4e23b9f67904648d64b2147d920c804630fdfabaf4fd338e16d356c6c0a7365",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_coarse_b0.03_s23_5000/fit.json",
+      "bytes": 8694,
+      "sha256": "29f37bd9eb20475680692b73ba9d81b0eee4874517d5d348bf81622db749d43c",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_coarse_b0.3_s17_5000/fit.json",
+      "bytes": 8692,
+      "sha256": "3262dce99b86dce388e38708a4a1200f328d93d44c48a3981cb6f140607cfbda",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/imagenet/warm_coarse_b0.3_s23_5000/fit.json",
+      "bytes": 8692,
+      "sha256": "d637b4647f233737116772da53493b14036f336d3c728cfe686648a5b6db475b",
+      "supports": "Fitting record of one codec: objective, rate weight, seed, initializer identity, image exposures, and the normalization taken from training images."
+    },
+    {
+      "path": "results/nonbinary/confirmation_seed17/codebook.npz",
+      "bytes": 31572,
+      "sha256": "a19ddc158655f0bf55e5e528a5538a38794efc023cb41668f0016b415d3ab8a2",
+      "supports": "The 8,192-word ternary codebook of length 16 that the confirmation and the seed-17 selectors use. Byte-identical to the development copy under profile_n16_b13/."
+    },
+    {
+      "path": "results/nonbinary/confirmation_seed17/run.json",
+      "bytes": 851,
+      "sha256": "944c3b84a15e1d98b9fc4c738a5b10e0eefc23d6a23102e10fbecf09bce32f3f",
+      "supports": "Codebook hash, assessment seed, and tolerances recorded before the confirmation blocks were drawn."
+    },
+    {
+      "path": "results/nonbinary/confirmation_seed17/summary.json",
+      "bytes": 919,
+      "sha256": "994214b1d5bebc7cc933e650d56d8f2c1a0d5979cfd30b692eb26ad5ce09d314",
+      "supports": "Independent confirmation of the frozen seed-17 codebook: complete packet length, both component risks, one-sided 99% bounds, and the margin below the reduced-observation minimum."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/run.json",
+      "bytes": 1790,
+      "sha256": "9736463cb68336936014c52e6c49a011c5832807fc8db636b7d22223d264d6ea",
+      "supports": "Calibration policy, codebook hashes, union size, and tolerances fixed before the fitted-cost selectors were assessed."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed17/full_table.npz",
+      "bytes": 859,
+      "sha256": "1192d8844904a29eaf77734381013ecfda7b54c6055e6afe9e5e4967bebf048f",
+      "supports": "Five conditional-cost rows fitted from 2^20 independent noisy labels, with their target counts and the integer table rounded to multiples of 2^-16, for seed 17."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed17/reduced_table.npz",
+      "bytes": 760,
+      "sha256": "71989dd0d15dcdf14f54daf042f214920ecdb5a765720e3799257f53fe167b50",
+      "supports": "The same fitted costs pooled into three class rows for the reduced-observation selector, for seed 17."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed17/summary.json",
+      "bytes": 3618,
+      "sha256": "0a1e789e1852955e48936440a3ec2d7cd6c4282ea1ecfd7a3ebc905131249ed9",
+      "supports": "Known and fitted selector records on the seed-17 codebook, with paired risk changes, cost-rounding error, and the fraction of indices the fitted costs move."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed23/full_table.npz",
+      "bytes": 857,
+      "sha256": "5f0fdfb3c078b0644fa65d62a435408f94cbf87863f055cefaf6ef3e84ca4da1",
+      "supports": "Five conditional-cost rows fitted from 2^20 independent noisy labels, with their target counts and the integer table rounded to multiples of 2^-16, for seed 23."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed23/reduced_table.npz",
+      "bytes": 764,
+      "sha256": "c8c25aded3b92d905173924072794c59fcf80c1cc8296cd2e270e6e3cde7040c",
+      "supports": "The same fitted costs pooled into three class rows for the reduced-observation selector, for seed 23."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed23/summary.json",
+      "bytes": 3573,
+      "sha256": "ba0c606b402a2343a9fa3deab1d480d0555329827b459bd6faf187d7de7863d0",
+      "supports": "Known and fitted selector records on the seed-23 codebook, with paired risk changes, cost-rounding error, and the fraction of indices the fitted costs move."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed31/full_table.npz",
+      "bytes": 863,
+      "sha256": "5dfa69aa49c5b9bd853455e7de7a6e9dcc5744e310447cc5a93ece36d80936ef",
+      "supports": "Five conditional-cost rows fitted from 2^20 independent noisy labels, with their target counts and the integer table rounded to multiples of 2^-16, for seed 31."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed31/reduced_table.npz",
+      "bytes": 765,
+      "sha256": "adadd28a5466bc14db0c2edb0b2e309f4daa888910ca7de7e18a3c25408a1e8b",
+      "supports": "The same fitted costs pooled into three class rows for the reduced-observation selector, for seed 31."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/seed31/summary.json",
+      "bytes": 3581,
+      "sha256": "67fb950a1d16b6d65eaf56d347909b7f716a6d3e6f4d8ac21ded8ee608776d8f",
+      "supports": "Known and fitted selector records on the seed-31 codebook, with paired risk changes, cost-rounding error, and the fraction of indices the fitted costs move."
+    },
+    {
+      "path": "results/nonbinary/learned_selectors/summary.json",
+      "bytes": 15057,
+      "sha256": "3409c524ec6caa7374a89ed35c8dce2acabd54d9b9005c71a608920335ed4920",
+      "supports": "Known-cost and fitted-cost selectors on the three frozen codebooks under both observations, with union-bounded one-sided 99% upper risks, the two controls, and the reduced-observation minimum. Input to the ternary-code figure."
+    },
+    {
+      "path": "results/nonbinary/matched_confirmation_reference.json",
+      "bytes": 4048,
+      "sha256": "be605cce1bb6d53af047b8fe3fd96de43b83d5ff0d9f4c7079e26bdbc2aac6af",
+      "supports": "Matched-risk comparison of the two observations at the confirmation tolerance 0.499: full and reduced rates, the dual gap interval, and the conditional-KL certificates."
+    },
+    {
+      "path": "results/nonbinary/profile_n16_b13/full_b13_codebook.npz",
+      "bytes": 31572,
+      "sha256": "a19ddc158655f0bf55e5e528a5538a38794efc023cb41668f0016b415d3ab8a2",
+      "supports": "The development codebook the seed-17 confirmation freezes."
+    },
+    {
+      "path": "results/nonbinary/profile_n16_b13/run.json",
+      "bytes": 860,
+      "sha256": "2ee4b8ec548770d4cc6c7067f1bd7bee0cb183231628babdd111621a360d228b",
+      "supports": "Configuration of the first development fit. Its source_sha256 570b2691 is an earlier revision of the fitting code than the 459d2db4 the confirmation and replications record, so the codebook is pinned by its own hash a95d4558 instead."
+    },
+    {
+      "path": "results/nonbinary/profile_n16_b13/selection.json",
+      "bytes": 589,
+      "sha256": "f7259ebe74833f5dc78cb3d4f39e76a3af989ee38ec11c39eb19e7096546a372",
+      "supports": "Development selection for the first fit, and the reduced-observation infeasibility at these tolerances. Its additional tolerance 0.51197 is the dual optimum at the earlier development multiplier, before the 0.499 tolerance was declared and independently confirmed."
+    },
+    {
+      "path": "results/nonbinary/profile_n16_b13/summary.json",
+      "bytes": 6027,
+      "sha256": "8338dea1d99ed16941a9c38da7468e88caa8e09ab1fe44c237a4a0efb985db7d",
+      "supports": "First development fit at length 16 and 13 index bits, under both observations."
+    },
+    {
+      "path": "results/nonbinary/replication_seed23/full_b13.json",
+      "bytes": 2147,
+      "sha256": "15d66284a07b3775c642890752b4be58ab917df887e79a398f52eb29816395e3",
+      "supports": "Lloyd fitting history, development record, and assessment of the full-observation codebook for seed 23."
+    },
+    {
+      "path": "results/nonbinary/replication_seed23/full_b13_codebook.npz",
+      "bytes": 31583,
+      "sha256": "cd37db8281573aef64138c34bcf9699f4318b89f4909c196308bb593d47551eb",
+      "supports": "The seed-23 ternary codebook the known and fitted selectors are assessed on."
+    },
+    {
+      "path": "results/nonbinary/replication_seed23/run.json",
+      "bytes": 911,
+      "sha256": "d20dd7b915039f29482a16c0a722e0c35daa65e24293d7b1643fc0098afc782f",
+      "supports": "Configuration, split seeds, and script hash of the seed-23 replication."
+    },
+    {
+      "path": "results/nonbinary/replication_seed23/selection.json",
+      "bytes": 416,
+      "sha256": "45f49121f86ac64f1d9f8c21248606f45cf436ec6149730b4cdb2be218d079e1",
+      "supports": "Development selection for seed 23, frozen before assessment at tolerances 0.35 and 0.499."
+    },
+    {
+      "path": "results/nonbinary/replication_seed23/summary.json",
+      "bytes": 3645,
+      "sha256": "2a030194702bb7b89a5e000fcea12c838825986e8c32c9e410ace6501dff825d",
+      "supports": "Seed-23 replication: selected assessment risks, complete rate, and the candidate record."
+    },
+    {
+      "path": "results/nonbinary/replication_seed31/full_b13.json",
+      "bytes": 2140,
+      "sha256": "c4dc2478f53245500efed9a9c1089dc9429ca7dae88a7fd6320c522d4772c38b",
+      "supports": "Lloyd fitting history, development record, and assessment of the full-observation codebook for seed 31."
+    },
+    {
+      "path": "results/nonbinary/replication_seed31/full_b13_codebook.npz",
+      "bytes": 31592,
+      "sha256": "521c047c74c49fdebd9dfb2f29de9602a599b7ea6a34e5496072dfe79bccffee",
+      "supports": "The seed-31 ternary codebook the known and fitted selectors are assessed on."
+    },
+    {
+      "path": "results/nonbinary/replication_seed31/run.json",
+      "bytes": 911,
+      "sha256": "16bc62c5b7ff573913b1fd81f37c0222f26d861d6e380ca4a7fd6e701e4428cf",
+      "supports": "Configuration, split seeds, and script hash of the seed-31 replication."
+    },
+    {
+      "path": "results/nonbinary/replication_seed31/selection.json",
+      "bytes": 416,
+      "sha256": "00866538c24f566b75c45728d7ec63518f52629ff92981eab705cbe80cb565d9",
+      "supports": "Development selection for seed 31, frozen before assessment at tolerances 0.35 and 0.499."
+    },
+    {
+      "path": "results/nonbinary/replication_seed31/summary.json",
+      "bytes": 3639,
+      "sha256": "e811fadf4ba2a39633227b07b6a16362afeb75c21b6fa674d25368050a47e0f1",
+      "supports": "Seed-31 replication: selected assessment risks, complete rate, and the candidate record."
+    },
+    {
+      "path": "results/pilot/pair/asset_evidence.json",
+      "bytes": 16230,
+      "sha256": "e3141d39bc91c8e2400deeb8fef3f49a498da9d16f77df302da06b963f71b4f3",
+      "supports": "Binds the figure to its evidence: the evaluation it reads by hash, the copied accuracy block, the verified illustration images, and the file the wing boxes come from."
+    },
+    {
+      "path": "results/pilot/pair/cue_retention.json",
+      "bytes": 56816,
+      "sha256": "b9050da3bdd7b831ef510a2f70cf8182191b6f2982a13ed99f68f38b3412432e",
+      "supports": "Per-photograph measurements inside the marked region. Only the wing boxes are still reported."
+    },
+    {
+      "path": "results/pilot/pair/figure_numbers.json",
+      "bytes": 5068,
+      "sha256": "7245fa322803a23266b900941b881d049c32937476251c6afadabb7b537e0ec0",
+      "supports": "Accuracies, wing boxes and mark meanings as the motivating figure reports them."
+    },
+    {
+      "path": "results/pilot/pair/heldout_evaluation.json",
+      "bytes": 41336,
+      "sha256": "f060e8d2af0b9c1601d37efa14ade7515fa05c1a99a1792055064cccdf473ddc",
+      "supports": "Species-pair accuracy for each of the two readers fitted per observation, from the 200-way CUB output restricted to the two species on thirty official test photographs each."
+    },
+    {
+      "path": "results/pilot/pair/sources.json",
+      "bytes": 27592,
+      "sha256": "ea1ddd97b7d1812fe341ccdee60f15da5c95982f9b0fe6fa8095c752733ea2ac",
+      "supports": "Bird boxes and provenance for the retained photograph and inversion images."
+    },
+    {
+      "path": "results/taskonomy/available_heads/d_r30/evaluation.json",
+      "bytes": 14223,
+      "sha256": "4e5b173696ab492389b61957a214a68a8a7784d9dd3a10cbe06426b00db9cd06",
+      "supports": "Depth-preserving focal code at rate multiplier 30, validation evaluation with its selected heads."
+    },
+    {
+      "path": "results/taskonomy/available_heads/de_r3/evaluation.json",
+      "bytes": 14628,
+      "sha256": "c05478abca4afffdc886f397a81de8af29eba68698a0769360f909d21afc029b",
+      "supports": "Depth-edge focal code at rate multiplier 3, validation evaluation with its selected heads."
+    },
+    {
+      "path": "results/taskonomy/available_heads/ds_r3/evaluation.json",
+      "bytes": 14960,
+      "sha256": "15a121d7d08192ec0a5f2350b1100a0b5c039fcf98015f30aa4540cfa2389b23",
+      "supports": "Depth-semantic focal code at rate multiplier 3, validation evaluation with its selected heads."
+    },
+    {
+      "path": "results/taskonomy/candidate_pool.csv",
+      "bytes": 4602,
+      "sha256": "4d195882731f6e516bf001badde63679e86ea0f8be9378997b8e2ae5afa4181e",
+      "supports": "Complete twelve-candidate test pool with validation-selected heads, object mIoU, and depth RMSE."
+    },
+    {
+      "path": "results/taskonomy/decoder_comparison.json",
+      "bytes": 867,
+      "sha256": "58045c93323ab5d04d1e2984920cbdc9121515a3b50a1ebc60304edaeaa2db2f",
+      "supports": "Matched task decoders against the reconstructed-RGB route at unchanged transmitted bits."
+    },
+    {
+      "path": "results/taskonomy/examples/focal_readout_example_predictions.json",
+      "bytes": 8682,
+      "sha256": "9aa4b6fcf61353447c4919a66de382a74e452df9173688d0958fa402502ef580",
+      "supports": "Image keys, rates, and sources for the decoded example arrays."
+    },
+    {
+      "path": "results/taskonomy/examples/focal_readout_example_predictions.npz",
+      "bytes": 9015678,
+      "sha256": "73f8fdaab403ddfb098a7d7bccd8b6c6097160c15cfb6823400934a47b758aaa",
+      "supports": "Decoded semantic and edge predictions on the five preselected validation images for the three focal codes. Input to the qualitative figures."
+    },
+    {
+      "path": "results/taskonomy/focal_building_means.csv",
+      "bytes": 2230,
+      "sha256": "10c5b11437bbb6e17398b7f2c8f1b01690ae6048d20238def6f9e35b406e5751",
+      "supports": "Focal-setting risks after averaging fits within each test building."
+    },
+    {
+      "path": "results/taskonomy/focal_means.json",
+      "bytes": 4250,
+      "sha256": "673c5d62e335ae966c2bc50406371c31a3f75a4698a5130af81c6bcbdc8a8986",
+      "supports": "Three-fit means for the focal settings, including complete message lengths and the header fraction."
+    },
+    {
+      "path": "results/taskonomy/focal_seed_building_metrics.csv",
+      "bytes": 6837,
+      "sha256": "f8f56913e58c68cd0bcb4cc8a51169aeeb2fe6fffb294ce9c2e35b87bee1abd2",
+      "supports": "Per-fit, per-building test metrics for the focal settings, flat view."
+    },
+    {
+      "path": "results/taskonomy/focal_seed_building_metrics.json",
+      "bytes": 88164,
+      "sha256": "c78685190e8390d6139d3b8de212e228282e1310c2e3d075d923969fabdf396c",
+      "supports": "Per-fit, per-building test metrics for the focal settings."
+    },
+    {
+      "path": "results/taskonomy/focal_seed_metrics.csv",
+      "bytes": 1596,
+      "sha256": "e54ac233d62806e46a0ea563406dccf2555700ea6a75c046e586634654cdf4eb",
+      "supports": "Per-fit test metrics for the focal settings, flat view."
+    },
+    {
+      "path": "results/taskonomy/focal_seed_metrics.json",
+      "bytes": 17778,
+      "sha256": "fc8b58e83818968e4a9e9fae5c2dec077e1cfacda14a2c30fe3872045015e284",
+      "supports": "Per-fit test metrics for the focal settings."
+    },
+    {
+      "path": "results/taskonomy/mixture_selections.csv",
+      "bytes": 1925,
+      "sha256": "a8df74027680e8551b8641ec6c5559c743796d14e1356b2bca7ec1d410dad0f9",
+      "supports": "Validation-selected single codes and mixtures, flat view."
+    },
+    {
+      "path": "results/taskonomy/mixture_selections.json",
+      "bytes": 12615,
+      "sha256": "a90b7dad5b309c11252596f57e2a28279a5422ef8d44be7a1bc5fa0f80595640",
+      "supports": "Validation-selected single codes and input-independent mixtures across family and tolerance, with their transferred test outcomes."
+    },
+    {
+      "path": "results/taskonomy/pool/capacity_de_r3_retained_selection.json",
+      "bytes": 1234,
+      "sha256": "d1369e5d56472fa7fb522c7e321f36d0969d224bdeed14eb2cccc7e996cc645a",
+      "supports": "Selection record for the wider decoder bank, fixed before test access."
+    },
+    {
+      "path": "results/taskonomy/pool/capacity_sensitivity_summary.json",
+      "bytes": 3822,
+      "sha256": "48583c7b5301dc43a54ed23774f93b7254fef251e2e2709d8c79769b5e1f00bd",
+      "supports": "Validation losses when the fresh decoder width doubles from 48 to 96."
+    },
+    {
+      "path": "results/taskonomy/pool/capacity_sensitivity_test_summary.json",
+      "bytes": 7416,
+      "sha256": "f3e932de919b036538ccab09791a77ae349e0b1f6cacd7baf65a7feb5dfc84ac",
+      "supports": "Test point decisions at the doubled decoder width against the matched width-48 bank."
+    },
+    {
+      "path": "results/taskonomy/pool/development_tolerances.json",
+      "bytes": 957,
+      "sha256": "1d0729a150fe4345965c93b0f2a272574b23dcfd18a196774b97099024e5d146",
+      "supports": "Reference and constant-predictor losses that fix the absolute component requirements."
+    },
+    {
+      "path": "results/taskonomy/pool/focal_available_validation_selected_heads_test.json",
+      "bytes": 130099,
+      "sha256": "4d92d3ed3e11123c2819da9b80ea4b112ac3e2bdbe09f0a575af00d71945a736",
+      "supports": "Three-fit focal test results under validation-selected available heads."
+    },
+    {
+      "path": "results/taskonomy/pool/full_pool_available_test_summary.json",
+      "bytes": 44343,
+      "sha256": "c1ae957d6349bfa3f79bdc88c776f42568067358d7221b4e11efbf35e7192960",
+      "supports": "Test risks and rates for the twelve candidates under validation-selected available heads."
+    },
+    {
+      "path": "results/taskonomy/pool/full_pool_available_validation_choices.json",
+      "bytes": 9239,
+      "sha256": "ef972949ddf159bad9ac472d9f5b0578e3efb10e61f65dc4997e4500a711610e",
+      "supports": "Validation choice per family and tolerance under available heads."
+    },
+    {
+      "path": "results/taskonomy/pool/full_pool_available_validation_summary.json",
+      "bytes": 44025,
+      "sha256": "7ecc0e2ab0a08fc9fcd81b1d80f738efca1432733b178a99bf3eb061945a36d7",
+      "supports": "Validation risks and rates under validation-selected available heads."
+    },
+    {
+      "path": "results/taskonomy/pool/full_pool_matched_test_paired.json",
+      "bytes": 166520,
+      "sha256": "5f5b38366abad23c5ec833ae61253fcc7bcc559d1b4e85e2cd3d8ff9400ac49b",
+      "supports": "Conditional image-bootstrap intervals for the matched-decoder pool."
+    },
+    {
+      "path": "results/taskonomy/pool/full_pool_matched_test_summary.json",
+      "bytes": 32928,
+      "sha256": "317566370608e91fd5451aedb486ad7f15f60b2d9d2fbaaae1c5366ce76023e7",
+      "supports": "Test risks and rates for the twelve candidates under matched task decoders."
+    },
+    {
+      "path": "results/taskonomy/provenance.json",
+      "bytes": 7955,
+      "sha256": "6b14957d3e327389a1a3c52e79ce050d57ad0f10bfcccd18064caedd23fc579f",
+      "supports": "Inputs and hashes of the run that produced these tables, naming the retained copy where one is released and marking the rest external."
+    },
+    {
+      "path": "results/taskonomy/reference/test_evaluation.json",
+      "bytes": 12537,
+      "sha256": "d9d511be663376497e8d319178ce193e7d74db9e26f47401f1a2a8550ed6277c",
+      "supports": "Uncompressed reference predictor on test."
+    },
+    {
+      "path": "results/taskonomy/reference/validation_evaluation.json",
+      "bytes": 12018,
+      "sha256": "e54a534bde95812514d82d75c0806f32ee8458a39fb718c135a5f1a44e83d8d9",
+      "supports": "Uncompressed reference predictor on validation."
+    },
+    {
+      "path": "results/taskonomy/retained_paired_contrasts.json",
+      "bytes": 3417,
+      "sha256": "48287f942ab501e1cc586cb7c4207bdf0ef93011d53888c1b5421ad4c2f6d50d",
+      "supports": "Paired image-bootstrap contrasts retained for the reported candidate comparisons."
+    },
+    {
+      "path": "results/taskonomy/semantic_support.csv",
+      "bytes": 2366,
+      "sha256": "1c52f31a41613667a0d859941c182e8397eeeb9d6df55afd210063910a7b8410",
+      "supports": "Per-class semantic support and IoU, flat view."
+    },
+    {
+      "path": "results/taskonomy/semantic_support.json",
+      "bytes": 47624,
+      "sha256": "34b08906f57c67c759ca7fd874eae1ee2a89354a7153720f3d197c63760a877c",
+      "supports": "Semantic class support across validation and test, and the retrospective fixed-class mIoU diagnostic."
+    },
+    {
+      "path": "results/taskonomy/summary.json",
+      "bytes": 927,
+      "sha256": "be1863330ca8dd38d75143f837ad49b7490ace134a26598ff55b2db872804018",
+      "supports": "Aggregate of the Taskonomy analysis outputs."
+    },
+    {
+      "path": "assets/pilot/cub3092_block1.png",
+      "bytes": 50290,
+      "sha256": "19deea33b9f267eaab6d248f15a4da9a00b870258a9e668cf070ca0fc5f30dd3",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub3092_block2.png",
+      "bytes": 53557,
+      "sha256": "182d9b2a1b53c7e15ba1afcfac8b759f16334ff5f9130c5e8944473686f4f2c8",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub3092_block3.png",
+      "bytes": 54951,
+      "sha256": "868c919a6095eb9e3556dc164ec177b8b10979ebb418522b358971a0ce580963",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub3092_layer3.png",
+      "bytes": 54709,
+      "sha256": "4d91a245b7621c3d02432d1be16a6d8bd549fe6ffb9c0ab0321f373bacf0e967",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub3092_original.png",
+      "bytes": 72925,
+      "sha256": "f71443e4dc486674ebd1fa08c841ce0e3a33121ebb675ac42f575e585f34c66d",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub754_block1.png",
+      "bytes": 53753,
+      "sha256": "29a75159713ac420c8edd94cb382857172b0919ddf84da1ce3a7e5dee0b5747b",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub754_block2.png",
+      "bytes": 56467,
+      "sha256": "83480a3187e6213794b9e813f344ee3a936fdcad3fe54a45760779c85e2787f1",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub754_block3.png",
+      "bytes": 53439,
+      "sha256": "d3a4f1bfe729136e4ec8a3e4931a98808271a10a45de665793bf6e5dc8ed557d",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub754_layer3.png",
+      "bytes": 62449,
+      "sha256": "6fa2ff050edb207e81f2a0774b5b4eeb534414074f53b71dadd0d2ad14e46964",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    },
+    {
+      "path": "assets/pilot/cub754_original.png",
+      "bytes": 99140,
+      "sha256": "2dfd5352bef7e7dc664bd07acbc354a125f731797ab4cf15866df7752b2e593a",
+      "supports": "Photograph or RGB inversion shown in the motivating figure. Retained because the intermediate inversion renders are not recoverable."
+    }
+  ]
+}

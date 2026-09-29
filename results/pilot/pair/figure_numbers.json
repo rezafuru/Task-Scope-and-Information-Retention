@@ -1,0 +1,184 @@
+{
+  "evidence_sha256": "b17e1e8a451d8dee170b1bc7c6255ab21391da7149b093fc676aea3ec35f5f7c",
+  "evaluation_source": {
+    "path": "results/pilot_motivation/claude_continuation/final_pair/heldout/evaluation.json",
+    "sha256": "f5d9a5a8058f4ab711a584697ccd96f786c76f5ab107656e428369f182269bf8"
+  },
+  "blocks": [
+    13,
+    14,
+    15,
+    16
+  ],
+  "species": [
+    "Indigo Bunting",
+    "Blue Grosbeak"
+  ],
+  "test_photographs_per_species": 30,
+  "fitted_readers_per_observation": 2,
+  "readouts": {
+    "Native feature": {
+      "per_fit_percent": [
+        [
+          96.66666666666667,
+          96.66666666666667
+        ],
+        [
+          95.0,
+          96.66666666666667
+        ],
+        [
+          93.33333333333333,
+          93.33333333333333
+        ],
+        [
+          93.33333333333333,
+          93.33333333333333
+        ]
+      ],
+      "mean_percent": [
+        96.66666666666667,
+        95.83333333333334,
+        93.33333333333333,
+        93.33333333333333
+      ]
+    },
+    "Reconstructed RGB": {
+      "per_fit_percent": [
+        [
+          91.66666666666666,
+          88.33333333333333
+        ],
+        [
+          86.66666666666667,
+          85.0
+        ],
+        [
+          88.33333333333333,
+          86.66666666666667
+        ],
+        [
+          83.33333333333334,
+          81.66666666666667
+        ]
+      ],
+      "mean_percent": [
+        90.0,
+        85.83333333333334,
+        87.5,
+        82.5
+      ]
+    }
+  },
+  "statistic": "Individual fitted-reader accuracies and their arithmetic mean, not a probability ensemble",
+  "accuracy_marks": {
+    "filled": "Individual fitted readers, offset horizontally by 0.07 blocks",
+    "open": "Arithmetic mean at the stated block",
+    "line": "Arithmetic means"
+  },
+  "imagenet_native_decision_agreement_percent": 100,
+  "imagenet_agreement_basis": "Unchanged suffix on complete feature, separate from species accuracy and reconstructed-RGB predictions",
+  "illustration_images": [
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub754_original.png",
+      "sha256": "2dfd5352bef7e7dc664bd07acbc354a125f731797ab4cf15866df7752b2e593a",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "original"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub754_layer3.png",
+      "sha256": "6fa2ff050edb207e81f2a0774b5b4eeb534414074f53b71dadd0d2ad14e46964",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "layer3"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub754_block1.png",
+      "sha256": "29a75159713ac420c8edd94cb382857172b0919ddf84da1ce3a7e5dee0b5747b",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "block1"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub754_block2.png",
+      "sha256": "83480a3187e6213794b9e813f344ee3a936fdcad3fe54a45760779c85e2787f1",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "block2"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub754_block3.png",
+      "sha256": "d3a4f1bfe729136e4ec8a3e4931a98808271a10a45de665793bf6e5dc8ed557d",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "block3"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub3092_original.png",
+      "sha256": "f71443e4dc486674ebd1fa08c841ce0e3a33121ebb675ac42f575e585f34c66d",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "original"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub3092_layer3.png",
+      "sha256": "4d91a245b7621c3d02432d1be16a6d8bd549fe6ffb9c0ab0321f373bacf0e967",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "layer3"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub3092_block1.png",
+      "sha256": "19deea33b9f267eaab6d248f15a4da9a00b870258a9e668cf070ca0fc5f30dd3",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "block1"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub3092_block2.png",
+      "sha256": "182d9b2a1b53c7e15ba1afcfac8b759f16334ff5f9130c5e8944473686f4f2c8",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "block2"
+    },
+    {
+      "path": "output/pilot_claude/final_pair/sources/cub3092_block3.png",
+      "sha256": "868c919a6095eb9e3556dc164ec177b8b10979ebb418522b358971a0ce580963",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "block3"
+    }
+  ],
+  "boxes_xyxy_224": {
+    "754": [
+      72,
+      50,
+      168,
+      98
+    ],
+    "3092": [
+      72,
+      60,
+      168,
+      108
+    ]
+  },
+  "illustration_inventory": {
+    "path": "output/pilot_claude/final_pair/sources/sources.json",
+    "sha256": "542afb7edfcc61aad9e4bb5dc30b5b7f4ea9bb5c29573d3538a670a9154197c6"
+  },
+  "context_crop_xyxy_224": [
+    0,
+    0,
+    224,
+    224
+  ],
+  "figure_size_inches": [
+    6.5,
+    2.02
+  ],
+  "cue_color_curve": "Not displayed",
+  "plot_source_sha256": "e72dfa865924ec3e0c3f641e8fe481a9f6f362be525e1232d6a150718f9c06ea",
+  "text_within_canvas": true
+}

@@ -1,0 +1,392 @@
+{
+  "scope": "fixed twelve-setting base-seed pool, separate from replicated focal setting means",
+  "split": "val",
+  "readout_profile": "available",
+  "decision_scope": "point-risk descriptive choices on the reported split",
+  "rows": [
+    {
+      "alpha": 0.1,
+      "requirement": "D",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "D_lambda30",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda30",
+      "lowest_observed_bpp": 0.0072509765625
+    },
+    {
+      "alpha": 0.1,
+      "requirement": "DS",
+      "feasible_settings": [
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DS_lambda3",
+      "lowest_observed_bpp": 0.0337626953125
+    },
+    {
+      "alpha": 0.1,
+      "requirement": "DE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda1",
+      "lowest_observed_bpp": 0.0624111328125
+    },
+    {
+      "alpha": 0.1,
+      "requirement": "DSE",
+      "feasible_settings": [
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DSE_lambda1",
+      "lowest_observed_bpp": 0.091712890625
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "D",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "D_lambda30",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda30",
+      "lowest_observed_bpp": 0.0072509765625
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "DS",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DS_lambda3",
+      "lowest_observed_bpp": 0.0337626953125
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "DE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda3",
+      "lowest_observed_bpp": 0.03123046875
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "DSE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DSE_lambda3",
+      "lowest_observed_bpp": 0.04994140625
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "D",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "D_lambda30",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda30",
+      "lowest_observed_bpp": 0.0072509765625
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "DS",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda3",
+      "lowest_observed_bpp": 0.01744921875
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "DE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda3",
+      "lowest_observed_bpp": 0.03123046875
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "DSE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda3",
+      "lowest_observed_bpp": 0.03123046875
+    }
+  ],
+  "semantic_miou_floors": {
+    "0.1": 0.16573043614625932,
+    "0.25": 0.13810869678854942,
+    "0.5": 0.09207246452569962
+  },
+  "semantic_sensitivity_definition": "retain every primary task-loss requirement and additionally require the fixed mIoU floor when semantic prediction is required",
+  "semantic_decision_sensitivity": [
+    {
+      "alpha": 0.1,
+      "requirement": "D",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "D_lambda30",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda30",
+      "lowest_observed_bpp": 0.0072509765625
+    },
+    {
+      "alpha": 0.1,
+      "requirement": "DS",
+      "feasible_settings": [
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DS_lambda3",
+      "lowest_observed_bpp": 0.0337626953125
+    },
+    {
+      "alpha": 0.1,
+      "requirement": "DE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda1",
+      "lowest_observed_bpp": 0.0624111328125
+    },
+    {
+      "alpha": 0.1,
+      "requirement": "DSE",
+      "feasible_settings": [
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DSE_lambda1",
+      "lowest_observed_bpp": 0.091712890625
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "D",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "D_lambda30",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda30",
+      "lowest_observed_bpp": 0.0072509765625
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "DS",
+      "feasible_settings": [
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DS_lambda3",
+      "lowest_observed_bpp": 0.0337626953125
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "DE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda3",
+      "lowest_observed_bpp": 0.03123046875
+    },
+    {
+      "alpha": 0.25,
+      "requirement": "DSE",
+      "feasible_settings": [
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DSE_lambda3",
+      "lowest_observed_bpp": 0.04994140625
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "D",
+      "feasible_settings": [
+        "D_lambda0.3",
+        "D_lambda3",
+        "D_lambda30",
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "D_lambda30",
+      "lowest_observed_bpp": 0.0072509765625
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "DS",
+      "feasible_settings": [
+        "DS_lambda0.3",
+        "DS_lambda3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DS_lambda3",
+      "lowest_observed_bpp": 0.0337626953125
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "DE",
+      "feasible_settings": [
+        "DE_lambda0.3",
+        "DE_lambda3",
+        "DS_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3",
+        "DE_lambda1"
+      ],
+      "selected_setting": "DE_lambda3",
+      "lowest_observed_bpp": 0.03123046875
+    },
+    {
+      "alpha": 0.5,
+      "requirement": "DSE",
+      "feasible_settings": [
+        "DS_lambda0.3",
+        "DSE_lambda0.3",
+        "DSE_lambda1",
+        "DSE_lambda3",
+        "RGB_lambda0.3"
+      ],
+      "selected_setting": "DSE_lambda3",
+      "lowest_observed_bpp": 0.04994140625
+    }
+  ]
+}

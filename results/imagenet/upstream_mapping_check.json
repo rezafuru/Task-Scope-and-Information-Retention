@@ -1,0 +1,7 @@
+{
+  "exact_upstream_match": true,
+  "coarse_classes": 30,
+  "fine_classes": 240,
+  "upstream_sha256": "5fa8b32d10bdc55b020653b93ce45e6aa4fcb6d4ff7535754601f63b7732cb72",
+  "method": "Execute only ClassHierarchy, BreedsDatasetGenerator, make_entity30 definitions from pinned upstream AST and compare superclass order, every fine index and names"
+}

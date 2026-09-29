@@ -1,0 +1,1523 @@
+{
+  "split": "test",
+  "test_images": 10000,
+  "codec_seeds": [
+    17,
+    23,
+    29
+  ],
+  "bootstrap_samples": 5000,
+  "bootstrap_seed": 20260906,
+  "bootstrap_unit": "paired test images resampled within fine classes",
+  "interval_scope": "conditional on the three fitted codec seeds and fixed teacher",
+  "seed_variation_scope": "codec initialization and fitting with teacher, data splits, and readout seed fixed",
+  "equivalence_margin": 0.01,
+  "groups": {
+    "preservation_early": {
+      "runs": [
+        "codec_early_early_b0.03_s17_controlled",
+        "codec_early_early_b0.03_s23_controlled",
+        "codec_early_early_b0.03_s29_controlled"
+      ],
+      "metrics": {
+        "actual_bpp": {
+          "mean": 2.7503447916666666,
+          "seed_values": [
+            2.745609375,
+            2.744165625,
+            2.761259375
+          ],
+          "seed_sd": 0.009479831249596823,
+          "paired_image_ci95": [
+            2.7472520312499995,
+            2.753415729166667
+          ]
+        },
+        "coarse_accuracy": {
+          "mean": 0.8374333333333333,
+          "seed_values": [
+            0.8356,
+            0.8392,
+            0.8375
+          ],
+          "seed_sd": 0.001800925687898649,
+          "paired_image_ci95": [
+            0.8309000000000002,
+            0.8439000000000001
+          ]
+        },
+        "teacher_agreement": {
+          "mean": 0.9251666666666667,
+          "seed_values": [
+            0.9266,
+            0.9249,
+            0.924
+          ],
+          "seed_sd": 0.0013203534880225213,
+          "paired_image_ci95": [
+            0.9208000000000002,
+            0.9294675000000003
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean": 0.5822666666666666,
+          "seed_values": [
+            0.5858,
+            0.5799,
+            0.5811
+          ],
+          "seed_sd": 0.0031182259913825065,
+          "paired_image_ci95": [
+            0.5738333333333333,
+            0.5909666666666666
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean": 0.5471,
+          "seed_values": [
+            0.5472,
+            0.5476,
+            0.5465
+          ],
+          "seed_sd": 0.0005567764362830006,
+          "paired_image_ci95": [
+            0.5388333333333335,
+            0.5556333333333332
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean": 0.5988333333333333,
+          "seed_values": [
+            0.6015,
+            0.5952,
+            0.5998
+          ],
+          "seed_sd": 0.003259345537578611,
+          "paired_image_ci95": [
+            0.5910658333333331,
+            0.6066999999999998
+          ]
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean": 0.3610333333333333,
+          "seed_values": [
+            0.3631,
+            0.3593,
+            0.3607
+          ],
+          "seed_sd": 0.0019218047073865927,
+          "paired_image_ci95": [
+            0.3526,
+            0.36963416666666676
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean": 0.4232666666666667,
+          "seed_values": [
+            0.4286,
+            0.4219,
+            0.4193
+          ],
+          "seed_sd": 0.004798263574808413,
+          "paired_image_ci95": [
+            0.41486499999999976,
+            0.43170083333333337
+          ]
+        }
+      },
+      "reference_risk_margins": {
+        "coarse_accuracy": {
+          "accuracy_drop": 0.01636666666666664,
+          "paired_image_ci95": [
+            0.012499166666666301,
+            0.020267500000000067
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.013633333333333358,
+              "margin_ci95": [
+                0.00973249999999992,
+                0.017500833333333687
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "accuracy_drop": 0.025466666666666637,
+          "paired_image_ci95": [
+            0.01883333333333348,
+            0.03220083333333342
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.004533333333333361,
+              "margin_ci95": [
+                -0.002200833333333438,
+                0.01116666666666652
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": false
+            },
+            {
+              "allowance": 0.05,
+              "point_margin": 0.024533333333333365,
+              "margin_ci95": [
+                0.017799166666666567,
+                0.031166666666666523
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.1,
+              "point_margin": 0.07453333333333337,
+              "margin_ci95": [
+                0.06779916666666656,
+                0.08116666666666653
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        }
+      }
+    },
+    "preservation_late_rate_match": {
+      "runs": [
+        "codec_early_late_b0.001_s17_controlled",
+        "codec_early_late_b0.001_s23_controlled",
+        "codec_early_late_b0.001_s29_controlled"
+      ],
+      "metrics": {
+        "actual_bpp": {
+          "mean": 2.7268572916666667,
+          "seed_values": [
+            2.719525,
+            2.721253125,
+            2.73979375
+          ],
+          "seed_sd": 0.01123657286103991,
+          "paired_image_ci95": [
+            2.7241947395833326,
+            2.7295365364583333
+          ]
+        },
+        "coarse_accuracy": {
+          "mean": 0.8432333333333334,
+          "seed_values": [
+            0.8421,
+            0.8445,
+            0.8431
+          ],
+          "seed_sd": 0.0012055427546683777,
+          "paired_image_ci95": [
+            0.8368999999999999,
+            0.8493999999999999
+          ]
+        },
+        "teacher_agreement": {
+          "mean": 0.9294666666666668,
+          "seed_values": [
+            0.9291,
+            0.9308,
+            0.9285
+          ],
+          "seed_sd": 0.001193035344544861,
+          "paired_image_ci95": [
+            0.9254666666666671,
+            0.9335333333333334
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean": 0.4089333333333333,
+          "seed_values": [
+            0.4121,
+            0.4107,
+            0.404
+          ],
+          "seed_sd": 0.004329357150124403,
+          "paired_image_ci95": [
+            0.40123333333333344,
+            0.4167333333333333
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean": 0.5517333333333333,
+          "seed_values": [
+            0.5499,
+            0.5544,
+            0.5509
+          ],
+          "seed_sd": 0.0023629078131262946,
+          "paired_image_ci95": [
+            0.5437000000000002,
+            0.5598333333333334
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean": 0.6026666666666666,
+          "seed_values": [
+            0.6022,
+            0.6031,
+            0.6027
+          ],
+          "seed_sd": 0.0004509249752822972,
+          "paired_image_ci95": [
+            0.5948991666666665,
+            0.6104008333333334
+          ]
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean": 0.36843333333333333,
+          "seed_values": [
+            0.3712,
+            0.3678,
+            0.3663
+          ],
+          "seed_sd": 0.0025106440076867174,
+          "paired_image_ci95": [
+            0.3599666666666666,
+            0.37673333333333336
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean": 0.43406666666666666,
+          "seed_values": [
+            0.4369,
+            0.4331,
+            0.4322
+          ],
+          "seed_sd": 0.0024946609656090403,
+          "paired_image_ci95": [
+            0.4258666666666666,
+            0.44263333333333343
+          ]
+        }
+      },
+      "reference_risk_margins": {
+        "coarse_accuracy": {
+          "accuracy_drop": 0.010566666666666724,
+          "paired_image_ci95": [
+            0.006899999999999793,
+            0.014099999999999894
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.019433333333333275,
+              "margin_ci95": [
+                0.015900000000000105,
+                0.023100000000000207
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "accuracy_drop": 0.021633333333333282,
+          "paired_image_ci95": [
+            0.0149666666666669,
+            0.028434166666666958
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.008366666666666717,
+              "margin_ci95": [
+                0.0015658333333330306,
+                0.015033333333333098
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.05,
+              "point_margin": 0.02836666666666672,
+              "margin_ci95": [
+                0.021565833333333034,
+                0.035033333333333104
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.1,
+              "point_margin": 0.07836666666666672,
+              "margin_ci95": [
+                0.07156583333333304,
+                0.0850333333333331
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        }
+      }
+    },
+    "preservation_late_efficient": {
+      "runs": [
+        "codec_early_late_b0.01_s17_controlled",
+        "codec_early_late_b0.01_s23_controlled",
+        "codec_early_late_b0.01_s29_controlled"
+      ],
+      "metrics": {
+        "actual_bpp": {
+          "mean": 1.998909375,
+          "seed_values": [
+            1.990940625,
+            2.00489375,
+            2.00089375
+          ],
+          "seed_sd": 0.007185104899851851,
+          "paired_image_ci95": [
+            1.9968780989583328,
+            2.0009251041666674
+          ]
+        },
+        "coarse_accuracy": {
+          "mean": 0.8396333333333333,
+          "seed_values": [
+            0.8389,
+            0.8405,
+            0.8395
+          ],
+          "seed_sd": 0.000808290376865497,
+          "paired_image_ci95": [
+            0.8331999999999999,
+            0.8457683333333333
+          ]
+        },
+        "teacher_agreement": {
+          "mean": 0.9215,
+          "seed_values": [
+            0.9226,
+            0.9235,
+            0.9184
+          ],
+          "seed_sd": 0.002722131517763234,
+          "paired_image_ci95": [
+            0.9173333333333332,
+            0.9257333333333334
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean": 0.4747666666666667,
+          "seed_values": [
+            0.4741,
+            0.4767,
+            0.4735
+          ],
+          "seed_sd": 0.001700980109623088,
+          "paired_image_ci95": [
+            0.46696666666666664,
+            0.48276666666666657
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean": 0.5456,
+          "seed_values": [
+            0.5463,
+            0.547,
+            0.5435
+          ],
+          "seed_sd": 0.0018520259177452402,
+          "paired_image_ci95": [
+            0.5376333333333335,
+            0.5540666666666668
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean": 0.6014,
+          "seed_values": [
+            0.5998,
+            0.6077,
+            0.5967
+          ],
+          "seed_sd": 0.0056718603649949,
+          "paired_image_ci95": [
+            0.5935658333333332,
+            0.6093675000000001
+          ]
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean": 0.36483333333333334,
+          "seed_values": [
+            0.3652,
+            0.364,
+            0.3653
+          ],
+          "seed_sd": 0.0007234178138070397,
+          "paired_image_ci95": [
+            0.3565666666666667,
+            0.37293333333333323
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean": 0.4337,
+          "seed_values": [
+            0.4322,
+            0.4361,
+            0.4328
+          ],
+          "seed_sd": 0.0020999999999999986,
+          "paired_image_ci95": [
+            0.42546666666666666,
+            0.4419008333333334
+          ]
+        }
+      },
+      "reference_risk_margins": {
+        "coarse_accuracy": {
+          "accuracy_drop": 0.01416666666666666,
+          "paired_image_ci95": [
+            0.01036583333333298,
+            0.017967499999999782
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.015833333333333338,
+              "margin_ci95": [
+                0.012032500000000204,
+                0.019634166666667008
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "accuracy_drop": 0.02289999999999992,
+          "paired_image_ci95": [
+            0.015966666666666574,
+            0.029866666666666052
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.0071000000000000785,
+              "margin_ci95": [
+                0.00013333333333394591,
+                0.014033333333333425
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.05,
+              "point_margin": 0.027100000000000082,
+              "margin_ci95": [
+                0.02013333333333395,
+                0.03403333333333343
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.1,
+              "point_margin": 0.07710000000000009,
+              "margin_ci95": [
+                0.07013333333333395,
+                0.08403333333333343
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        }
+      }
+    },
+    "observation_early": {
+      "runs": [
+        "codec_early_late_b0.001_s17_pressure",
+        "codec_early_late_b0.001_s23_observation",
+        "codec_early_late_b0.001_s29_observation"
+      ],
+      "metrics": {
+        "actual_bpp": {
+          "mean": 2.7699322916666667,
+          "seed_values": [
+            2.69399375,
+            2.823578125,
+            2.792225
+          ],
+          "seed_sd": 0.06760733092395714,
+          "paired_image_ci95": [
+            2.767048932291667,
+            2.7728969270833326
+          ]
+        },
+        "coarse_accuracy": {
+          "mean": 0.8336666666666667,
+          "seed_values": [
+            0.8298,
+            0.8353,
+            0.8359
+          ],
+          "seed_sd": 0.0033620430296671428,
+          "paired_image_ci95": [
+            0.8270666666666667,
+            0.8398999999999998
+          ]
+        },
+        "teacher_agreement": {
+          "mean": 0.9038333333333334,
+          "seed_values": [
+            0.8974,
+            0.9072,
+            0.9069
+          ],
+          "seed_sd": 0.005573448962117948,
+          "paired_image_ci95": [
+            0.899,
+            0.9085341666666669
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean": 0.3765666666666667,
+          "seed_values": [
+            0.3739,
+            0.3798,
+            0.376
+          ],
+          "seed_sd": 0.002990540642314261,
+          "paired_image_ci95": [
+            0.3696666666666666,
+            0.3837333333333333
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean": 0.5504000000000001,
+          "seed_values": [
+            0.552,
+            0.55,
+            0.5492
+          ],
+          "seed_sd": 0.0014422205101856061,
+          "paired_image_ci95": [
+            0.5424,
+            0.5583999999999998
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean": 0.6143000000000001,
+          "seed_values": [
+            0.6159,
+            0.6093,
+            0.6177
+          ],
+          "seed_sd": 0.004422668877499233,
+          "paired_image_ci95": [
+            0.6066000000000003,
+            0.6222008333333335
+          ]
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean": 0.36646666666666666,
+          "seed_values": [
+            0.3665,
+            0.3683,
+            0.3646
+          ],
+          "seed_sd": 0.0018502252115170739,
+          "paired_image_ci95": [
+            0.3582999999999999,
+            0.37470083333333337
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean": 0.4315333333333333,
+          "seed_values": [
+            0.4313,
+            0.4307,
+            0.4326
+          ],
+          "seed_sd": 0.0009712534856222088,
+          "paired_image_ci95": [
+            0.4234999999999999,
+            0.43983333333333335
+          ]
+        }
+      },
+      "reference_risk_margins": {
+        "coarse_accuracy": {
+          "accuracy_drop": 0.020133333333333336,
+          "paired_image_ci95": [
+            0.01579916666666607,
+            0.024499999999999748
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.009866666666666662,
+              "margin_ci95": [
+                0.005500000000000252,
+                0.014200833333333917
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "accuracy_drop": 0.010000000000000009,
+          "paired_image_ci95": [
+            0.002699999999999919,
+            0.017166666666666663
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.01999999999999999,
+              "margin_ci95": [
+                0.012833333333333335,
+                0.02730000000000008
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.05,
+              "point_margin": 0.039999999999999994,
+              "margin_ci95": [
+                0.03283333333333334,
+                0.047300000000000085
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            },
+            {
+              "allowance": 0.1,
+              "point_margin": 0.09,
+              "margin_ci95": [
+                0.08283333333333334,
+                0.09730000000000008
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        }
+      }
+    },
+    "observation_late": {
+      "runs": [
+        "codec_late_late_b0.001_s17_observation",
+        "codec_late_late_b0.001_s23_observation",
+        "codec_late_late_b0.001_s29_observation"
+      ],
+      "metrics": {
+        "actual_bpp": {
+          "mean": 0.7235270833333334,
+          "seed_values": [
+            0.70426875,
+            0.761171875,
+            0.705140625
+          ],
+          "seed_sd": 0.03260426039989193,
+          "paired_image_ci95": [
+            0.7197332291666667,
+            0.7273095833333333
+          ]
+        },
+        "coarse_accuracy": {
+          "mean": 0.8542666666666667,
+          "seed_values": [
+            0.8539,
+            0.8557,
+            0.8532
+          ],
+          "seed_sd": 0.0012897028081435677,
+          "paired_image_ci95": [
+            0.8477,
+            0.8606999999999999
+          ]
+        },
+        "teacher_agreement": {
+          "mean": 0.9805,
+          "seed_values": [
+            0.9803,
+            0.9807,
+            0.9805
+          ],
+          "seed_sd": 0.00020000000000003348,
+          "paired_image_ci95": [
+            0.9783666666666679,
+            0.9825666666666676
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean": 0.014833333333333332,
+          "seed_values": [
+            0.014,
+            0.014,
+            0.0165
+          ],
+          "seed_sd": 0.0014433756729740647,
+          "paired_image_ci95": [
+            0.014133333333333331,
+            0.015566666666666666
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean": 0.41356666666666664,
+          "seed_values": [
+            0.4147,
+            0.4108,
+            0.4152
+          ],
+          "seed_sd": 0.002409010862020629,
+          "paired_image_ci95": [
+            0.4051991666666665,
+            0.42199999999999993
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean": 0.4121666666666666,
+          "seed_values": [
+            0.415,
+            0.4085,
+            0.413
+          ],
+          "seed_sd": 0.0033291640592397,
+          "paired_image_ci95": [
+            0.4043658333333335,
+            0.41986666666666655
+          ]
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean": 0.369,
+          "seed_values": [
+            0.3696,
+            0.3704,
+            0.367
+          ],
+          "seed_sd": 0.0017776388834631219,
+          "paired_image_ci95": [
+            0.3599333333333334,
+            0.37770000000000004
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean": 0.4281,
+          "seed_values": [
+            0.4257,
+            0.4314,
+            0.4272
+          ],
+          "seed_sd": 0.002954657340538822,
+          "paired_image_ci95": [
+            0.41949999999999993,
+            0.43670000000000003
+          ]
+        }
+      },
+      "reference_risk_margins": {
+        "coarse_accuracy": {
+          "accuracy_drop": -0.00046666666666661527,
+          "paired_image_ci95": [
+            -0.002134166666667084,
+            0.0011000000000001065
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": 0.030466666666666614,
+              "margin_ci95": [
+                0.02889999999999989,
+                0.03213416666666707
+              ],
+              "point_feasible": true,
+              "upper_interval_feasible": true
+            }
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "accuracy_drop": 0.21213333333333328,
+          "paired_image_ci95": [
+            0.20246666666666685,
+            0.2219666666666667
+          ],
+          "tolerances": [
+            {
+              "allowance": 0.03,
+              "point_margin": -0.18213333333333329,
+              "margin_ci95": [
+                -0.1919666666666667,
+                -0.17246666666666685
+              ],
+              "point_feasible": false,
+              "upper_interval_feasible": false
+            },
+            {
+              "allowance": 0.05,
+              "point_margin": -0.1621333333333333,
+              "margin_ci95": [
+                -0.1719666666666667,
+                -0.15246666666666686
+              ],
+              "point_feasible": false,
+              "upper_interval_feasible": false
+            },
+            {
+              "allowance": 0.1,
+              "point_margin": -0.11213333333333328,
+              "margin_ci95": [
+                -0.1219666666666667,
+                -0.10246666666666684
+              ],
+              "point_feasible": false,
+              "upper_interval_feasible": false
+            }
+          ]
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "preservation_near_rate": {
+      "difference": "preservation_late_rate_match minus preservation_early",
+      "metrics": {
+        "actual_bpp": {
+          "mean_difference": -0.023487499999999883,
+          "seed_differences": [
+            -0.026084374999999937,
+            -0.02291249999999989,
+            -0.02146562499999982
+          ],
+          "seed_sd": 0.0023624524631461396,
+          "paired_image_ci95": [
+            -0.024684453125001372,
+            -0.02228119791666605
+          ]
+        },
+        "coarse_accuracy": {
+          "mean_difference": 0.00579999999999999,
+          "seed_differences": [
+            0.00649999999999995,
+            0.005300000000000082,
+            0.005599999999999938
+          ],
+          "seed_sd": 0.0006244997998397888,
+          "paired_image_ci95": [
+            0.002632499999999616,
+            0.008933333333333132
+          ],
+          "within_equivalence_margin": true
+        },
+        "teacher_agreement": {
+          "mean_difference": 0.0042999999999999705,
+          "seed_differences": [
+            0.0025000000000000577,
+            0.005899999999999905,
+            0.0044999999999999485
+          ],
+          "seed_sd": 0.0017088007490634284,
+          "paired_image_ci95": [
+            0.0007649999999999302,
+            0.0077666666666668105
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean_difference": -0.17333333333333326,
+          "seed_differences": [
+            -0.17369999999999997,
+            -0.16919999999999996,
+            -0.17709999999999992
+          ],
+          "seed_sd": 0.003962743157628714,
+          "paired_image_ci95": [
+            -0.18046666666666666,
+            -0.16623249999999976
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean_difference": 0.004633333333333341,
+          "seed_differences": [
+            0.0027000000000000357,
+            0.006800000000000028,
+            0.0043999999999999595
+          ],
+          "seed_sd": 0.0020599352740640507,
+          "paired_image_ci95": [
+            0.0001999999999999752,
+            0.009100833333333315
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean_difference": 0.0038333333333333184,
+          "seed_differences": [
+            0.0006999999999999229,
+            0.007900000000000018,
+            0.0029000000000000137
+          ],
+          "seed_sd": 0.003689625093872497,
+          "paired_image_ci95": [
+            -0.0010000000000001147,
+            0.008699999999999713
+          ],
+          "within_equivalence_margin": true
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean_difference": 0.0073999999999999995,
+          "seed_differences": [
+            0.008099999999999996,
+            0.008500000000000008,
+            0.005599999999999994
+          ],
+          "seed_sd": 0.0015716233645501764,
+          "paired_image_ci95": [
+            0.002599166666666665,
+            0.012333333333333144
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean_difference": 0.010799999999999995,
+          "seed_differences": [
+            0.00830000000000003,
+            0.011199999999999988,
+            0.012899999999999967
+          ],
+          "seed_sd": 0.0023259406699225695,
+          "paired_image_ci95": [
+            0.0056333333333333764,
+            0.016067500000000155
+          ]
+        }
+      },
+      "rate_ratio": {
+        "mean_ratio": 0.9914601616236752,
+        "paired_image_ci95": [
+          0.9910295532193185,
+          0.9918912796453409
+        ]
+      }
+    },
+    "preservation_cheaper": {
+      "difference": "preservation_late_efficient minus preservation_early",
+      "metrics": {
+        "actual_bpp": {
+          "mean_difference": -0.7514354166666667,
+          "seed_differences": [
+            -0.75466875,
+            -0.739271875,
+            -0.7603656249999999
+          ],
+          "seed_sd": 0.010912259417689696,
+          "paired_image_ci95": [
+            -0.7527636458333336,
+            -0.7501250000000022
+          ]
+        },
+        "coarse_accuracy": {
+          "mean_difference": 0.0022000000000000166,
+          "seed_differences": [
+            0.0032999999999999696,
+            0.0013000000000000789,
+            0.0020000000000000018
+          ],
+          "seed_sd": 0.0010148891565091704,
+          "paired_image_ci95": [
+            -0.0010333333333335526,
+            0.0054999999999995166
+          ],
+          "within_equivalence_margin": true
+        },
+        "teacher_agreement": {
+          "mean_difference": -0.003666666666666707,
+          "seed_differences": [
+            -0.0040000000000000036,
+            -0.0014000000000000679,
+            -0.005600000000000049
+          ],
+          "seed_sd": 0.002119748412744606,
+          "paired_image_ci95": [
+            -0.0072333333333336495,
+            -0.00020000000000030548
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean_difference": -0.10749999999999997,
+          "seed_differences": [
+            -0.11169999999999997,
+            -0.10319999999999996,
+            -0.10759999999999997
+          ],
+          "seed_sd": 0.004250882261366461,
+          "paired_image_ci95": [
+            -0.1140333333333331,
+            -0.1010991666666666
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean_difference": -0.001499999999999983,
+          "seed_differences": [
+            -0.0009000000000000119,
+            -0.0005999999999999339,
+            -0.0030000000000000027
+          ],
+          "seed_sd": 0.0013076696830622236,
+          "paired_image_ci95": [
+            -0.006099999999999886,
+            0.0030000000000000083
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean_difference": 0.00256666666666668,
+          "seed_differences": [
+            -0.0017000000000000348,
+            0.012500000000000067,
+            -0.0030999999999999917
+          ],
+          "seed_sd": 0.008630952052545195,
+          "paired_image_ci95": [
+            -0.00226666666666675,
+            0.007367499999999837
+          ],
+          "within_equivalence_margin": true
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean_difference": 0.003800000000000007,
+          "seed_differences": [
+            0.0021000000000000463,
+            0.004699999999999982,
+            0.004599999999999993
+          ],
+          "seed_sd": 0.0014730919862655893,
+          "paired_image_ci95": [
+            -0.0010000000000000009,
+            0.008733333333333095
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean_difference": 0.010433333333333331,
+          "seed_differences": [
+            0.003599999999999992,
+            0.01419999999999999,
+            0.013500000000000012
+          ],
+          "seed_sd": 0.005928181283777798,
+          "paired_image_ci95": [
+            0.005332499999999699,
+            0.015633333333333225
+          ]
+        }
+      },
+      "rate_ratio": {
+        "mean_ratio": 0.7267850129396656,
+        "paired_image_ci95": [
+          0.7265279822641713,
+          0.7270482148006454
+        ]
+      }
+    },
+    "observation": {
+      "difference": "observation_early minus observation_late",
+      "metrics": {
+        "actual_bpp": {
+          "mean_difference": 2.0464052083333333,
+          "seed_differences": [
+            1.9897250000000002,
+            2.06240625,
+            2.0870843750000003
+          ],
+          "seed_sd": 0.050613604652419895,
+          "paired_image_ci95": [
+            2.0415561979166665,
+            2.0512116666666658
+          ]
+        },
+        "coarse_accuracy": {
+          "mean_difference": -0.02059999999999999,
+          "seed_differences": [
+            -0.02410000000000001,
+            -0.020399999999999974,
+            -0.017299999999999982
+          ],
+          "seed_sd": 0.0034044089061098554,
+          "paired_image_ci95": [
+            -0.024699999999999948,
+            -0.016466666666666508
+          ],
+          "within_equivalence_margin": false
+        },
+        "teacher_agreement": {
+          "mean_difference": -0.07666666666666666,
+          "seed_differences": [
+            -0.08289999999999997,
+            -0.07350000000000001,
+            -0.0736
+          ],
+          "seed_sd": 0.005398456569551444,
+          "paired_image_ci95": [
+            -0.08110083333333482,
+            -0.07223250000000073
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean_difference": 0.3617333333333333,
+          "seed_differences": [
+            0.3599,
+            0.3658,
+            0.3595
+          ],
+          "seed_sd": 0.0035275109260402616,
+          "paired_image_ci95": [
+            0.3548658333333333,
+            0.36883416666666685
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean_difference": 0.13683333333333336,
+          "seed_differences": [
+            0.13730000000000003,
+            0.13920000000000005,
+            0.134
+          ],
+          "seed_sd": 0.002631222782915471,
+          "paired_image_ci95": [
+            0.12743249999999995,
+            0.14663416666666643
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean_difference": 0.20213333333333336,
+          "seed_differences": [
+            0.20090000000000002,
+            0.20079999999999998,
+            0.20470000000000005
+          ],
+          "seed_sd": 0.002223360819420334,
+          "paired_image_ci95": [
+            0.19353333333333345,
+            0.21100000000000013
+          ],
+          "within_equivalence_margin": false
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean_difference": -0.002533333333333332,
+          "seed_differences": [
+            -0.0030999999999999917,
+            -0.0020999999999999908,
+            -0.0024000000000000132
+          ],
+          "seed_sd": 0.000513160143944686,
+          "paired_image_ci95": [
+            -0.008733333333333374,
+            0.003466666666666678
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean_difference": 0.003433333333333325,
+          "seed_differences": [
+            0.005599999999999994,
+            -0.0006999999999999784,
+            0.00539999999999996
+          ],
+          "seed_sd": 0.0035809682117177682,
+          "paired_image_ci95": [
+            -0.0029999999999999485,
+            0.010000000000000068
+          ]
+        }
+      },
+      "rate_ratio": {
+        "mean_ratio": 3.828374024238899,
+        "paired_image_ci95": [
+          3.8081227729425966,
+          3.849099238550347
+        ]
+      }
+    },
+    "achieved_family_choice": {
+      "difference": "preservation_late_efficient minus observation_late",
+      "metrics": {
+        "actual_bpp": {
+          "mean_difference": 1.2753822916666666,
+          "seed_differences": [
+            1.286671875,
+            1.2437218749999999,
+            1.295753125
+          ],
+          "seed_sd": 0.027792152903667572,
+          "paired_image_ci95": [
+            1.2710519270833334,
+            1.2796628385416666
+          ]
+        },
+        "coarse_accuracy": {
+          "mean_difference": -0.014633333333333312,
+          "seed_differences": [
+            -0.015000000000000013,
+            -0.015199999999999991,
+            -0.013699999999999934
+          ],
+          "seed_sd": 0.0008144527815247453,
+          "paired_image_ci95": [
+            -0.018133333333333453,
+            -0.011033333333333447
+          ],
+          "within_equivalence_margin": false
+        },
+        "teacher_agreement": {
+          "mean_difference": -0.05900000000000002,
+          "seed_differences": [
+            -0.057699999999999974,
+            -0.05720000000000003,
+            -0.062100000000000044
+          ],
+          "seed_sd": 0.002696293752542575,
+          "paired_image_ci95": [
+            -0.0628675000000014,
+            -0.05503333333333437
+          ]
+        },
+        "fixed_fine_accuracy": {
+          "mean_difference": 0.4599333333333333,
+          "seed_differences": [
+            0.4601,
+            0.4627,
+            0.45699999999999996
+          ],
+          "seed_sd": 0.002853652630109952,
+          "paired_image_ci95": [
+            0.45200000000000007,
+            0.4679333333333333
+          ]
+        },
+        "refit_linear_accuracy": {
+          "mean_difference": 0.13203333333333334,
+          "seed_differences": [
+            0.1316,
+            0.13620000000000004,
+            0.12829999999999997
+          ],
+          "seed_sd": 0.003967786956646441,
+          "paired_image_ci95": [
+            0.12249999999999983,
+            0.14206666666666662
+          ]
+        },
+        "refit_mlp_accuracy": {
+          "mean_difference": 0.18923333333333336,
+          "seed_differences": [
+            0.18480000000000002,
+            0.19920000000000004,
+            0.18370000000000003
+          ],
+          "seed_sd": 0.008648892029233196,
+          "paired_image_ci95": [
+            0.18063333333333365,
+            0.1978666666666663
+          ],
+          "within_equivalence_margin": false
+        },
+        "preserved_logit_linear_accuracy": {
+          "mean_difference": -0.004166666666666652,
+          "seed_differences": [
+            -0.0043999999999999595,
+            -0.006400000000000017,
+            -0.0016999999999999793
+          ],
+          "seed_sd": 0.002358671942711282,
+          "paired_image_ci95": [
+            -0.009466666666666462,
+            0.0014008333333333847
+          ]
+        },
+        "preserved_logit_mlp_accuracy": {
+          "mean_difference": 0.005599999999999976,
+          "seed_differences": [
+            0.00649999999999995,
+            0.004699999999999982,
+            0.005599999999999994
+          ],
+          "seed_sd": 0.0008999999999999841,
+          "paired_image_ci95": [
+            -6.666666666672039e-05,
+            0.011666666666666494
+          ]
+        }
+      },
+      "rate_ratio": {
+        "mean_ratio": 2.762729165286948,
+        "paired_image_ci95": [
+          2.7479066984151577,
+          2.7776946214532297
+        ]
+      }
+    }
+  },
+  "feasible_choices": [
+    {
+      "coarse_tolerance": 0.03,
+      "fine_tolerance": null,
+      "point_candidates": [
+        {
+          "group": "observation_late",
+          "mean_actual_bpp": 0.7235270833333334
+        },
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ],
+      "upper_interval_candidates": [
+        {
+          "group": "observation_late",
+          "mean_actual_bpp": 0.7235270833333334
+        },
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ]
+    },
+    {
+      "coarse_tolerance": 0.03,
+      "fine_tolerance": 0.03,
+      "point_candidates": [
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ],
+      "upper_interval_candidates": [
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ]
+    },
+    {
+      "coarse_tolerance": 0.03,
+      "fine_tolerance": 0.05,
+      "point_candidates": [
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ],
+      "upper_interval_candidates": [
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ]
+    },
+    {
+      "coarse_tolerance": 0.03,
+      "fine_tolerance": 0.1,
+      "point_candidates": [
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ],
+      "upper_interval_candidates": [
+        {
+          "group": "preservation_late_efficient",
+          "mean_actual_bpp": 1.998909375
+        },
+        {
+          "group": "preservation_late_rate_match",
+          "mean_actual_bpp": 2.7268572916666667
+        },
+        {
+          "group": "preservation_early",
+          "mean_actual_bpp": 2.7503447916666666
+        },
+        {
+          "group": "observation_early",
+          "mean_actual_bpp": 2.7699322916666667
+        }
+      ]
+    }
+  ],
+  "feasibility_interval_note": "Each accuracy-drop upper endpoint is a one-sided 97.5% percentile bound. Requiring both provides an approximate Bonferroni 95% joint check for one prespecified candidate's coarse and fine mean risks, conditional on the three fitted seeds. This is not simultaneous coverage across candidate groups or a post-selection guarantee for the cheapest candidate. Mean feasibility does not imply feasibility of every seed. Seeds remain replications, not candidates selected by test score."
+}

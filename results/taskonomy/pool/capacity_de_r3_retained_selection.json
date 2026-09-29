@@ -1,0 +1,40 @@
+{
+  "fixed_utc": "2026-09-06T02:49:32.166037+00:00",
+  "test_outcomes_accessed_before_choice": false,
+  "setting": "DE_lambda3",
+  "encoder_seed": 20260905,
+  "head_channels": 96,
+  "selected_checkpoint": "results/round2_task_family/probe_de_r3_w96/best.pt",
+  "selected_step": 20000,
+  "selected_quantized_validation_losses": {
+    "depth": 0.06815855193510652,
+    "semantic": 0.9142373262345791,
+    "edge": 0.006863390203332528
+  },
+  "final_checkpoint": "results/round2_task_family/probe_de_r3_w96/last.pt",
+  "final_step": 24000,
+  "final_quantized_validation_losses": {
+    "depth": 0.06843283519148827,
+    "semantic": 0.9417274839971215,
+    "edge": 0.006856747910438571
+  },
+  "component_feasibility": {
+    "0.1": {
+      "depth": true,
+      "semantic": false,
+      "edge": false
+    },
+    "0.25": {
+      "depth": true,
+      "semantic": false,
+      "edge": true
+    },
+    "0.5": {
+      "depth": true,
+      "semantic": true,
+      "edge": true
+    }
+  },
+  "consequential_retained_final_witness": false,
+  "decision": "Best and retained final wider banks have identical component decisions at every fixed alpha. Select the weighted-sum best bank for capacity sensitivity. No extra final-head coding is required."
+}

@@ -1,0 +1,185 @@
+[
+  {
+    "setting": "D_lambda30",
+    "seeds": [
+      20260905,
+      20260906,
+      20260907
+    ],
+    "actual_bpp": 0.007253173828125001,
+    "losses": {
+      "depth": 0.08962511975582067,
+      "semantic": 1.0505914414773387,
+      "edge": 0.041705215911225724
+    },
+    "mean_bytes": {
+      "bytes": 59.418000000000006,
+      "main_bytes": 8.793333333333333,
+      "hyper_bytes": 10.624666666666668,
+      "header_bytes": 40.0
+    },
+    "header_fraction_of_total_bytes": 0.6731966744084283,
+    "mean_original_miou": 0.008638327694219551,
+    "mean_fixed_validation_class_miou": 0.00925535110094952,
+    "fixed_class_moderate_pass_count": 0,
+    "feasible_seed_counts": {
+      "0.1": {
+        "D": 0,
+        "DS": 0,
+        "DE": 0,
+        "DSE": 0
+      },
+      "0.25": {
+        "D": 3,
+        "DS": 0,
+        "DE": 0,
+        "DSE": 0
+      },
+      "0.5": {
+        "D": 3,
+        "DS": 3,
+        "DE": 0,
+        "DSE": 0
+      }
+    },
+    "retained_image_intervals_95": {
+      "depth": {
+        "lower": 0.08665440368395064,
+        "upper": 0.09251813427226935,
+        "defined_replicates": 2000
+      },
+      "semantic": {
+        "lower": 1.0175209485666517,
+        "upper": 1.0860578103533027,
+        "defined_replicates": 2000
+      },
+      "edge": {
+        "lower": 0.04110246197354666,
+        "upper": 0.04230601944853939,
+        "defined_replicates": 2000
+      }
+    }
+  },
+  {
+    "setting": "DS_lambda3",
+    "seeds": [
+      20260905,
+      20260906,
+      20260907
+    ],
+    "actual_bpp": 0.031991943359375,
+    "losses": {
+      "depth": 0.0759827055480176,
+      "semantic": 0.6496902408571913,
+      "edge": 0.032324411657088305
+    },
+    "mean_bytes": {
+      "bytes": 262.078,
+      "main_bytes": 190.62466666666668,
+      "hyper_bytes": 31.453333333333333,
+      "header_bytes": 40.0
+    },
+    "header_fraction_of_total_bytes": 0.15262631735590168,
+    "mean_original_miou": 0.13314698139393202,
+    "mean_fixed_validation_class_miou": 0.14146265073378797,
+    "fixed_class_moderate_pass_count": 2,
+    "feasible_seed_counts": {
+      "0.1": {
+        "D": 3,
+        "DS": 3,
+        "DE": 0,
+        "DSE": 0
+      },
+      "0.25": {
+        "D": 3,
+        "DS": 3,
+        "DE": 0,
+        "DSE": 0
+      },
+      "0.5": {
+        "D": 3,
+        "DS": 3,
+        "DE": 0,
+        "DSE": 0
+      }
+    },
+    "retained_image_intervals_95": {
+      "depth": {
+        "lower": 0.07345533200851258,
+        "upper": 0.07849942203941167,
+        "defined_replicates": 2000
+      },
+      "semantic": {
+        "lower": 0.6178700436768354,
+        "upper": 0.6831423800504112,
+        "defined_replicates": 2000
+      },
+      "edge": {
+        "lower": 0.031845511904541865,
+        "upper": 0.03278683361914359,
+        "defined_replicates": 2000
+      }
+    }
+  },
+  {
+    "setting": "DE_lambda3",
+    "seeds": [
+      20260905,
+      20260906,
+      20260907
+    ],
+    "actual_bpp": 0.02808479817708333,
+    "losses": {
+      "depth": 0.07705863566223221,
+      "semantic": 0.8816567406870114,
+      "edge": 0.010537389303392652
+    },
+    "mean_bytes": {
+      "bytes": 230.07066666666665,
+      "main_bytes": 163.86066666666667,
+      "hyper_bytes": 26.209999999999997,
+      "header_bytes": 40.0
+    },
+    "header_fraction_of_total_bytes": 0.173859625738179,
+    "mean_original_miou": 0.03844227255828213,
+    "mean_fixed_validation_class_miou": 0.04118642490382346,
+    "fixed_class_moderate_pass_count": 0,
+    "feasible_seed_counts": {
+      "0.1": {
+        "D": 3,
+        "DS": 0,
+        "DE": 0,
+        "DSE": 0
+      },
+      "0.25": {
+        "D": 3,
+        "DS": 2,
+        "DE": 2,
+        "DSE": 1
+      },
+      "0.5": {
+        "D": 3,
+        "DS": 3,
+        "DE": 3,
+        "DSE": 3
+      }
+    },
+    "retained_image_intervals_95": {
+      "depth": {
+        "lower": 0.07442129016010436,
+        "upper": 0.07986436868636715,
+        "defined_replicates": 2000
+      },
+      "semantic": {
+        "lower": 0.8526388059220196,
+        "upper": 0.9133986652741444,
+        "defined_replicates": 2000
+      },
+      "edge": {
+        "lower": 0.010373827363843164,
+        "upper": 0.010703957975932519,
+        "defined_replicates": 2000
+      }
+    }
+  }
+]

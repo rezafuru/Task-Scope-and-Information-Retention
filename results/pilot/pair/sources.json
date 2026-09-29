@@ -1,0 +1,882 @@
+{
+ "3070": {
+  "cub_image_id": 3070,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003070,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.813648293963254,
+   19.401574803149607,
+   205.18635170603673,
+   204.5984251968504
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003070.png",
+    "sha256": "8aad586d2d28a4bf51ab07645511e683da6ed89c528345e3943b67a160b0e102"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1590.png",
+    "sha256": "46bfc99471b008a4efa9cf8b913d3347a3468fa3f0523938e2fd13aeff276737"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1590.png",
+    "sha256": "141f92c6e803de064134160d4d6b8e8984552cef7e67c01b93fc8bb7ecef62a0"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1590.png",
+    "sha256": "30acaaa7d5ecd17381872554a81863cd9dd3bc3d72a8a92c1421ac71c66e8dee"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1590.png",
+    "sha256": "c0f048eecdf9554ef655ac3bae77854e15ef0e0df4fbcc15ddcccd8760f046d3"
+   }
+  }
+ },
+ "3088": {
+  "cub_image_id": 3088,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003088,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   24.436363636363634,
+   19.345454545454544,
+   200.58181818181816,
+   205.67272727272726
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003088.png",
+    "sha256": "39ebd5f53c7313af952aa7abf3c3b7a1a6a242cb2ab2c9f3cec4ead264d198cc"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1597.png",
+    "sha256": "a260d34e0eea4b51447f0c1eaf6fe468e3b15817effc1e61a2fe2563cbd5d077"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1597.png",
+    "sha256": "37ff74aa8a061d7889e52a1fd804acbe8938eafa896b47ad1b677d68af2b81a2"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1597.png",
+    "sha256": "f640ed7dc0860685f05ec7a8a53317514bfe67ad85b5f4dc026a17b25de6d084"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1597.png",
+    "sha256": "5d4f3f8f0dd5e8482a60f157111738d7a23e1032f2dc537757d36817ec268199"
+   }
+  }
+ },
+ "3109": {
+  "cub_image_id": 3109,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003109,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.929577464788732,
+   29.971830985915492,
+   205.07042253521126,
+   194.8169014084507
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003109.png",
+    "sha256": "5f10a76bbcddd7dce9c53e10e42f919c56a7a1b099e936dc04d71412641893a2"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1608.png",
+    "sha256": "c6c8511eaba54231b814d3c455eef52af83309485012fb27abe77a733bb47a63"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1608.png",
+    "sha256": "ce2b2c31923facbbf40e0f55591c4dbae3d4268f256eff7c1c289a6344776eac"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1608.png",
+    "sha256": "7003a3f87c312a009ed4b63e9ed83f2695785951dc0a1532f8f1dd3c64178863"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1608.png",
+    "sha256": "4932ec02c19dbebacd5eb9368616eae60b1b718eee1e9ef7398d22eca9d641f8"
+   }
+  }
+ },
+ "3114": {
+  "cub_image_id": 3114,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003114,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   31.093484419263454,
+   19.03682719546742,
+   193.54107648725213,
+   205.59773371104816
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003114.png",
+    "sha256": "e28ac6ee5ca0d98560519d585f57504fedac5ebe272d8e4363596c4e44bfc0da"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1610.png",
+    "sha256": "b08758301e47e4403f0c32c40b82ab1bb1e83a904f1c4f22dc0ade04b7a8f33b"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1610.png",
+    "sha256": "e4b251c7d8879ec6bb5d7aa8f5b2e4c874432d0fd350573c042ee695f30579b7"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1610.png",
+    "sha256": "b00384d059c8f8a66eccca2e0220eae9e4b5adc06e4875562d6a86e1d2f52d93"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1610.png",
+    "sha256": "c88a8b3aefeea3be070d8c3eb971d48c8d2da081ba5dac1ce6f94dddd1b8283a"
+   }
+  }
+ },
+ "3120": {
+  "cub_image_id": 3120,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003120,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   57.62318840579711,
+   18.666666666666668,
+   167.18840579710147,
+   205.33333333333334
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003120.png",
+    "sha256": "6be5ad2ef75c45f4ec007623bc8658a9d5cb4e2046abc2510ff96487118bda80"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1614.png",
+    "sha256": "acd83999323c78e1ce588e4802eca98a5ba27bc19c3e22e8ff182d1338cedd7b"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1614.png",
+    "sha256": "372b2351e12d7e0353d0b639828fc0680149515996b127878532d6f8f2694691"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1614.png",
+    "sha256": "f7ba9fe451f159202c41bb1b6155348d9cf650d533849e911d44d30a0b9e1630"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1614.png",
+    "sha256": "353cd464c08dab3269169b1b79a0a35506b0a4cb38102f696aae228536c104ac"
+   }
+  }
+ },
+ "3122": {
+  "cub_image_id": 3122,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003122,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   44.800000000000004,
+   18.953846153846154,
+   179.20000000000002,
+   205.04615384615386
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003122.png",
+    "sha256": "ceedb3029f40a41a513886b0aca0381ffe28d5ad4dd8cd02b4c4ab7cac03fd4c"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1616.png",
+    "sha256": "cb8e70f57449cea008ef384078701520618c6e6851fc86c6528952cd30d6c8c0"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1616.png",
+    "sha256": "94612c6385335c25bd720e4be5f16e0d351dc5dca7934c574494b8f90148dea6"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1616.png",
+    "sha256": "2a7776aad94150f4af2d832d457af7e4ea8fa7fd264ff314689fae2ff18044d8"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1616.png",
+    "sha256": "9c8939c72d74e642c6decaf95e586753d7f47f8181f87c605c8ec2d4455e92f1"
+   }
+  }
+ },
+ "3079": {
+  "cub_image_id": 3079,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003079,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.06382978723404,
+   27.404255319148934,
+   204.93617021276594,
+   197.7872340425532
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003079.png",
+    "sha256": "22775d03cd4372443a668ac6966690ab9dc08ba6a8a2aa440e6db8eb434df57e"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1593.png",
+    "sha256": "acd96907ecc4ac32eae2550c81e73cc5066468f0af5b4b49d95403a974def34e"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1593.png",
+    "sha256": "f8f8df2b508a9b95b74e4182e127bc96424827488f566296a46cd98eecee3ee8"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1593.png",
+    "sha256": "658215308bf089d619411b7240f88ec26a146addd2a6eb33ce4229a12d03b68b"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1593.png",
+    "sha256": "cfb4f0a75fa28e6a473f2c8df3a5d0aad2f429fee01162e47883024330f2f256"
+   }
+  }
+ },
+ "3085": {
+  "cub_image_id": 3085,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003085,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.863157894736844,
+   30.652631578947368,
+   205.13684210526316,
+   194.13333333333333
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003085.png",
+    "sha256": "f966f39d07720f41b2cb54b57a3fc4641f0d59957b5f1425b610cc0f3166acba"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1595.png",
+    "sha256": "15666116625941d4b59bade34dd531d2535d059c16dbbcbe17050de7505f2c3a"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1595.png",
+    "sha256": "877e2839edc26e5c7d182e9c2d1ec4f1bd3f93a29a5d4a43cf6e8b698157ddbb"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1595.png",
+    "sha256": "9d6d6c796074e9011af1fcbce619e07d83540fca76d29a6fb3e5c6db65e42348"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1595.png",
+    "sha256": "48f14d114a0b31fd98edd9a08600ab3efcde4e2f40a6ec4da6d96dd416c5c3b6"
+   }
+  }
+ },
+ "3095": {
+  "cub_image_id": 3095,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003095,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.17117117117117,
+   21.189189189189186,
+   205.8378378378378,
+   203.8198198198198
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003095.png",
+    "sha256": "a029baf06a1f2fa31f13c6236c8d64eb84a7416eaae18d51f7ffb72876552223"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1602.png",
+    "sha256": "5cb705ebcb45fd836b114816d02a46ae07a00f5ece050d38d354b9f6aa14a2f9"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1602.png",
+    "sha256": "59d1782605073866c6785d4dd2d6ab3eb09a63feee3a35841287fc3a98545dd7"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1602.png",
+    "sha256": "8e3f9bddacc9777bb0240bb523eaf3ab9c3c73c47e1225bec8f5aad6cab2a383"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1602.png",
+    "sha256": "185fe55c7b7d63569ae9101a61b95c4c7c6818c1bc50dcfe6a2e7da7f7982439"
+   }
+  }
+ },
+ "3092": {
+  "cub_image_id": 3092,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003092,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   40.44444444444444,
+   18.666666666666664,
+   184.59259259259258,
+   205.33333333333331
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003092.png",
+    "sha256": "f71443e4dc486674ebd1fa08c841ce0e3a33121ebb675ac42f575e585f34c66d"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1599.png",
+    "sha256": "4d91a245b7621c3d02432d1be16a6d8bd549fe6ffb9c0ab0321f373bacf0e967"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1599.png",
+    "sha256": "19deea33b9f267eaab6d248f15a4da9a00b870258a9e668cf070ca0fc5f30dd3"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1599.png",
+    "sha256": "182d9b2a1b53c7e15ba1afcfac8b759f16334ff5f9130c5e8944473686f4f2c8"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1599.png",
+    "sha256": "868c919a6095eb9e3556dc164ec177b8b10979ebb418522b358971a0ce580963"
+   }
+  }
+ },
+ "3126": {
+  "cub_image_id": 3126,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003126,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.778443113772454,
+   26.82634730538922,
+   205.22155688622752,
+   197.17365269461078
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003126.png",
+    "sha256": "90bf3ed111e20b9335085eeb914d4f6630951c09a0d7c05955b957bd0c98d4a5"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1619.png",
+    "sha256": "1aa7a6e5875205d0f554135de94ca41e9122b7c035bd65fa7483d941e6a50e15"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1619.png",
+    "sha256": "e0afceaa0b321650ab6de37a0a0f0dc999022848d4378b3d33b96b0b160a58a8"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1619.png",
+    "sha256": "afc15084444f247ae4e81d222a40630ada5f67c50c9ac7e9c90446222bc07cf4"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1619.png",
+    "sha256": "cdebeefe528abbca9e73877fec3fa246089f86ae8eb964f712c30771a7630cd0"
+   }
+  }
+ },
+ "3119": {
+  "cub_image_id": 3119,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003119,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.145299145299145,
+   50.41595441595442,
+   205.49287749287748,
+   173.58404558404558
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003119.png",
+    "sha256": "120cd65fccae47b674107f82c85a3a1f2227a2e41b303e01aa0663bddffba3c4"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1613.png",
+    "sha256": "99351588054cccc30c69b1068330f9bf84729933af1177d1ae25eadcb8babc7b"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1613.png",
+    "sha256": "03a1ae0ee8417a5eaec110545bd098bb9b597ad29aefb7829f003ad434d9ce3f"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1613.png",
+    "sha256": "6386b77eb185be8f94afd1738a95413862fbe5e34ad5333e2958e97c26db259a"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1613.png",
+    "sha256": "4cbdcde56a6321b9eb533a955ad59fe2bafcd26bc82aad7fa9c3d49210b9b469"
+   }
+  }
+ },
+ "3077": {
+  "cub_image_id": 3077,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003077,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   63.68079800498753,
+   18.992518703241895,
+   160.87780548628427,
+   205.5660847880299
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003077.png",
+    "sha256": "5d0ede9c4b60d9cd62e8b9da44a200c6592ce473052ec8c739701a3280f2693b"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1592.png",
+    "sha256": "9d1b7024f6bd087816b699be70cd65b6cb956f152fa809dd49f699cd95ff4c35"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1592.png",
+    "sha256": "9b010bdf7301fbcaa325aba3e1a7209a43e0fde31a1b3da2c3a909b0d3befd13"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1592.png",
+    "sha256": "2b82f7fad54b942aeba32f2728b510ffe173179a04eb5853b3b8d04e7cb3ba1d"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1592.png",
+    "sha256": "3ef814a537af18ff213332f0eba6a76a3d832569046fb9504231929142ade61a"
+   }
+  }
+ },
+ "3125": {
+  "cub_image_id": 3125,
+  "fine_label": 53,
+  "split": "train",
+  "observation_id": 1000000003125,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   49.301435406698566,
+   19.291866028708135,
+   175.77033492822966,
+   205.7799043062201
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000003125.png",
+    "sha256": "ee626abca341441f6445d95f276fd42ddcee5bfc417068b8ea22e1f97e1cff3a"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/1618.png",
+    "sha256": "a98c10d9bbd53abc432f66b2ef0d7524a745aaa37064c765ba42e115c0b2e6ab"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/1618.png",
+    "sha256": "6a1951338e46717c609663d2dfca07ec53bf531ae81fe8fe11a8cd08467be3a1"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/1618.png",
+    "sha256": "117956d59e030c7de611b6a176f2cf1e9fd72a90f70cdc8295f8445dab2b5f2b"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/1618.png",
+    "sha256": "cdca361505488b2bfd46d5c00a07e1f272f700937cfe3f4e9dd9ad202332d4f3"
+   }
+  }
+ },
+ "746": {
+  "cub_image_id": 746,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000746,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.06382978723404,
+   25.418439716312058,
+   204.93617021276597,
+   200.17021276595744
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000746.png",
+    "sha256": "bb1b0d9958e8726587f2e1c7fca404c5e3c21b112fc9416d38ead150748c1d2b"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0404.png",
+    "sha256": "f206e00afaecc4619d177f2d76caec95132ef3d46d7f7a36b403fb4bac434411"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0404.png",
+    "sha256": "560fdf9dad169f58806b1a402cb289b16d0d1c23bed7dbcbf9e35e88f03f5b46"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0404.png",
+    "sha256": "bb775f0cf0ac95469cdf7c5730f7855a29df829ec87adcd8a92a39305bb0aa21"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0404.png",
+    "sha256": "5c0e13fda2e5e344a4ab9dacb85ffaf5c5a57b8f13ffe8fedf18b61ea696c5e0"
+   }
+  }
+ },
+ "754": {
+  "cub_image_id": 754,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000754,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   46.22222222222222,
+   18.666666666666664,
+   177.77777777777777,
+   205.33333333333331
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000754.png",
+    "sha256": "2dfd5352bef7e7dc664bd07acbc354a125f731797ab4cf15866df7752b2e593a"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0408.png",
+    "sha256": "6fa2ff050edb207e81f2a0774b5b4eeb534414074f53b71dadd0d2ad14e46964"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0408.png",
+    "sha256": "29a75159713ac420c8edd94cb382857172b0919ddf84da1ce3a7e5dee0b5747b"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0408.png",
+    "sha256": "83480a3187e6213794b9e813f344ee3a936fdcad3fe54a45760779c85e2787f1"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0408.png",
+    "sha256": "d3a4f1bfe729136e4ec8a3e4931a98808271a10a45de665793bf6e5dc8ed557d"
+   }
+  }
+ },
+ "756": {
+  "cub_image_id": 756,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000756,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.831858407079647,
+   28.743362831858406,
+   205.16814159292036,
+   195.2566371681416
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000756.png",
+    "sha256": "e3d5111ec970044a3907b7d99ca3029deb45ad4678bd74b8ec4a3f1b591cede8"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0410.png",
+    "sha256": "0faa6a633e9f1da72948d7adc77d10e39543d73aee898ea51b51f26ba0926399"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0410.png",
+    "sha256": "3796a914822420c87d35b834b6021b22c45496e357bc552faf4b4108038e8746"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0410.png",
+    "sha256": "27b7dbdbab1c74bd6cfd01c8e94a76ad56273de843cf6f0cf2924ad100a8da20"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0410.png",
+    "sha256": "7d9cfb15090ae8d00a10068b765b78441eafce7db32561c567b97e029dba2173"
+   }
+  }
+ },
+ "762": {
+  "cub_image_id": 762,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000762,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.421965317919074,
+   23.30635838150289,
+   205.8728323699422,
+   200.6936416184971
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000762.png",
+    "sha256": "7965be20036fdcbb62895651db88739b18c8a732d038d21e2aa9e6538dfd631f"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0413.png",
+    "sha256": "c6107a3f62aafbf6a7b8ba057aaaeae66dc91f1814b3c329f449023d15e45be9"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0413.png",
+    "sha256": "6f97cfc4858e0d522609897971b37444931cd7076beaf2edf75507b88b40e819"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0413.png",
+    "sha256": "17ba4e5c85ad8669ff78fd94264295c4d2313494d64f3f437b9a2a3b24ab5aed"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0413.png",
+    "sha256": "8fc5e14d7bfcf2f7e5accd394f7ad0cbbe293880bbdd38f7fd195db521583fa7"
+   }
+  }
+ },
+ "776": {
+  "cub_image_id": 776,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000776,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.345454545454544,
+   40.72727272727272,
+   205.67272727272726,
+   183.27272727272725
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000776.png",
+    "sha256": "881ccb08c4d3c10a149658030be676820d584434e9fdecd65121acd577c8e9dc"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0418.png",
+    "sha256": "d541596c15ad2a15f18ce546b79000de2dd06ebf223fba208b4a6e86028f19e0"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0418.png",
+    "sha256": "da1debd4c4afd91c97e004ba8ead32ef4c7ad50106ba1163b0b73d89fcdbbe67"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0418.png",
+    "sha256": "a792e66faf4f34910df903eb4155c86f75be124a78d11e507d11dceca3f39325"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0418.png",
+    "sha256": "8ccea22af5b14735427d1839dc2d5a9a510ecbfb97fbf8a5c331ce220e35d614"
+   }
+  }
+ },
+ "741": {
+  "cub_image_id": 741,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000741,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   19.11466666666667,
+   25.685333333333336,
+   205.4826666666667,
+   198.31466666666668
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000741.png",
+    "sha256": "0f3a8c19630da6d7a8677dd89e94a242ec0c220d8e3a7774a49bc7c5f68060f3"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0402.png",
+    "sha256": "001896e54317e7b771683eeca820377241de44c5aae159b4e84dd3dd51bb283f"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0402.png",
+    "sha256": "cc6bc68e9e3b2f16372940a60e6a33ab7e676545e72322f3679cd5f8135cb204"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0402.png",
+    "sha256": "68342b85d6621403a5086d617ec996410f33e5b518a24dc3d2f57b2a90dd3360"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0402.png",
+    "sha256": "b56c7a55b6883d1d3540bf31cb707936632f0bbb0c67b8fbebeda96f2c625207"
+   }
+  }
+ },
+ "758": {
+  "cub_image_id": 758,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000758,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.983050847457626,
+   38.91525423728814,
+   205.01694915254237,
+   186.03389830508476
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000758.png",
+    "sha256": "6bd89d718071b598154bcad2f996bfe9b6e902e88c629644e2dfdecefbaa308b"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0411.png",
+    "sha256": "b6341307a2762906387f6275aa2cf11cc447ca78d4afab4dc27f1553b21ed83b"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0411.png",
+    "sha256": "2fb7a29528c421ce547800d5b7450b59d142b12130999679affa771a739524be"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0411.png",
+    "sha256": "b7d94f5b018d2bac951625b2dc1101b26739e8bfb6ca7fbd42721c84614c78d7"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0411.png",
+    "sha256": "b4ab3c6da5c579992acb51ff979551639d8627abfd342f43c631bc4e9a33cf9d"
+   }
+  }
+ },
+ "734": {
+  "cub_image_id": 734,
+  "fine_label": 13,
+  "split": "train",
+  "observation_id": 1000000000734,
+  "padding_ltrb": [
+   0,
+   0,
+   0,
+   0
+  ],
+  "bird_bbox_input224_xyxy": [
+   18.75862068965517,
+   28.689655172413794,
+   205.24137931034483,
+   196.41379310344828
+  ],
+  "files": {
+   "original": {
+    "source": "<CUB_ROOT>/inputs224_categories/1000000000734.png",
+    "sha256": "575d9ab883c4c10766ae89d2ea2d9424f2e0027252ed25dfb60cbd5f211870e5"
+   },
+   "layer3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_development/0398.png",
+    "sha256": "2437f3a0c27b6deee057f4727b0b010f84bcad2ee1b878df233aef9c206f179a"
+   },
+   "block1": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block1_development/0398.png",
+    "sha256": "8345d1ed9865b8ec82837c88118ba297ace7130b717a70832d956d3635ea7076"
+   },
+   "block2": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block2_development/0398.png",
+    "sha256": "d322b29d97e47bec022063951c27d4e1e740b0ffb42ab21f0c30539711921c6d"
+   },
+   "block3": {
+    "source": "results/pilot_motivation/cub_inverse_rgb/simple_block3_development/0398.png",
+    "sha256": "711bd679c1e9098821c7a1f46cfd5f5a184703508830a26b4d39aa6cf949c50e"
+   }
+  }
+ }
+}

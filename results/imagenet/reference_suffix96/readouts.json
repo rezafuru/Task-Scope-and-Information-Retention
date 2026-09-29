@@ -1,0 +1,28 @@
+{
+  "readouts": {
+    "17": {
+      "selected_epoch": 3,
+      "fine_accuracy": 0.8566666666666667,
+      "coarse_accuracy": 0.9245,
+      "normalized_ce_sum": 0.17983142630259197,
+      "seconds": 3.6859730081632733,
+      "peak_allocated_bytes": 331012096,
+      "image_exposures": 460800
+    },
+    "23": {
+      "selected_epoch": 3,
+      "fine_accuracy": 0.8598333333333333,
+      "coarse_accuracy": 0.9273333333333333,
+      "normalized_ce_sum": 0.17532205963134764,
+      "seconds": 3.658332349732518,
+      "peak_allocated_bytes": 331012096,
+      "image_exposures": 460800
+    }
+  },
+  "feature": "frozen_suffix_penultimate_2048",
+  "test_used": false,
+  "readout_epochs": 20,
+  "readout_lr": 0.001,
+  "readout_batch_size": 256,
+  "seconds": 7.843365213833749
+}

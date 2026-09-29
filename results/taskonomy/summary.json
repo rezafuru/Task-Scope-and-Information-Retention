@@ -1,0 +1,18 @@
+{
+  "scope": "Retrospective reanalysis of retained fits. No new training or threshold adjustment.",
+  "mixture_cell_count": 12,
+  "mixture_test_pass_count": 5,
+  "single_validation_selected_test_pass_count": 11,
+  "cell_count_interpretation": "Repeated family and tolerance choices, not independent statistical trials.",
+  "focal_fit_count": 9,
+  "focal_image_count_per_fit": 2000,
+  "focal_buildings": [
+    "ihlen",
+    "mcdade",
+    "muleshoe",
+    "noxapater",
+    "uvalda"
+  ],
+  "mixture_interpretation": "Input-independent schedule over full messages and fixed selected heads. Shared model availability and schedule assumed. No per-image requirement guarantee. Model storage and switching costs excluded.",
+  "fixed_class_interpretation": "Diagnostic restriction to validation-present classes. Original metric and failed original requirements remain unchanged. The new test class is excluded only in this diagnostic."
+}

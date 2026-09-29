@@ -1,0 +1,988 @@
+[
+  {
+    "name": "cyclic_1",
+    "tasks": 1,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1
+    ],
+    "unrestricted_rate": 0.3938162328793948,
+    "formula_rate": 0.3938162328793796,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 1.5210055437364645e-14,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.3938162328794049,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.3938162328793948,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 6.938893903907228e-18,
+    "max_normalization_violation": 1.1102230246251565e-16,
+    "formula_errors": [
+      0.039835224056917945,
+      0.14579440735453686,
+      0.41251094671513916
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_2",
+    "tasks": 1,
+    "states": 3,
+    "weights": [
+      [
+        0.1,
+        0.9,
+        0.5
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1
+    ],
+    "unrestricted_rate": 0.3938162328793954,
+    "formula_rate": 0.39381623287939127,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 4.107825191113079e-15,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.3938162328794038,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.3938162328793954,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 0.0,
+    "formula_errors": [
+      0.41251094671513644,
+      0.03983522405691514,
+      0.14579440735452878
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_3",
+    "tasks": 1,
+    "states": 3,
+    "weights": [
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1
+    ],
+    "unrestricted_rate": 0.393816232879395,
+    "formula_rate": 0.39381623287938405,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 1.0935696792557792e-14,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.39381623287940426,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.393816232879395,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 1.1102230246251565e-16,
+    "formula_errors": [
+      0.14579440735453236,
+      0.412510946715138,
+      0.03983522405691767
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_12",
+    "tasks": 2,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.1,
+        0.9,
+        0.5
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1,
+      0.1
+    ],
+    "unrestricted_rate": 0.4979428777552777,
+    "formula_rate": 0.4979428777351561,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 2.0121571076003875e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.4979428777552777,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.4979428777777935,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 8.326672684688674e-17,
+    "max_normalization_violation": 1.1102230246251565e-16,
+    "formula_errors": [
+      0.12097811192726284,
+      0.04231019220003752,
+      0.1996460316544957
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0,
+      1
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_13",
+    "tasks": 2,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1,
+      0.1
+    ],
+    "unrestricted_rate": 0.4979428777504765,
+    "formula_rate": 0.4979428777351472,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 1.5329293390209386e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.4979428777504765,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.49794290616883335,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 1.1102230246251565e-16,
+    "formula_errors": [
+      0.04231019220003885,
+      0.1996460316544972,
+      0.12097811192726894
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0,
+      1
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_23",
+    "tasks": 2,
+    "states": 3,
+    "weights": [
+      [
+        0.1,
+        0.9,
+        0.5
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1,
+      0.1
+    ],
+    "unrestricted_rate": 0.4979428777443149,
+    "formula_rate": 0.4979428777351529,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 9.162004488416642e-12,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.4979428777443149,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.49794287774657786,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 2.220446049250313e-16,
+    "formula_errors": [
+      0.19964603165449615,
+      0.1209781119272653,
+      0.042310192200037955
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0,
+      1
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_123",
+    "tasks": 3,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.1,
+        0.9,
+        0.5
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "unrestricted_rate": 0.5310044064310847,
+    "formula_rate": 0.5310044064107282,
+    "reduced_rate": 0.5310044064107189,
+    "absolute_discrepancy": 2.0356494268014558e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.5310044064310847,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.5310044065442318,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 1.4363510381087963e-15,
+    "max_normalization_violation": 6.661338147750939e-16,
+    "formula_errors": [
+      0.09999999999999627,
+      0.09999999999999738,
+      0.09999999999999738
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333326
+    ],
+    "active_tasks": [
+      0,
+      1,
+      2
+    ],
+    "constant_profile_in_active_hull": true,
+    "active_hull_coefficients": [
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333326
+    ]
+  },
+  {
+    "name": "cyclic_unbalanced_7",
+    "tasks": 3,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.1,
+        0.9,
+        0.5
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "unrestricted_rate": 0.5897708265874793,
+    "formula_rate": 0.5897708265730724,
+    "reduced_rate": 0.7136030428840439,
+    "absolute_discrepancy": 1.4406809079048344e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.5897708265874793,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.5897709194527031,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 7.147060721024445e-15,
+    "max_normalization_violation": 1.1102230246251565e-16,
+    "formula_errors": [
+      0.03802856785893846,
+      0.03604643838787656,
+      0.22751069732994217
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333326
+    ],
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_unbalanced_8",
+    "tasks": 3,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.1,
+        0.9,
+        0.5
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.2,
+      0.05,
+      0.4
+    ],
+    "unrestricted_rate": 0.5520477316155,
+    "formula_rate": 0.5520477315863122,
+    "reduced_rate": 0.7136030428840439,
+    "absolute_discrepancy": 2.918787433969783e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.5520477316155,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.5520477316929808,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 5.204170427930421e-15,
+    "max_normalization_violation": 2.220446049250313e-16,
+    "formula_errors": [
+      0.3206996728472808,
+      0.008700899669964676,
+      0.07019844602460396
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333326
+    ],
+    "active_tasks": [
+      1
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_unbalanced_9",
+    "tasks": 3,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.1,
+        0.9,
+        0.5
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.42,
+      0.36,
+      0.45
+    ],
+    "unrestricted_rate": 0.04037199758336601,
+    "formula_rate": 0.04037199742279185,
+    "reduced_rate": 0.057316810744507674,
+    "absolute_discrepancy": 1.6057415813675036e-10,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.04037199861751066,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.04037199758336601,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 2.7755575615628914e-17,
+    "max_normalization_violation": 2.220446049250313e-16,
+    "formula_errors": [
+      0.4751215434568686,
+      0.32466575549361126,
+      0.400577331420126
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333326
+    ],
+    "active_tasks": [
+      1
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "cyclic_unbalanced_10",
+    "tasks": 3,
+    "states": 3,
+    "weights": [
+      [
+        0.9,
+        0.5,
+        0.1
+      ],
+      [
+        0.1,
+        0.9,
+        0.5
+      ],
+      [
+        0.5,
+        0.1,
+        0.9
+      ]
+    ],
+    "state_probabilities": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "normalized_allowances": [
+      0.01,
+      0.49,
+      0.49
+    ],
+    "unrestricted_rate": 0.7966388654478245,
+    "formula_rate": 0.7966388654312743,
+    "reduced_rate": 0.9192068641040888,
+    "absolute_discrepancy": 1.655020565038967e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.7966388654478245,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.7966390432958302,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 2.886579864025407e-15,
+    "formula_errors": [
+      1.5651738055768263e-07,
+      0.00016562627899120914,
+      0.14917045994801834
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.33333333333333337,
+      0.33333333333333337,
+      0.33333333333333326
+    ],
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "nonuniform_hull",
+    "tasks": 2,
+    "states": 3,
+    "weights": [
+      [
+        0.48,
+        0.18,
+        0.3
+      ],
+      [
+        0.42,
+        0.72,
+        0.6
+      ]
+    ],
+    "state_probabilities": [
+      0.2,
+      0.3,
+      0.5
+    ],
+    "normalized_allowances": [
+      0.23,
+      0.23
+    ],
+    "unrestricted_rate": 0.22198869647770383,
+    "formula_rate": 0.22198869645347674,
+    "reduced_rate": 0.2219886964534623,
+    "absolute_discrepancy": 2.4227092554340857e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.22198869660400536,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.22198869647770383,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 2.220446049250313e-16,
+    "formula_errors": [
+      0.2299999399126702,
+      0.22999993991267015,
+      0.23000006008732995
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.3333333333333333,
+      0.6666666666666667
+    ],
+    "active_tasks": [
+      0,
+      1
+    ],
+    "constant_profile_in_active_hull": true,
+    "active_hull_coefficients": [
+      0.3333333333333333,
+      0.6666666666666667
+    ]
+  },
+  {
+    "name": "nonuniform_hull_single",
+    "tasks": 1,
+    "states": 3,
+    "weights": [
+      [
+        0.48,
+        0.18,
+        0.3
+      ]
+    ],
+    "state_probabilities": [
+      0.2,
+      0.3,
+      0.5
+    ],
+    "normalized_allowances": [
+      0.23
+    ],
+    "unrestricted_rate": 0.20164018592924654,
+    "formula_rate": 0.20164018592921962,
+    "reduced_rate": 0.2219886964534623,
+    "absolute_discrepancy": 2.6922908347160046e-14,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.20164018592948424,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.20164018592924654,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 1.3877787807814457e-17,
+    "max_normalization_violation": 0.0,
+    "formula_errors": [
+      0.14330857430664667,
+      0.3383783892489019,
+      0.24646629231414383
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "random_2_4",
+    "tasks": 2,
+    "states": 4,
+    "weights": [
+      [
+        0.22053443337504688,
+        0.8242979012776537,
+        0.5283991423680703,
+        0.875627835200434
+      ],
+      [
+        0.4329592155500288,
+        0.07082527757996389,
+        0.06920534682896501,
+        0.07239381613610539
+      ]
+    ],
+    "state_probabilities": [
+      0.40823023494984867,
+      0.17685465086614668,
+      0.22236329897565243,
+      0.19255181520835232
+    ],
+    "normalized_allowances": [
+      0.3486467808720223,
+      0.2540146273834412
+    ],
+    "unrestricted_rate": 0.12057827127581687,
+    "formula_rate": 0.120578271229977,
+    "reduced_rate": 0.1824206284714447,
+    "absolute_discrepancy": 4.583987356365782e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.12057962642617906,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.12057827127581687,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 2.220446049250313e-16,
+    "formula_errors": [
+      0.22470671243671553,
+      0.36844531592851054,
+      0.3993048328014947,
+      0.36240556476894314
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      1
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "random_3_4",
+    "tasks": 3,
+    "states": 4,
+    "weights": [
+      [
+        0.6501616400904879,
+        0.05609902557045579,
+        0.8462046941767902,
+        0.6516718249292979
+      ],
+      [
+        0.266166571595049,
+        0.8670230208659594,
+        0.9206200579534267,
+        0.6909086054979489
+      ],
+      [
+        0.06640095602856004,
+        0.6098185024916436,
+        0.7668997149860679,
+        0.6195872820613967
+      ]
+    ],
+    "state_probabilities": [
+      0.6925508470578539,
+      0.08576328196938512,
+      0.13296058323400944,
+      0.08872528773875163
+    ],
+    "normalized_allowances": [
+      0.08249482270151262,
+      0.24971332731964088,
+      0.08008170819662937
+    ],
+    "unrestricted_rate": 0.5650815765926674,
+    "formula_rate": 0.5650815765309907,
+    "reduced_rate": 0.5975329713174294,
+    "absolute_discrepancy": 6.167677479851363e-11,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.5650815765926674,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.5650815766114384,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 2.220446049250313e-16,
+    "formula_errors": [
+      0.10249789490169463,
+      0.22294343236659594,
+      0.01764303582705868,
+      0.04123006335234659
+    ],
+    "constant_profile_in_hull": false,
+    "hull_coefficients": null,
+    "active_tasks": [
+      2
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  },
+  {
+    "name": "random_4_3",
+    "tasks": 4,
+    "states": 3,
+    "weights": [
+      [
+        0.630454241831607,
+        0.4357000231902927,
+        0.9433966198208436
+      ],
+      [
+        0.5786394415907261,
+        0.7870223056004038,
+        0.27873828378358023
+      ],
+      [
+        0.7930836463518309,
+        0.4550901309099236,
+        0.7819348529053531
+      ],
+      [
+        0.8684220939556008,
+        0.5921619599018219,
+        0.5635735575533477
+      ]
+    ],
+    "state_probabilities": [
+      0.1925761947953316,
+      0.6988604230680926,
+      0.10856338213657576
+    ],
+    "normalized_allowances": [
+      0.14655874220943016,
+      0.15203421062316153,
+      0.231525235152879,
+      0.3439380173456602
+    ],
+    "unrestricted_rate": 0.3916239712202171,
+    "formula_rate": 0.39162397094691626,
+    "reduced_rate": 0.3988388701809017,
+    "absolute_discrepancy": 2.733008264144132e-10,
+    "unrestricted_starts": {
+      "spread": {
+        "rate": 0.3916239712202171,
+        "success": true,
+        "message": "Optimization terminated successfully"
+      },
+      "common_prediction": {
+        "rate": 0.3916239709706764,
+        "success": false,
+        "message": "More than 3*n iterations in LSQ subproblem"
+      }
+    },
+    "formula_success": true,
+    "max_risk_violation": 0.0,
+    "max_normalization_violation": 1.1546319456101628e-14,
+    "formula_errors": [
+      0.1443296721801898,
+      0.15515748971901122,
+      0.12363676780676247
+    ],
+    "constant_profile_in_hull": true,
+    "hull_coefficients": [
+      0.42357830589836004,
+      0.5524834796055307,
+      0.0,
+      0.023938214496109323
+    ],
+    "active_tasks": [
+      0
+    ],
+    "constant_profile_in_active_hull": false,
+    "active_hull_coefficients": null
+  }
+]

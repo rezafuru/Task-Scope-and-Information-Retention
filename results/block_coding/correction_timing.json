@@ -1,0 +1,9 @@
+{
+  "corrected_configuration_written_utc": "2026-09-07T15:17:18.087539+00:00",
+  "rescoring_completed_utc": "2026-09-07T15:24:51.545199+00:00",
+  "rescoring_runtime": {
+    "elapsed_seconds": 453.42975759506226,
+    "identical_reference_encoders": 624
+  },
+  "configuration_started_unix_describes_original_fitting": true
+}

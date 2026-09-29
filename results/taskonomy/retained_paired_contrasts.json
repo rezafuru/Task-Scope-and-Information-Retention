@@ -1,0 +1,122 @@
+{
+  "interval_scope": "paired image resampling within the observed buildings, conditional on the same three fixed fits per setting",
+  "rows": [
+    {
+      "left": "D_lambda30",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.013642414207803086,
+          "interval_95": {
+            "lower": 0.01238272404306343,
+            "upper": 0.014922945290144162,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.4009012006201471,
+          "interval_95": {
+            "lower": 0.3789033340875478,
+            "upper": 0.4231966153095739,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.009380804254137419,
+          "interval_95": {
+            "lower": 0.009177884322306108,
+            "upper": 0.00959362930688814,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.024738769531249996,
+        "interval_95": {
+          "lower": -0.02504815673828126,
+          "upper": -0.024441774495442707,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda30",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.012566484093588473,
+          "interval_95": {
+            "lower": 0.01145890845020183,
+            "upper": 0.01373341178588446,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.16893470079032713,
+          "interval_95": {
+            "lower": 0.15871038530192966,
+            "upper": 0.17878896462257157,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03116782660783307,
+          "interval_95": {
+            "lower": 0.03068959615522256,
+            "upper": 0.031650350443249826,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.02083162434895833,
+        "interval_95": {
+          "lower": -0.020983013916015633,
+          "upper": -0.02067159830729166,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0010759301142146127,
+          "interval_95": {
+            "lower": -0.001996128874964709,
+            "upper": -0.00018392989511882985,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.23196649982981998,
+          "interval_95": {
+            "lower": -0.25055864144318785,
+            "upper": -0.2140273196391864,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.021787022353695652,
+          "interval_95": {
+            "lower": 0.02143249359975208,
+            "upper": 0.02213546135388858,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.003907145182291665,
+        "interval_95": {
+          "lower": 0.003700435384114539,
+          "upper": 0.004123579915364559,
+          "defined_replicates": 2000
+        }
+      }
+    }
+  ]
+}

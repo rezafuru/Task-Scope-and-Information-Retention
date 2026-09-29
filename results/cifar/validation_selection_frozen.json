@@ -1,0 +1,1699 @@
+{
+  "split": "validation",
+  "test_used": false,
+  "codec_seeds": [
+    17,
+    23
+  ],
+  "readout_seeds": [
+    17,
+    23
+  ],
+  "coarse_allowance": 0.03,
+  "fine_allowance": 0.05,
+  "fine_allowances": [
+    0.03,
+    0.05,
+    0.1
+  ],
+  "selected_groups": [
+    "teacher_17/early/beta_0.05",
+    "teacher_17/late/beta_0.02",
+    "teacher_23/early/beta_0.03",
+    "teacher_23/late/beta_0.02",
+    "teacher_29/early/beta_0.05",
+    "teacher_29/late/beta_0.02"
+  ],
+  "selected_groups_by_fine_allowance": {
+    "0.03": [],
+    "0.05": [
+      "teacher_17/early/beta_0.05",
+      "teacher_17/late/beta_0.02",
+      "teacher_23/early/beta_0.03",
+      "teacher_23/late/beta_0.02",
+      "teacher_29/early/beta_0.05",
+      "teacher_29/late/beta_0.02"
+    ],
+    "0.1": [
+      "teacher_17/early/beta_0.05",
+      "teacher_17/late/beta_0.02",
+      "teacher_23/early/beta_0.03",
+      "teacher_23/late/beta_0.02",
+      "teacher_29/early/beta_0.05",
+      "teacher_29/late/beta_0.02"
+    ]
+  },
+  "interval_scope": "Paired images resampled within fine classes, conditional on each teacher and the retained codec/readout fits. Teacher variation is descriptive.",
+  "selection_rule": "Lowest mean actual rate among paired codec groups meeting both mean validation accuracy allowances.",
+  "selection_source": null,
+  "selection_sha256": null,
+  "analysis_sha256": "875953e583a13bad1d6465a61178170cddf03ec3da6073168950c125803d0f4b",
+  "references": [
+    {
+      "teacher_seed": 17,
+      "coarse_accuracy": 0.8568,
+      "early_fine_accuracy": 0.6337,
+      "late_fine_accuracy": 0.4597,
+      "early_readout_seed_values": [
+        0.6338,
+        0.6336
+      ],
+      "late_readout_seed_values": [
+        0.4584,
+        0.461
+      ]
+    },
+    {
+      "teacher_seed": 23,
+      "coarse_accuracy": 0.8586,
+      "early_fine_accuracy": 0.6281,
+      "late_fine_accuracy": 0.46409999999999996,
+      "early_readout_seed_values": [
+        0.624,
+        0.6322
+      ],
+      "late_readout_seed_values": [
+        0.4644,
+        0.4638
+      ]
+    },
+    {
+      "teacher_seed": 29,
+      "coarse_accuracy": 0.8616,
+      "early_fine_accuracy": 0.6243,
+      "late_fine_accuracy": 0.45389999999999997,
+      "early_readout_seed_values": [
+        0.623,
+        0.6256
+      ],
+      "late_readout_seed_values": [
+        0.4538,
+        0.454
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.03,
+      "run": "codec_early_early_b0.03_s17_controlled",
+      "actual_bpp": 2.74316875,
+      "coarse_accuracy": 0.8364,
+      "fine_accuracy": 0.5944,
+      "fine_readout_seed_values": [
+        0.5998,
+        0.589
+      ],
+      "logit_fine_accuracy": 0.4535,
+      "fixed_fine_accuracy": 0.5778,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0204,
+      "fine_drop": 0.0393,
+      "early_mse": null,
+      "late_mse": null,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 303.1256,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.03,
+      "run": "codec_early_early_b0.03_s23_controlled",
+      "actual_bpp": 2.7418375,
+      "coarse_accuracy": 0.8386,
+      "fine_accuracy": 0.5997,
+      "fine_readout_seed_values": [
+        0.6054,
+        0.594
+      ],
+      "logit_fine_accuracy": 0.4485,
+      "fixed_fine_accuracy": 0.5792,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0182,
+      "fine_drop": 0.034,
+      "early_mse": null,
+      "late_mse": null,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 302.9552,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s17_extension",
+      "actual_bpp": 2.32863125,
+      "coarse_accuracy": 0.8306,
+      "fine_accuracy": 0.5928,
+      "fine_readout_seed_values": [
+        0.5912,
+        0.5944
+      ],
+      "logit_fine_accuracy": 0.44889999999999997,
+      "fixed_fine_accuracy": 0.575,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0262,
+      "fine_drop": 0.0409,
+      "early_mse": 0.00459776793627534,
+      "late_mse": 0.21598029939148575,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 250.0648,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s23_extension",
+      "actual_bpp": 2.34301875,
+      "coarse_accuracy": 0.831,
+      "fine_accuracy": 0.5938,
+      "fine_readout_seed_values": [
+        0.5968,
+        0.5908
+      ],
+      "logit_fine_accuracy": 0.4469,
+      "fixed_fine_accuracy": 0.5764,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0258,
+      "fine_drop": 0.0399,
+      "early_mse": 0.004601070083142258,
+      "late_mse": 0.20730888234712183,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 251.9064,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s17_extension",
+      "actual_bpp": 1.96811875,
+      "coarse_accuracy": 0.8236,
+      "fine_accuracy": 0.5854,
+      "fine_readout_seed_values": [
+        0.5858,
+        0.585
+      ],
+      "logit_fine_accuracy": 0.4425,
+      "fixed_fine_accuracy": 0.5668,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0332,
+      "fine_drop": 0.0483,
+      "early_mse": 0.004940999386343173,
+      "late_mse": 0.2819403752637282,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 203.9192,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s23_extension",
+      "actual_bpp": 1.97379375,
+      "coarse_accuracy": 0.8236,
+      "fine_accuracy": 0.5834,
+      "fine_readout_seed_values": [
+        0.5854,
+        0.5814
+      ],
+      "logit_fine_accuracy": 0.4394,
+      "fixed_fine_accuracy": 0.5622,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0332,
+      "fine_drop": 0.0503,
+      "early_mse": 0.00495179043977987,
+      "late_mse": 0.277284234467335,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 204.6456,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.1,
+      "run": "codec_early_early_b0.1_s17_extension",
+      "actual_bpp": 1.7344,
+      "coarse_accuracy": 0.8214,
+      "fine_accuracy": 0.5874,
+      "fine_readout_seed_values": [
+        0.588,
+        0.5868
+      ],
+      "logit_fine_accuracy": 0.44179999999999997,
+      "fixed_fine_accuracy": 0.559,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0354,
+      "fine_drop": 0.0463,
+      "early_mse": 0.0052523477537790315,
+      "late_mse": 0.33859961629036817,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 174.0032,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.001,
+      "run": "codec_early_late_b0.001_s17_controlled",
+      "actual_bpp": 2.71801875,
+      "coarse_accuracy": 0.8434,
+      "fine_accuracy": 0.6029,
+      "fine_readout_seed_values": [
+        0.603,
+        0.6028
+      ],
+      "logit_fine_accuracy": 0.4482,
+      "fixed_fine_accuracy": 0.408,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0134,
+      "fine_drop": 0.0308,
+      "early_mse": null,
+      "late_mse": null,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 299.9064,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.001,
+      "run": "codec_early_late_b0.001_s23_controlled",
+      "actual_bpp": 2.71960625,
+      "coarse_accuracy": 0.8414,
+      "fine_accuracy": 0.6026,
+      "fine_readout_seed_values": [
+        0.605,
+        0.6002
+      ],
+      "logit_fine_accuracy": 0.45230000000000004,
+      "fixed_fine_accuracy": 0.403,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0154,
+      "fine_drop": 0.0311,
+      "early_mse": null,
+      "late_mse": null,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0008,
+      "mean_main_bytes": 300.1088,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.003,
+      "run": "codec_early_late_b0.003_s17_extension",
+      "actual_bpp": 2.430025,
+      "coarse_accuracy": 0.8416,
+      "fine_accuracy": 0.6056,
+      "fine_readout_seed_values": [
+        0.6078,
+        0.6034
+      ],
+      "logit_fine_accuracy": 0.4465,
+      "fixed_fine_accuracy": 0.4372,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0152,
+      "fine_drop": 0.0281,
+      "early_mse": 0.019178091461583974,
+      "late_mse": 0.14324005926992744,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 263.0432,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.01,
+      "run": "codec_early_late_b0.01_s17_controlled",
+      "actual_bpp": 1.98974375,
+      "coarse_accuracy": 0.8406,
+      "fine_accuracy": 0.6067,
+      "fine_readout_seed_values": [
+        0.6066,
+        0.6068
+      ],
+      "logit_fine_accuracy": 0.4498,
+      "fixed_fine_accuracy": 0.4696,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0162,
+      "fine_drop": 0.027,
+      "early_mse": null,
+      "late_mse": null,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 206.6872,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.01,
+      "run": "codec_early_late_b0.01_s23_controlled",
+      "actual_bpp": 2.00318125,
+      "coarse_accuracy": 0.839,
+      "fine_accuracy": 0.5982,
+      "fine_readout_seed_values": [
+        0.6004,
+        0.596
+      ],
+      "logit_fine_accuracy": 0.45230000000000004,
+      "fixed_fine_accuracy": 0.47,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0178,
+      "fine_drop": 0.0355,
+      "early_mse": null,
+      "late_mse": null,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 208.4072,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s17_extension",
+      "actual_bpp": 1.7121125,
+      "coarse_accuracy": 0.8422,
+      "fine_accuracy": 0.6026,
+      "fine_readout_seed_values": [
+        0.6042,
+        0.601
+      ],
+      "logit_fine_accuracy": 0.4497,
+      "fixed_fine_accuracy": 0.4974,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0146,
+      "fine_drop": 0.0311,
+      "early_mse": 0.012925137770362199,
+      "late_mse": 0.19407358734577895,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 171.1504,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s23_extension",
+      "actual_bpp": 1.7289125,
+      "coarse_accuracy": 0.8388,
+      "fine_accuracy": 0.5992,
+      "fine_readout_seed_values": [
+        0.5982,
+        0.6002
+      ],
+      "logit_fine_accuracy": 0.4494,
+      "fixed_fine_accuracy": 0.5002,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.018,
+      "fine_drop": 0.0345,
+      "early_mse": 0.013061240069102496,
+      "late_mse": 0.19312255088791253,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 173.3008,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.1,
+      "run": "codec_early_late_b0.1_s17_warm",
+      "actual_bpp": 1.02233125,
+      "coarse_accuracy": 0.813,
+      "fine_accuracy": 0.5798,
+      "fine_readout_seed_values": [
+        0.5784,
+        0.5812
+      ],
+      "logit_fine_accuracy": 0.44,
+      "fixed_fine_accuracy": 0.434,
+      "reference_coarse_accuracy": 0.8568,
+      "reference_fine_accuracy": 0.6337,
+      "coarse_drop": 0.0438,
+      "fine_drop": 0.0539,
+      "early_mse": 0.013841946569085122,
+      "late_mse": 0.4186457050797157,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 82.8584,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.03,
+      "run": "codec_early_early_b0.03_s17_extension",
+      "actual_bpp": 2.75910625,
+      "coarse_accuracy": 0.8298,
+      "fine_accuracy": 0.5926,
+      "fine_readout_seed_values": [
+        0.592,
+        0.5932
+      ],
+      "logit_fine_accuracy": 0.4465,
+      "fixed_fine_accuracy": 0.5722,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0288,
+      "fine_drop": 0.0355,
+      "early_mse": 0.004586445708735846,
+      "late_mse": 0.1860606461053714,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 305.1656,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.03,
+      "run": "codec_early_early_b0.03_s23_extension",
+      "actual_bpp": 2.74771875,
+      "coarse_accuracy": 0.829,
+      "fine_accuracy": 0.5893,
+      "fine_readout_seed_values": [
+        0.5866,
+        0.592
+      ],
+      "logit_fine_accuracy": 0.4444,
+      "fixed_fine_accuracy": 0.5706,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0296,
+      "fine_drop": 0.0388,
+      "early_mse": 0.004614935485739261,
+      "late_mse": 0.18375612769003957,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 303.708,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s17_extension",
+      "actual_bpp": 2.321475,
+      "coarse_accuracy": 0.822,
+      "fine_accuracy": 0.5861,
+      "fine_readout_seed_values": [
+        0.585,
+        0.5872
+      ],
+      "logit_fine_accuracy": 0.4384,
+      "fixed_fine_accuracy": 0.5618,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0366,
+      "fine_drop": 0.042,
+      "early_mse": 0.004884666281635873,
+      "late_mse": 0.24152609645377845,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 249.1488,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s23_extension",
+      "actual_bpp": 2.34821875,
+      "coarse_accuracy": 0.8252,
+      "fine_accuracy": 0.5865,
+      "fine_readout_seed_values": [
+        0.5832,
+        0.5898
+      ],
+      "logit_fine_accuracy": 0.436,
+      "fixed_fine_accuracy": 0.5658,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0334,
+      "fine_drop": 0.0416,
+      "early_mse": 0.004874529733508826,
+      "late_mse": 0.2326332523028925,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 252.572,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s17_extension",
+      "actual_bpp": 1.97495625,
+      "coarse_accuracy": 0.8206,
+      "fine_accuracy": 0.5809,
+      "fine_readout_seed_values": [
+        0.5794,
+        0.5824
+      ],
+      "logit_fine_accuracy": 0.4383,
+      "fixed_fine_accuracy": 0.56,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.038,
+      "fine_drop": 0.0472,
+      "early_mse": 0.005240689620492048,
+      "late_mse": 0.30726070770718156,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 204.7944,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.01,
+      "run": "codec_early_late_b0.01_s17_extension",
+      "actual_bpp": 2.04033125,
+      "coarse_accuracy": 0.837,
+      "fine_accuracy": 0.5889,
+      "fine_readout_seed_values": [
+        0.5922,
+        0.5856
+      ],
+      "logit_fine_accuracy": 0.4526,
+      "fixed_fine_accuracy": 0.4702,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0216,
+      "fine_drop": 0.0392,
+      "early_mse": 0.01590390696031973,
+      "late_mse": 0.1791131673049927,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 213.1624,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.01,
+      "run": "codec_early_late_b0.01_s23_extension",
+      "actual_bpp": 2.03201875,
+      "coarse_accuracy": 0.8406,
+      "fine_accuracy": 0.5908,
+      "fine_readout_seed_values": [
+        0.5912,
+        0.5904
+      ],
+      "logit_fine_accuracy": 0.45499999999999996,
+      "fixed_fine_accuracy": 0.4838,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.018,
+      "fine_drop": 0.0373,
+      "early_mse": 0.015964689479023218,
+      "late_mse": 0.16869388101454824,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 212.0984,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s17_extension",
+      "actual_bpp": 1.75380625,
+      "coarse_accuracy": 0.834,
+      "fine_accuracy": 0.5904,
+      "fine_readout_seed_values": [
+        0.5934,
+        0.5874
+      ],
+      "logit_fine_accuracy": 0.4477,
+      "fixed_fine_accuracy": 0.493,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0246,
+      "fine_drop": 0.0377,
+      "early_mse": 0.013554811558872462,
+      "late_mse": 0.2090372117361799,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 176.4872,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s23_extension",
+      "actual_bpp": 1.7503125,
+      "coarse_accuracy": 0.8362,
+      "fine_accuracy": 0.5944,
+      "fine_readout_seed_values": [
+        0.5968,
+        0.592
+      ],
+      "logit_fine_accuracy": 0.4538,
+      "fixed_fine_accuracy": 0.4998,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0224,
+      "fine_drop": 0.0337,
+      "early_mse": 0.013434315576124936,
+      "late_mse": 0.19666209631700068,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 176.04,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.1,
+      "run": "codec_early_late_b0.1_s17_extension",
+      "actual_bpp": 1.05146875,
+      "coarse_accuracy": 0.8142,
+      "fine_accuracy": 0.5721,
+      "fine_readout_seed_values": [
+        0.576,
+        0.5682
+      ],
+      "logit_fine_accuracy": 0.4417,
+      "fixed_fine_accuracy": 0.4406,
+      "reference_coarse_accuracy": 0.8586,
+      "reference_fine_accuracy": 0.6281,
+      "coarse_drop": 0.0444,
+      "fine_drop": 0.056,
+      "early_mse": 0.014068994756229221,
+      "late_mse": 0.45277380897693337,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 86.588,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s17_extension",
+      "actual_bpp": 2.350175,
+      "coarse_accuracy": 0.8334,
+      "fine_accuracy": 0.5928,
+      "fine_readout_seed_values": [
+        0.5972,
+        0.5884
+      ],
+      "logit_fine_accuracy": 0.4416,
+      "fixed_fine_accuracy": 0.5636,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0282,
+      "fine_drop": 0.0315,
+      "early_mse": 0.004320722725684754,
+      "late_mse": 0.22332070866554976,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 252.8224,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s23_extension",
+      "actual_bpp": 2.32914375,
+      "coarse_accuracy": 0.8312,
+      "fine_accuracy": 0.5911,
+      "fine_readout_seed_values": [
+        0.5894,
+        0.5928
+      ],
+      "logit_fine_accuracy": 0.44279999999999997,
+      "fixed_fine_accuracy": 0.5718,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0304,
+      "fine_drop": 0.0332,
+      "early_mse": 0.0043196408858988435,
+      "late_mse": 0.22182256889611482,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 250.1304,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s17_extension",
+      "actual_bpp": 1.958925,
+      "coarse_accuracy": 0.8208,
+      "fine_accuracy": 0.5849,
+      "fine_readout_seed_values": [
+        0.589,
+        0.5808
+      ],
+      "logit_fine_accuracy": 0.43979999999999997,
+      "fixed_fine_accuracy": 0.5594,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0408,
+      "fine_drop": 0.0394,
+      "early_mse": 0.004677836499013938,
+      "late_mse": 0.29626161806993184,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 202.7424,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s23_extension",
+      "actual_bpp": 1.99059375,
+      "coarse_accuracy": 0.8194,
+      "fine_accuracy": 0.5832,
+      "fine_readout_seed_values": [
+        0.5848,
+        0.5816
+      ],
+      "logit_fine_accuracy": 0.4377,
+      "fixed_fine_accuracy": 0.5598,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0422,
+      "fine_drop": 0.0411,
+      "early_mse": 0.0046110749162733555,
+      "late_mse": 0.28256486473843456,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 206.796,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.01,
+      "run": "codec_early_late_b0.01_s17_extension",
+      "actual_bpp": 2.0175125,
+      "coarse_accuracy": 0.8426,
+      "fine_accuracy": 0.5971,
+      "fine_readout_seed_values": [
+        0.5996,
+        0.5946
+      ],
+      "logit_fine_accuracy": 0.44630000000000003,
+      "fixed_fine_accuracy": 0.4872,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.019,
+      "fine_drop": 0.0272,
+      "early_mse": 0.014046235421020537,
+      "late_mse": 0.164289805855304,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 210.2416,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.01,
+      "run": "codec_early_late_b0.01_s23_extension",
+      "actual_bpp": 2.01855,
+      "coarse_accuracy": 0.8424,
+      "fine_accuracy": 0.5885,
+      "fine_readout_seed_values": [
+        0.5926,
+        0.5844
+      ],
+      "logit_fine_accuracy": 0.4407,
+      "fixed_fine_accuracy": 0.5,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0192,
+      "fine_drop": 0.0358,
+      "early_mse": 0.013894862339738757,
+      "late_mse": 0.1634283362290915,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 210.3744,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s17_extension",
+      "actual_bpp": 1.7383,
+      "coarse_accuracy": 0.839,
+      "fine_accuracy": 0.5922,
+      "fine_readout_seed_values": [
+        0.5932,
+        0.5912
+      ],
+      "logit_fine_accuracy": 0.4425,
+      "fixed_fine_accuracy": 0.4946,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0226,
+      "fine_drop": 0.0321,
+      "early_mse": 0.012103005663584918,
+      "late_mse": 0.19058614645857364,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 174.5024,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s23_extension",
+      "actual_bpp": 1.73735625,
+      "coarse_accuracy": 0.841,
+      "fine_accuracy": 0.5947,
+      "fine_readout_seed_values": [
+        0.5932,
+        0.5962
+      ],
+      "logit_fine_accuracy": 0.44110000000000005,
+      "fixed_fine_accuracy": 0.5108,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0206,
+      "fine_drop": 0.0296,
+      "early_mse": 0.01197942937510088,
+      "late_mse": 0.18696155054189265,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 174.3816,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.1,
+      "run": "codec_early_late_b0.1_s17_extension",
+      "actual_bpp": 1.03673125,
+      "coarse_accuracy": 0.8132,
+      "fine_accuracy": 0.5709,
+      "fine_readout_seed_values": [
+        0.5726,
+        0.5692
+      ],
+      "logit_fine_accuracy": 0.43379999999999996,
+      "fixed_fine_accuracy": 0.4462,
+      "reference_coarse_accuracy": 0.8616,
+      "reference_fine_accuracy": 0.6243,
+      "coarse_drop": 0.0484,
+      "fine_drop": 0.0534,
+      "early_mse": 0.0128218718489632,
+      "late_mse": 0.42265090089166535,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 84.7016,
+      "point_feasible": false
+    }
+  ],
+  "groups": [
+    {
+      "key": "teacher_17/early/beta_0.03",
+      "teacher_seed": 17,
+      "objective": "early",
+      "beta": 0.03,
+      "runs": [
+        "codec_early_early_b0.03_s17_controlled",
+        "codec_early_early_b0.03_s23_controlled"
+      ],
+      "actual_bpp": 2.742503125,
+      "coarse_accuracy": 0.8375,
+      "fine_accuracy": 0.59705,
+      "fixed_fine_accuracy": 0.5785,
+      "logit_fine_accuracy": 0.451,
+      "reference_fine_accuracy": 0.6337,
+      "reference_coarse_accuracy": 0.8568,
+      "codec_mean_fine_seed_values": [
+        0.5944,
+        0.5997
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5998,
+          0.589
+        ],
+        [
+          0.6054,
+          0.594
+        ]
+      ],
+      "coarse_drop": 0.0193,
+      "fine_drop": 0.03665,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_17/early/beta_0.05",
+      "teacher_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "runs": [
+        "codec_early_early_b0.05_s17_extension",
+        "codec_early_early_b0.05_s23_extension"
+      ],
+      "actual_bpp": 2.335825,
+      "coarse_accuracy": 0.8308,
+      "fine_accuracy": 0.5933,
+      "fixed_fine_accuracy": 0.5757,
+      "logit_fine_accuracy": 0.44789999999999996,
+      "reference_fine_accuracy": 0.6337,
+      "reference_coarse_accuracy": 0.8568,
+      "codec_mean_fine_seed_values": [
+        0.5928,
+        0.5938
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5912,
+          0.5944
+        ],
+        [
+          0.5968,
+          0.5908
+        ]
+      ],
+      "coarse_drop": 0.026,
+      "fine_drop": 0.0404,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "key": "teacher_17/early/beta_0.075",
+      "teacher_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "runs": [
+        "codec_early_early_b0.075_s17_extension",
+        "codec_early_early_b0.075_s23_extension"
+      ],
+      "actual_bpp": 1.97095625,
+      "coarse_accuracy": 0.8236,
+      "fine_accuracy": 0.5844,
+      "fixed_fine_accuracy": 0.5645,
+      "logit_fine_accuracy": 0.44095,
+      "reference_fine_accuracy": 0.6337,
+      "reference_coarse_accuracy": 0.8568,
+      "codec_mean_fine_seed_values": [
+        0.5854,
+        0.5834
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5858,
+          0.585
+        ],
+        [
+          0.5854,
+          0.5814
+        ]
+      ],
+      "coarse_drop": 0.0332,
+      "fine_drop": 0.0493,
+      "individual_fit_feasible": [
+        false,
+        false
+      ],
+      "point_feasible": false,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": false,
+        "0.1": false
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_17/late/beta_0.001",
+      "teacher_seed": 17,
+      "objective": "late",
+      "beta": 0.001,
+      "runs": [
+        "codec_early_late_b0.001_s17_controlled",
+        "codec_early_late_b0.001_s23_controlled"
+      ],
+      "actual_bpp": 2.7188125000000003,
+      "coarse_accuracy": 0.8424,
+      "fine_accuracy": 0.60275,
+      "fixed_fine_accuracy": 0.40549999999999997,
+      "logit_fine_accuracy": 0.45025000000000004,
+      "reference_fine_accuracy": 0.6337,
+      "reference_coarse_accuracy": 0.8568,
+      "codec_mean_fine_seed_values": [
+        0.6029,
+        0.6026
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.603,
+          0.6028
+        ],
+        [
+          0.605,
+          0.6002
+        ]
+      ],
+      "coarse_drop": 0.0144,
+      "fine_drop": 0.03095,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_17/late/beta_0.01",
+      "teacher_seed": 17,
+      "objective": "late",
+      "beta": 0.01,
+      "runs": [
+        "codec_early_late_b0.01_s17_controlled",
+        "codec_early_late_b0.01_s23_controlled"
+      ],
+      "actual_bpp": 1.9964624999999998,
+      "coarse_accuracy": 0.8398,
+      "fine_accuracy": 0.60245,
+      "fixed_fine_accuracy": 0.4698,
+      "logit_fine_accuracy": 0.45105,
+      "reference_fine_accuracy": 0.6337,
+      "reference_coarse_accuracy": 0.8568,
+      "codec_mean_fine_seed_values": [
+        0.6067,
+        0.5982
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.6066,
+          0.6068
+        ],
+        [
+          0.6004,
+          0.596
+        ]
+      ],
+      "coarse_drop": 0.017,
+      "fine_drop": 0.03125,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_17/late/beta_0.02",
+      "teacher_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "runs": [
+        "codec_early_late_b0.02_s17_extension",
+        "codec_early_late_b0.02_s23_extension"
+      ],
+      "actual_bpp": 1.7205125,
+      "coarse_accuracy": 0.8405,
+      "fine_accuracy": 0.6009,
+      "fixed_fine_accuracy": 0.4988,
+      "logit_fine_accuracy": 0.44955,
+      "reference_fine_accuracy": 0.6337,
+      "reference_coarse_accuracy": 0.8568,
+      "codec_mean_fine_seed_values": [
+        0.6026,
+        0.5992
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.6042,
+          0.601
+        ],
+        [
+          0.5982,
+          0.6002
+        ]
+      ],
+      "coarse_drop": 0.0163,
+      "fine_drop": 0.0328,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "key": "teacher_23/early/beta_0.03",
+      "teacher_seed": 23,
+      "objective": "early",
+      "beta": 0.03,
+      "runs": [
+        "codec_early_early_b0.03_s17_extension",
+        "codec_early_early_b0.03_s23_extension"
+      ],
+      "actual_bpp": 2.7534125,
+      "coarse_accuracy": 0.8294,
+      "fine_accuracy": 0.59095,
+      "fixed_fine_accuracy": 0.5714,
+      "logit_fine_accuracy": 0.44545,
+      "reference_fine_accuracy": 0.6281,
+      "reference_coarse_accuracy": 0.8586,
+      "codec_mean_fine_seed_values": [
+        0.5926,
+        0.5893
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.592,
+          0.5932
+        ],
+        [
+          0.5866,
+          0.592
+        ]
+      ],
+      "coarse_drop": 0.0292,
+      "fine_drop": 0.03715,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "key": "teacher_23/early/beta_0.05",
+      "teacher_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "runs": [
+        "codec_early_early_b0.05_s17_extension",
+        "codec_early_early_b0.05_s23_extension"
+      ],
+      "actual_bpp": 2.334846875,
+      "coarse_accuracy": 0.8236,
+      "fine_accuracy": 0.5863,
+      "fixed_fine_accuracy": 0.5638,
+      "logit_fine_accuracy": 0.43720000000000003,
+      "reference_fine_accuracy": 0.6281,
+      "reference_coarse_accuracy": 0.8586,
+      "codec_mean_fine_seed_values": [
+        0.5861,
+        0.5865
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.585,
+          0.5872
+        ],
+        [
+          0.5832,
+          0.5898
+        ]
+      ],
+      "coarse_drop": 0.035,
+      "fine_drop": 0.0418,
+      "individual_fit_feasible": [
+        false,
+        false
+      ],
+      "point_feasible": false,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": false,
+        "0.1": false
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_23/late/beta_0.01",
+      "teacher_seed": 23,
+      "objective": "late",
+      "beta": 0.01,
+      "runs": [
+        "codec_early_late_b0.01_s17_extension",
+        "codec_early_late_b0.01_s23_extension"
+      ],
+      "actual_bpp": 2.036175,
+      "coarse_accuracy": 0.8388,
+      "fine_accuracy": 0.58985,
+      "fixed_fine_accuracy": 0.477,
+      "logit_fine_accuracy": 0.4538,
+      "reference_fine_accuracy": 0.6281,
+      "reference_coarse_accuracy": 0.8586,
+      "codec_mean_fine_seed_values": [
+        0.5889,
+        0.5908
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5922,
+          0.5856
+        ],
+        [
+          0.5912,
+          0.5904
+        ]
+      ],
+      "coarse_drop": 0.0198,
+      "fine_drop": 0.03825,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_23/late/beta_0.02",
+      "teacher_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "runs": [
+        "codec_early_late_b0.02_s17_extension",
+        "codec_early_late_b0.02_s23_extension"
+      ],
+      "actual_bpp": 1.752059375,
+      "coarse_accuracy": 0.8351,
+      "fine_accuracy": 0.5924,
+      "fixed_fine_accuracy": 0.4964,
+      "logit_fine_accuracy": 0.45075,
+      "reference_fine_accuracy": 0.6281,
+      "reference_coarse_accuracy": 0.8586,
+      "codec_mean_fine_seed_values": [
+        0.5904,
+        0.5944
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5934,
+          0.5874
+        ],
+        [
+          0.5968,
+          0.592
+        ]
+      ],
+      "coarse_drop": 0.0235,
+      "fine_drop": 0.0357,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "key": "teacher_29/early/beta_0.05",
+      "teacher_seed": 29,
+      "objective": "early",
+      "beta": 0.05,
+      "runs": [
+        "codec_early_early_b0.05_s17_extension",
+        "codec_early_early_b0.05_s23_extension"
+      ],
+      "actual_bpp": 2.339659375,
+      "coarse_accuracy": 0.8323,
+      "fine_accuracy": 0.59195,
+      "fixed_fine_accuracy": 0.5677,
+      "logit_fine_accuracy": 0.4422,
+      "reference_fine_accuracy": 0.6243,
+      "reference_coarse_accuracy": 0.8616,
+      "codec_mean_fine_seed_values": [
+        0.5928,
+        0.5911
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5972,
+          0.5884
+        ],
+        [
+          0.5894,
+          0.5928
+        ]
+      ],
+      "coarse_drop": 0.0293,
+      "fine_drop": 0.03235,
+      "individual_fit_feasible": [
+        true,
+        false
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ]
+    },
+    {
+      "key": "teacher_29/early/beta_0.075",
+      "teacher_seed": 29,
+      "objective": "early",
+      "beta": 0.075,
+      "runs": [
+        "codec_early_early_b0.075_s17_extension",
+        "codec_early_early_b0.075_s23_extension"
+      ],
+      "actual_bpp": 1.974759375,
+      "coarse_accuracy": 0.8201,
+      "fine_accuracy": 0.58405,
+      "fixed_fine_accuracy": 0.5596,
+      "logit_fine_accuracy": 0.43875,
+      "reference_fine_accuracy": 0.6243,
+      "reference_coarse_accuracy": 0.8616,
+      "codec_mean_fine_seed_values": [
+        0.5849,
+        0.5832
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.589,
+          0.5808
+        ],
+        [
+          0.5848,
+          0.5816
+        ]
+      ],
+      "coarse_drop": 0.0415,
+      "fine_drop": 0.04025,
+      "individual_fit_feasible": [
+        false,
+        false
+      ],
+      "point_feasible": false,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": false,
+        "0.1": false
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_29/late/beta_0.01",
+      "teacher_seed": 29,
+      "objective": "late",
+      "beta": 0.01,
+      "runs": [
+        "codec_early_late_b0.01_s17_extension",
+        "codec_early_late_b0.01_s23_extension"
+      ],
+      "actual_bpp": 2.01803125,
+      "coarse_accuracy": 0.8425,
+      "fine_accuracy": 0.5928,
+      "fixed_fine_accuracy": 0.49360000000000004,
+      "logit_fine_accuracy": 0.4435,
+      "reference_fine_accuracy": 0.6243,
+      "reference_coarse_accuracy": 0.8616,
+      "codec_mean_fine_seed_values": [
+        0.5971,
+        0.5885
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5996,
+          0.5946
+        ],
+        [
+          0.5926,
+          0.5844
+        ]
+      ],
+      "coarse_drop": 0.0191,
+      "fine_drop": 0.0315,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": []
+    },
+    {
+      "key": "teacher_29/late/beta_0.02",
+      "teacher_seed": 29,
+      "objective": "late",
+      "beta": 0.02,
+      "runs": [
+        "codec_early_late_b0.02_s17_extension",
+        "codec_early_late_b0.02_s23_extension"
+      ],
+      "actual_bpp": 1.737828125,
+      "coarse_accuracy": 0.84,
+      "fine_accuracy": 0.59345,
+      "fixed_fine_accuracy": 0.5027,
+      "logit_fine_accuracy": 0.4418,
+      "reference_fine_accuracy": 0.6243,
+      "reference_coarse_accuracy": 0.8616,
+      "codec_mean_fine_seed_values": [
+        0.5922,
+        0.5947
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5932,
+          0.5912
+        ],
+        [
+          0.5932,
+          0.5962
+        ]
+      ],
+      "coarse_drop": 0.0216,
+      "fine_drop": 0.03085,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "teacher_seed": 17,
+      "early_group": "teacher_17/early/beta_0.05",
+      "late_group": "teacher_17/late/beta_0.02",
+      "late_minus_early_fine_accuracy": 0.0076,
+      "relative_rate_saving": 0.2634240578810484,
+      "both_assessed_mean_requirements_met": true,
+      "scope": "Two fixed validation-selected candidate groups, without an interpolated rate frontier."
+    },
+    {
+      "teacher_seed": 23,
+      "early_group": "teacher_23/early/beta_0.03",
+      "late_group": "teacher_23/late/beta_0.02",
+      "late_minus_early_fine_accuracy": 0.00145,
+      "relative_rate_saving": 0.36367711884797504,
+      "both_assessed_mean_requirements_met": true,
+      "scope": "Two fixed validation-selected candidate groups, without an interpolated rate frontier."
+    },
+    {
+      "teacher_seed": 29,
+      "early_group": "teacher_29/early/beta_0.05",
+      "late_group": "teacher_29/late/beta_0.02",
+      "late_minus_early_fine_accuracy": 0.0015,
+      "relative_rate_saving": 0.2572302859257023,
+      "both_assessed_mean_requirements_met": true,
+      "scope": "Two fixed validation-selected candidate groups, without an interpolated rate frontier."
+    }
+  ],
+  "missing": [],
+  "unreplicated_development_groups": [
+    {
+      "key": "teacher_17/early/beta_0.1",
+      "codec_seeds": [
+        17
+      ]
+    },
+    {
+      "key": "teacher_17/late/beta_0.003",
+      "codec_seeds": [
+        17
+      ]
+    },
+    {
+      "key": "teacher_17/late/beta_0.1",
+      "codec_seeds": [
+        17
+      ]
+    },
+    {
+      "key": "teacher_23/early/beta_0.075",
+      "codec_seeds": [
+        17
+      ]
+    },
+    {
+      "key": "teacher_23/late/beta_0.1",
+      "codec_seeds": [
+        17
+      ]
+    },
+    {
+      "key": "teacher_29/late/beta_0.1",
+      "codec_seeds": [
+        17
+      ]
+    }
+  ]
+}

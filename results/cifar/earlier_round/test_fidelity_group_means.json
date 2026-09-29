@@ -1,0 +1,144 @@
+{
+  "split": "test",
+  "groups": {
+    "preservation_early": {
+      "runs": [
+        "codec_early_early_b0.03_s17_controlled",
+        "codec_early_early_b0.03_s23_controlled",
+        "codec_early_early_b0.03_s29_controlled"
+      ],
+      "metrics": {
+        "early_normalized_mse": {
+          "mean": 0.31927872390818324,
+          "seed_values": [
+            0.318538615791585,
+            0.31966221404180667,
+            0.319635341891158
+          ],
+          "seed_sd": 0.0006410932430708151
+        },
+        "late_normalized_mse": {
+          "mean": 0.028070195205707308,
+          "seed_values": [
+            0.02808216289976255,
+            0.027709872539869684,
+            0.02841855017748969
+          ],
+          "seed_sd": 0.00035449036346763826
+        }
+      }
+    },
+    "preservation_late_rate_match": {
+      "runs": [
+        "codec_early_late_b0.001_s17_controlled",
+        "codec_early_late_b0.001_s23_controlled",
+        "codec_early_late_b0.001_s29_controlled"
+      ],
+      "metrics": {
+        "early_normalized_mse": {
+          "mean": 1.6512498770879058,
+          "seed_values": [
+            1.6355051646215428,
+            1.6708310024217379,
+            1.6474134642204368
+          ],
+          "seed_sd": 0.017972680708193862
+        },
+        "late_normalized_mse": {
+          "mean": 0.023329901943275957,
+          "seed_values": [
+            0.022894581995532643,
+            0.023365647174723825,
+            0.023729476659571404
+          ],
+          "seed_sd": 0.0004185935572707074
+        }
+      }
+    },
+    "preservation_late_efficient": {
+      "runs": [
+        "codec_early_late_b0.01_s17_controlled",
+        "codec_early_late_b0.01_s23_controlled",
+        "codec_early_late_b0.01_s29_controlled"
+      ],
+      "metrics": {
+        "early_normalized_mse": {
+          "mean": 1.1114871491838074,
+          "seed_values": [
+            1.105032396813776,
+            1.1285946880345488,
+            1.1008343627030976
+          ],
+          "seed_sd": 0.014963515186807589
+        },
+        "late_normalized_mse": {
+          "mean": 0.02824695551799556,
+          "seed_values": [
+            0.028424505855963917,
+            0.027785868015679473,
+            0.028530492682343294
+          ],
+          "seed_sd": 0.00040281455464712227
+        }
+      }
+    },
+    "observation_early": {
+      "runs": [
+        "codec_early_late_b0.001_s17_pressure",
+        "codec_early_late_b0.001_s23_observation",
+        "codec_early_late_b0.001_s29_observation"
+      ],
+      "metrics": {
+        "early_normalized_mse": {
+          "mean": 2.1347826631615514,
+          "seed_values": [
+            2.2416569367691115,
+            2.036636084282228,
+            2.1260549684333148
+          ],
+          "seed_sd": 0.10278870064391359
+        },
+        "late_normalized_mse": {
+          "mean": 0.043226888267100805,
+          "seed_values": [
+            0.04661255788721426,
+            0.04061243855441134,
+            0.04245566835967682
+          ],
+          "seed_sd": 0.0030735066473287715
+        }
+      }
+    },
+    "observation_late": {
+      "runs": [
+        "codec_late_late_b0.001_s17_observation",
+        "codec_late_late_b0.001_s23_observation",
+        "codec_late_late_b0.001_s29_observation"
+      ],
+      "metrics": {
+        "early_normalized_mse": {
+          "mean": 2.6701967842185494,
+          "seed_values": [
+            2.6856932149975337,
+            2.8932607826826082,
+            2.431636354975507
+          ],
+          "seed_sd": 0.23120203846234377
+        },
+        "late_normalized_mse": {
+          "mean": 0.002987373421474102,
+          "seed_values": [
+            0.0029092640641187307,
+            0.0029959613044879038,
+            0.003056894895815671
+          ],
+          "seed_sd": 7.41891462269019e-05
+        }
+      }
+    }
+  },
+  "efficient_vs_early_ratio": {
+    "early_normalized_mse": 3.4812440227099004,
+    "late_normalized_mse": 1.0062970816908432
+  }
+}

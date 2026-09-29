@@ -1,0 +1,1351 @@
+{
+  "scope": "fixed twelve-setting base-seed pool, separate from replicated focal setting means",
+  "split": "test",
+  "readout_profile": "available",
+  "reference_source": "results/round2_task_family/reference_dse_selected/test2000/image_metrics.jsonl",
+  "rows": [
+    {
+      "setting": "D_lambda0.3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "D",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.0709638671875,
+      "losses": {
+        "depth": 0.07669203760405072,
+        "semantic": 0.8406794189489447,
+        "edge": 0.02826603429242823
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.038689360301983285,
+        "semantic": 0.18952559721004444,
+        "edge": 0.5900924236633476
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2514616827565477,
+        "semantic_object_miou": 0.04442846566414418,
+        "edge_mse": 0.02826603429242823
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_d_r03/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r03/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r03/best_validation.json",
+          "validation_step": 18000,
+          "validation_risk": 0.06997173590678722
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r03/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r03/best_validation.json",
+          "validation_step": 18000,
+          "validation_risk": 0.8962714029233902
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r03/last.pt",
+          "validation_source": "results/round2_task_family/probe_d_r03/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.02742012252099812
+        }
+      },
+      "source": "results/round2_task_family/available_primary/d_r03/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/d_r03/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07389852659056778,
+          "upper": 0.07934418628200073,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.809772478514514,
+          "upper": 0.8744183548911824,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.02782686527474525,
+          "upper": 0.028702638107056918,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0706923583984375,
+        "upper": 0.07123389892578125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.025060492553969634,
+        "semantic": 0.32230876409727494,
+        "edge": 0.5779081039188779
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "D_lambda3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "D",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.0175205078125,
+      "losses": {
+        "depth": 0.07550985364383087,
+        "semantic": 0.9265903931483627,
+        "edge": 0.036420694860920776
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.02863082793295492,
+        "semantic": 0.3076700199804915,
+        "edge": 0.7715820272737216
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2231266306854642,
+        "semantic_object_miou": 0.028447481985989245,
+        "edge_mse": 0.036420694860920776
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_d_r3/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r3/best_validation.json",
+          "validation_step": 23000,
+          "validation_risk": 0.07214100756123662
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r3/best_validation.json",
+          "validation_step": 23000,
+          "validation_risk": 1.0132680146843196
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r3/best_validation.json",
+          "validation_step": 23000,
+          "validation_risk": 0.035480817193863916
+        }
+      },
+      "source": "results/round2_task_family/available_primary/d_r3/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/d_r3/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07277957317247055,
+          "upper": 0.07830058313079645,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8955825726813171,
+          "upper": 0.9600181154754013,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.035885896786929515,
+          "upper": 0.03693777683329681,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.017425537109375,
+        "upper": 0.017612310791015624,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.014989407660881932,
+        "semantic": 0.44968514847754265,
+        "edge": 0.7565675352983422
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "D_lambda30",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "D",
+      "lambda_rate": 30.0,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.00717529296875,
+      "losses": {
+        "depth": 0.088333780471934,
+        "semantic": 1.0371536742076277,
+        "edge": 0.04183323882427067
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.13774234309387653,
+        "semantic": 0.4597161950131809,
+        "edge": 0.8920432592503807
+      },
+      "metrics": {
+        "depth_rmse_m": 1.349746251833188,
+        "semantic_object_miou": 0.008192763073096887,
+        "edge_mse": 0.04183323882427067
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_d_r30/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r30/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r30/best_validation.json",
+          "validation_step": 23000,
+          "validation_risk": 0.08282276396080851
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r30/last.pt",
+          "validation_source": "results/round2_task_family/probe_d_r30/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 1.1692670873999595
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_d_r30/best.pt",
+          "validation_source": "results/round2_task_family/probe_d_r30/best_validation.json",
+          "validation_step": 23000,
+          "validation_risk": 0.04052590950392187
+        }
+      },
+      "source": "results/round2_task_family/available_primary/d_r30/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/d_r30/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.0853193365444662,
+          "upper": 0.09118899357601767,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.0036930536174216,
+          "upper": 1.0733827620307914,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.04125028478060849,
+          "upper": 0.04241867595277726,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.007163330078125,
+        "upper": 0.007187255859375,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.12423708830489386,
+        "semantic": 0.6136124129252543,
+        "edge": 0.8751502793238488
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "DE_lambda0.3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DE",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.132766357421875,
+      "losses": {
+        "depth": 0.074192451805342,
+        "semantic": 0.7896010057693348,
+        "edge": 0.002988130868405278
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.017421803380639502,
+        "semantic": 0.11928277087300712,
+        "edge": 0.02750902316562308
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2005376832837964,
+        "semantic_object_miou": 0.05905412410156014,
+        "edge_mse": 0.002988130868405278
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_de_r03/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r03/last.pt",
+          "validation_source": "results/round2_task_family/probe_de_r03/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.06989470799267292
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r03/best.pt",
+          "validation_source": "results/round2_task_family/probe_de_r03/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.8443177535794676
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r03/last.pt",
+          "validation_source": "results/round2_task_family/probe_de_r03/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.002769033950637095
+        }
+      },
+      "source": "results/round2_task_family/available_primary/de_r03/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/de_r03/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07164536281583714,
+          "upper": 0.07673834985297871,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.7603469098452827,
+          "upper": 0.8199656034957851,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.002937177105316914,
+          "upper": 0.0030421957527321866,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.13206173095703125,
+        "upper": 0.1334392333984375,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.0037663948302359817,
+        "semantic": 0.2465770703139189,
+        "edge": 0.024097701355942042
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": true,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DE_lambda3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DE",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.031422607421875,
+      "losses": {
+        "depth": 0.07702921888628043,
+        "semantic": 0.8763155727609993,
+        "edge": 0.007575584832804452
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.04155824446524614,
+        "semantic": 0.2385322911873614,
+        "edge": 0.12960710494188926
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2597201120299641,
+        "semantic_object_miou": 0.03670734189731421,
+        "edge_mse": 0.007575584832804452
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_de_r3/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_de_r3/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.06929539657384157
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_de_r3/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.9364140452221036
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r3/last.pt",
+          "validation_source": "results/round2_task_family/probe_de_r3/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.0069458463267656045
+        }
+      },
+      "source": "results/round2_task_family/available_primary/de_r3/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/de_r3/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07428618018470005,
+          "upper": 0.07977684058079612,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8454602234999415,
+          "upper": 0.9099447524854448,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.007449622916344196,
+          "upper": 0.0077004396510219515,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.031234857177734377,
+        "upper": 0.03160181884765625,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.02793295693511733,
+        "semantic": 0.3751449060232427,
+        "edge": 0.12460365250806142
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DS_lambda0.3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DS",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.124156005859375,
+      "losses": {
+        "depth": 0.07606675551063381,
+        "semantic": 0.664527190040797,
+        "edge": 0.024213946179515916
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.03336918984793813,
+        "semantic": -0.05271823249875389,
+        "edge": 0.4999094100075491
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2284608617831156,
+        "semantic_object_miou": 0.13032995951002715,
+        "edge_mse": 0.024213946179515916
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_ds_r03/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_ds_r03/best.pt",
+          "validation_source": "results/round2_task_family/probe_ds_r03/best_validation.json",
+          "validation_step": 5500,
+          "validation_risk": 0.07014624583534897
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/codec_ds_r03/best.pt",
+          "validation_source": "results/round2_task_family/codec_ds_r03/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.6891082953475416
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_ds_r03/last.pt",
+          "validation_source": "results/round2_task_family/probe_ds_r03/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.023112122429534792
+        }
+      },
+      "source": "results/round2_task_family/available_primary/ds_r03/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/ds_r03/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07339104896518403,
+          "upper": 0.0788317132026539,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6299908392499318,
+          "upper": 0.7014627858849359,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.023837640906280284,
+          "upper": 0.024591291227872715,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.12324777221679686,
+        "upper": 0.1250610595703125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.019733682804530868,
+        "semantic": 0.0611356808219937,
+        "edge": 0.4891314157818476
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DS_lambda3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DS",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.03345556640625,
+      "losses": {
+        "depth": 0.07687883985997178,
+        "semantic": 0.6644403569446876,
+        "edge": 0.032628283027857835
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.04027875467799909,
+        "semantic": -0.052837645019829446,
+        "edge": 0.6871783522796662
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2568112956714725,
+        "semantic_object_miou": 0.1345125408084034,
+        "edge_mse": 0.032628283027857835
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_ds_r3/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.07004834003187715
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.7339926457889379
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_ds_r3/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.03141428892395925
+        }
+      },
+      "source": "results/round2_task_family/available_primary/ds_r3/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/ds_r3/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07428892447894322,
+          "upper": 0.07963507575586554,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6279112921886961,
+          "upper": 0.7014048838162678,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.032150789618899396,
+          "upper": 0.03309953231625713,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.03315623779296875,
+        "upper": 0.033758575439453126,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.0266518704113138,
+        "semantic": 0.06100693724842789,
+        "edge": 0.673480062072338
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "DSE_lambda0.3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DSE",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.19187841796875,
+      "losses": {
+        "depth": 0.07777181925741024,
+        "semantic": 0.6256778759032022,
+        "edge": 0.004248200165293383
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.047876609560364256,
+        "semantic": -0.10614365150471126,
+        "edge": 0.055553044776702844
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2476159668455973,
+        "semantic_object_miou": 0.1384196915719855,
+        "edge_mse": 0.004248200165293383
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_dse_r03_pilot/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_dse_r03/best.pt",
+          "validation_source": "results/round2_task_family/probe_dse_r03/best_validation.json",
+          "validation_step": 15500,
+          "validation_risk": 0.0697946762740612
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/codec_dse_r03_pilot/best.pt",
+          "validation_source": "results/round2_task_family/codec_dse_r03_pilot/best_validation.json",
+          "validation_step": 14000,
+          "validation_risk": 0.6694353348556906
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_dse_r03/last.pt",
+          "validation_source": "results/round2_task_family/probe_dse_r03/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.0039002862767665647
+        }
+      },
+      "source": "results/round2_task_family/available_primary/dse_r03/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/dse_r03/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07511892573853837,
+          "upper": 0.08037597203829792,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.5901760743277613,
+          "upper": 0.6633634261764121,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.00417599375036134,
+          "upper": 0.004324008031732319,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.19042105102539064,
+        "upper": 0.19338285522460938,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.03425920702050662,
+        "semantic": 0.0035355288435802087,
+        "edge": 0.05170440088560329
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DSE_lambda1",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DSE",
+      "lambda_rate": 1.0,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.0940966796875,
+      "losses": {
+        "depth": 0.07364167731325143,
+        "semantic": 0.6229737911892589,
+        "edge": 0.005427986488168245
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753181047644466
+      },
+      "fixed_validation_excess": {
+        "depth": 0.012735575819492547,
+        "semantic": -0.10986229782001972,
+        "edge": 0.08181029365727534
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2079981577428114,
+        "semantic_object_miou": 0.14413947609639316,
+        "edge_mse": 0.005427986488168245
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_dse_r1/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_dse_r1/best.pt",
+          "validation_source": "results/round2_task_family/probe_dse_r1/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.0668275608252734
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/codec_dse_r1/best.pt",
+          "validation_source": "results/round2_task_family/codec_dse_r1/best_validation.json",
+          "validation_step": 21500,
+          "validation_risk": 0.6853951980434358
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_dse_r1/last.pt",
+          "validation_source": "results/round2_task_family/probe_dse_r1/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.004978737136290874
+        }
+      },
+      "source": "results/round2_task_family/available_primary/dse_r1/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/dse_r1/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07104498282991117,
+          "upper": 0.07629083043026039,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.5885760584077565,
+          "upper": 0.6595354128189036,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0053386872466766365,
+          "upper": 0.005522166203268353,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.09330614624023438,
+        "upper": 0.09491434936523438,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": -0.0009256808986208006,
+        "semantic": -0.0004736974180210378,
+        "edge": 0.07755219084862026
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DSE_lambda3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DSE",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.05094580078125,
+      "losses": {
+        "depth": 0.07675871143082623,
+        "semantic": 0.6532695636381395,
+        "edge": 0.007704579061828554
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.0392566500532871,
+        "semantic": -0.06819967460206464,
+        "edge": 0.13247799224577836
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2654974959756284,
+        "semantic_object_miou": 0.12036111992115942,
+        "edge_mse": 0.007704579061828554
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_dse_r3/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_dse_r3/best.pt",
+          "validation_source": "results/round2_task_family/probe_dse_r3/best_validation.json",
+          "validation_step": 17500,
+          "validation_risk": 0.06943564063496888
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/codec_dse_r3/best.pt",
+          "validation_source": "results/round2_task_family/codec_dse_r3/best_validation.json",
+          "validation_step": 23500,
+          "validation_risk": 0.6712768840808422
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_dse_r3/last.pt",
+          "validation_source": "results/round2_task_family/probe_dse_r3/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.007063046820810996
+        }
+      },
+      "source": "results/round2_task_family/available_primary/dse_r3/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/dse_r3/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07404172451147752,
+          "upper": 0.07946941970412444,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6201779899791465,
+          "upper": 0.6914937127974932,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.007577524870166962,
+          "upper": 0.007833064158250636,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0504252197265625,
+        "upper": 0.051476806640625,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.025628490253311056,
+        "semantic": 0.04444449833643803,
+        "edge": 0.12742977082593748
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "RGB_lambda0.3",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "RGB",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads plus reconstructed-RGB frozen-reference route",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.182718017578125,
+      "losses": {
+        "depth": 0.07754924977757037,
+        "semantic": 0.6709326453519753,
+        "edge": 0.0005457901710469741
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.04598289217571053,
+        "semantic": -0.043909476372156704,
+        "edge": -0.026847555053914427
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2109529613593115,
+        "semantic_object_miou": 0.12618217577004157,
+        "edge_mse": 0.0005457901710469741
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_rgb_r03/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "rgb_reference",
+          "checkpoint": "results/round2_task_family/reference_dse_extended/best.pt",
+          "validation_source": "results/round2_task_family/rgb_reconstruction_reference_witness/evaluation.json",
+          "validation_step": 18000,
+          "validation_risk": 0.07651814458519221
+        },
+        "semantic": {
+          "kind": "rgb_reference",
+          "checkpoint": "results/round2_task_family/reference_dse_extended/best.pt",
+          "validation_source": "results/round2_task_family/rgb_reconstruction_reference_witness/evaluation.json",
+          "validation_step": 18000,
+          "validation_risk": 0.7701181643507443
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_rgb_r03/best.pt",
+          "validation_source": "results/round2_task_family/probe_rgb_r03/best_validation.json",
+          "validation_step": 23500,
+          "validation_risk": 0.0005091242718044669
+        }
+      },
+      "source": "results/round2_task_family/available_primary/rgb_r03/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/rgb_r03/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": true,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07492107346449048,
+          "upper": 0.08017950129748788,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6346040126664666,
+          "upper": 0.7091523852899597,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0005382145695302825,
+          "upper": 0.0005531669202486228,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.18067030639648438,
+        "upper": 0.18470572509765623,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": 0.032363126375273686,
+        "semantic": 0.07063276481446928,
+        "edge": -0.029411233388796365
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DE_lambda1",
+      "readout_profile": "available_validation_selected_heads",
+      "preservation_family": "DE",
+      "lambda_rate": 1,
+      "encoder_seed": 20260905,
+      "readout_policy": "native plus retained fresh width-48 best and last heads",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.063859619140625,
+      "losses": {
+        "depth": 0.07250163302361033,
+        "semantic": 0.8218348410988692,
+        "edge": 0.004021062038842501
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.003035585991049646,
+        "semantic": 0.1636106102925173,
+        "edge": 0.05049787317414109
+      },
+      "metrics": {
+        "depth_rmse_m": 1.1954745488479506,
+        "semantic_object_miou": 0.04852058237881166,
+        "edge_mse": 0.004021062038842501
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_de_r1/best.pt",
+      "selected_heads": {
+        "depth": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r1/last.pt",
+          "validation_source": "results/round2_task_family/probe_de_r1/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.06719963381066918
+        },
+        "semantic": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r1/best.pt",
+          "validation_source": "results/round2_task_family/probe_de_r1/best_validation.json",
+          "validation_step": 20000,
+          "validation_risk": 0.8808474116753787
+        },
+        "edge": {
+          "kind": "latent",
+          "checkpoint": "results/round2_task_family/probe_de_r1/last.pt",
+          "validation_source": "results/round2_task_family/probe_de_r1/validation.jsonl",
+          "validation_step": 24000,
+          "validation_risk": 0.0036816376438364388
+        }
+      },
+      "source": "results/round2_task_family/available_primary/de_r1/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/available_primary/de_r1/test2000/coded_rates.jsonl",
+      "extra_decoder_computation": false,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.06999441385227836,
+          "upper": 0.07500617515170598,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.7913034195859218,
+          "upper": 0.853990805670491,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.003957659372904254,
+          "upper": 0.004088607504897573,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.06339085693359375,
+        "upper": 0.064287158203125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": -0.01063777580872271,
+        "semantic": 0.2943687457924731,
+        "edge": 0.04672806027945921
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": true,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    }
+  ],
+  "fixed_baselines": [
+    {
+      "setting": "Fixed_spatial_prior",
+      "readout_profile": "fixed_spatial_prior",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.0,
+      "losses": {
+        "depth": 0.16744558820361272,
+        "semantic": 1.1506043719854206,
+        "edge": 0.04513854260090738
+      },
+      "constant_losses": {
+        "depth": 0.19113430943772255,
+        "semantic": 1.2977588105797768,
+        "edge": 0.04753183402121067
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.1626465587315266,
+          "upper": 0.1727224554391345,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.1072366212376392,
+          "upper": 1.198545791956596,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.044596015495620665,
+          "upper": 0.04569443091237917,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "defined_replicates": 2000
+      },
+      "metrics": {
+        "depth_rmse_m": 1.7695264963975892,
+        "semantic_object_miou": 0.0,
+        "edge_mse": 0.04513854260090738
+      },
+      "normalized_excess": {
+        "depth": 0.7981945759053835,
+        "semantic": 0.7818207218522368,
+        "edge": 0.9475657634890561
+      },
+      "fixed_validation_excess": {
+        "depth": 0.8108598151778768,
+        "semantic": 0.6157331337892353,
+        "edge": 0.9656058885217254
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "source": "results/round2_task_family/spatial_prior/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/spatial_prior/test2000/image_metrics.jsonl"
+    }
+  ],
+  "normalization_definitions": {
+    "normalized_excess": "(current-split codec risk - current-split reference risk) / (current-split constant risk - current-split reference risk), descriptive",
+    "fixed_validation_excess": "(current-split codec risk - fixed validation reference risk) / (fixed validation constant risk - fixed validation reference risk), alpha is the fixed requirement"
+  },
+  "interval_scope": "fixed codec/readout seeds, paired image resampling conditional on the observed buildings"
+}

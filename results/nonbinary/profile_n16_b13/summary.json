@@ -1,0 +1,248 @@
+{
+  "selected": {
+    "full": {
+      "risks": [
+        0.2510185241699219,
+        0.49745864868163914
+      ],
+      "risk_se": [
+        0.00039023148168415605,
+        9.020005721672886e-05
+      ],
+      "prediction_frequency": [
+        0.3103485107421875,
+        0.3123455047607422,
+        0.3773059844970703
+      ],
+      "state_count": [
+        91545,
+        92023,
+        91285,
+        91941,
+        157494
+      ],
+      "state_error": [
+        0.43359003768638377,
+        0.12468621974941048,
+        0.4306403023497836,
+        0.12145832653549558,
+        0.1902358185073717
+      ],
+      "transmitted_rate": 0.813232421875,
+      "message_bytes": 53296,
+      "source_symbols": 524288,
+      "packet_count": 1,
+      "framing_bytes": 48,
+      "risk_upper_99": [
+        0.25202376046674024,
+        0.49769100402902944
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "name": "full_b13",
+      "access": "full",
+      "bits": 13,
+      "length": 16,
+      "condition": "expanded",
+      "seed": 17,
+      "fit_seconds": 0.9352047983556986,
+      "history": [
+        {
+          "iteration": 0,
+          "training_objective": 0.49770501295725506,
+          "occupied_codewords": 8191
+        },
+        {
+          "iteration": 1,
+          "training_objective": 0.4973730395237605,
+          "occupied_codewords": 8191
+        },
+        {
+          "iteration": 2,
+          "training_objective": 0.49731108168760935,
+          "occupied_codewords": 8191
+        },
+        {
+          "iteration": 3,
+          "training_objective": 0.49729972998301186,
+          "occupied_codewords": 8191
+        }
+      ],
+      "development": {
+        "risks": [
+          0.2504920959472656,
+          0.49755873998005473
+        ],
+        "risk_se": [
+          0.0005520548720955868,
+          0.0001270801816107696
+        ],
+        "prediction_frequency": [
+          0.31034088134765625,
+          0.31285858154296875,
+          0.376800537109375
+        ],
+        "state_count": [
+          45727,
+          45884,
+          45932,
+          46023,
+          78578
+        ],
+        "state_error": [
+          0.42970236403000417,
+          0.12612239560631155,
+          0.42933031437777586,
+          0.1217869326206462,
+          0.18967140930031307
+        ],
+        "message_bytes": 26672,
+        "header_bytes": 48,
+        "transmitted_rate": 0.81396484375,
+        "index_bits": 13,
+        "used_codewords": 6754
+      },
+      "codebook_bytes": 31572,
+      "codebook_sha256": "a95d45582f0fd73abf117fc9fbad39d6eb1abbe1c9709a800c3bb653ad434d82",
+      "assessment": {
+        "risks": [
+          0.2510185241699219,
+          0.49745864868163914
+        ],
+        "risk_se": [
+          0.00039023148168415605,
+          9.020005721672886e-05
+        ],
+        "prediction_frequency": [
+          0.3103485107421875,
+          0.3123455047607422,
+          0.3773059844970703
+        ],
+        "state_count": [
+          91545,
+          92023,
+          91285,
+          91941,
+          157494
+        ],
+        "state_error": [
+          0.43359003768638377,
+          0.12468621974941048,
+          0.4306403023497836,
+          0.12145832653549558,
+          0.1902358185073717
+        ],
+        "message_bytes": 53296,
+        "header_bytes": 48,
+        "transmitted_rate": 0.813232421875,
+        "index_bits": 13,
+        "used_codewords": 7854
+      }
+    },
+    {
+      "name": "reduced_b13",
+      "access": "reduced",
+      "bits": 13,
+      "length": 16,
+      "condition": "expanded",
+      "seed": 17,
+      "fit_seconds": 0.05558297224342823,
+      "history": [
+        {
+          "iteration": 0,
+          "training_objective": 0.5168622374534607,
+          "occupied_codewords": 8189
+        },
+        {
+          "iteration": 1,
+          "training_objective": 0.5162996888160706,
+          "occupied_codewords": 8189
+        },
+        {
+          "iteration": 2,
+          "training_objective": 0.5162077903747558,
+          "occupied_codewords": 8189
+        },
+        {
+          "iteration": 3,
+          "training_objective": 0.5161949276924134,
+          "occupied_codewords": 8189
+        }
+      ],
+      "development": {
+        "risks": [
+          0.20544815063476562,
+          0.5166614039738958
+        ],
+        "risk_se": [
+          0.0003151752621882862,
+          0.00019887723337637137
+        ],
+        "prediction_frequency": [
+          0.34136962890625,
+          0.34771728515625,
+          0.3109130859375
+        ],
+        "state_count": [
+          45727,
+          45884,
+          45932,
+          46023,
+          78578
+        ],
+        "state_error": [
+          0.20895750869289478,
+          0.2107924330921454,
+          0.20371418618827833,
+          0.20159485474653976,
+          0.2035557026139632
+        ],
+        "message_bytes": 26672,
+        "header_bytes": 48,
+        "transmitted_rate": 0.81396484375,
+        "index_bits": 13,
+        "used_codewords": 6304
+      },
+      "codebook_bytes": 31548,
+      "codebook_sha256": "88e4f0d45f3116a3f2e8f09d45fd7cd02a974fa2e1aef0881781001407ae1867",
+      "assessment": {
+        "risks": [
+          0.20566558837890625,
+          0.5166916751861518
+        ],
+        "risk_se": [
+          0.00022263155276767345,
+          0.00014078661451924365
+        ],
+        "prediction_frequency": [
+          0.3440723419189453,
+          0.3458232879638672,
+          0.3101043701171875
+        ],
+        "state_count": [
+          91545,
+          92023,
+          91285,
+          91941,
+          157494
+        ],
+        "state_error": [
+          0.20689278496914085,
+          0.2060897819023505,
+          0.20450238264775156,
+          0.20288010789528066,
+          0.20700471129058884
+        ],
+        "message_bytes": 53296,
+        "header_bytes": 48,
+        "transmitted_rate": 0.813232421875,
+        "index_bits": 13,
+        "used_codewords": 7583
+      }
+    }
+  ],
+  "elapsed_seconds": 1.7088658846914768,
+  "peak_cuda_memory_bytes": 0
+}

@@ -1,0 +1,26 @@
+{
+  "tolerances": [
+    0.35,
+    0.5119734230828843
+  ],
+  "safety_margin": 0.001,
+  "selections": {
+    "full": {
+      "names": [
+        "full_b13"
+      ],
+      "block_counts": [
+        32768
+      ],
+      "development_risks_after_rounding": [
+        0.2504920959472656,
+        0.49755873998005473
+      ],
+      "public_schedule": "Consecutive block groups in the listed order, fixed before assessment."
+    },
+    "reduced": {
+      "feasible": false,
+      "reason": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)"
+    }
+  }
+}

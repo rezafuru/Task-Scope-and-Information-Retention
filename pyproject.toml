@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskscope"
+version = "1.0.0"
+description = "Task scope and the limits of learned compression"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.11",
+    "matplotlib>=3.8",
+    "pymupdf>=1.24",
+    "pillow>=10.0",
+]
+
+[project.optional-dependencies]
+train = [
+    "torch>=2.2",
+    "torchvision>=0.17",
+    "compressai>=1.2",
+]
+notebook = [
+    "jupyter>=1.0",
+    "nbclient>=0.10",
+]
+
+[tool.setuptools.packages.find]
+include = ["taskscope*"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]
+ignore = ["E501", "B905"]

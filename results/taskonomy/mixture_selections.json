@@ -1,0 +1,425 @@
+[
+  {
+    "alpha": 0.1,
+    "family": "D",
+    "limits": {
+      "depth": 0.08389790543671698
+    },
+    "single_validation_setting": "D_lambda30",
+    "single_validation_bpp": 0.0072509765625,
+    "single_test_bpp": 0.00717529296875,
+    "single_test_losses": {
+      "depth": 0.088333780471934
+    },
+    "single_test_failed_tasks": [
+      "depth"
+    ],
+    "descriptive_test_minimum_setting": "D_lambda3",
+    "descriptive_test_minimum_bpp": 0.0175205078125,
+    "mixture_weights": {
+      "D_lambda30": 1.0
+    },
+    "mixture_validation_bpp": 0.0072509765625,
+    "mixture_validation_losses": {
+      "depth": 0.0827417961517349
+    },
+    "mixture_test_bpp": 0.00717529296875,
+    "mixture_test_losses": {
+      "depth": 0.088333780471934
+    },
+    "mixture_test_failed_tasks": [
+      "depth"
+    ],
+    "validation_rate_reduction_percent": 0.0
+  },
+  {
+    "alpha": 0.1,
+    "family": "DS",
+    "limits": {
+      "depth": 0.08389790543671698,
+      "semantic": 0.7755791705263546
+    },
+    "single_validation_setting": "DS_lambda3",
+    "single_validation_bpp": 0.0337626953125,
+    "single_test_bpp": 0.03345556640625,
+    "single_test_losses": {
+      "depth": 0.07687883985997178,
+      "semantic": 0.6644403569446876
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DS_lambda3",
+    "descriptive_test_minimum_bpp": 0.03345556640625,
+    "mixture_weights": {
+      "D_lambda30": 0.09548901386266417,
+      "DS_lambda3": 0.9045109861373358
+    },
+    "mixture_validation_bpp": 0.031231117433258196,
+    "mixture_validation_losses": {
+      "depth": 0.07125869521128718,
+      "semantic": 0.7755791705263546
+    },
+    "mixture_test_bpp": 0.030946089011661956,
+    "mixture_test_losses": {
+      "depth": 0.07797266084286343,
+      "semantic": 0.7000303840636081
+    },
+    "mixture_test_failed_tasks": [],
+    "validation_rate_reduction_percent": 7.498151009005893
+  },
+  {
+    "alpha": 0.1,
+    "family": "DE",
+    "limits": {
+      "depth": 0.08389790543671698,
+      "edge": 0.006245283336663851
+    },
+    "single_validation_setting": "DE_lambda1",
+    "single_validation_bpp": 0.0624111328125,
+    "single_test_bpp": 0.063859619140625,
+    "single_test_losses": {
+      "depth": 0.07250163302361033,
+      "edge": 0.004021062038842501
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DE_lambda1",
+    "descriptive_test_minimum_bpp": 0.063859619140625,
+    "mixture_weights": {
+      "DE_lambda3": 0.7858385407420424,
+      "DE_lambda1": 0.21416145925795751
+    },
+    "mixture_validation_bpp": 0.03790816526625715,
+    "mixture_validation_losses": {
+      "depth": 0.06884207965521341,
+      "edge": 0.0062452833366638495
+    },
+    "mixture_test_bpp": 0.03836936518552997,
+    "mixture_test_losses": {
+      "depth": 0.0760595844910153,
+      "edge": 0.006814343044283888
+    },
+    "mixture_test_failed_tasks": [
+      "edge"
+    ],
+    "validation_rate_reduction_percent": 39.2605716993736
+  },
+  {
+    "alpha": 0.1,
+    "family": "DSE",
+    "limits": {
+      "depth": 0.08389790543671698,
+      "semantic": 0.7755791705263546,
+      "edge": 0.006245283336663851
+    },
+    "single_validation_setting": "DSE_lambda1",
+    "single_validation_bpp": 0.091712890625,
+    "single_test_bpp": 0.0940966796875,
+    "single_test_losses": {
+      "depth": 0.07364167731325143,
+      "semantic": 0.6229737911892589,
+      "edge": 0.005427986488168245
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DSE_lambda1",
+    "descriptive_test_minimum_bpp": 0.0940966796875,
+    "mixture_weights": {
+      "DE_lambda3": 0.20825539912171964,
+      "DSE_lambda3": 0.5571108168348359,
+      "DE_lambda1": 0.23463378404344445
+    },
+    "mixture_validation_bpp": 0.048970571622342376,
+    "mixture_validation_losses": {
+      "depth": 0.06887192692916587,
+      "semantic": 0.7755791705263546,
+      "edge": 0.006245283336663854
+    },
+    "mixture_test_bpp": 0.04991000842417272,
+    "mixture_test_losses": {
+      "depth": 0.07581619165327254,
+      "semantic": 0.7392712081994715,
+      "edge": 0.006813437779487079
+    },
+    "mixture_test_failed_tasks": [
+      "edge"
+    ],
+    "validation_rate_reduction_percent": 46.60448352612114
+  },
+  {
+    "alpha": 0.25,
+    "family": "D",
+    "limits": {
+      "depth": 0.10152747479407118
+    },
+    "single_validation_setting": "D_lambda30",
+    "single_validation_bpp": 0.0072509765625,
+    "single_test_bpp": 0.00717529296875,
+    "single_test_losses": {
+      "depth": 0.088333780471934
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "D_lambda30",
+    "descriptive_test_minimum_bpp": 0.00717529296875,
+    "mixture_weights": {
+      "D_lambda30": 1.0
+    },
+    "mixture_validation_bpp": 0.0072509765625,
+    "mixture_validation_losses": {
+      "depth": 0.0827417961517349
+    },
+    "mixture_test_bpp": 0.00717529296875,
+    "mixture_test_losses": {
+      "depth": 0.088333780471934
+    },
+    "mixture_test_failed_tasks": [],
+    "validation_rate_reduction_percent": 0.0
+  },
+  {
+    "alpha": 0.25,
+    "family": "DS",
+    "limits": {
+      "depth": 0.10152747479407118,
+      "semantic": 0.8846545363178594
+    },
+    "single_validation_setting": "DS_lambda3",
+    "single_validation_bpp": 0.0337626953125,
+    "single_test_bpp": 0.03345556640625,
+    "single_test_losses": {
+      "depth": 0.07687883985997178,
+      "semantic": 0.6644403569446876
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DE_lambda3",
+    "descriptive_test_minimum_bpp": 0.031422607421875,
+    "mixture_weights": {
+      "D_lambda30": 0.34610400565324073,
+      "DS_lambda3": 0.6538959943467593
+    },
+    "mixture_validation_bpp": 0.02458688325637287,
+    "mixture_validation_losses": {
+      "depth": 0.07444034506632134,
+      "semantic": 0.8846545363178594
+    },
+    "mixture_test_bpp": 0.024359858499868787,
+    "mixture_test_losses": {
+      "depth": 0.0808434406902919,
+      "semantic": 0.7934379290096983
+    },
+    "mixture_test_failed_tasks": [],
+    "validation_rate_reduction_percent": 27.17736830901044
+  },
+  {
+    "alpha": 0.25,
+    "family": "DE",
+    "limits": {
+      "depth": 0.10152747479407118,
+      "edge": 0.012985058293139444
+    },
+    "single_validation_setting": "DE_lambda3",
+    "single_validation_bpp": 0.03123046875,
+    "single_test_bpp": 0.031422607421875,
+    "single_test_losses": {
+      "depth": 0.07702921888628043,
+      "edge": 0.007575584832804452
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DE_lambda3",
+    "descriptive_test_minimum_bpp": 0.031422607421875,
+    "mixture_weights": {
+      "D_lambda30": 0.1799221683668636,
+      "DE_lambda3": 0.8200778316331364
+    },
+    "mixture_validation_bpp": 0.026916026519288736,
+    "mixture_validation_losses": {
+      "depth": 0.0717129686740207,
+      "edge": 0.012985058293139442
+    },
+    "mixture_test_bpp": 0.027059978028395555,
+    "mixture_test_losses": {
+      "depth": 0.07906316011920797,
+      "edge": 0.013739296222110793
+    },
+    "mixture_test_failed_tasks": [
+      "edge"
+    ],
+    "validation_rate_reduction_percent": 13.814849419163021
+  },
+  {
+    "alpha": 0.25,
+    "family": "DSE",
+    "limits": {
+      "depth": 0.10152747479407118,
+      "semantic": 0.8846545363178594,
+      "edge": 0.012985058293139444
+    },
+    "single_validation_setting": "DSE_lambda3",
+    "single_validation_bpp": 0.04994140625,
+    "single_test_bpp": 0.05094580078125,
+    "single_test_losses": {
+      "depth": 0.07675871143082623,
+      "semantic": 0.6532695636381395,
+      "edge": 0.007704579061828554
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DE_lambda3",
+    "descriptive_test_minimum_bpp": 0.031422607421875,
+    "mixture_weights": {
+      "DE_lambda3": 0.7459854945183148,
+      "DS_lambda3": 0.24683193885781068,
+      "DSE_lambda3": 0.007182566623874585
+    },
+    "mixture_validation_bpp": 0.03198989569723803,
+    "mixture_validation_losses": {
+      "depth": 0.069480123884553,
+      "semantic": 0.8846545363178594,
+      "edge": 0.01298505829313944
+    },
+    "mixture_test_bpp": 0.032064633266621186,
+    "mixture_test_losses": {
+      "depth": 0.07699015760183206,
+      "semantic": 0.8224159596244277,
+      "edge": 0.013760317411553114
+    },
+    "mixture_test_failed_tasks": [
+      "edge"
+    ],
+    "validation_rate_reduction_percent": 35.94514432152573
+  },
+  {
+    "alpha": 0.5,
+    "family": "D",
+    "limits": {
+      "depth": 0.1309100903896615
+    },
+    "single_validation_setting": "D_lambda30",
+    "single_validation_bpp": 0.0072509765625,
+    "single_test_bpp": 0.00717529296875,
+    "single_test_losses": {
+      "depth": 0.088333780471934
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "D_lambda30",
+    "descriptive_test_minimum_bpp": 0.00717529296875,
+    "mixture_weights": {
+      "D_lambda30": 1.0
+    },
+    "mixture_validation_bpp": 0.0072509765625,
+    "mixture_validation_losses": {
+      "depth": 0.0827417961517349
+    },
+    "mixture_test_bpp": 0.00717529296875,
+    "mixture_test_losses": {
+      "depth": 0.088333780471934
+    },
+    "mixture_test_failed_tasks": [],
+    "validation_rate_reduction_percent": 0.0
+  },
+  {
+    "alpha": 0.5,
+    "family": "DS",
+    "limits": {
+      "depth": 0.1309100903896615,
+      "semantic": 1.066446812637034
+    },
+    "single_validation_setting": "D_lambda3",
+    "single_validation_bpp": 0.01744921875,
+    "single_test_bpp": 0.0175205078125,
+    "single_test_losses": {
+      "depth": 0.07550985364383087,
+      "semantic": 0.9265903931483627
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "D_lambda30",
+    "descriptive_test_minimum_bpp": 0.00717529296875,
+    "mixture_weights": {
+      "D_lambda30": 0.7637956586375346,
+      "DS_lambda3": 0.23620434136246538
+    },
+    "mixture_validation_bpp": 0.013513159628230674,
+    "mixture_validation_losses": {
+      "depth": 0.07974309482471162,
+      "semantic": 1.066446812637034
+    },
+    "mixture_test_bpp": 0.013382807646880181,
+    "mixture_test_losses": {
+      "depth": 0.08562807376933931,
+      "semantic": 0.9491171705865153
+    },
+    "mixture_test_failed_tasks": [],
+    "validation_rate_reduction_percent": 22.55722263651102
+  },
+  {
+    "alpha": 0.5,
+    "family": "DE",
+    "limits": {
+      "depth": 0.1309100903896615,
+      "edge": 0.0242180165539321
+    },
+    "single_validation_setting": "DE_lambda3",
+    "single_validation_bpp": 0.03123046875,
+    "single_test_bpp": 0.031422607421875,
+    "single_test_losses": {
+      "depth": 0.07702921888628043,
+      "edge": 0.007575584832804452
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DE_lambda3",
+    "descriptive_test_minimum_bpp": 0.031422607421875,
+    "mixture_weights": {
+      "D_lambda30": 0.5144713828116266,
+      "DE_lambda3": 0.48552861718837337
+    },
+    "mixture_validation_bpp": 0.01889370624517628,
+    "mixture_validation_losses": {
+      "depth": 0.07621215817359334,
+      "edge": 0.024218016553932097
+    },
+    "mixture_test_bpp": 0.01894805802570744,
+    "mixture_test_losses": {
+      "depth": 0.08284509231733082,
+      "edge": 0.025200167453676314
+    },
+    "mixture_test_failed_tasks": [
+      "edge"
+    ],
+    "validation_rate_reduction_percent": 39.50232897104281
+  },
+  {
+    "alpha": 0.5,
+    "family": "DSE",
+    "limits": {
+      "depth": 0.1309100903896615,
+      "semantic": 1.066446812637034,
+      "edge": 0.0242180165539321
+    },
+    "single_validation_setting": "DE_lambda3",
+    "single_validation_bpp": 0.03123046875,
+    "single_test_bpp": 0.031422607421875,
+    "single_test_losses": {
+      "depth": 0.07702921888628043,
+      "semantic": 0.8763155727609993,
+      "edge": 0.007575584832804452
+    },
+    "single_test_failed_tasks": [],
+    "descriptive_test_minimum_setting": "DE_lambda3",
+    "descriptive_test_minimum_bpp": 0.031422607421875,
+    "mixture_weights": {
+      "D_lambda30": 0.5144713828116266,
+      "DE_lambda3": 0.48552861718837337
+    },
+    "mixture_validation_bpp": 0.01889370624517628,
+    "mixture_validation_losses": {
+      "depth": 0.07621215817359334,
+      "semantic": 1.056268292967938,
+      "edge": 0.024218016553932097
+    },
+    "mixture_test_bpp": 0.01894805802570744,
+    "mixture_test_losses": {
+      "depth": 0.08284509231733082,
+      "semantic": 0.9590621732210428,
+      "edge": 0.025200167453676314
+    },
+    "mixture_test_failed_tasks": [
+      "edge"
+    ],
+    "validation_rate_reduction_percent": 39.50232897104281
+  }
+]

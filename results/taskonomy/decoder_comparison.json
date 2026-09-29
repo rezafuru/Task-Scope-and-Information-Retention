@@ -1,0 +1,37 @@
+[
+  {
+    "policy": "matched_frozen_latent_heads",
+    "actual_bpp": 0.182718017578125,
+    "losses": {
+      "depth": 0.10667190936580301,
+      "semantic": 0.8301780027374626,
+      "edge": 0.0005457901748741279
+    },
+    "failed_tasks": {
+      "0.1": [
+        "depth",
+        "semantic"
+      ],
+      "0.25": [
+        "depth"
+      ],
+      "0.5": []
+    },
+    "source": "results/round2_task_family/probe_rgb_r03/coded_test2000/evaluation.json"
+  },
+  {
+    "policy": "available_validation_selected_heads",
+    "actual_bpp": 0.182718017578125,
+    "losses": {
+      "depth": 0.07754924977757037,
+      "semantic": 0.6709326453519753,
+      "edge": 0.0005457901710469741
+    },
+    "failed_tasks": {
+      "0.1": [],
+      "0.25": [],
+      "0.5": []
+    },
+    "source": "results/round2_task_family/available_primary/rgb_r03/test2000/evaluation.json"
+  }
+]

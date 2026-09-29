@@ -1,0 +1,1125 @@
+{
+  "split": "test",
+  "test_used": true,
+  "codec_seeds": [
+    17,
+    23
+  ],
+  "readout_seeds": [
+    17,
+    23
+  ],
+  "coarse_allowance": 0.03,
+  "fine_allowance": 0.05,
+  "fine_allowances": [
+    0.03,
+    0.05,
+    0.1
+  ],
+  "selected_groups": [
+    "teacher_17/early/beta_0.05",
+    "teacher_17/late/beta_0.02",
+    "teacher_23/early/beta_0.03",
+    "teacher_23/late/beta_0.02",
+    "teacher_29/early/beta_0.05",
+    "teacher_29/late/beta_0.02"
+  ],
+  "selected_groups_by_fine_allowance": {
+    "0.03": [],
+    "0.05": [
+      "teacher_17/early/beta_0.05",
+      "teacher_17/late/beta_0.02",
+      "teacher_23/early/beta_0.03",
+      "teacher_23/late/beta_0.02",
+      "teacher_29/early/beta_0.05",
+      "teacher_29/late/beta_0.02"
+    ],
+    "0.1": [
+      "teacher_17/early/beta_0.05",
+      "teacher_17/late/beta_0.02",
+      "teacher_23/early/beta_0.03",
+      "teacher_23/late/beta_0.02",
+      "teacher_29/early/beta_0.05",
+      "teacher_29/late/beta_0.02"
+    ]
+  },
+  "interval_scope": "Paired images resampled within fine classes, conditional on each teacher and the retained codec/readout fits. Teacher variation is descriptive.",
+  "selection_rule": "Lowest mean actual rate among paired codec groups meeting both mean validation accuracy allowances.",
+  "selection_source": "results/task_scope_extension/cifar/validation_selection_frozen.json",
+  "selection_sha256": "ac439745d7a709cd0eae5b1372f7e826d275f0920f036a22c1def71b8650a22c",
+  "analysis_sha256": "d664d7418132d3bf3845407b26d8ffc124dd2a5b37ddfff9e70dc06389bd2dac",
+  "references": [
+    {
+      "teacher_seed": 17,
+      "coarse_accuracy": 0.8538,
+      "early_fine_accuracy": 0.62615,
+      "late_fine_accuracy": 0.44485,
+      "early_readout_seed_values": [
+        0.6243,
+        0.628
+      ],
+      "late_readout_seed_values": [
+        0.4469,
+        0.4428
+      ]
+    },
+    {
+      "teacher_seed": 23,
+      "coarse_accuracy": 0.8527,
+      "early_fine_accuracy": 0.6248,
+      "late_fine_accuracy": 0.4506,
+      "early_readout_seed_values": [
+        0.625,
+        0.6246
+      ],
+      "late_readout_seed_values": [
+        0.4547,
+        0.4465
+      ]
+    },
+    {
+      "teacher_seed": 29,
+      "coarse_accuracy": 0.8555,
+      "early_fine_accuracy": 0.6306,
+      "late_fine_accuracy": 0.43765,
+      "early_readout_seed_values": [
+        0.6307,
+        0.6305
+      ],
+      "late_readout_seed_values": [
+        0.4367,
+        0.4386
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s17_extension",
+      "actual_bpp": 2.330775,
+      "coarse_accuracy": 0.8295,
+      "fine_accuracy": 0.59995,
+      "fine_readout_seed_values": [
+        0.5982,
+        0.6017
+      ],
+      "logit_fine_accuracy": 0.4369,
+      "fixed_fine_accuracy": 0.5752,
+      "reference_coarse_accuracy": 0.8538,
+      "reference_fine_accuracy": 0.62615,
+      "coarse_drop": 0.0243,
+      "fine_drop": 0.0262,
+      "early_mse": 0.004610617060784716,
+      "late_mse": 0.21377158447619526,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 250.3392,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s23_extension",
+      "actual_bpp": 2.34478125,
+      "coarse_accuracy": 0.8327,
+      "fine_accuracy": 0.5988,
+      "fine_readout_seed_values": [
+        0.5988,
+        0.5988
+      ],
+      "logit_fine_accuracy": 0.4404,
+      "fixed_fine_accuracy": 0.5754,
+      "reference_coarse_accuracy": 0.8538,
+      "reference_fine_accuracy": 0.62615,
+      "coarse_drop": 0.0211,
+      "fine_drop": 0.02735,
+      "early_mse": 0.004612959782825783,
+      "late_mse": 0.2055705241329409,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 252.132,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s17_extension",
+      "actual_bpp": 1.9695375,
+      "coarse_accuracy": 0.8239,
+      "fine_accuracy": 0.5919,
+      "fine_readout_seed_values": [
+        0.5915,
+        0.5923
+      ],
+      "logit_fine_accuracy": 0.42855,
+      "fixed_fine_accuracy": 0.5704,
+      "reference_coarse_accuracy": 0.8538,
+      "reference_fine_accuracy": 0.62615,
+      "coarse_drop": 0.0299,
+      "fine_drop": 0.03425,
+      "early_mse": 0.004954670777986757,
+      "late_mse": 0.2809601692048274,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 204.1008,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s23_extension",
+      "actual_bpp": 1.9752125,
+      "coarse_accuracy": 0.8256,
+      "fine_accuracy": 0.59205,
+      "fine_readout_seed_values": [
+        0.5911,
+        0.593
+      ],
+      "logit_fine_accuracy": 0.43305,
+      "fixed_fine_accuracy": 0.5677,
+      "reference_coarse_accuracy": 0.8538,
+      "reference_fine_accuracy": 0.62615,
+      "coarse_drop": 0.0282,
+      "fine_drop": 0.0341,
+      "early_mse": 0.00496423639251152,
+      "late_mse": 0.27390741993708534,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 204.8272,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s17_extension",
+      "actual_bpp": 1.71323125,
+      "coarse_accuracy": 0.837,
+      "fine_accuracy": 0.6004,
+      "fine_readout_seed_values": [
+        0.5988,
+        0.602
+      ],
+      "logit_fine_accuracy": 0.43945,
+      "fixed_fine_accuracy": 0.4962,
+      "reference_coarse_accuracy": 0.8538,
+      "reference_fine_accuracy": 0.62615,
+      "coarse_drop": 0.0168,
+      "fine_drop": 0.02575,
+      "early_mse": 0.012990141688659787,
+      "late_mse": 0.1942337952489592,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 171.2936,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 17,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s23_extension",
+      "actual_bpp": 1.73031875,
+      "coarse_accuracy": 0.8373,
+      "fine_accuracy": 0.5949,
+      "fine_readout_seed_values": [
+        0.5973,
+        0.5925
+      ],
+      "logit_fine_accuracy": 0.43725,
+      "fixed_fine_accuracy": 0.5031,
+      "reference_coarse_accuracy": 0.8538,
+      "reference_fine_accuracy": 0.62615,
+      "coarse_drop": 0.0165,
+      "fine_drop": 0.03125,
+      "early_mse": 0.013122754783881828,
+      "late_mse": 0.19282012656725012,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 173.4808,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.03,
+      "run": "codec_early_early_b0.03_s17_extension",
+      "actual_bpp": 2.760778125,
+      "coarse_accuracy": 0.8354,
+      "fine_accuracy": 0.59695,
+      "fine_readout_seed_values": [
+        0.5966,
+        0.5973
+      ],
+      "logit_fine_accuracy": 0.43625,
+      "fixed_fine_accuracy": 0.5716,
+      "reference_coarse_accuracy": 0.8527,
+      "reference_fine_accuracy": 0.6248,
+      "coarse_drop": 0.0173,
+      "fine_drop": 0.02785,
+      "early_mse": 0.004597399021906313,
+      "late_mse": 0.189656174010206,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 305.3796,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.03,
+      "run": "codec_early_early_b0.03_s23_extension",
+      "actual_bpp": 2.7495375,
+      "coarse_accuracy": 0.8352,
+      "fine_accuracy": 0.5947,
+      "fine_readout_seed_values": [
+        0.5949,
+        0.5945
+      ],
+      "logit_fine_accuracy": 0.43925000000000003,
+      "fixed_fine_accuracy": 0.5726,
+      "reference_coarse_accuracy": 0.8527,
+      "reference_fine_accuracy": 0.6248,
+      "coarse_drop": 0.0175,
+      "fine_drop": 0.0301,
+      "early_mse": 0.004627004350745119,
+      "late_mse": 0.18881871495673433,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 303.9408,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s17_extension",
+      "actual_bpp": 2.3233375,
+      "coarse_accuracy": 0.8263,
+      "fine_accuracy": 0.5931,
+      "fine_readout_seed_values": [
+        0.5907,
+        0.5955
+      ],
+      "logit_fine_accuracy": 0.43200000000000005,
+      "fixed_fine_accuracy": 0.5696,
+      "reference_coarse_accuracy": 0.8527,
+      "reference_fine_accuracy": 0.6248,
+      "coarse_drop": 0.0264,
+      "fine_drop": 0.0317,
+      "early_mse": 0.004895045052433852,
+      "late_mse": 0.24432949807778,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 249.3872,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s23_extension",
+      "actual_bpp": 2.34970625,
+      "coarse_accuracy": 0.8287,
+      "fine_accuracy": 0.5902,
+      "fine_readout_seed_values": [
+        0.5895,
+        0.5909
+      ],
+      "logit_fine_accuracy": 0.43284999999999996,
+      "fixed_fine_accuracy": 0.5667,
+      "reference_coarse_accuracy": 0.8527,
+      "reference_fine_accuracy": 0.6248,
+      "coarse_drop": 0.024,
+      "fine_drop": 0.0346,
+      "early_mse": 0.004885647920530755,
+      "late_mse": 0.23641066608419642,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 252.7624,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s17_extension",
+      "actual_bpp": 1.754825,
+      "coarse_accuracy": 0.8357,
+      "fine_accuracy": 0.58895,
+      "fine_readout_seed_values": [
+        0.5922,
+        0.5857
+      ],
+      "logit_fine_accuracy": 0.4396,
+      "fixed_fine_accuracy": 0.4973,
+      "reference_coarse_accuracy": 0.8527,
+      "reference_fine_accuracy": 0.6248,
+      "coarse_drop": 0.017,
+      "fine_drop": 0.03585,
+      "early_mse": 0.01358821018487215,
+      "late_mse": 0.2068515305268951,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 176.6176,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 23,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s23_extension",
+      "actual_bpp": 1.75101875,
+      "coarse_accuracy": 0.8354,
+      "fine_accuracy": 0.59515,
+      "fine_readout_seed_values": [
+        0.5959,
+        0.5944
+      ],
+      "logit_fine_accuracy": 0.44265,
+      "fixed_fine_accuracy": 0.5029,
+      "reference_coarse_accuracy": 0.8527,
+      "reference_fine_accuracy": 0.6248,
+      "coarse_drop": 0.0173,
+      "fine_drop": 0.02965,
+      "early_mse": 0.013478282468020917,
+      "late_mse": 0.20365858423548983,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 176.1304,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s17_extension",
+      "actual_bpp": 2.351896875,
+      "coarse_accuracy": 0.8309,
+      "fine_accuracy": 0.5939,
+      "fine_readout_seed_values": [
+        0.5931,
+        0.5947
+      ],
+      "logit_fine_accuracy": 0.4295,
+      "fixed_fine_accuracy": 0.5764,
+      "reference_coarse_accuracy": 0.8555,
+      "reference_fine_accuracy": 0.6306,
+      "coarse_drop": 0.0246,
+      "fine_drop": 0.0367,
+      "early_mse": 0.004329634987248573,
+      "late_mse": 0.2204695012266375,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 253.0428,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "run": "codec_early_early_b0.05_s23_extension",
+      "actual_bpp": 2.330075,
+      "coarse_accuracy": 0.8253,
+      "fine_accuracy": 0.5918,
+      "fine_readout_seed_values": [
+        0.5967,
+        0.5869
+      ],
+      "logit_fine_accuracy": 0.43035,
+      "fixed_fine_accuracy": 0.5707,
+      "reference_coarse_accuracy": 0.8555,
+      "reference_fine_accuracy": 0.6306,
+      "coarse_drop": 0.0302,
+      "fine_drop": 0.0388,
+      "early_mse": 0.004329476817848626,
+      "late_mse": 0.2197185849304311,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 250.2496,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s17_extension",
+      "actual_bpp": 1.960171875,
+      "coarse_accuracy": 0.8222,
+      "fine_accuracy": 0.58685,
+      "fine_readout_seed_values": [
+        0.5877,
+        0.586
+      ],
+      "logit_fine_accuracy": 0.43069999999999997,
+      "fixed_fine_accuracy": 0.5651,
+      "reference_coarse_accuracy": 0.8555,
+      "reference_fine_accuracy": 0.6306,
+      "coarse_drop": 0.0333,
+      "fine_drop": 0.04375,
+      "early_mse": 0.004686828999116551,
+      "late_mse": 0.2966746272901073,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 202.902,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "early",
+      "beta": 0.075,
+      "run": "codec_early_early_b0.075_s23_extension",
+      "actual_bpp": 1.991975,
+      "coarse_accuracy": 0.8234,
+      "fine_accuracy": 0.59275,
+      "fine_readout_seed_values": [
+        0.593,
+        0.5925
+      ],
+      "logit_fine_accuracy": 0.4251,
+      "fixed_fine_accuracy": 0.5697,
+      "reference_coarse_accuracy": 0.8555,
+      "reference_fine_accuracy": 0.6306,
+      "coarse_drop": 0.0321,
+      "fine_drop": 0.03785,
+      "early_mse": 0.004621565175871365,
+      "late_mse": 0.28267447171494364,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 206.9728,
+      "point_feasible": false
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s17_extension",
+      "actual_bpp": 1.739434375,
+      "coarse_accuracy": 0.8394,
+      "fine_accuracy": 0.59675,
+      "fine_readout_seed_values": [
+        0.5928,
+        0.6007
+      ],
+      "logit_fine_accuracy": 0.4333,
+      "fixed_fine_accuracy": 0.5038,
+      "reference_coarse_accuracy": 0.8555,
+      "reference_fine_accuracy": 0.6306,
+      "coarse_drop": 0.0161,
+      "fine_drop": 0.03385,
+      "early_mse": 0.012132991725951434,
+      "late_mse": 0.1902067144653015,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 174.6476,
+      "point_feasible": true
+    },
+    {
+      "teacher_seed": 29,
+      "codec_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "run": "codec_early_late_b0.02_s23_extension",
+      "actual_bpp": 1.738021875,
+      "coarse_accuracy": 0.8346,
+      "fine_accuracy": 0.59865,
+      "fine_readout_seed_values": [
+        0.5976,
+        0.5997
+      ],
+      "logit_fine_accuracy": 0.4383,
+      "fixed_fine_accuracy": 0.5146,
+      "reference_coarse_accuracy": 0.8555,
+      "reference_fine_accuracy": 0.6306,
+      "coarse_drop": 0.0209,
+      "fine_drop": 0.03195,
+      "early_mse": 0.012015746287629008,
+      "late_mse": 0.18697080139735714,
+      "mean_header_bytes": 40.0,
+      "mean_hyper_bytes": 8.0,
+      "mean_main_bytes": 174.4668,
+      "point_feasible": true
+    }
+  ],
+  "groups": [
+    {
+      "key": "teacher_17/early/beta_0.05",
+      "teacher_seed": 17,
+      "objective": "early",
+      "beta": 0.05,
+      "runs": [
+        "codec_early_early_b0.05_s17_extension",
+        "codec_early_early_b0.05_s23_extension"
+      ],
+      "actual_bpp": 2.337778125,
+      "coarse_accuracy": 0.8311,
+      "fine_accuracy": 0.599375,
+      "fixed_fine_accuracy": 0.5753,
+      "logit_fine_accuracy": 0.43865,
+      "reference_fine_accuracy": 0.62615,
+      "reference_coarse_accuracy": 0.8538,
+      "codec_mean_fine_seed_values": [
+        0.59995,
+        0.5988
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5982,
+          0.6017
+        ],
+        [
+          0.5988,
+          0.5988
+        ]
+      ],
+      "coarse_drop": 0.0227,
+      "fine_drop": 0.026775,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": true,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ],
+      "coarse_drop_image_ci95": [
+        0.01859875,
+        0.026949999999999998
+      ],
+      "fine_drop_image_ci95": [
+        0.021074999999999997,
+        0.032175625000000006
+      ]
+    },
+    {
+      "key": "teacher_17/early/beta_0.075",
+      "teacher_seed": 17,
+      "objective": "early",
+      "beta": 0.075,
+      "runs": [
+        "codec_early_early_b0.075_s17_extension",
+        "codec_early_early_b0.075_s23_extension"
+      ],
+      "actual_bpp": 1.972375,
+      "coarse_accuracy": 0.82475,
+      "fine_accuracy": 0.591975,
+      "fixed_fine_accuracy": 0.5690500000000001,
+      "logit_fine_accuracy": 0.43079999999999996,
+      "reference_fine_accuracy": 0.62615,
+      "reference_coarse_accuracy": 0.8538,
+      "codec_mean_fine_seed_values": [
+        0.5919,
+        0.59205
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5915,
+          0.5923
+        ],
+        [
+          0.5911,
+          0.593
+        ]
+      ],
+      "coarse_drop": 0.02905,
+      "fine_drop": 0.034175,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": [],
+      "coarse_drop_image_ci95": [
+        0.0247,
+        0.033650000000000006
+      ],
+      "fine_drop_image_ci95": [
+        0.028425000000000002,
+        0.03980125
+      ]
+    },
+    {
+      "key": "teacher_17/late/beta_0.02",
+      "teacher_seed": 17,
+      "objective": "late",
+      "beta": 0.02,
+      "runs": [
+        "codec_early_late_b0.02_s17_extension",
+        "codec_early_late_b0.02_s23_extension"
+      ],
+      "actual_bpp": 1.721775,
+      "coarse_accuracy": 0.83715,
+      "fine_accuracy": 0.59765,
+      "fixed_fine_accuracy": 0.49965,
+      "logit_fine_accuracy": 0.43835,
+      "reference_fine_accuracy": 0.62615,
+      "reference_coarse_accuracy": 0.8538,
+      "codec_mean_fine_seed_values": [
+        0.6004,
+        0.5949
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5988,
+          0.602
+        ],
+        [
+          0.5973,
+          0.5925
+        ]
+      ],
+      "coarse_drop": 0.01665,
+      "fine_drop": 0.0285,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": true,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ],
+      "coarse_drop_image_ci95": [
+        0.012548749999999997,
+        0.02070125
+      ],
+      "fine_drop_image_ci95": [
+        0.022699374999999997,
+        0.03412624999999998
+      ]
+    },
+    {
+      "key": "teacher_23/early/beta_0.03",
+      "teacher_seed": 23,
+      "objective": "early",
+      "beta": 0.03,
+      "runs": [
+        "codec_early_early_b0.03_s17_extension",
+        "codec_early_early_b0.03_s23_extension"
+      ],
+      "actual_bpp": 2.7551578125000002,
+      "coarse_accuracy": 0.8353,
+      "fine_accuracy": 0.595825,
+      "fixed_fine_accuracy": 0.5721,
+      "logit_fine_accuracy": 0.43775000000000003,
+      "reference_fine_accuracy": 0.6248,
+      "reference_coarse_accuracy": 0.8527,
+      "codec_mean_fine_seed_values": [
+        0.59695,
+        0.5947
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5966,
+          0.5973
+        ],
+        [
+          0.5949,
+          0.5945
+        ]
+      ],
+      "coarse_drop": 0.0174,
+      "fine_drop": 0.028975,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": true,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ],
+      "coarse_drop_image_ci95": [
+        0.013350000000000002,
+        0.0215
+      ],
+      "fine_drop_image_ci95": [
+        0.02372437499999999,
+        0.03435
+      ]
+    },
+    {
+      "key": "teacher_23/early/beta_0.05",
+      "teacher_seed": 23,
+      "objective": "early",
+      "beta": 0.05,
+      "runs": [
+        "codec_early_early_b0.05_s17_extension",
+        "codec_early_early_b0.05_s23_extension"
+      ],
+      "actual_bpp": 2.336521875,
+      "coarse_accuracy": 0.8275,
+      "fine_accuracy": 0.59165,
+      "fixed_fine_accuracy": 0.5681499999999999,
+      "logit_fine_accuracy": 0.432425,
+      "reference_fine_accuracy": 0.6248,
+      "reference_coarse_accuracy": 0.8527,
+      "codec_mean_fine_seed_values": [
+        0.5931,
+        0.5902
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5907,
+          0.5955
+        ],
+        [
+          0.5895,
+          0.5909
+        ]
+      ],
+      "coarse_drop": 0.0252,
+      "fine_drop": 0.03315,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": [],
+      "coarse_drop_image_ci95": [
+        0.02070000000000001,
+        0.02945
+      ],
+      "fine_drop_image_ci95": [
+        0.02755,
+        0.038750625000000004
+      ]
+    },
+    {
+      "key": "teacher_23/late/beta_0.02",
+      "teacher_seed": 23,
+      "objective": "late",
+      "beta": 0.02,
+      "runs": [
+        "codec_early_late_b0.02_s17_extension",
+        "codec_early_late_b0.02_s23_extension"
+      ],
+      "actual_bpp": 1.7529218750000002,
+      "coarse_accuracy": 0.83555,
+      "fine_accuracy": 0.59205,
+      "fixed_fine_accuracy": 0.5001,
+      "logit_fine_accuracy": 0.441125,
+      "reference_fine_accuracy": 0.6248,
+      "reference_coarse_accuracy": 0.8527,
+      "codec_mean_fine_seed_values": [
+        0.58895,
+        0.59515
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5922,
+          0.5857
+        ],
+        [
+          0.5959,
+          0.5944
+        ]
+      ],
+      "coarse_drop": 0.01715,
+      "fine_drop": 0.03275,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ],
+      "coarse_drop_image_ci95": [
+        0.01305,
+        0.021150000000000002
+      ],
+      "fine_drop_image_ci95": [
+        0.026949374999999998,
+        0.03849999999999999
+      ]
+    },
+    {
+      "key": "teacher_29/early/beta_0.05",
+      "teacher_seed": 29,
+      "objective": "early",
+      "beta": 0.05,
+      "runs": [
+        "codec_early_early_b0.05_s17_extension",
+        "codec_early_early_b0.05_s23_extension"
+      ],
+      "actual_bpp": 2.3409859375,
+      "coarse_accuracy": 0.8281,
+      "fine_accuracy": 0.59285,
+      "fixed_fine_accuracy": 0.57355,
+      "logit_fine_accuracy": 0.429925,
+      "reference_fine_accuracy": 0.6306,
+      "reference_coarse_accuracy": 0.8555,
+      "codec_mean_fine_seed_values": [
+        0.5939,
+        0.5918
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5931,
+          0.5947
+        ],
+        [
+          0.5967,
+          0.5869
+        ]
+      ],
+      "coarse_drop": 0.0274,
+      "fine_drop": 0.03775,
+      "individual_fit_feasible": [
+        true,
+        false
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ],
+      "coarse_drop_image_ci95": [
+        0.02309874999999999,
+        0.031349999999999996
+      ],
+      "fine_drop_image_ci95": [
+        0.032124999999999994,
+        0.043276250000000016
+      ]
+    },
+    {
+      "key": "teacher_29/early/beta_0.075",
+      "teacher_seed": 29,
+      "objective": "early",
+      "beta": 0.075,
+      "runs": [
+        "codec_early_early_b0.075_s17_extension",
+        "codec_early_early_b0.075_s23_extension"
+      ],
+      "actual_bpp": 1.9760734375,
+      "coarse_accuracy": 0.8228,
+      "fine_accuracy": 0.5898,
+      "fixed_fine_accuracy": 0.5674,
+      "logit_fine_accuracy": 0.42789999999999995,
+      "reference_fine_accuracy": 0.6306,
+      "reference_coarse_accuracy": 0.8555,
+      "codec_mean_fine_seed_values": [
+        0.58685,
+        0.59275
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5877,
+          0.586
+        ],
+        [
+          0.593,
+          0.5925
+        ]
+      ],
+      "coarse_drop": 0.0327,
+      "fine_drop": 0.0408,
+      "individual_fit_feasible": [
+        false,
+        false
+      ],
+      "point_feasible": false,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": false,
+        "0.1": false
+      },
+      "selected_on_validation": false,
+      "selected_fine_allowances": [],
+      "coarse_drop_image_ci95": [
+        0.02805000000000001,
+        0.03705124999999999
+      ],
+      "fine_drop_image_ci95": [
+        0.034824375,
+        0.046325624999999995
+      ]
+    },
+    {
+      "key": "teacher_29/late/beta_0.02",
+      "teacher_seed": 29,
+      "objective": "late",
+      "beta": 0.02,
+      "runs": [
+        "codec_early_late_b0.02_s17_extension",
+        "codec_early_late_b0.02_s23_extension"
+      ],
+      "actual_bpp": 1.7387281250000002,
+      "coarse_accuracy": 0.837,
+      "fine_accuracy": 0.5977,
+      "fixed_fine_accuracy": 0.5092,
+      "logit_fine_accuracy": 0.4358,
+      "reference_fine_accuracy": 0.6306,
+      "reference_coarse_accuracy": 0.8555,
+      "codec_mean_fine_seed_values": [
+        0.59675,
+        0.59865
+      ],
+      "readout_fine_seed_values": [
+        [
+          0.5928,
+          0.6007
+        ],
+        [
+          0.5976,
+          0.5997
+        ]
+      ],
+      "coarse_drop": 0.0185,
+      "fine_drop": 0.0329,
+      "individual_fit_feasible": [
+        true,
+        true
+      ],
+      "point_feasible": true,
+      "fine_allowance_feasibility": {
+        "0.03": false,
+        "0.05": true,
+        "0.1": true
+      },
+      "selected_on_validation": true,
+      "selected_fine_allowances": [
+        0.05,
+        0.1
+      ],
+      "coarse_drop_image_ci95": [
+        0.014649999999999998,
+        0.022499999999999996
+      ],
+      "fine_drop_image_ci95": [
+        0.027199375000000005,
+        0.03862500000000001
+      ]
+    }
+  ],
+  "comparisons": [
+    {
+      "teacher_seed": 17,
+      "early_group": "teacher_17/early/beta_0.05",
+      "late_group": "teacher_17/late/beta_0.02",
+      "late_minus_early_fine_accuracy": -0.001725,
+      "relative_rate_saving": 0.26349939646218556,
+      "both_assessed_mean_requirements_met": true,
+      "scope": "Two fixed validation-selected candidate groups, without an interpolated rate frontier.",
+      "fine_difference_image_ci95": [
+        -0.0064,
+        0.002800624999999998
+      ],
+      "within_one_percentage_point": true
+    },
+    {
+      "teacher_seed": 23,
+      "early_group": "teacher_23/early/beta_0.03",
+      "late_group": "teacher_23/late/beta_0.02",
+      "late_minus_early_fine_accuracy": -0.003775,
+      "relative_rate_saving": 0.3637671617040993,
+      "both_assessed_mean_requirements_met": true,
+      "scope": "Two fixed validation-selected candidate groups, without an interpolated rate frontier.",
+      "fine_difference_image_ci95": [
+        -0.008350624999999999,
+        0.0005499999999999998
+      ],
+      "within_one_percentage_point": true
+    },
+    {
+      "teacher_seed": 29,
+      "early_group": "teacher_29/early/beta_0.05",
+      "late_group": "teacher_29/late/beta_0.02",
+      "late_minus_early_fine_accuracy": 0.00485,
+      "relative_rate_saving": 0.2572667365713298,
+      "both_assessed_mean_requirements_met": true,
+      "scope": "Two fixed validation-selected candidate groups, without an interpolated rate frontier.",
+      "fine_difference_image_ci95": [
+        0.0004993749999999996,
+        0.009276249999999993
+      ],
+      "within_one_percentage_point": true
+    }
+  ],
+  "missing": [
+    "teacher_17/codec_early_early_b0.03_s17_controlled test scores",
+    "teacher_17/codec_early_early_b0.03_s23_controlled test scores",
+    "teacher_17/codec_early_early_b0.1_s17_extension test scores",
+    "teacher_17/codec_early_late_b0.001_s17_controlled test scores",
+    "teacher_17/codec_early_late_b0.001_s23_controlled test scores",
+    "teacher_17/codec_early_late_b0.003_s17_extension test scores",
+    "teacher_17/codec_early_late_b0.01_s17_controlled test scores",
+    "teacher_17/codec_early_late_b0.01_s23_controlled test scores",
+    "teacher_17/codec_early_late_b0.1_s17_warm test scores",
+    "teacher_23/codec_early_early_b0.075_s17_extension test scores",
+    "teacher_23/codec_early_late_b0.01_s17_extension test scores",
+    "teacher_23/codec_early_late_b0.01_s23_extension test scores",
+    "teacher_23/codec_early_late_b0.1_s17_extension test scores",
+    "teacher_29/codec_early_late_b0.01_s17_extension test scores",
+    "teacher_29/codec_early_late_b0.01_s23_extension test scores",
+    "teacher_29/codec_early_late_b0.1_s17_extension test scores"
+  ],
+  "unreplicated_development_groups": []
+}

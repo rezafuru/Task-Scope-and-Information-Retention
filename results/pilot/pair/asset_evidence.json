@@ -1,0 +1,617 @@
+{
+  "selected_illustration": [
+    754,
+    3092
+  ],
+  "feature_cuts": {
+    "layer3": "residual block 13",
+    "block3": "residual block 16"
+  },
+  "verified_images": [
+    {
+      "path": "assets/pilot/cub754_original.png",
+      "sha256": "2dfd5352bef7e7dc664bd07acbc354a125f731797ab4cf15866df7752b2e593a",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "original"
+    },
+    {
+      "path": "assets/pilot/cub754_layer3.png",
+      "sha256": "6fa2ff050edb207e81f2a0774b5b4eeb534414074f53b71dadd0d2ad14e46964",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "layer3"
+    },
+    {
+      "path": "assets/pilot/cub754_block3.png",
+      "sha256": "d3a4f1bfe729136e4ec8a3e4931a98808271a10a45de665793bf6e5dc8ed557d",
+      "cub_image_id": 754,
+      "split": "train",
+      "view": "block3"
+    },
+    {
+      "path": "assets/pilot/cub3092_original.png",
+      "sha256": "f71443e4dc486674ebd1fa08c841ce0e3a33121ebb675ac42f575e585f34c66d",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "original"
+    },
+    {
+      "path": "assets/pilot/cub3092_layer3.png",
+      "sha256": "4d91a245b7621c3d02432d1be16a6d8bd549fe6ffb9c0ab0321f373bacf0e967",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "layer3"
+    },
+    {
+      "path": "assets/pilot/cub3092_block3.png",
+      "sha256": "868c919a6095eb9e3556dc164ec177b8b10979ebb418522b358971a0ce580963",
+      "cub_image_id": 3092,
+      "split": "train",
+      "view": "block3"
+    }
+  ],
+  "evaluation_source": {
+    "path": "results/pilot/pair/heldout_evaluation.json",
+    "sha256": "f060e8d2af0b9c1601d37efa14ade7515fa05c1a99a1792055064cccdf473ddc"
+  },
+  "restricted_200way_test": {
+    "rgb": {
+      "file": "results/pilot_motivation/cub_categories/original_test/original_predictions.npz",
+      "sha256": "70e9bde4f576afefeeb52ee0563c0ba118ba5ff166c3b6217e6eeca45f0fc7d6",
+      "selected_seed_index": 0,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.9666666666666667,
+            "macro_cross_entropy": 0.24142373846743248,
+            "per_class_accuracy": [
+              1.0,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                30,
+                0
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.9833333333333333,
+          "top1_200way_correct_fraction": 0.95
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.95,
+            "macro_cross_entropy": 0.2948117445685577,
+            "per_class_accuracy": [
+              0.9666666666666667,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                29,
+                1
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.9333333333333333
+        }
+      ]
+    },
+    "layer3": {
+      "file": "results/pilot_motivation/cub_intermediate_stages/native_layer3_test_readouts/original_predictions.npz",
+      "sha256": "88f22689e05d31f861c4699817dfa64ee6634d740a3dd4abc1cb930906418597",
+      "selected_seed_index": 1,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.9666666666666667,
+            "macro_cross_entropy": 0.24405673722726434,
+            "per_class_accuracy": [
+              1.0,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                30,
+                0
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.95
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.9666666666666667,
+            "macro_cross_entropy": 0.22076113247666315,
+            "per_class_accuracy": [
+              1.0,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                30,
+                0
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.95
+        }
+      ]
+    },
+    "block1": {
+      "file": "results/pilot_motivation/cub_block_readouts/official_test/block1_predictions.npz",
+      "sha256": "0c804936635366e7477a944c8045c6e99f15ed6b03ce46ba5e7506033d5f7515",
+      "selected_seed_index": 1,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.95,
+            "macro_cross_entropy": 0.21520223451763748,
+            "per_class_accuracy": [
+              0.9666666666666667,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                29,
+                1
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.9333333333333333
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.9666666666666667,
+            "macro_cross_entropy": 0.2576900283889916,
+            "per_class_accuracy": [
+              1.0,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                30,
+                0
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.95
+        }
+      ]
+    },
+    "block2": {
+      "file": "results/pilot_motivation/cub_block_readouts/official_test/block2_predictions.npz",
+      "sha256": "4e2796bb7a27dd73c16b6d3a7b62982ae9c16f9ba20b0ffe3e51b391fdf50b6f",
+      "selected_seed_index": 1,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.9333333333333333,
+            "macro_cross_entropy": 0.3595127534174558,
+            "per_class_accuracy": [
+              0.9333333333333333,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                28,
+                2
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.9
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.9333333333333333,
+            "macro_cross_entropy": 0.2880140719457852,
+            "per_class_accuracy": [
+              0.9333333333333333,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                28,
+                2
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.9
+        }
+      ]
+    },
+    "block3": {
+      "file": "results/pilot_motivation/cub_block_readouts/official_test/block3_predictions.npz",
+      "sha256": "930aff94a7916784c45af942d6cc8777c4440917296a1b2bac8c2d0ae79ced03",
+      "selected_seed_index": 0,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.9333333333333333,
+            "macro_cross_entropy": 0.3008834912245312,
+            "per_class_accuracy": [
+              0.9,
+              0.9666666666666667
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                27,
+                3
+              ],
+              [
+                1,
+                29
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.9
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.9333333333333333,
+            "macro_cross_entropy": 0.22567148204799722,
+            "per_class_accuracy": [
+              0.9,
+              0.9666666666666667
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                27,
+                3
+              ],
+              [
+                1,
+                29
+              ]
+            ]
+          },
+          "family_correct_fraction": 1.0,
+          "top1_200way_correct_fraction": 0.9
+        }
+      ]
+    },
+    "inverse_layer3": {
+      "file": "results/pilot_motivation/cub_inverse_rgb/simple_layer3_reader_test/predictions.npz",
+      "sha256": "c29cb67640d07b6be41744cb3fb2042978f3d231c41cb4f70ea228d80f9973ca",
+      "selected_seed_index": 1,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.9166666666666667,
+            "macro_cross_entropy": 0.5010889589147758,
+            "per_class_accuracy": [
+              0.9,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                27,
+                3
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.9333333333333333,
+          "top1_200way_correct_fraction": 0.85
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.8833333333333333,
+            "macro_cross_entropy": 0.4310472085645075,
+            "per_class_accuracy": [
+              0.8333333333333334,
+              0.9333333333333333
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                25,
+                5
+              ],
+              [
+                2,
+                28
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.9166666666666666,
+          "top1_200way_correct_fraction": 0.8333333333333334
+        }
+      ]
+    },
+    "inverse_block1": {
+      "file": "results/pilot_motivation/cub_inverse_rgb/simple_block1_reader_test/predictions.npz",
+      "sha256": "7aa22fbb842856468bfe7ead954bbbd00c547d8318ee59b9d61d4561ed691077",
+      "selected_seed_index": 1,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.8666666666666667,
+            "macro_cross_entropy": 0.46272017001416005,
+            "per_class_accuracy": [
+              0.9,
+              0.8333333333333334
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                27,
+                3
+              ],
+              [
+                5,
+                25
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.7666666666666667,
+          "top1_200way_correct_fraction": 0.6833333333333333
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.8500000000000001,
+            "macro_cross_entropy": 0.4698146043925494,
+            "per_class_accuracy": [
+              0.8333333333333334,
+              0.8666666666666667
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                25,
+                5
+              ],
+              [
+                4,
+                26
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.7833333333333333,
+          "top1_200way_correct_fraction": 0.7333333333333333
+        }
+      ]
+    },
+    "inverse_block2": {
+      "file": "results/pilot_motivation/cub_inverse_rgb/simple_block2_reader_test/predictions.npz",
+      "sha256": "3fc790fa95d2cd54ede89b6cf217b3d63c303ab4bb94cde02ce681872922e703",
+      "selected_seed_index": 0,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.8833333333333333,
+            "macro_cross_entropy": 0.4211665494457552,
+            "per_class_accuracy": [
+              0.8666666666666667,
+              0.9
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                26,
+                4
+              ],
+              [
+                3,
+                27
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.8666666666666667,
+          "top1_200way_correct_fraction": 0.7333333333333333
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.8666666666666667,
+            "macro_cross_entropy": 0.3229309432118177,
+            "per_class_accuracy": [
+              0.8666666666666667,
+              0.8666666666666667
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                26,
+                4
+              ],
+              [
+                4,
+                26
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.8,
+          "top1_200way_correct_fraction": 0.7
+        }
+      ]
+    },
+    "inverse_block3": {
+      "file": "results/pilot_motivation/cub_inverse_rgb/simple_block3_reader_test/predictions.npz",
+      "sha256": "a1f00e789d0f2610f95f03f37d240be12548f786ac0a1d26d528a918021f61f5",
+      "selected_seed_index": 0,
+      "candidates": [
+        {
+          "seed_index": 0,
+          "restricted": {
+            "macro_accuracy": 0.8333333333333334,
+            "macro_cross_entropy": 0.5116784304864965,
+            "per_class_accuracy": [
+              0.8333333333333334,
+              0.8333333333333334
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                25,
+                5
+              ],
+              [
+                5,
+                25
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.95,
+          "top1_200way_correct_fraction": 0.75
+        },
+        {
+          "seed_index": 1,
+          "restricted": {
+            "macro_accuracy": 0.8166666666666667,
+            "macro_cross_entropy": 0.6724271507723281,
+            "per_class_accuracy": [
+              0.8666666666666667,
+              0.7666666666666667
+            ],
+            "counts": [
+              30,
+              30
+            ],
+            "confusion": [
+              [
+                26,
+                4
+              ],
+              [
+                7,
+                23
+              ]
+            ]
+          },
+          "family_correct_fraction": 0.9,
+          "top1_200way_correct_fraction": 0.7
+        }
+      ]
+    },
+    "teacher_top1_is_anchor_per_class": {
+      "Indigo Bunting": 1.0,
+      "Blue Grosbeak": 1.0
+    },
+    "family_label": 6
+  },
+  "cue_measurement_source": "results/pilot/pair/cue_retention.json",
+  "new_model_fits": 0,
+  "image_selection_population": "CUB development"
+}

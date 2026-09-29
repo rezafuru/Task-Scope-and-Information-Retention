@@ -1,0 +1,50 @@
+{
+  "calibration_count_per_fit": 1048576,
+  "replicates": [
+    {
+      "seed": 17,
+      "directory": "confirmation_seed17",
+      "codebook": "codebook.npz",
+      "assessment": "assessment.npz",
+      "known_risks": "assessment_risks.npy",
+      "known_packet": "assessment.bin",
+      "codebook_sha256": "a95d45582f0fd73abf117fc9fbad39d6eb1abbe1c9709a800c3bb653ad434d82",
+      "calibration_seed": 73000017
+    },
+    {
+      "seed": 23,
+      "directory": "replication_seed23",
+      "codebook": "full_b13_codebook.npz",
+      "assessment": "splits.npz",
+      "known_risks": "selected_full_risks.npy",
+      "known_packet": "selected_full_b13.bin",
+      "codebook_sha256": "b69f2ab7c2900c1877a2266782bc3a11220b83a77c48949c61d375a84e947e3a",
+      "calibration_seed": 73000023
+    },
+    {
+      "seed": 31,
+      "directory": "replication_seed31",
+      "codebook": "full_b13_codebook.npz",
+      "assessment": "splits.npz",
+      "known_risks": "selected_full_risks.npy",
+      "known_packet": "selected_full_b13.bin",
+      "codebook_sha256": "845b36e7cd48915c70790538ff1599e4aac9983eac3df5352af010a5abecc953",
+      "calibration_seed": 73000031
+    }
+  ],
+  "tolerances": [
+    0.35,
+    0.499
+  ],
+  "table_scale": 65536,
+  "device": "cuda:0",
+  "calibration_policy": "One independent labeled calibration draw per frozen codebook. No tuning or refitting.",
+  "comparison": "Known and fitted selectors use the same frozen codebook and assessment source blocks.",
+  "study_failure_probability": 0.01,
+  "risk_means_in_union": 22,
+  "control_blocks": 32768,
+  "source_sha256": "96d3fb9dfcab7e53a9a216d1a28ca0dd0c3803f75be58c8f530cbe184f8c7126",
+  "base_codes_sha256": "459d2db47d51051a57d661827be92b04490797aefc06b6393cb2644e491dce7c",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8"
+}

@@ -1,0 +1,265 @@
+{
+  "scope": "three base-seed width96 matched banks, separate from focal replicated width48 policy",
+  "rows": [
+    {
+      "setting": "D_lambda30",
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 96,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.00717529296875,
+      "losses": {
+        "depth": 0.09002505108853802,
+        "semantic": 1.0416765836179256,
+        "edge": 0.04169224642729387
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.0870526148294215,
+          "upper": 0.09293759443953167,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.0085857782829553,
+          "upper": 1.0779627873554825,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.041090214999753516,
+          "upper": 0.04229667598565575,
+          "defined_replicates": 2000
+        }
+      },
+      "metrics": {
+        "depth_rmse_m": 1.369324168630471,
+        "semantic_object_miou": 0.003911573549065154
+      },
+      "fixed_validation_excess": {
+        "depth": 0.15213240488995636,
+        "semantic": 0.4659360816633114,
+        "edge": 0.8889053414885718
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "baseline_point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "same_family_point_decisions_as_matched48": true,
+      "source": "results/round2_task_family/probe_d_r30_w96/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_d_r30_w96/coded_test2000/coded_rates.jsonl",
+      "baseline_source": "results/round2_task_family/probe_d_r30/coded_test2000/evaluation.json",
+      "checkpoint": "results/round2_task_family/probe_d_r30_w96/best.pt",
+      "checkpoint_step": 20000
+    },
+    {
+      "setting": "DS_lambda3",
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 96,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.03345556640625,
+      "losses": {
+        "depth": 0.0769356029923074,
+        "semantic": 0.6567992193975951,
+        "edge": 0.032294126724591476
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07434274672797184,
+          "upper": 0.0797217797161371,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6203879122657003,
+          "upper": 0.693752980333165,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.03180370786930143,
+          "upper": 0.03278077753916441,
+          "defined_replicates": 2000
+        }
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2328868718877548,
+        "semantic_object_miou": 0.13456082777756398
+      },
+      "fixed_validation_excess": {
+        "depth": 0.04076171995512825,
+        "semantic": -0.06334570633822792,
+        "edge": 0.6797413909844237
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "baseline_point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "same_family_point_decisions_as_matched48": true,
+      "source": "results/round2_task_family/probe_ds_r3_w96/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_ds_r3_w96/coded_test2000/coded_rates.jsonl",
+      "baseline_source": "results/round2_task_family/probe_ds_r3/coded_test2000/evaluation.json",
+      "checkpoint": "results/round2_task_family/probe_ds_r3_w96/best.pt",
+      "checkpoint_step": 18000
+    },
+    {
+      "setting": "DE_lambda3",
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 96,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.031422607421875,
+      "losses": {
+        "depth": 0.07467707781423814,
+        "semantic": 0.8627733767977915,
+        "edge": 0.007501284206875425
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07199137392228004,
+          "upper": 0.07732149004364619,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8310824595064275,
+          "upper": 0.8974297433875152,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0073785149291032215,
+          "upper": 0.007626966228439596,
+          "defined_replicates": 2000
+        }
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2268943085720867,
+        "semantic_object_miou": 0.04122200409151567
+      },
+      "fixed_validation_excess": {
+        "depth": 0.02154521104085544,
+        "semantic": 0.21990911830372423,
+        "edge": 0.12795347496739795
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "baseline_point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "same_family_point_decisions_as_matched48": true,
+      "source": "results/round2_task_family/probe_de_r3_w96/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_de_r3_w96/coded_test2000/coded_rates.jsonl",
+      "baseline_source": "results/round2_task_family/probe_de_r3/coded_test2000/evaluation.json",
+      "checkpoint": "results/round2_task_family/probe_de_r3_w96/best.pt",
+      "checkpoint_step": 20000
+    }
+  ],
+  "paired_source": "results/round2_task_family/capacity_sensitivity_test_paired.json",
+  "retained_de3_choice": "results/round2_task_family/capacity_de_r3_retained_selection.json"
+}

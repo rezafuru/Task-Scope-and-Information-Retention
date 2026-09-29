@@ -1,0 +1,25 @@
+{
+  "status": "validation development requirements fixed before the first full codec pilot completes",
+  "reference": "reference_dse_selected/evaluation.json",
+  "reference_checkpoint_step": 18000,
+  "definition": "reference risk + alpha * (training-constant risk - reference risk)",
+  "risk_aggregation": "mean over images with valid targets, with within-image pixel normalization",
+  "tolerances": {
+    "0.1": {
+      "depth": 0.08389790543671698,
+      "semantic": 0.7755791705263546,
+      "edge": 0.006245283336663851
+    },
+    "0.25": {
+      "depth": 0.10152747479407118,
+      "semantic": 0.8846545363178594,
+      "edge": 0.012985058293139444
+    },
+    "0.5": {
+      "depth": 0.1309100903896615,
+      "semantic": 1.066446812637034,
+      "edge": 0.0242180165539321
+    }
+  },
+  "interpretation": "Empirical quality requirements relative to tested learned and constant references. No Bayes-optimality or theoretical rate minimum is implied."
+}

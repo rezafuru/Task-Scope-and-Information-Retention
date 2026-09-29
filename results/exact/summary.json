@@ -1,0 +1,76 @@
+{
+  "quantity": "Ideal asymptotic mutual-information rates of finite models, not measured packet lengths",
+  "threshold_label_noise": 0.05,
+  "threshold_split_risk_floor": 0.2,
+  "threshold_zero_allowance_baseline_gap_bits": 0.5408520829727552,
+  "confidence_label_noise": [
+    0.05,
+    0.45
+  ],
+  "confidence_bayes_risk": 0.25,
+  "confidence_at_risk_0_30": {
+    "source_direct_bits": 0.33679817157188197,
+    "split_bits": 0.5310044064107189
+  },
+  "confidence_family_at_risk_0_30": {
+    "source_direct_bits": 0.5310044064107189,
+    "split_bits": 0.5310044064107189,
+    "rate_increase_bits": 0.19420623483883692,
+    "single_task_channel_second_task_risk": 0.44485742313256404
+  },
+  "single_task_antecedent": "Martinian, Wornell, and Zamir, IEEE TIT 2008, Section IV-E, equations (40)-(44)",
+  "verification": {
+    "status": "passed",
+    "independent_channel_comparisons": [
+      {
+        "risk": 0.26,
+        "analytic_rate": 0.6390332034911785,
+        "independent_rate": 0.6390332034914865,
+        "achieved_risk": 0.2599999999999981,
+        "absolute_difference": 3.079758670310184e-13
+      },
+      {
+        "risk": 0.275,
+        "analytic_rate": 0.46989105969099265,
+        "independent_rate": 0.46989105969104783,
+        "achieved_risk": 0.27499999999999813,
+        "absolute_difference": 5.517808432387028e-14
+      },
+      {
+        "risk": 0.3,
+        "analytic_rate": 0.33679817157188197,
+        "independent_rate": 0.33679817157188285,
+        "achieved_risk": 0.30000000000000004,
+        "absolute_difference": 8.881784197001252e-16
+      },
+      {
+        "risk": 0.35,
+        "analytic_rate": 0.17217103239075993,
+        "independent_rate": 0.17217103239076004,
+        "achieved_risk": 0.35,
+        "absolute_difference": 1.1102230246251565e-16
+      },
+      {
+        "risk": 0.4,
+        "analytic_rate": 0.07279688095338921,
+        "independent_rate": 0.07279688095343018,
+        "achieved_risk": 0.4,
+        "absolute_difference": 4.0967229608668276e-14
+      },
+      {
+        "risk": 0.45,
+        "analytic_rate": 0.017736140300834036,
+        "independent_rate": 0.017736140300833814,
+        "achieved_risk": 0.45000000000000007,
+        "absolute_difference": 2.220446049250313e-16
+      },
+      {
+        "risk": 0.49,
+        "analytic_rate": 0.0007039771964427732,
+        "independent_rate": 0.0007039771964427732,
+        "achieved_risk": 0.49,
+        "absolute_difference": 0.0
+      }
+    ]
+  }
+}

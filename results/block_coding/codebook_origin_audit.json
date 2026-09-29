@@ -1,0 +1,1442 @@
+[
+  {
+    "codebook_file": "codebooks/s11_n12_b4_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b4_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b4_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b4_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b4_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b4_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b4_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b4_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b4_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b4_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b5_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b5_three_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b5_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b5_three_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b5_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b5_two_tau_0_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b5_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b5_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b5_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b5_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b6_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b6_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b6_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b6_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b6_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b6_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b6_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b6_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b7_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b7_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b7_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b7_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b7_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b7_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b7_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b7_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b8_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b8_three_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b8_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b8_three_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b8_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b8_two_tau_0_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b8_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b8_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b8_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b8_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b9_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b9_three_reduced_fit.npz",
+    "changed_bits": 48,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b9_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b9_three_reduced_fit.npz",
+    "changed_bits": 48,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b9_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b9_two_tau_0_reduced_fit.npz",
+    "changed_bits": 48,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b9_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b9_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 48,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b9_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b9_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b10_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b10_three_reduced_fit.npz",
+    "changed_bits": 318,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b10_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b10_three_reduced_fit.npz",
+    "changed_bits": 318,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b10_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b10_two_tau_0_reduced_fit.npz",
+    "changed_bits": 318,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b10_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b10_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 318,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s11_n12_b10_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n12_b10_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b5_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b5_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b5_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b5_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b5_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b5_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b5_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b5_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b6_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b6_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b6_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b6_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b6_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b6_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b6_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b6_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b7_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b7_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b7_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b7_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b7_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b7_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b7_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b7_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b8_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b8_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b8_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b8_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b8_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b8_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b8_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b8_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b8_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b8_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b9_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b9_three_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b9_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b9_three_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b9_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b9_two_tau_0_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b9_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b9_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b9_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b9_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b10_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b10_three_reduced_fit.npz",
+    "changed_bits": 18,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b10_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b10_three_reduced_fit.npz",
+    "changed_bits": 17,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b10_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b10_two_tau_0_reduced_fit.npz",
+    "changed_bits": 18,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b10_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b10_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 18,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b10_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b10_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b11_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b11_three_reduced_fit.npz",
+    "changed_bits": 256,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b11_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b11_three_reduced_fit.npz",
+    "changed_bits": 254,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b11_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b11_two_tau_0_reduced_fit.npz",
+    "changed_bits": 256,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b11_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b11_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 255,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b11_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b11_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b12_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b12_three_reduced_fit.npz",
+    "changed_bits": 1776,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b12_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b12_three_reduced_fit.npz",
+    "changed_bits": 1779,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b12_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b12_two_tau_0_reduced_fit.npz",
+    "changed_bits": 1821,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b12_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b12_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 1809,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b12_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b12_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b13_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b13_three_reduced_fit.npz",
+    "changed_bits": 10839,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b13_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b13_three_reduced_fit.npz",
+    "changed_bits": 11043,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b13_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b13_two_tau_0_reduced_fit.npz",
+    "changed_bits": 11303,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b13_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b13_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 11218,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s11_n16_b13_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s11_n16_b13_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b4_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b4_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b4_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b4_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b4_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b4_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b4_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b4_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b4_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b4_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b5_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b5_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b5_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b5_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b5_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b5_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b5_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b5_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b6_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b6_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b6_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b6_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b6_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b6_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b6_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b6_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b7_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b7_three_reduced_fit.npz",
+    "changed_bits": 2,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b7_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b7_three_reduced_fit.npz",
+    "changed_bits": 2,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b7_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b7_two_tau_0_reduced_fit.npz",
+    "changed_bits": 2,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b7_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b7_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 2,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b7_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b7_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b8_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b8_three_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b8_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b8_three_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b8_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b8_two_tau_0_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b8_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b8_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 1,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b8_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b8_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b9_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b9_three_reduced_fit.npz",
+    "changed_bits": 51,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b9_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b9_three_reduced_fit.npz",
+    "changed_bits": 51,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b9_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b9_two_tau_0_reduced_fit.npz",
+    "changed_bits": 51,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b9_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b9_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 51,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b9_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b9_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b10_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b10_three_reduced_fit.npz",
+    "changed_bits": 294,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b10_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b10_three_reduced_fit.npz",
+    "changed_bits": 294,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b10_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b10_two_tau_0_reduced_fit.npz",
+    "changed_bits": 294,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b10_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b10_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 294,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s12_n12_b10_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n12_b10_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b5_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b5_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b5_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b5_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b5_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b5_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b5_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b5_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b6_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b6_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b6_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b6_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b6_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b6_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b6_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b6_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b7_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b7_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b7_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b7_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b7_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b7_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b7_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b7_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b8_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b8_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b8_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b8_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b8_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b8_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b8_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b8_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b8_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b8_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b9_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b9_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b9_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b9_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b9_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b9_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b9_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b9_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b9_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b9_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b10_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b10_three_reduced_fit.npz",
+    "changed_bits": 26,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b10_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b10_three_reduced_fit.npz",
+    "changed_bits": 26,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b10_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b10_two_tau_0_reduced_fit.npz",
+    "changed_bits": 26,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b10_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b10_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 26,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b10_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b10_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b11_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b11_three_reduced_fit.npz",
+    "changed_bits": 242,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b11_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b11_three_reduced_fit.npz",
+    "changed_bits": 244,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b11_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b11_two_tau_0_reduced_fit.npz",
+    "changed_bits": 243,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b11_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b11_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 243,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b11_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b11_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b12_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b12_three_reduced_fit.npz",
+    "changed_bits": 1754,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b12_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b12_three_reduced_fit.npz",
+    "changed_bits": 1756,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b12_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b12_two_tau_0_reduced_fit.npz",
+    "changed_bits": 1782,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b12_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b12_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 1792,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b12_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b12_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b13_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b13_three_reduced_fit.npz",
+    "changed_bits": 11030,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b13_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b13_three_reduced_fit.npz",
+    "changed_bits": 11182,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b13_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b13_two_tau_0_reduced_fit.npz",
+    "changed_bits": 11373,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b13_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b13_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 11389,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s12_n16_b13_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s12_n16_b13_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b4_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b4_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b4_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b4_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b4_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b4_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b4_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b4_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b4_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b4_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 192
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b5_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b5_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b5_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b5_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b5_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b5_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b5_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b5_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 384
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b6_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b6_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b6_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b6_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b6_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b6_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b6_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b6_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 768
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b7_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b7_three_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b7_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b7_three_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b7_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b7_two_tau_0_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b7_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b7_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 3,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b7_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b7_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1536
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b8_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b8_three_reduced_fit.npz",
+    "changed_bits": 5,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b8_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b8_three_reduced_fit.npz",
+    "changed_bits": 5,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b8_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b8_two_tau_0_reduced_fit.npz",
+    "changed_bits": 5,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b8_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b8_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 5,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b8_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b8_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 3072
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b9_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b9_three_reduced_fit.npz",
+    "changed_bits": 64,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b9_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b9_three_reduced_fit.npz",
+    "changed_bits": 64,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b9_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b9_two_tau_0_reduced_fit.npz",
+    "changed_bits": 64,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b9_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b9_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 64,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b9_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b9_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 6144
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b10_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b10_three_reduced_fit.npz",
+    "changed_bits": 332,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b10_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b10_three_reduced_fit.npz",
+    "changed_bits": 332,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b10_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b10_two_tau_0_reduced_fit.npz",
+    "changed_bits": 332,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b10_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b10_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 332,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s13_n12_b10_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n12_b10_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 12288
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b5_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b5_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b5_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b5_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b5_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b5_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b5_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b5_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b5_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 512
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b6_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b6_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b6_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b6_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b6_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b6_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b6_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b6_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b6_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 1024
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b7_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b7_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b7_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b7_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b7_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b7_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b7_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b7_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b7_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 2048
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b8_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b8_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b8_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b8_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b8_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b8_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b8_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b8_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b8_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b8_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 4096
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b9_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b9_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b9_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b9_three_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b9_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b9_two_tau_0_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b9_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b9_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b9_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b9_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 8192
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b10_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b10_three_reduced_fit.npz",
+    "changed_bits": 19,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b10_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b10_three_reduced_fit.npz",
+    "changed_bits": 19,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b10_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b10_two_tau_0_reduced_fit.npz",
+    "changed_bits": 19,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b10_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b10_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 19,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b10_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b10_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 16384
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b11_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b11_three_reduced_fit.npz",
+    "changed_bits": 264,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b11_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b11_three_reduced_fit.npz",
+    "changed_bits": 265,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b11_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b11_two_tau_0_reduced_fit.npz",
+    "changed_bits": 264,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b11_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b11_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 263,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b11_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b11_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 32768
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b12_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b12_three_reduced_fit.npz",
+    "changed_bits": 1813,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b12_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b12_three_reduced_fit.npz",
+    "changed_bits": 1847,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b12_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b12_two_tau_0_reduced_fit.npz",
+    "changed_bits": 1851,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b12_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b12_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 1861,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b12_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b12_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 65536
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b13_three_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b13_three_reduced_fit.npz",
+    "changed_bits": 11015,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b13_three_full_fit_1.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b13_three_reduced_fit.npz",
+    "changed_bits": 11050,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b13_two_tau_0_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b13_two_tau_0_reduced_fit.npz",
+    "changed_bits": 11431,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b13_two_tau_0.125_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b13_two_tau_0.125_reduced_fit.npz",
+    "changed_bits": 11402,
+    "bits": 131072
+  },
+  {
+    "codebook_file": "codebooks/s13_n16_b13_two_tau_0.5_full_fit_0.npz",
+    "reduced_codebook_file": "codebooks/s13_n16_b13_two_tau_0.5_reduced_fit.npz",
+    "changed_bits": 0,
+    "bits": 131072
+  }
+]

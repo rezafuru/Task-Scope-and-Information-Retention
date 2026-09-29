@@ -1,0 +1,5778 @@
+{
+  "scope": "fixed codec/readout seeds, paired image resampling conditional on the observed buildings",
+  "intervals": "componentwise percentile 95%, no joint family-feasibility coverage claim",
+  "training_seed_variation": "not estimated by image resampling, report separately",
+  "sources": {
+    "reference": "results/round2_task_family/reference_dse_selected/test2000/image_metrics.jsonl",
+    "D_lambda0.3": "results/round2_task_family/probe_d_r03/coded_test2000/coded_rates.jsonl",
+    "DSE_lambda0.3": "results/round2_task_family/probe_dse_r03/coded_test2000/coded_rates.jsonl",
+    "DSE_lambda3": "results/round2_task_family/probe_dse_r3/coded_test2000/coded_rates.jsonl",
+    "D_lambda3": "results/round2_task_family/probe_d_r3/coded_test2000/coded_rates.jsonl",
+    "DE_lambda0.3": "results/round2_task_family/probe_de_r03/coded_test2000/coded_rates.jsonl",
+    "DS_lambda0.3": "results/round2_task_family/probe_ds_r03/coded_test2000/coded_rates.jsonl",
+    "RGB_lambda0.3": "results/round2_task_family/probe_rgb_r03/coded_test2000/coded_rates.jsonl",
+    "DS_lambda3": "results/round2_task_family/probe_ds_r3/coded_test2000/coded_rates.jsonl",
+    "DE_lambda3": "results/round2_task_family/probe_de_r3/coded_test2000/coded_rates.jsonl",
+    "D_lambda30": "results/round2_task_family/probe_d_r30/coded_test2000/coded_rates.jsonl",
+    "DSE_lambda1": "results/round2_task_family/probe_dse_r1/coded_test2000/coded_rates.jsonl",
+    "DE_lambda1": "results/round2_task_family/probe_de_r1/coded_test2000/coded_rates.jsonl",
+    "Fixed_spatial_prior": "results/round2_task_family/spatial_prior/test2000/image_metrics.jsonl"
+  },
+  "normalization_definitions": {
+    "normalized_excess": "(current-split codec risk - current-split reference risk) / (current-split constant risk - current-split reference risk), descriptive",
+    "fixed_validation_excess": "(current-split codec risk - fixed validation reference risk) / (fixed validation constant risk - fixed validation reference risk), alpha is the fixed requirement"
+  },
+  "validation_reference_source": "results/round2_task_family/reference_dse_selected/evaluation.json",
+  "tolerances_source": "results/round2_task_family/development_tolerances.json",
+  "bootstrap_repetitions": 2000,
+  "resampling_seed": 20260906,
+  "images": 2000,
+  "rows": [
+    {
+      "name": "reference",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07375033741514199,
+        "semantic": 0.6232932837455591,
+        "edge": 0.001888224899146735
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183019626886
+      },
+      "actual_bpp": null,
+      "semantic_object_miou": 0.13605748701000156,
+      "depth_rmse_m": 1.1841354909986626,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07119752427864005,
+          "upper": 0.07628299747232814,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.5900757995517059,
+          "upper": 0.6600732151428165,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.00185893259331242,
+          "upper": 0.001917836911698305,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": null,
+        "upper": null,
+        "defined_replicates": 0
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.0,
+          "interval_95": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.0,
+          "interval_95": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0,
+          "interval_95": {
+            "lower": 0.0,
+            "upper": 0.0,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.013660102956440743,
+          "interval_95": {
+            "lower": -0.008060335173011076,
+            "upper": 0.03520906997187419,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.10942293295429335,
+          "interval_95": {
+            "lower": -0.1551034822966827,
+            "upper": -0.05884332068753998,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0030295863217767454,
+          "interval_95": {
+            "lower": 0.002377658638208376,
+            "upper": 0.0036886293775790476,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06781992974691092,
+            "semantic": 0.5107115239341511,
+            "edge": 0.0016728194662755413
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967802844944
+          },
+          "actual_bpp": null,
+          "semantic_object_miou": 0.1817422679636286,
+          "depth_rmse_m": 1.0202224017730135
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0926760141889099,
+            "semantic": 0.5171926274614816,
+            "edge": 0.001985740649906802
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548972260207
+          },
+          "actual_bpp": null,
+          "semantic_object_miou": 0.15133592911642696,
+          "depth_rmse_m": 1.5844937754906263
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07112279253778979,
+            "semantic": 0.6957753780600615,
+            "edge": 0.0018747958832682342
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967730935663
+          },
+          "actual_bpp": null,
+          "semantic_object_miou": 0.15185224731398117,
+          "depth_rmse_m": 1.2114289910951674
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06903921390417964,
+            "semantic": 0.6927875718445284,
+            "edge": 0.0015253561460849595
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181156069
+          },
+          "actual_bpp": null,
+          "semantic_object_miou": 0.1210006781529028,
+          "depth_rmse_m": 0.85714130324005
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06809373669791967,
+            "semantic": 0.6999993174275733,
+            "edge": 0.0023824123501981374
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.05429619803093374
+          },
+          "actual_bpp": null,
+          "semantic_object_miou": 0.09710296106986682,
+          "depth_rmse_m": 1.1191924748012716
+        }
+      }
+    },
+    {
+      "name": "D_lambda0.3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07669203764316626,
+        "semantic": 0.840679421288427,
+        "edge": 0.028612837362728898
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.0709638671875,
+      "semantic_object_miou": 0.044428467426473835,
+      "depth_rmse_m": 1.2514616828749712,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07389852657759911,
+          "upper": 0.07934418630030121,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8097724803328281,
+          "upper": 0.8744183556455537,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.02818055631451025,
+          "upper": 0.029044588471558018,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0706923583984375,
+        "upper": 0.07123389892578125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.02506049288719693,
+          "interval_95": {
+            "lower": 0.014563812507692566,
+            "upper": 0.03553934823001953,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.32230876756592136,
+          "interval_95": {
+            "lower": 0.2964695093482822,
+            "upper": 0.34709635390538485,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.5855061687089643,
+          "interval_95": {
+            "lower": 0.5806803911975859,
+            "upper": 0.590275368378076,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.03868936063479525,
+          "interval_95": {
+            "lower": 0.014920960435032308,
+            "upper": 0.06125498833144066,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.18952560042729097,
+          "interval_95": {
+            "lower": 0.14702250076130846,
+            "upper": 0.23592324591621547,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.5978108505961518,
+          "interval_95": {
+            "lower": 0.5881900312584828,
+            "upper": 0.6074198756366903,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06987249017343856,
+            "semantic": 0.7306955270911567,
+            "edge": 0.02555071622795367
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.068966064453125,
+          "semantic_object_miou": 0.061254038012998335,
+          "depth_rmse_m": 1.062398369160275
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10247607866534963,
+            "semantic": 0.7718121736031026,
+            "edge": 0.03257284648017958
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.072716064453125,
+          "semantic_object_miou": 0.04456593708130529,
+          "depth_rmse_m": 1.705744629125051
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0725128943589516,
+            "semantic": 0.9309715263685212,
+            "edge": 0.02743306370219216
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.071072998046875,
+          "semantic_object_miou": 0.046679664567319576,
+          "depth_rmse_m": 1.2555878338249176
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06907418634276836,
+            "semantic": 0.946219291430898,
+            "edge": 0.023441791291115805
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.069898681640625,
+          "semantic_object_miou": 0.03634411362129554,
+          "depth_rmse_m": 0.8602120458920653
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06952453867532313,
+            "semantic": 0.8236985879484564,
+            "edge": 0.03406576911220327
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.07216552734375,
+          "semantic_object_miou": 0.0461454160831248,
+          "depth_rmse_m": 1.2125208246025525
+        }
+      }
+    },
+    {
+      "name": "DSE_lambda0.3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07777181951864623,
+        "semantic": 0.6552547544657137,
+        "edge": 0.004326002445923223
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.19187841796875,
+      "semantic_object_miou": 0.14668883677436936,
+      "depth_rmse_m": 1.2476159780075309,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07511892542921124,
+          "upper": 0.08037597214222186,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6164505814934454,
+          "upper": 0.6963926241442445,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.00425197223124269,
+          "upper": 0.0044013902736709494,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.19042105102539064,
+        "upper": 0.19338285522460938,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.03425920924598923,
+          "interval_95": {
+            "lower": 0.02286646595405277,
+            "upper": 0.04554935276831396,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.04738785257351507,
+          "interval_95": {
+            "lower": 0.015565365503282415,
+            "upper": 0.07990966419176505,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.053408961253334476,
+          "interval_95": {
+            "lower": 0.05254916430621762,
+            "upper": 0.054332190169529344,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.047876611783073036,
+          "interval_95": {
+            "lower": 0.02530464162605668,
+            "upper": 0.07003386847031007,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.06546964823932634,
+          "interval_95": {
+            "lower": -0.11883298929807866,
+            "upper": -0.008897016949005966,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.05728460735406502,
+          "interval_95": {
+            "lower": 0.055636995635010414,
+            "upper": 0.058962434022638587,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07379244928015397,
+            "semantic": 0.5373502254908089,
+            "edge": 0.003823840511358867
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.187476806640625,
+          "semantic_object_miou": 0.18338579060350915,
+          "depth_rmse_m": 1.0723487105614946
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10151211169199087,
+            "semantic": 0.526008845778415,
+            "edge": 0.004537054592947243
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.193922119140625,
+          "semantic_object_miou": 0.16971324094823417,
+          "depth_rmse_m": 1.6990638267675189
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07251482638530433,
+            "semantic": 0.757479064790532,
+            "edge": 0.00434324495276087
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.18884765625,
+          "semantic_object_miou": 0.15250814711520214,
+          "depth_rmse_m": 1.2355960730978413
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06921917781233787,
+            "semantic": 0.7198140946321655,
+            "edge": 0.0035168720677029343
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.178907470703125,
+          "semantic_object_miou": 0.1537791181467744,
+          "depth_rmse_m": 0.8529582678599039
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07182053242344409,
+            "semantic": 0.7356215416366467,
+            "edge": 0.0054090001048462
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.210238037109375,
+          "semantic_object_miou": 0.10622598448796054,
+          "depth_rmse_m": 1.2187693441866767
+        }
+      }
+    },
+    {
+      "name": "DSE_lambda3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07675871131825261,
+        "semantic": 0.6604359244392254,
+        "edge": 0.007794924578643986
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.05094580078125,
+      "semantic_object_miou": 0.13714863299832109,
+      "depth_rmse_m": 1.2654974968884252,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07404172572755488,
+          "upper": 0.07946941863566172,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.622731734796206,
+          "upper": 0.7002795793949044,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.007669062147719524,
+          "upper": 0.007925846868563895,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0504252197265625,
+        "upper": 0.051476806640625,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.025628489294290725,
+          "interval_95": {
+            "lower": 0.014091244774067898,
+            "upper": 0.037225240993713625,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.05506974309140887,
+          "interval_95": {
+            "lower": 0.02165137521165288,
+            "upper": 0.08640383513095042,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.12940913937553647,
+          "interval_95": {
+            "lower": 0.1277328130055242,
+            "upper": 0.1310493843598918,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.03925664909546209,
+          "interval_95": {
+            "lower": 0.01613936072933127,
+            "upper": 0.0623205191974138,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.058344524336351684,
+          "interval_95": {
+            "lower": -0.11019517278857432,
+            "upper": -0.003551691876125115,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.13448871628476042,
+          "interval_95": {
+            "lower": 0.13168753007890202,
+            "upper": 0.13740251438852613,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0679832638753578,
+            "semantic": 0.5425414563261438,
+            "edge": 0.0069014604733820305
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.047509765625,
+          "semantic_object_miou": 0.1808748105100008,
+          "depth_rmse_m": 1.0647078392417968
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10739986541680992,
+            "semantic": 0.49527341552078724,
+            "edge": 0.00844913161941804
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.053162841796875,
+          "semantic_object_miou": 0.17497119896821964,
+          "depth_rmse_m": 1.7621358683472315
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07145555960247293,
+            "semantic": 0.7666864380566403,
+            "edge": 0.00770641790877562
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.051561279296875,
+          "semantic_object_miou": 0.14717843842791675,
+          "depth_rmse_m": 1.2339269236505923
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06679946112446487,
+            "semantic": 0.7604441633005626,
+            "edge": 0.006249560273136012
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.04537109375,
+          "semantic_object_miou": 0.12534101759195854,
+          "depth_rmse_m": 0.8425957717143051
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07015540657215752,
+            "semantic": 0.7372341489919927,
+            "edge": 0.009668052618508227
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.0571240234375,
+          "semantic_object_miou": 0.09964417984567102,
+          "depth_rmse_m": 1.2370564413555931
+        }
+      }
+    },
+    {
+      "name": "D_lambda3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07551232062047347,
+        "semantic": 0.9265918506719172,
+        "edge": 0.036420739057299215
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.017520751953125,
+      "semantic_object_miou": 0.028447470616004465,
+      "depth_rmse_m": 1.2231397448498211,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.0727808824932843,
+          "upper": 0.07830238761939108,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8955801938311663,
+          "upper": 0.9600216532588005,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.03588615257008059,
+          "upper": 0.03693790846113261,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.017425775146484378,
+        "upper": 0.017612548828125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.015010423959557087,
+          "interval_95": {
+            "lower": 0.0033284931288476084,
+            "upper": 0.02744091887071148,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.44968730948295843,
+          "interval_95": {
+            "lower": 0.4273179913354144,
+            "upper": 0.47153509002888505,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.7565685035912312,
+          "interval_95": {
+            "lower": 0.7513317889952097,
+            "upper": 0.7616205691074457,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.02865181803707432,
+          "interval_95": {
+            "lower": 0.005411561240474609,
+            "upper": 0.052390914628396276,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.3076720243609635,
+          "interval_95": {
+            "lower": 0.2650249198350493,
+            "upper": 0.3536445530950643,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.7715830109054911,
+          "interval_95": {
+            "lower": 0.759685288266288,
+            "upper": 0.7830931000517873,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07131183492019773,
+            "semantic": 0.8732127389777452,
+            "edge": 0.03305939690821105
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.0170556640625,
+          "semantic_object_miou": 0.026897780079996526,
+          "depth_rmse_m": 1.0733142077338917
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.09570707547361962,
+            "semantic": 0.8270631601661443,
+            "edge": 0.04243787695420906
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.017637939453125,
+          "semantic_object_miou": 0.027212078674185517,
+          "depth_rmse_m": 1.6161498011611444
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06996876276563853,
+            "semantic": 0.9899186825565994,
+            "edge": 0.03344005640014075
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.018209228515625,
+          "semantic_object_miou": 0.038370092304842104,
+          "depth_rmse_m": 1.227099207431513
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07127420965000056,
+            "semantic": 0.9995995699521154,
+            "edge": 0.03081196861458011
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.016866455078125,
+          "semantic_object_miou": 0.025448550300125012,
+          "depth_rmse_m": 0.8729713778446188
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06929972029291093,
+            "semantic": 0.9431651017069816,
+            "edge": 0.0423543964093551
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.01783447265625,
+          "semantic_object_miou": 0.027226929899213454,
+          "depth_rmse_m": 1.2009353649279968
+        }
+      }
+    },
+    {
+      "name": "DE_lambda0.3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07796657087770291,
+        "semantic": 0.7896010055234656,
+        "edge": 0.003140342491798947
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.132766357421875,
+      "semantic_object_miou": 0.059054126201263955,
+      "depth_rmse_m": 1.2427644171271681,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07542821568700601,
+          "upper": 0.08058137696148479,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.7603469085764489,
+          "upper": 0.819965602991567,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0030879948051519023,
+          "upper": 0.0031962135715570186,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.13206173095703125,
+        "upper": 0.1334392333984375,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.03591830591461538,
+          "interval_95": {
+            "lower": 0.024228224396608395,
+            "upper": 0.04786133377240879,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.24657706994937953,
+          "interval_95": {
+            "lower": 0.2201642736501161,
+            "upper": 0.27039388267373954,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.027432486643011948,
+          "interval_95": {
+            "lower": 0.02688736547914971,
+            "upper": 0.028026571627498907,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.049533640566156494,
+          "interval_95": {
+            "lower": 0.02793621689195303,
+            "upper": 0.0717815414999173,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.11928277053488877,
+          "interval_95": {
+            "lower": 0.07905265523607521,
+            "upper": 0.16104004163972643,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03089663531239269,
+          "interval_95": {
+            "lower": 0.029731588549293825,
+            "upper": 0.0321400984870286,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": true,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07413678597076796,
+            "semantic": 0.6892602676688694,
+            "edge": 0.002784300014627661
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.12749755859375,
+          "semantic_object_miou": 0.07923086106703396,
+          "depth_rmse_m": 1.0809507776196259
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10572178079281003,
+            "semantic": 0.7023830461478792,
+            "edge": 0.003223667384008877
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.137628173828125,
+          "semantic_object_miou": 0.0647813207643795,
+          "depth_rmse_m": 1.7049957014029673
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0757424346334301,
+            "semantic": 0.8841092307353392,
+            "edge": 0.0032165839010849595
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.133157958984375,
+          "semantic_object_miou": 0.058179619506531395,
+          "depth_rmse_m": 1.2558991146643854
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06623764241114259,
+            "semantic": 0.8261031093960628,
+            "edge": 0.0025416661563212985
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.12627685546875,
+          "semantic_object_miou": 0.05419004880679599,
+          "depth_rmse_m": 0.8356671900374095
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06799421058036387,
+            "semantic": 0.8461493736691773,
+            "edge": 0.003935495002951939
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.139271240234375,
+          "semantic_object_miou": 0.05533597104984729,
+          "depth_rmse_m": 1.1679793173159503
+        }
+      }
+    },
+    {
+      "name": "DS_lambda0.3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07606675557489508,
+        "semantic": 0.668499041069299,
+        "edge": 0.025546843116520904
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.124156005859375,
+      "semantic_object_miou": 0.13467390371629565,
+      "depth_rmse_m": 1.2284608619854247,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07339104903719854,
+          "upper": 0.0788317133822129,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6296448385447846,
+          "upper": 0.7072999874499044,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.02514951819916023,
+          "upper": 0.02593596673786815,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.12324777221679686,
+        "upper": 0.1250610595703125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.019733683351975815,
+          "interval_95": {
+            "lower": 0.009258851399816772,
+            "upper": 0.030671118139612277,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.0670245678707343,
+          "interval_95": {
+            "lower": 0.03610646402397045,
+            "upper": 0.0969243767693144,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.5183336869067586,
+          "interval_95": {
+            "lower": 0.5140415331592461,
+            "upper": 0.5225424453110369,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.033369190394700744,
+          "interval_95": {
+            "lower": 0.010603122062631419,
+            "upper": 0.056894647125421347,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.04725615909700958,
+          "interval_95": {
+            "lower": -0.10068830059280352,
+            "upper": 0.006102744765993664,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.529574278915175,
+          "interval_95": {
+            "lower": 0.5207314409882442,
+            "upper": 0.5382345893230183,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06818832658813336,
+            "semantic": 0.5315988798439503,
+            "edge": 0.02177453352662269
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.11872802734375,
+          "semantic_object_miou": 0.1749420580316967,
+          "depth_rmse_m": 1.0409101822785127
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0995287172589451,
+            "semantic": 0.5107128232670948,
+            "edge": 0.030590186449699103
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.125009765625,
+          "semantic_object_miou": 0.1682368419506672,
+          "depth_rmse_m": 1.6700137445558811
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07250256438041106,
+            "semantic": 0.7210499624628574,
+            "edge": 0.023913361002341843
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.12359375,
+          "semantic_object_miou": 0.14876653261553363,
+          "depth_rmse_m": 1.2461296844654246
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07118657406419515,
+            "semantic": 0.8136315451911651,
+            "edge": 0.020362110673449934
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.115086669921875,
+          "semantic_object_miou": 0.11982502782931803,
+          "depth_rmse_m": 0.8698883074860857
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06892759558279067,
+            "semantic": 0.7655019945814274,
+            "edge": 0.031094023930490947
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.13836181640625,
+          "semantic_object_miou": 0.09161783140760535,
+          "depth_rmse_m": 1.1657382996672192
+        }
+      }
+    },
+    {
+      "name": "RGB_lambda0.3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.10667190936580301,
+        "semantic": 0.8301780027374626,
+        "edge": 0.0005457901748741279
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.182718017578125,
+      "semantic_object_miou": 0.05561502639578815,
+      "depth_rmse_m": 1.403495407894494,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.10344283440511208,
+          "upper": 0.10965953719343524,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8014760233834153,
+          "upper": 0.8614364892856683,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0005382145521323765,
+          "upper": 0.0005531669338757637,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.18067030639648438,
+        "upper": 0.18470572509765623,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.2804605349808183,
+          "interval_95": {
+            "lower": 0.2658818176417815,
+            "upper": 0.29541942986322633,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.30673878086339856,
+          "interval_95": {
+            "lower": 0.2815436087761311,
+            "upper": 0.32951841793166087,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.02941123330494774,
+          "interval_95": {
+            "lower": -0.029811893145826253,
+            "upper": -0.029019443155876023,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.29377107404713065,
+          "interval_95": {
+            "lower": 0.26629670786803916,
+            "upper": 0.31919110360434105,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.17508409229010397,
+          "interval_95": {
+            "lower": 0.1356132468625803,
+            "upper": 0.21807063602715043,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.02684755496873754,
+          "interval_95": {
+            "lower": -0.02701615754354175,
+            "upper": -0.026683378292603525,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10383300366345793,
+            "semantic": 0.7034351183287799,
+            "edge": 0.0004858247365336865
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.1669873046875,
+          "semantic_object_miou": 0.08346695570830089,
+          "depth_rmse_m": 1.2744141779794451
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.12917913476470858,
+            "semantic": 0.7495705512631684,
+            "edge": 0.0005552022817209945
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.188167724609375,
+          "semantic_object_miou": 0.05570022629543367,
+          "depth_rmse_m": 1.7885123741345585
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10199946029111744,
+            "semantic": 0.876115104095079,
+            "edge": 0.0005633620016124041
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.1865771484375,
+          "semantic_object_miou": 0.07157334171694206,
+          "depth_rmse_m": 1.4139243523600067
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.09543499581050127,
+            "semantic": 0.914015402183868,
+            "edge": 0.0004596227456931956
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.161944580078125,
+          "semantic_object_miou": 0.043442811196428954,
+          "depth_rmse_m": 1.02602682010984
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.1029129522992298,
+            "semantic": 0.9077538378164172,
+            "edge": 0.0006649391088103584
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.209913330078125,
+          "semantic_object_miou": 0.04326590303850517,
+          "depth_rmse_m": 1.4014383939733863
+        }
+      }
+    },
+    {
+      "name": "DS_lambda3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.0768788398078177,
+        "semantic": 0.6644403568925336,
+        "edge": 0.03262828302133858
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.03345556640625,
+      "semantic_object_miou": 0.13451249650637234,
+      "depth_rmse_m": 1.2568112950983945,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07428892448029364,
+          "upper": 0.07963507573863608,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6279112924707007,
+          "upper": 0.7014048840397852,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.03215078961333474,
+          "upper": 0.033099532308527156,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.03315623779296875,
+        "upper": 0.033758575439453126,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.02665186996701062,
+          "interval_95": {
+            "lower": 0.01506860702749988,
+            "upper": 0.03837109637734193,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.06100693717110138,
+          "interval_95": {
+            "lower": 0.027728072267517792,
+            "upper": 0.09374443806080525,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.6734800619295084,
+          "interval_95": {
+            "lower": 0.6683454870089902,
+            "upper": 0.6784596861955056,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.04027875423424968,
+          "interval_95": {
+            "lower": 0.018242634618738457,
+            "upper": 0.06373000146793728,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.0528376450915515,
+          "interval_95": {
+            "lower": -0.10307226611265925,
+            "upper": -0.00200417749918715,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.687178352134574,
+          "interval_95": {
+            "lower": 0.6765512894116921,
+            "upper": 0.6976664461042947,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07688103906111791,
+            "semantic": 0.5326820997521281,
+            "edge": 0.028334457035271043
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.031944580078125,
+          "semantic_object_miou": 0.17495196085011125,
+          "depth_rmse_m": 1.1256845527571602
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10554075486026704,
+            "semantic": 0.551069392322097,
+            "edge": 0.039269811331760135
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.033387451171875,
+          "semantic_object_miou": 0.15270188633827544,
+          "depth_rmse_m": 1.7374521526416673
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06989906479371712,
+            "semantic": 0.7375410731928423,
+            "edge": 0.030179496336495505
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.03453369140625,
+          "semantic_object_miou": 0.1517862418974232,
+          "depth_rmse_m": 1.2249661296705165
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06399419372202829,
+            "semantic": 0.7556276254751719,
+            "edge": 0.026780808417825028
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.03112060546875,
+          "semantic_object_miou": 0.12266318167720647,
+          "depth_rmse_m": 0.8297546788029667
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0680791466019582,
+            "semantic": 0.7452815937204287,
+            "edge": 0.03857684198534116
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.03629150390625,
+          "semantic_object_miou": 0.09729215134741744,
+          "depth_rmse_m": 1.1893912361715873
+        }
+      }
+    },
+    {
+      "name": "DE_lambda3",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07702921862597577,
+        "semantic": 0.8763155802218243,
+        "edge": 0.0076905365608326975
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.031422607421875,
+      "semantic_object_miou": 0.036707358782606066,
+      "depth_rmse_m": 1.2597201161819562,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07428618001854047,
+          "upper": 0.07977684011911042,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8454602117069299,
+          "upper": 0.909944749863795,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.007564509188347801,
+          "upper": 0.007817792172448934,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.031234857177734377,
+        "upper": 0.03160181884765625,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.027932954717568723,
+          "interval_95": {
+            "lower": 0.016783102854702216,
+            "upper": 0.03862110279567436,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.3751449170850765,
+          "interval_95": {
+            "lower": 0.3525497321614314,
+            "upper": 0.39640943331755907,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.1271221154401623,
+          "interval_95": {
+            "lower": 0.1254947886402152,
+            "upper": 0.1287518121148764,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.04155824225046147,
+          "interval_95": {
+            "lower": 0.018219283551299887,
+            "upper": 0.06493619412302218,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.23853230144745774,
+          "interval_95": {
+            "lower": 0.19610012399245774,
+            "upper": 0.28477899894593617,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.13216546324251324,
+          "interval_95": {
+            "lower": 0.12936060610784417,
+            "upper": 0.1349976559886665,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06560131723759696,
+            "semantic": 0.7859874825878069,
+            "edge": 0.006748531025914417
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.0297802734375,
+          "semantic_object_miou": 0.048101809141037344,
+          "depth_rmse_m": 1.0317039160573789
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.10611440398963168,
+            "semantic": 0.8212165291514247,
+            "edge": 0.008398609545547515
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.032960205078125,
+          "semantic_object_miou": 0.03300497344926026,
+          "depth_rmse_m": 1.7397597543823702
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0712670070794411,
+            "semantic": 0.9352390212658793,
+            "edge": 0.00760333527403418
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.031771240234375,
+          "semantic_object_miou": 0.04226363377068582,
+          "depth_rmse_m": 1.2122719169632494
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06837113472749479,
+            "semantic": 0.9382672704849392,
+            "edge": 0.00624274871457601
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.029000244140625,
+          "semantic_object_miou": 0.030959458707696074,
+          "depth_rmse_m": 0.8577501228364918
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07379223009571433,
+            "semantic": 0.9008675976190716,
+            "edge": 0.009459458244091366
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.03360107421875,
+          "semantic_object_miou": 0.039269141746355714,
+          "depth_rmse_m": 1.2780688382302747
+        }
+      }
+    },
+    {
+      "name": "D_lambda30",
+      "images": 2000,
+      "losses": {
+        "depth": 0.08833378031547182,
+        "semantic": 1.055780183164403,
+        "edge": 0.0418332388419658
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.00717529296875,
+      "semantic_object_miou": 0.007726440460050735,
+      "depth_rmse_m": 1.3497462517042336,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.08531933647461701,
+          "upper": 0.09118899338053306,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.0234575135278983,
+          "upper": 1.0903755759355147,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.04125028478370514,
+          "upper": 0.04241867603354622,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.007163330078125,
+        "upper": 0.007187255859375,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.12423708697198454,
+          "interval_95": {
+            "lower": 0.11113515837415054,
+            "upper": 0.13674828322840665,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.6412291101708637,
+          "interval_95": {
+            "lower": 0.6235997260580398,
+            "upper": 0.6576057871593108,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.8751502797115291,
+          "interval_95": {
+            "lower": 0.8704901391953588,
+            "upper": 0.8795634454095208,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.13774234176262856,
+          "interval_95": {
+            "lower": 0.11209414996833497,
+            "upper": 0.16203572925711823,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.48533129447438195,
+          "interval_95": {
+            "lower": 0.4408812904767486,
+            "upper": 0.5329067380955018,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.8920432596442024,
+          "interval_95": {
+            "lower": 0.8790690714400275,
+            "upper": 0.9050727123045896,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.08272925922647119,
+            "semantic": 0.9684991910960525,
+            "edge": 0.03855362948961556
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.007088623046875,
+          "semantic_object_miou": 0.005886020515505125,
+          "depth_rmse_m": 1.2120563094843082
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.11503252936294302,
+            "semantic": 0.9511653079837561,
+            "edge": 0.04917022509966046
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.00719970703125,
+          "semantic_object_miou": 0.010461870959736776,
+          "depth_rmse_m": 1.7339271928832503
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.08623241647379473,
+            "semantic": 1.1516026183217765,
+            "edge": 0.03792525156633928
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.0072021484375,
+          "semantic_object_miou": 0.008654762037351367,
+          "depth_rmse_m": 1.3717532595646291
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.08017645712243393,
+            "semantic": 1.13104910697788,
+            "edge": 0.03636592457070947
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.00716552734375,
+          "semantic_object_miou": 0.004926376864510589,
+          "depth_rmse_m": 0.9965428384631437
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.0774982393917162,
+            "semantic": 1.0765846914425492,
+            "edge": 0.047151163483504205
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.007220458984375,
+          "semantic_object_miou": 0.011322569956824438,
+          "depth_rmse_m": 1.3230618966549574
+        }
+      }
+    },
+    {
+      "name": "DSE_lambda1",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07364393244031817,
+        "semantic": 0.6762084370898083,
+        "edge": 0.005528235855861567
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.09409619140625,
+      "semantic_object_miou": 0.1413165518005552,
+      "depth_rmse_m": 1.2080245479931726,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07104888614203082,
+          "upper": 0.0762892941789003,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6361353483320621,
+          "upper": 0.7186677913445164,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.005438450770815688,
+          "upper": 0.005623380771898519,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.09330636596679687,
+        "upper": 0.09491480712890625,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": -0.0009064693571872647,
+          "interval_95": {
+            "lower": -0.011731932720907652,
+            "upper": 0.010023984288318693,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.07845494681823252,
+          "interval_95": {
+            "lower": 0.040648825284286795,
+            "upper": 0.11674947375308603,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.07974854161979046,
+          "interval_95": {
+            "lower": 0.07865420858734104,
+            "upper": 0.08093108727381103,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.012754763415806107,
+          "interval_95": {
+            "lower": -0.00932501271784755,
+            "upper": 0.035262645074401106,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.03665422900321701,
+          "interval_95": {
+            "lower": -0.09176257789614443,
+            "upper": 0.021735702508727115,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0840414371674233,
+          "interval_95": {
+            "lower": 0.08204318606202966,
+            "upper": 0.08615897632825692,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06542029476258904,
+            "semantic": 0.5809422628278844,
+            "edge": 0.00495907483753399
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.089986572265625,
+          "semantic_object_miou": 0.15804219163653785,
+          "depth_rmse_m": 1.0262066259879752
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.09579921410884708,
+            "semantic": 0.5280386687675491,
+            "edge": 0.005822950966394274
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.09686767578125,
+          "semantic_object_miou": 0.16117446203769253,
+          "depth_rmse_m": 1.6465959271937627
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06731431032996625,
+            "semantic": 0.8179200853570364,
+            "edge": 0.005538355810276698
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.094761962890625,
+          "semantic_object_miou": 0.14873684888619082,
+          "depth_rmse_m": 1.168824317256527
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06989016380626709,
+            "semantic": 0.706396159438882,
+            "edge": 0.00449838414468104
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.085252685546875,
+          "semantic_object_miou": 0.15379495517899922,
+          "depth_rmse_m": 0.8531167884507442
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06979567919392139,
+            "semantic": 0.7477450090576895,
+            "edge": 0.006822413520421833
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.103612060546875,
+          "semantic_object_miou": 0.10719978324409542,
+          "depth_rmse_m": 1.1974759633598455
+        }
+      }
+    },
+    {
+      "name": "DE_lambda1",
+      "images": 2000,
+      "losses": {
+        "depth": 0.07278276622761042,
+        "semantic": 0.8218348407710436,
+        "edge": 0.004069371561861772
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "actual_bpp": 0.063859619140625,
+      "semantic_object_miou": 0.04852058131684343,
+      "depth_rmse_m": 1.1926781083793059,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07028763877876336,
+          "upper": 0.07528981860113562,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.7913034195672953,
+          "upper": 0.8539908047898324,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.004004222258154004,
+          "upper": 0.004137599996942299,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.06339085693359375,
+        "upper": 0.064287158203125,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": -0.008242787838133054,
+          "interval_95": {
+            "lower": -0.017901381534233658,
+            "upper": 0.0014668875152298118,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.2943687453064207,
+          "interval_95": {
+            "lower": 0.2690408347260852,
+            "upper": 0.31764190299243616,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.047786467535082304,
+          "interval_95": {
+            "lower": 0.04703010293913212,
+            "upper": 0.04858051532567317,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.0054275888667421985,
+          "interval_95": {
+            "lower": -0.015802034485965004,
+            "upper": 0.026758674635545102,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.16361060984169296,
+          "interval_95": {
+            "lower": 0.12162392341318931,
+            "upper": 0.20783136095095917,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.051573046826034065,
+          "interval_95": {
+            "lower": 0.05012308809309807,
+            "upper": 0.05309153450969863,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": true,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06544226604979485,
+            "semantic": 0.7412947084463667,
+            "edge": 0.003688786506645556
+          },
+          "constant_losses": {
+            "depth": 0.1664593121118378,
+            "semantic": 1.1881209068000316,
+            "edge": 0.042667967895977196
+          },
+          "actual_bpp": 0.06032958984375,
+          "semantic_object_miou": 0.057753498044299384,
+          "depth_rmse_m": 1.00991866514339
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.09651866189669818,
+            "semantic": 0.7587309706280939,
+            "edge": 0.004202233805845026
+          },
+          "constant_losses": {
+            "depth": 0.24100311197340488,
+            "semantic": 1.177335983812809,
+            "edge": 0.05676548987161368
+          },
+          "actual_bpp": 0.06747314453125,
+          "semantic_object_miou": 0.047440378636193534,
+          "depth_rmse_m": 1.62605724478214
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.07050683214329183,
+            "semantic": 0.8655196090764367,
+            "edge": 0.0040959026158088815
+          },
+          "constant_losses": {
+            "depth": 0.19144952214068325,
+            "semantic": 1.4295281563699245,
+            "edge": 0.04305967738386243
+          },
+          "actual_bpp": 0.06466064453125,
+          "semantic_object_miou": 0.05982022836166526,
+          "depth_rmse_m": 1.1906192723340197
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06641963169677183,
+            "semantic": 0.9007053825166076,
+            "edge": 0.003358694527851185
+          },
+          "constant_losses": {
+            "depth": 0.16427754629869015,
+            "semantic": 1.34176178753376,
+            "edge": 0.0408698181854561
+          },
+          "actual_bpp": 0.057452392578125,
+          "semantic_object_miou": 0.0405322495712136,
+          "depth_rmse_m": 0.8508993177820846
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.06502643935149535,
+            "semantic": 0.8429235331877135,
+            "edge": 0.00500124035315821
+          },
+          "constant_losses": {
+            "depth": 0.19248206106480212,
+            "semantic": 1.3520469829440116,
+            "edge": 0.054296198142692445
+          },
+          "actual_bpp": 0.06938232421875,
+          "semantic_object_miou": 0.0498373755710702,
+          "depth_rmse_m": 1.1414436481815755
+        }
+      }
+    },
+    {
+      "name": "Fixed_spatial_prior",
+      "images": 2000,
+      "losses": {
+        "depth": 0.16744558820361272,
+        "semantic": 1.1506043719854206,
+        "edge": 0.04513854260090738
+      },
+      "constant_losses": {
+        "depth": 0.19113430943772255,
+        "semantic": 1.2977588105797768,
+        "edge": 0.04753183402121067
+      },
+      "actual_bpp": 0.0,
+      "semantic_object_miou": 0.0,
+      "depth_rmse_m": 1.7695264963975892,
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.1626465587315266,
+          "upper": 0.1727224554391345,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.1072366212376392,
+          "upper": 1.198545791956596,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.044596015495620665,
+          "upper": 0.04569443091237917,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "defined_replicates": 2000
+      },
+      "normalized_excess": {
+        "depth": {
+          "estimate": 0.7981945759053835,
+          "interval_95": {
+            "lower": 0.7879898465058182,
+            "upper": 0.8077529842317667,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.7818207218522368,
+          "interval_95": {
+            "lower": 0.7557670653452279,
+            "upper": 0.8106896656880646,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.9475657634890561,
+          "interval_95": {
+            "lower": 0.9450919180483635,
+            "upper": 0.9500724123921116,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "fixed_validation_excess": {
+        "depth": {
+          "estimate": 0.8108598151778768,
+          "interval_95": {
+            "lower": 0.7700275970889745,
+            "upper": 0.8557576835990405,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.6157331337892353,
+          "interval_95": {
+            "lower": 0.556093979109693,
+            "upper": 0.6816619798077045,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.9656058885217254,
+          "interval_95": {
+            "lower": 0.9535314399950995,
+            "upper": 0.9779777031979192,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "buildings": {
+        "ihlen": {
+          "images": 400,
+          "losses": {
+            "depth": 0.14518937052227557,
+            "semantic": 1.0151057615783066,
+            "edge": 0.04160656019113958
+          },
+          "constant_losses": {
+            "depth": 0.1664593107847031,
+            "semantic": 1.1881209678947926,
+            "edge": 0.0426679712254554
+          },
+          "actual_bpp": 0.0,
+          "semantic_object_miou": 0.0,
+          "depth_rmse_m": 1.4532177816512803
+        },
+        "mcdade": {
+          "images": 400,
+          "losses": {
+            "depth": 0.20896340986248105,
+            "semantic": 0.9795637553930283,
+            "edge": 0.05330043251160532
+          },
+          "constant_losses": {
+            "depth": 0.24100311006419362,
+            "semantic": 1.1773360556364059,
+            "edge": 0.05676549433264881
+          },
+          "actual_bpp": 0.0,
+          "semantic_object_miou": 0.0,
+          "depth_rmse_m": 2.2667946835687967
+        },
+        "muleshoe": {
+          "images": 400,
+          "losses": {
+            "depth": 0.16466969755245373,
+            "semantic": 1.329968024007976,
+            "edge": 0.04057803961448372
+          },
+          "constant_losses": {
+            "depth": 0.19144952040813223,
+            "semantic": 1.4295281651616096,
+            "edge": 0.04305968087166548
+          },
+          "actual_bpp": 0.0,
+          "semantic_object_miou": 0.0,
+          "depth_rmse_m": 1.8224029398543933
+        },
+        "noxapater": {
+          "images": 400,
+          "losses": {
+            "depth": 0.14667280259076507,
+            "semantic": 1.2797078439965843,
+            "edge": 0.03928862196393311
+          },
+          "constant_losses": {
+            "depth": 0.1642775464360602,
+            "semantic": 1.341761874705553,
+            "edge": 0.0408698207559064
+          },
+          "actual_bpp": 0.0,
+          "semantic_object_miou": 0.0,
+          "depth_rmse_m": 1.2438946370367823
+        },
+        "uvalda": {
+          "images": 400,
+          "losses": {
+            "depth": 0.17173266049008817,
+            "semantic": 1.1486764749512077,
+            "edge": 0.0509190587233752
+          },
+          "constant_losses": {
+            "depth": 0.19248205949552358,
+            "semantic": 1.3520469895005227,
+            "edge": 0.054296202920377255
+          },
+          "actual_bpp": 0.0,
+          "semantic_object_miou": 0.0,
+          "depth_rmse_m": 1.877331923050337
+        }
+      }
+    }
+  ],
+  "paired_contrasts": [
+    {
+      "left": "D_lambda0.3",
+      "right": "DSE_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0010797818754799682,
+          "interval_95": {
+            "lower": -0.002279744028253489,
+            "upper": 7.79096904268971e-05,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.1854246668227133,
+          "interval_95": {
+            "lower": 0.15699638422509604,
+            "upper": 0.21238516911310434,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.024286834916805673,
+          "interval_95": {
+            "lower": 0.023917192697952488,
+            "upper": 0.024661575199275462,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.12091455078124999,
+        "interval_95": {
+          "lower": -0.12240904541015625,
+          "upper": -0.11949925537109375,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DSE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -6.667367508635114e-05,
+          "interval_95": {
+            "lower": -0.0012620487840147674,
+            "upper": 0.001154800763895041,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.1802434968492016,
+          "interval_95": {
+            "lower": 0.15520051936751106,
+            "upper": 0.20494674024772247,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.020817912784084912,
+          "interval_95": {
+            "lower": 0.020487780115679196,
+            "upper": 0.021154435449929586,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.02001806640625,
+        "interval_95": {
+          "lower": 0.01945384521484375,
+          "upper": 0.020557574462890624,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "D_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0011797170226927889,
+          "interval_95": {
+            "lower": -0.00013676582404297116,
+            "upper": 0.0025357765093678656,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.0859124293834902,
+          "interval_95": {
+            "lower": -0.0986281235527015,
+            "upper": -0.07317750467910672,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.007807901694570317,
+          "interval_95": {
+            "lower": -0.008018000566076077,
+            "upper": -0.007597962096390617,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.053443115234375005,
+        "interval_95": {
+          "lower": 0.0531889404296875,
+          "upper": 0.05369900512695312,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DE_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0012745332345366484,
+          "interval_95": {
+            "lower": -0.002644104976818206,
+            "upper": 2.471184302703254e-05,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.051078415764961416,
+          "interval_95": {
+            "lower": 0.03709266073743345,
+            "upper": 0.06561318195490164,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.02547249487092995,
+          "interval_95": {
+            "lower": 0.02508962358080371,
+            "upper": 0.025860918188624234,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.06180249023437501,
+        "interval_95": {
+          "lower": -0.062377807617187496,
+          "upper": -0.061201593017578125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DS_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0006252820682711852,
+          "interval_95": {
+            "lower": -0.0004663783153868228,
+            "upper": 0.0017372831592219818,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.17218038021912796,
+          "interval_95": {
+            "lower": 0.14728306123359364,
+            "upper": 0.19779658170617187,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.003065994246207994,
+          "interval_95": {
+            "lower": 0.002924881013792038,
+            "upper": 0.0032087617719120313,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.053192138671875,
+        "interval_95": {
+          "lower": -0.054062072753906246,
+          "upper": -0.05232293090820313,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "RGB_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.029979871722636747,
+          "interval_95": {
+            "lower": -0.031811825002159455,
+            "upper": -0.02806047211883124,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.010501418550964425,
+          "interval_95": {
+            "lower": -0.006376114247448309,
+            "upper": 0.02803524662123529,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.02806704718785477,
+          "interval_95": {
+            "lower": 0.02764215855108614,
+            "upper": 0.028492440546359375,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.111754150390625,
+        "interval_95": {
+          "lower": -0.11377886352539063,
+          "upper": -0.10977872924804688,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.00018680216465144506,
+          "interval_95": {
+            "lower": -0.0013807437006442297,
+            "upper": 0.0010820411802967968,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.17623906439589343,
+          "interval_95": {
+            "lower": 0.1515836250533467,
+            "upper": 0.20063803819449383,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.00401544565860968,
+          "interval_95": {
+            "lower": -0.0042013418133847145,
+            "upper": -0.0038358949039951763,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.037508300781250004,
+        "interval_95": {
+          "lower": 0.03710178833007812,
+          "upper": 0.037879669189453125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0003371809828095068,
+          "interval_95": {
+            "lower": -0.0015666984011535577,
+            "upper": 0.0009918547735782335,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.03563615893339733,
+          "interval_95": {
+            "lower": -0.04851187240163561,
+            "upper": -0.022535229815973428,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0209223008018962,
+          "interval_95": {
+            "lower": 0.020589386901938816,
+            "upper": 0.021259677145064233,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.039541259765625,
+        "interval_95": {
+          "lower": 0.0392699951171875,
+          "upper": 0.039819091796875,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.011641742672305555,
+          "interval_95": {
+            "lower": -0.013170314817671896,
+            "upper": -0.009976879415946322,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.21510076187597593,
+          "interval_95": {
+            "lower": -0.22961923726444378,
+            "upper": -0.20030549331228245,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0132204014792369,
+          "interval_95": {
+            "lower": -0.013526854913101485,
+            "upper": -0.012933984220458298,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.06378857421875,
+        "interval_95": {
+          "lower": 0.0635146484375,
+          "upper": 0.06405791625976562,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.003048105202848095,
+          "interval_95": {
+            "lower": 0.0018969113901432127,
+            "upper": 0.0042745829834661036,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.16447098419861872,
+          "interval_95": {
+            "lower": 0.13571523058571036,
+            "upper": 0.19285320612111242,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.02308460150686733,
+          "interval_95": {
+            "lower": 0.022729103108147682,
+            "upper": 0.023449595868937464,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.02313232421875,
+        "interval_95": {
+          "lower": -0.023991693115234376,
+          "upper": -0.022335296630859376,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0039092714155558456,
+          "interval_95": {
+            "lower": 0.0026317012487736113,
+            "upper": 0.0051854636346630265,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.018844580517383358,
+          "interval_95": {
+            "lower": 0.004682665604964195,
+            "upper": 0.033178192788676744,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.024543465800867127,
+          "interval_95": {
+            "lower": 0.02416882369019986,
+            "upper": 0.024923434170544347,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.0071042480468749974,
+        "interval_95": {
+          "lower": 0.006651818847656249,
+          "upper": 0.007536676025390625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda0.3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.09075355056044646,
+          "interval_95": {
+            "lower": -0.09484249383453862,
+            "upper": -0.08647231859892492,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.30992495069699366,
+          "interval_95": {
+            "lower": -0.3340007783160195,
+            "upper": -0.2880144064730849,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.016525705238178486,
+          "interval_95": {
+            "lower": -0.016840945283056498,
+            "upper": -0.01623767241961432,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.0709638671875,
+        "interval_95": {
+          "lower": 0.0706923583984375,
+          "upper": 0.07123389892578125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DSE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.001013108200393617,
+          "interval_95": {
+            "lower": -0.00013769557365448656,
+            "upper": 0.0021226190833433015,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.005181169973511701,
+          "interval_95": {
+            "lower": -0.025449819401805858,
+            "upper": 0.016836657749304124,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0034689221327207634,
+          "interval_95": {
+            "lower": -0.00352711248611522,
+            "upper": -0.0034101171913118386,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.1409326171875,
+        "interval_95": {
+          "lower": 0.139941455078125,
+          "upper": 0.14201126098632813,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "D_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.002259498898172757,
+          "interval_95": {
+            "lower": 0.0008005971112812305,
+            "upper": 0.00373225577847916,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.2713370962062035,
+          "interval_95": {
+            "lower": -0.29875723870401133,
+            "upper": -0.24226128299253905,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.03209473661137599,
+          "interval_95": {
+            "lower": -0.03256678555874823,
+            "upper": -0.03161138685277037,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.174357666015625,
+        "interval_95": {
+          "lower": 0.17292548828124998,
+          "upper": 0.17584840698242188,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DE_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.00019475135905668017,
+          "interval_95": {
+            "lower": -0.0016563629686366765,
+            "upper": 0.0013345112066192068,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.1343462510577519,
+          "interval_95": {
+            "lower": -0.15957087297160172,
+            "upper": -0.10832218033524556,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0011856599541242756,
+          "interval_95": {
+            "lower": 0.0011617461060809543,
+            "upper": 0.0012090385571711527,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.059112060546874984,
+        "interval_95": {
+          "lower": 0.05802396850585938,
+          "upper": 0.060243243408203126,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DS_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0017050639437511533,
+          "interval_95": {
+            "lower": 0.0006600379535811947,
+            "upper": 0.0028405683977005447,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.013244286603585342,
+          "interval_95": {
+            "lower": -0.03705181949331884,
+            "upper": 0.009597772498639776,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.02122084067059768,
+          "interval_95": {
+            "lower": -0.021550571463708184,
+            "upper": -0.02088036764578828,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.06772241210937499,
+        "interval_95": {
+          "lower": 0.066799267578125,
+          "upper": 0.06868043823242187,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "RGB_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.02890008984715678,
+          "interval_95": {
+            "lower": -0.030824583262519443,
+            "upper": -0.026871277335757615,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.17492324827174888,
+          "interval_95": {
+            "lower": -0.2006185793673241,
+            "upper": -0.14782877590884608,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.003780212271049095,
+          "interval_95": {
+            "lower": 0.0037135808655047184,
+            "upper": 0.003849023742958707,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.00916040039062499,
+        "interval_95": {
+          "lower": 0.008158911132812498,
+          "upper": 0.010198504638671876,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0008929797108285231,
+          "interval_95": {
+            "lower": -0.00029918387062498884,
+            "upper": 0.002141636491747335,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.009185602426819872,
+          "interval_95": {
+            "lower": -0.03410009337557123,
+            "upper": 0.016368854161798622,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.028302280575415353,
+          "interval_95": {
+            "lower": -0.028731505914109588,
+            "upper": -0.027874941169507658,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.1584228515625,
+        "interval_95": {
+          "lower": 0.15721463623046875,
+          "upper": 0.15967459716796875,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0007426008926704614,
+          "interval_95": {
+            "lower": -0.0005608696761133667,
+            "upper": 0.0021499928638513744,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.22106082575611063,
+          "interval_95": {
+            "lower": -0.24848472768292565,
+            "upper": -0.19232667135899095,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.003364534114909475,
+          "interval_95": {
+            "lower": -0.0034242687421556185,
+            "upper": -0.003308006716828458,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.160455810546875,
+        "interval_95": {
+          "lower": 0.1591361328125,
+          "upper": 0.16181793212890627,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.010561960796825587,
+          "interval_95": {
+            "lower": -0.012356237992731615,
+            "upper": -0.008790572314319439,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.40052542869868923,
+          "interval_95": {
+            "lower": -0.4290588069697945,
+            "upper": -0.371031245555666,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.03750723639604257,
+          "interval_95": {
+            "lower": -0.03805134685213889,
+            "upper": -0.03697419648474733,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.184703125,
+        "interval_95": {
+          "lower": 0.183244287109375,
+          "upper": 0.18620855712890627,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.004127887078328063,
+          "interval_95": {
+            "lower": 0.0029821646663185696,
+            "upper": 0.00532242466625175,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.020953682624094583,
+          "interval_95": {
+            "lower": -0.04678607249927444,
+            "upper": 0.006403221185092104,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0012022334099383442,
+          "interval_95": {
+            "lower": -0.0012278193353462482,
+            "upper": -0.0011765556595504673,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.09778222656249999,
+        "interval_95": {
+          "lower": 0.09697871704101563,
+          "upper": 0.098618408203125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.004989053291035814,
+          "interval_95": {
+            "lower": 0.0037336998753948075,
+            "upper": 0.00626949693225906,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.16658008630532994,
+          "interval_95": {
+            "lower": -0.19251671012036392,
+            "upper": -0.14014821799211488,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.00025663088406145066,
+          "interval_95": {
+            "lower": 0.0002390953512505805,
+            "upper": 0.000272906920407331,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.128018798828125,
+        "interval_95": {
+          "lower": 0.1268937744140625,
+          "upper": 0.1292235107421875,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda0.3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.08967376868496649,
+          "interval_95": {
+            "lower": -0.09386941349651896,
+            "upper": -0.08530673945696325,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.49534961751970696,
+          "interval_95": {
+            "lower": -0.5300510074515448,
+            "upper": -0.4603740277637728,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.04081254015498416,
+          "interval_95": {
+            "lower": -0.04132722287973102,
+            "upper": -0.04031538291783399,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.19187841796875,
+        "interval_95": {
+          "lower": 0.19042105102539064,
+          "upper": 0.19338285522460938,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "D_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.00124639069777914,
+          "interval_95": {
+            "lower": -0.00020650471448317094,
+            "upper": 0.0026640205958508786,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.2661559262326918,
+          "interval_95": {
+            "lower": -0.29255592014834986,
+            "upper": -0.2389021309203237,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.02862581447865523,
+          "interval_95": {
+            "lower": -0.029060237278683048,
+            "upper": -0.02817018771081748,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.033425048828125,
+        "interval_95": {
+          "lower": 0.032915515136718754,
+          "upper": 0.033958990478515624,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "DE_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0012078595594502972,
+          "interval_95": {
+            "lower": -0.0026623937112046528,
+            "upper": 0.00021916750880191774,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.12916508108424019,
+          "interval_95": {
+            "lower": -0.15354914409118933,
+            "upper": -0.10345058399922566,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.004654582086845039,
+          "interval_95": {
+            "lower": 0.004577502726390322,
+            "upper": 0.00473117933302483,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.08182055664062501,
+        "interval_95": {
+          "lower": -0.08228956298828125,
+          "upper": -0.08132809448242187,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "DS_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0006919557433575363,
+          "interval_95": {
+            "lower": -0.00043640894730342385,
+            "upper": 0.001811399610090304,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.008063116630073641,
+          "interval_95": {
+            "lower": -0.03258065703364553,
+            "upper": 0.015286534221604165,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.01775191853787692,
+          "interval_95": {
+            "lower": -0.018047240793028687,
+            "upper": -0.017453676570312018,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.073210205078125,
+        "interval_95": {
+          "lower": -0.073782763671875,
+          "upper": -0.07261345825195313,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "RGB_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.029913198047550396,
+          "interval_95": {
+            "lower": -0.03179873139127739,
+            "upper": -0.02794679596431669,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.16974207829823718,
+          "interval_95": {
+            "lower": -0.19456318138559,
+            "upper": -0.14427646018769594,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.007249134403769858,
+          "interval_95": {
+            "lower": 0.007129539188452054,
+            "upper": 0.007373069279541141,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.131772216796875,
+        "interval_95": {
+          "lower": -0.13332449951171876,
+          "upper": -0.13019811401367187,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.00012012848956509392,
+          "interval_95": {
+            "lower": -0.001241157251730332,
+            "upper": 0.000958478118624771,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.004004432453308171,
+          "interval_95": {
+            "lower": -0.025442944133316596,
+            "upper": 0.016884414092398936,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.024833358442694593,
+          "interval_95": {
+            "lower": -0.025224869671047777,
+            "upper": -0.02443515701003453,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.017490234375000004,
+        "interval_95": {
+          "lower": 0.017197717285156247,
+          "upper": 0.01777930908203125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0002705073077231557,
+          "interval_95": {
+            "lower": -0.0013924444530392013,
+            "upper": 0.0008439640834345507,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.21587965578259893,
+          "interval_95": {
+            "lower": -0.24179046608266655,
+            "upper": -0.18900333144039624,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.00010438801781128843,
+          "interval_95": {
+            "lower": 7.824672156020812e-05,
+            "upper": 0.00013043277121123532,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.019523193359375003,
+        "interval_95": {
+          "lower": 0.01915592041015625,
+          "upper": 0.019917742919921873,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.011575068997219204,
+          "interval_95": {
+            "lower": -0.013187160046194905,
+            "upper": -0.00997118068645359,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.39534425872517753,
+          "interval_95": {
+            "lower": -0.4226766135932122,
+            "upper": -0.36628458833667693,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.03403831426332181,
+          "interval_95": {
+            "lower": -0.034546541075965435,
+            "upper": -0.033538932430182834,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.0437705078125,
+        "interval_95": {
+          "lower": 0.04325545654296875,
+          "upper": 0.04430348510742188,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.003114778877934446,
+          "interval_95": {
+            "lower": 0.0019647914862900495,
+            "upper": 0.004205222559435057,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.01577251265058288,
+          "interval_95": {
+            "lower": -0.04016574959994176,
+            "upper": 0.008120835727854825,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.002266688722782419,
+          "interval_95": {
+            "lower": 0.0022244819098978037,
+            "upper": 0.002309018626973921,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.043150390625,
+        "interval_95": {
+          "lower": -0.043539569091796876,
+          "upper": -0.042780975341796874,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.003975945090642197,
+          "interval_95": {
+            "lower": 0.002701882841042246,
+            "upper": 0.00522278038988588,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.16139891633181824,
+          "interval_95": {
+            "lower": -0.18588989257834043,
+            "upper": -0.13572232893540062,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.003725553016782214,
+          "interval_95": {
+            "lower": 0.0036604846876929506,
+            "upper": 0.0037898990935591424,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.012913818359375002,
+        "interval_95": {
+          "lower": -0.01318924560546875,
+          "upper": -0.012645721435546875,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0906868768853601,
+          "interval_95": {
+            "lower": -0.09483079784141156,
+            "upper": -0.08659252698268974,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.49016844754619526,
+          "interval_95": {
+            "lower": -0.5249243105642848,
+            "upper": -0.4568994554815522,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.037343618022263395,
+          "interval_95": {
+            "lower": -0.03783076395631361,
+            "upper": -0.03687812085000915,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.05094580078125,
+        "interval_95": {
+          "lower": 0.0504252197265625,
+          "upper": 0.051476806640625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "DE_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0024542502572294372,
+          "interval_95": {
+            "lower": -0.004025852167292031,
+            "upper": -0.000756336076336449,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.1369908451484516,
+          "interval_95": {
+            "lower": 0.12414482874872627,
+            "upper": 0.1506807066615787,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03328039656550027,
+          "interval_95": {
+            "lower": 0.032781198807289094,
+            "upper": 0.0337622076185693,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.11524560546875001,
+        "interval_95": {
+          "lower": -0.11588291625976563,
+          "upper": -0.11458150024414063,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "DS_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0005544349544216037,
+          "interval_95": {
+            "lower": -0.0019371414161170816,
+            "upper": 0.0007770991648430915,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.25809280960261816,
+          "interval_95": {
+            "lower": 0.2333105172276381,
+            "upper": 0.28298742436508184,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.010873895940778311,
+          "interval_95": {
+            "lower": 0.010647808960964905,
+            "upper": 0.01108214723927085,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.10663525390625,
+        "interval_95": {
+          "lower": -0.1075234375,
+          "upper": -0.10574114379882812,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "RGB_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.031159588745329536,
+          "interval_95": {
+            "lower": -0.03304253643741249,
+            "upper": -0.029117426313855686,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.09641384793445462,
+          "interval_95": {
+            "lower": 0.07990213051959866,
+            "upper": 0.11370363685758782,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03587494888242509,
+          "interval_95": {
+            "lower": 0.035344990964981934,
+            "upper": 0.03638820009948022,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.165197265625,
+        "interval_95": {
+          "lower": -0.16720086059570313,
+          "upper": -0.16316572265625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.001366519187344234,
+          "interval_95": {
+            "lower": -0.0027630949417769396,
+            "upper": 3.596097935223758e-05,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.2621514937793836,
+          "interval_95": {
+            "lower": 0.23580252952778252,
+            "upper": 0.28699573768486736,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.003792456035960637,
+          "interval_95": {
+            "lower": 0.0036363011102235753,
+            "upper": 0.003956770694009904,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.015934814453124998,
+        "interval_95": {
+          "lower": -0.0162651611328125,
+          "upper": -0.01563619384765625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0015168980055022957,
+          "interval_95": {
+            "lower": -0.0029353919950197353,
+            "upper": 2.2620956238883235e-06,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.050276270450092864,
+          "interval_95": {
+            "lower": 0.039919665482221256,
+            "upper": 0.060361955076851936,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.028730202496466517,
+          "interval_95": {
+            "lower": 0.028276258169961696,
+            "upper": 0.029165676412769424,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.013901855468749998,
+        "interval_95": {
+          "lower": -0.014072546386718749,
+          "upper": -0.013734344482421876,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.012821459694998344,
+          "interval_95": {
+            "lower": -0.01434435508509632,
+            "upper": -0.011193262339133066,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.12918833249248574,
+          "interval_95": {
+            "lower": -0.13959537523509924,
+            "upper": -0.11824969574813729,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.005412499784666583,
+          "interval_95": {
+            "lower": -0.0056096994543127976,
+            "upper": -0.005213758310716368,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.010345458984375,
+        "interval_95": {
+          "lower": 0.010253173828125,
+          "upper": 0.010436767578125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.001868388180155306,
+          "interval_95": {
+            "lower": 0.00055972489685518,
+            "upper": 0.003282505839620724,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.2503834135821089,
+          "interval_95": {
+            "lower": 0.2201306571706896,
+            "upper": 0.2801928712844441,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.030892503201437646,
+          "interval_95": {
+            "lower": 0.030421655592294698,
+            "upper": 0.03135040232268802,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.076575439453125,
+        "interval_95": {
+          "lower": -0.07737965087890625,
+          "upper": -0.07579340209960937,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0027295543928630567,
+          "interval_95": {
+            "lower": 0.0013699172266700785,
+            "upper": 0.004050716312299489,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.10475700990087355,
+          "interval_95": {
+            "lower": 0.09268602103428561,
+            "upper": 0.11707970339153545,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03235136749543744,
+          "interval_95": {
+            "lower": 0.03186304797773719,
+            "upper": 0.032826892521092665,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.04633886718750001,
+        "interval_95": {
+          "lower": -0.046757574462890625,
+          "upper": -0.0459255126953125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.09193326758313924,
+          "interval_95": {
+            "lower": -0.09636990076623042,
+            "upper": -0.0875706326731015,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.22401252131350347,
+          "interval_95": {
+            "lower": -0.24557325274432082,
+            "upper": -0.20424024361236956,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.008717803543608169,
+          "interval_95": {
+            "lower": -0.008966066176796446,
+            "upper": -0.008474079998435627,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.017520751953125,
+        "interval_95": {
+          "lower": 0.017425775146484378,
+          "upper": 0.017612548828125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "DS_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0018998153028078335,
+          "interval_95": {
+            "lower": 0.0003920932034729045,
+            "upper": 0.0033213839362957534,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.12110196445416654,
+          "interval_95": {
+            "lower": 0.09753813041592957,
+            "upper": 0.14438571275459822,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.022406500624721958,
+          "interval_95": {
+            "lower": -0.022751479294236467,
+            "upper": -0.022051484328050902,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.008610351562500007,
+        "interval_95": {
+          "lower": 0.007915203857421876,
+          "upper": 0.0092822509765625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "RGB_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0287053384881001,
+          "interval_95": {
+            "lower": -0.03066758623704663,
+            "upper": -0.026643740031984622,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.04057699721399699,
+          "interval_95": {
+            "lower": -0.05616386806986992,
+            "upper": -0.024588048270076997,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0025945523169248193,
+          "interval_95": {
+            "lower": 0.002548388087126387,
+            "upper": 0.002643578950838673,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.049951660156249994,
+        "interval_95": {
+          "lower": -0.05155130004882812,
+          "upper": -0.048417626953125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0010877310698852033,
+          "interval_95": {
+            "lower": -0.0003358076329634089,
+            "upper": 0.002559198675019435,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.12516064863093201,
+          "interval_95": {
+            "lower": 0.10198114566927542,
+            "upper": 0.14802665682233637,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.02948794052953963,
+          "interval_95": {
+            "lower": -0.02992807368551403,
+            "upper": -0.029045158542334776,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.09931079101562501,
+        "interval_95": {
+          "lower": 0.09874144287109375,
+          "upper": 0.09987921752929688,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0009373522517271415,
+          "interval_95": {
+            "lower": -0.00046609024533536374,
+            "upper": 0.0024237746384693226,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.08671457469835875,
+          "interval_95": {
+            "lower": -0.10017647026603804,
+            "upper": -0.07448327625420649,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0045501940690337505,
+          "interval_95": {
+            "lower": -0.00462610965414151,
+            "upper": -0.004475889194204138,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.10134375000000001,
+        "interval_95": {
+          "lower": 0.10079171752929687,
+          "upper": 0.1018767578125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.010367209437768907,
+          "interval_95": {
+            "lower": -0.012192347697739015,
+            "upper": -0.008542219784954798,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.26617917764093735,
+          "interval_95": {
+            "lower": -0.2812208655748168,
+            "upper": -0.2513351664940593,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.03869289635016685,
+          "interval_95": {
+            "lower": -0.03924881365558467,
+            "upper": -0.03814739501847307,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.125591064453125,
+        "interval_95": {
+          "lower": 0.12488548583984375,
+          "upper": 0.12625927734375,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.004322638437384743,
+          "interval_95": {
+            "lower": 0.0029006763538229315,
+            "upper": 0.005804690622945778,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.1133925684336573,
+          "interval_95": {
+            "lower": 0.08481408280130709,
+            "upper": 0.1408714434195252,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0023878933640626198,
+          "interval_95": {
+            "lower": -0.002428806423068909,
+            "upper": -0.0023464930642703623,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.03867016601562501,
+        "interval_95": {
+          "lower": 0.038111499023437495,
+          "upper": 0.039197302246093746,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.005183804650092494,
+          "interval_95": {
+            "lower": 0.0038788081714475954,
+            "upper": 0.006516887524171035,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.03223383524757806,
+          "interval_95": {
+            "lower": -0.04558519081434932,
+            "upper": -0.01898717254221555,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.000929029070062825,
+          "interval_95": {
+            "lower": -0.0009455120587743292,
+            "upper": -0.0009123694507943586,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.06890673828125,
+        "interval_95": {
+          "lower": 0.06851576538085938,
+          "upper": 0.06929251708984376,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda0.3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.08947901732590981,
+          "interval_95": {
+            "lower": -0.09370095673378674,
+            "upper": -0.0851210447196907,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.3610033664619551,
+          "interval_95": {
+            "lower": -0.3862596827642643,
+            "upper": -0.3379454319650891,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.04199820010910844,
+          "interval_95": {
+            "lower": -0.04252385917427746,
+            "upper": -0.041492787630776004,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.132766357421875,
+        "interval_95": {
+          "lower": 0.13206173095703125,
+          "upper": 0.1334392333984375,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "RGB_lambda0.3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.030605153790907932,
+          "interval_95": {
+            "lower": -0.03243164187300135,
+            "upper": -0.028649245112913203,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.16167896166816353,
+          "interval_95": {
+            "lower": -0.1840172697458649,
+            "upper": -0.13822069316365523,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.025001052941646777,
+          "interval_95": {
+            "lower": 0.0246110972229455,
+            "upper": 0.025383780676884547,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.05856201171875,
+        "interval_95": {
+          "lower": -0.06002576293945313,
+          "upper": -0.057040924072265624,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0008120842329226302,
+          "interval_95": {
+            "lower": -0.0019653082547068934,
+            "upper": 0.00040153878728742693,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.00405868417676547,
+          "interval_95": {
+            "lower": -0.02094539514665953,
+            "upper": 0.028914473096816825,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.007081439904817674,
+          "interval_95": {
+            "lower": -0.007258758275311262,
+            "upper": -0.006900398632883663,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.090700439453125,
+        "interval_95": {
+          "lower": 0.08996754150390625,
+          "upper": 0.09139506225585937,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.000962463051080692,
+          "interval_95": {
+            "lower": -0.0023210363571939474,
+            "upper": 0.0004007801991421791,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.2078165391525253,
+          "interval_95": {
+            "lower": -0.23369268173682503,
+            "upper": -0.18308451343631618,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.017856306555688206,
+          "interval_95": {
+            "lower": 0.017556019798651505,
+            "upper": 0.01815252535813197,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.0927333984375,
+        "interval_95": {
+          "lower": 0.09194823608398438,
+          "upper": 0.09351063232421875,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.01226702474057674,
+          "interval_95": {
+            "lower": -0.014002985240041737,
+            "upper": -0.010569499616348186,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.3872811420951039,
+          "interval_95": {
+            "lower": -0.41520382616383716,
+            "upper": -0.360565649750142,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.016286395725444894,
+          "interval_95": {
+            "lower": -0.016591657432500503,
+            "upper": -0.01599528853785014,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.116980712890625,
+        "interval_95": {
+          "lower": 0.11606834716796875,
+          "upper": 0.11788001098632812,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0024228231345769097,
+          "interval_95": {
+            "lower": 0.001330599887564305,
+            "upper": 0.003562015740259079,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.0077093960205092404,
+          "interval_95": {
+            "lower": -0.03449296035082661,
+            "upper": 0.018514627238630794,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.020018607260659335,
+          "interval_95": {
+            "lower": 0.019690116194733855,
+            "upper": 0.020341319585305606,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.030059814453125,
+        "interval_95": {
+          "lower": 0.029570379638671873,
+          "upper": 0.03052491455078125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0032839893472846604,
+          "interval_95": {
+            "lower": 0.0019950120928871936,
+            "upper": 0.004549733913294052,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.1533357997017446,
+          "interval_95": {
+            "lower": -0.17686255280589688,
+            "upper": -0.12880264766648766,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.021477471554659133,
+          "interval_95": {
+            "lower": 0.021132180508144117,
+            "upper": 0.021816038377319276,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.06029638671875,
+        "interval_95": {
+          "lower": 0.05967208251953125,
+          "upper": 0.060933905029296874,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda0.3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.09137883262871764,
+          "interval_95": {
+            "lower": -0.09559862393133807,
+            "upper": -0.08714255579404998,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.4821053309161216,
+          "interval_95": {
+            "lower": -0.5139710244048968,
+            "upper": -0.4509324681709521,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.01959169948438648,
+          "interval_95": {
+            "lower": -0.01990049207203265,
+            "upper": -0.019300790436845277,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.124156005859375,
+        "interval_95": {
+          "lower": 0.12324777221679686,
+          "upper": 0.1250610595703125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "RGB_lambda0.3",
+      "right": "DS_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.029793069557985302,
+          "interval_95": {
+            "lower": 0.02785669898090418,
+            "upper": 0.031722505815810285,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.165737645844929,
+          "interval_95": {
+            "lower": 0.14173873708127063,
+            "upper": 0.18895343045262855,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.03208249284646445,
+          "interval_95": {
+            "lower": -0.03254719405857558,
+            "upper": -0.031609090826636016,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.149262451171875,
+        "interval_95": {
+          "lower": 0.14746500244140626,
+          "upper": 0.15104165649414064,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "RGB_lambda0.3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.02964269073982724,
+          "interval_95": {
+            "lower": 0.02770015716092313,
+            "upper": 0.031531315407919466,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.04613757748436176,
+          "interval_95": {
+            "lower": -0.062489656242635104,
+            "upper": -0.030958440147130804,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.007144746385958569,
+          "interval_95": {
+            "lower": -0.0072654826868768395,
+            "upper": -0.007025114716755252,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.15129541015625,
+        "interval_95": {
+          "lower": 0.1494152587890625,
+          "upper": 0.1531741516113281,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "RGB_lambda0.3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.018338129050331192,
+          "interval_95": {
+            "lower": 0.016406680898519696,
+            "upper": 0.020285363299632448,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.22560218042694036,
+          "interval_95": {
+            "lower": -0.24367134390198625,
+            "upper": -0.2086133298409171,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.04128744866709167,
+          "interval_95": {
+            "lower": -0.04187224116486132,
+            "upper": -0.04071084132631086,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.175542724609375,
+        "interval_95": {
+          "lower": 0.17350146484375,
+          "upper": 0.17753834228515625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "RGB_lambda0.3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.03302797692548484,
+          "interval_95": {
+            "lower": 0.031030293666583022,
+            "upper": 0.03485730665812734,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.1539695656476543,
+          "interval_95": {
+            "lower": 0.12570052393985687,
+            "upper": 0.18188556208822998,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.004982445680987439,
+          "interval_95": {
+            "lower": -0.005069881120302761,
+            "upper": -0.004899238660800165,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.088621826171875,
+        "interval_95": {
+          "lower": 0.08722529907226563,
+          "upper": 0.08998313598632812,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "RGB_lambda0.3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.03388914313819259,
+          "interval_95": {
+            "lower": 0.03204976833678083,
+            "upper": 0.03563670732490719,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.008343161966418933,
+          "interval_95": {
+            "lower": -0.0073000736557762985,
+            "upper": 0.023733294766314826,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.003523581386987644,
+          "interval_95": {
+            "lower": -0.003585094648115319,
+            "upper": -0.0034655864416276013,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.1188583984375,
+        "interval_95": {
+          "lower": 0.11722215576171875,
+          "upper": 0.12050635375976562,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "RGB_lambda0.3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.06077367883780971,
+          "interval_95": {
+            "lower": -0.06473633006622549,
+            "upper": -0.056969216485775534,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.3204263692479581,
+          "interval_95": {
+            "lower": -0.3478748896291247,
+            "upper": -0.2945073013646527,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.04459275242603326,
+          "interval_95": {
+            "lower": -0.04514507658179363,
+            "upper": -0.04405735289328913,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.182718017578125,
+        "interval_95": {
+          "lower": 0.18067030639648438,
+          "upper": 0.18470572509765623,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda3",
+      "right": "DE_lambda3",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.00015037881815806176,
+          "interval_95": {
+            "lower": -0.001405931123398469,
+            "upper": 0.0011586971262993824,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.21187522332929076,
+          "interval_95": {
+            "lower": -0.2366331433038576,
+            "upper": -0.18734770950840324,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.02493774646050588,
+          "interval_95": {
+            "lower": 0.02453675157422913,
+            "upper": 0.025333730328868476,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.0020329589843749996,
+        "interval_95": {
+          "lower": 0.001811712646484375,
+          "upper": 0.002259521484375,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.01145494050765411,
+          "interval_95": {
+            "lower": -0.013162986730685215,
+            "upper": -0.0097870683607238,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.39133982627186936,
+          "interval_95": {
+            "lower": -0.4177123413944967,
+            "upper": -0.36357732879248217,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.00920495582062722,
+          "interval_95": {
+            "lower": -0.009444648124249942,
+            "upper": -0.008980485552371468,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.026280273437499998,
+        "interval_95": {
+          "lower": 0.025980145263671876,
+          "upper": 0.026586920166015625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.00323490736749954,
+          "interval_95": {
+            "lower": 0.002042411826387979,
+            "upper": 0.004471210746746512,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.01176808019727471,
+          "interval_95": {
+            "lower": -0.03721510337618527,
+            "upper": 0.01167806249185225,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.02710004716547701,
+          "interval_95": {
+            "lower": 0.0266827463435453,
+            "upper": 0.027517716765369547,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.060640625000000004,
+        "interval_95": {
+          "lower": -0.06121388549804688,
+          "upper": -0.06008853759765625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.004096073580207291,
+          "interval_95": {
+            "lower": 0.0027493239801842707,
+            "upper": 0.005401735581026871,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.15739448387851007,
+          "interval_95": {
+            "lower": -0.18039956084410652,
+            "upper": -0.1326333027578948,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.028558911459476807,
+          "interval_95": {
+            "lower": 0.02812825486566253,
+            "upper": 0.02899084508660053,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.030404052734375006,
+        "interval_95": {
+          "lower": -0.030714642333984375,
+          "upper": -0.03009493408203125,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DS_lambda3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.09056674839579501,
+          "interval_95": {
+            "lower": -0.09467173471933348,
+            "upper": -0.08627099405073095,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.4861640150928871,
+          "interval_95": {
+            "lower": -0.5196389811930829,
+            "upper": -0.4529118145871442,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.012510259579568805,
+          "interval_95": {
+            "lower": -0.012781689684010052,
+            "upper": -0.01225085531009245,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.03345556640625,
+        "interval_95": {
+          "lower": 0.03315623779296875,
+          "upper": 0.033758575439453126,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda3",
+      "right": "D_lambda30",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.011304561689496048,
+          "interval_95": {
+            "lower": -0.012974046831286983,
+            "upper": -0.00968582204543054,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.1794646029425786,
+          "interval_95": {
+            "lower": -0.18956708817528573,
+            "upper": -0.16843197981303082,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0341427022811331,
+          "interval_95": {
+            "lower": -0.03464949704127175,
+            "upper": -0.03364715425915966,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.024247314453125,
+        "interval_95": {
+          "lower": 0.024051507568359377,
+          "upper": 0.02442652587890625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda3",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0033852861856576016,
+          "interval_95": {
+            "lower": 0.002018683342903391,
+            "upper": 0.004682247663772426,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.20010714313201605,
+          "interval_95": {
+            "lower": 0.17012428513115155,
+            "upper": 0.2300359968430886,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0021623007049711308,
+          "interval_95": {
+            "lower": 0.0021204285966741733,
+            "upper": 0.0022051876599698517,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.062673583984375,
+        "interval_95": {
+          "lower": -0.06333624877929687,
+          "upper": -0.062030401611328126,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda3",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.004246452398365352,
+          "interval_95": {
+            "lower": 0.0029827783967601245,
+            "upper": 0.005483082578924937,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.05448073945078069,
+          "interval_95": {
+            "lower": 0.04393988916284291,
+            "upper": 0.06574387576431028,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0036211649989709256,
+          "interval_95": {
+            "lower": 0.0035568513696591256,
+            "upper": 0.003686406011207874,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.032437011718750006,
+        "interval_95": {
+          "lower": -0.032708013916015626,
+          "upper": -0.03215429077148438,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda3",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.09041636957763695,
+          "interval_95": {
+            "lower": -0.09457578790131958,
+            "upper": -0.08621604028500734,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.27428879176359633,
+          "interval_95": {
+            "lower": -0.2960730392779223,
+            "upper": -0.25437129450270446,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.037448006040074686,
+          "interval_95": {
+            "lower": -0.03792867669431744,
+            "upper": -0.03698200982825929,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.031422607421875,
+        "interval_95": {
+          "lower": 0.031234857177734377,
+          "upper": 0.03160181884765625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda30",
+      "right": "DSE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.01468984787515365,
+          "interval_95": {
+            "lower": 0.013063466197485107,
+            "upper": 0.016359846546943297,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.37957174607459465,
+          "interval_95": {
+            "lower": 0.347888663116272,
+            "upper": 0.4115511846063193,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03630500298610423,
+          "interval_95": {
+            "lower": 0.03578172586655564,
+            "upper": 0.03683577034591435,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.0869208984375,
+        "interval_95": {
+          "lower": -0.08774103393554687,
+          "upper": -0.08612766723632813,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda30",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0155510140878614,
+          "interval_95": {
+            "lower": 0.013909096979454631,
+            "upper": 0.017145801363978527,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": 0.2339453423933593,
+          "interval_95": {
+            "lower": 0.22042342928501313,
+            "upper": 0.24760452269531089,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.03776386728010402,
+          "interval_95": {
+            "lower": 0.037224109131926704,
+            "upper": 0.03831193178574722,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": -0.05668432617187501,
+        "interval_95": {
+          "lower": -0.05711162109375,
+          "upper": -0.05621671752929688,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "D_lambda30",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0791118078881409,
+          "interval_95": {
+            "lower": -0.08324220925869885,
+            "upper": -0.07517517170268694,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.09482418882101773,
+          "interval_95": {
+            "lower": -0.11429628395773488,
+            "upper": -0.077231806877721,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.0033053037589415857,
+          "interval_95": {
+            "lower": -0.0034853979847743154,
+            "upper": -0.0031281991250230986,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.00717529296875,
+        "interval_95": {
+          "lower": 0.007163330078125,
+          "upper": 0.007187255859375,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda1",
+      "right": "DE_lambda1",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": 0.0008611662127077507,
+          "interval_95": {
+            "lower": -0.0003441631277906618,
+            "upper": 0.002005830689752476,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.14562640368123536,
+          "interval_95": {
+            "lower": -0.1730890981068543,
+            "upper": -0.11631018609958117,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": 0.0014588642939997948,
+          "interval_95": {
+            "lower": 0.0014282833640492756,
+            "upper": 0.0014896985191475323,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.030236572265624997,
+        "interval_95": {
+          "lower": 0.029771466064453127,
+          "upper": 0.03073563232421875,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DSE_lambda1",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.09380165576329455,
+          "interval_95": {
+            "lower": -0.09814629034171814,
+            "upper": -0.08950378984360724,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.4743959348956124,
+          "interval_95": {
+            "lower": -0.511690972950688,
+            "upper": -0.4384066547658644,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.039610306745045815,
+          "interval_95": {
+            "lower": -0.04011447975973642,
+            "upper": -0.03912248977939817,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.09409619140625,
+        "interval_95": {
+          "lower": 0.09330636596679687,
+          "upper": 0.09491480712890625,
+          "defined_replicates": 2000
+        }
+      }
+    },
+    {
+      "left": "DE_lambda1",
+      "right": "Fixed_spatial_prior",
+      "direction": "left minus right",
+      "loss_differences": {
+        "depth": {
+          "estimate": -0.0946628219760023,
+          "interval_95": {
+            "lower": -0.09890030799726955,
+            "upper": -0.09053589939370285,
+            "defined_replicates": 2000
+          }
+        },
+        "semantic": {
+          "estimate": -0.328769531214377,
+          "interval_95": {
+            "lower": -0.35295451960699864,
+            "upper": -0.3066713436289284,
+            "defined_replicates": 2000
+          }
+        },
+        "edge": {
+          "estimate": -0.04106917103904561,
+          "interval_95": {
+            "lower": -0.04159040091101051,
+            "upper": -0.04056779295133219,
+            "defined_replicates": 2000
+          }
+        }
+      },
+      "rate_difference": {
+        "estimate": 0.063859619140625,
+        "interval_95": {
+          "lower": 0.06339085693359375,
+          "upper": 0.064287158203125,
+          "defined_replicates": 2000
+        }
+      }
+    }
+  ]
+}

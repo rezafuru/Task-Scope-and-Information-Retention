@@ -1,0 +1,1099 @@
+{
+  "scope": "fixed twelve-setting base-seed pool, separate from replicated focal setting means",
+  "split": "test",
+  "readout_profile": "matched",
+  "reference_source": "results/round2_task_family/reference_dse_selected/test2000/image_metrics.jsonl",
+  "rows": [
+    {
+      "setting": "D_lambda0.3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "D",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.0709638671875,
+      "losses": {
+        "depth": 0.07669203764316626,
+        "semantic": 0.840679421288427,
+        "edge": 0.028612837362728898
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.02506049288719693,
+        "semantic": 0.32230876756592136,
+        "edge": 0.5855061687089643
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2514616828749712,
+        "semantic_object_miou": 0.044428467426473835,
+        "edge_mse": 0.028612837362728898
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_d_r03/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_d_r03/best.pt",
+      "readout_checkpoint_step": 18000,
+      "source": "results/round2_task_family/probe_d_r03/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_d_r03/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.03868936063479525,
+        "semantic": 0.18952560042729097,
+        "edge": 0.5978108505961518
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07389852657759911,
+          "upper": 0.07934418630030121,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8097724803328281,
+          "upper": 0.8744183556455537,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.02818055631451025,
+          "upper": 0.029044588471558018,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0706923583984375,
+        "upper": 0.07123389892578125,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "DSE_lambda0.3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DSE",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.19187841796875,
+      "losses": {
+        "depth": 0.07777181951864623,
+        "semantic": 0.6552547544657137,
+        "edge": 0.004326002445923223
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.03425920924598923,
+        "semantic": 0.04738785257351507,
+        "edge": 0.053408961253334476
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2476159780075309,
+        "semantic_object_miou": 0.14668883677436936,
+        "edge_mse": 0.004326002445923223
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_dse_r03_pilot/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_dse_r03/best.pt",
+      "readout_checkpoint_step": 15500,
+      "source": "results/round2_task_family/probe_dse_r03/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_dse_r03/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.047876611783073036,
+        "semantic": -0.06546964823932634,
+        "edge": 0.05728460735406502
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07511892542921124,
+          "upper": 0.08037597214222186,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6164505814934454,
+          "upper": 0.6963926241442445,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.00425197223124269,
+          "upper": 0.0044013902736709494,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.19042105102539064,
+        "upper": 0.19338285522460938,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DSE_lambda3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DSE",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.05094580078125,
+      "losses": {
+        "depth": 0.07675871131825261,
+        "semantic": 0.6604359244392254,
+        "edge": 0.007794924578643986
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.025628489294290725,
+        "semantic": 0.05506974309140887,
+        "edge": 0.12940913937553647
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2654974968884252,
+        "semantic_object_miou": 0.13714863299832109,
+        "edge_mse": 0.007794924578643986
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_dse_r3/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_dse_r3/best.pt",
+      "readout_checkpoint_step": 17500,
+      "source": "results/round2_task_family/probe_dse_r3/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_dse_r3/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.03925664909546209,
+        "semantic": -0.058344524336351684,
+        "edge": 0.13448871628476042
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07404172572755488,
+          "upper": 0.07946941863566172,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.622731734796206,
+          "upper": 0.7002795793949044,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.007669062147719524,
+          "upper": 0.007925846868563895,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0504252197265625,
+        "upper": 0.051476806640625,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "D_lambda3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "D",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.017520751953125,
+      "losses": {
+        "depth": 0.07551232062047347,
+        "semantic": 0.9265918506719172,
+        "edge": 0.036420739057299215
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.015010423959557087,
+        "semantic": 0.44968730948295843,
+        "edge": 0.7565685035912312
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2231397448498211,
+        "semantic_object_miou": 0.028447470616004465,
+        "edge_mse": 0.036420739057299215
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_d_r3/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_d_r3/best.pt",
+      "readout_checkpoint_step": 23000,
+      "source": "results/round2_task_family/probe_d_r3/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_d_r3/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.02865181803707432,
+        "semantic": 0.3076720243609635,
+        "edge": 0.7715830109054911
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.0727808824932843,
+          "upper": 0.07830238761939108,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8955801938311663,
+          "upper": 0.9600216532588005,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.03588615257008059,
+          "upper": 0.03693790846113261,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.017425775146484378,
+        "upper": 0.017612548828125,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "DE_lambda0.3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DE",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.132766357421875,
+      "losses": {
+        "depth": 0.07796657087770291,
+        "semantic": 0.7896010055234656,
+        "edge": 0.003140342491798947
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.03591830591461538,
+        "semantic": 0.24657706994937953,
+        "edge": 0.027432486643011948
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2427644171271681,
+        "semantic_object_miou": 0.059054126201263955,
+        "edge_mse": 0.003140342491798947
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_de_r03/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_de_r03/best.pt",
+      "readout_checkpoint_step": 17500,
+      "source": "results/round2_task_family/probe_de_r03/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_de_r03/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.049533640566156494,
+        "semantic": 0.11928277053488877,
+        "edge": 0.03089663531239269
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07542821568700601,
+          "upper": 0.08058137696148479,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.7603469085764489,
+          "upper": 0.819965602991567,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0030879948051519023,
+          "upper": 0.0031962135715570186,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.13206173095703125,
+        "upper": 0.1334392333984375,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": true,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DS_lambda0.3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DS",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.124156005859375,
+      "losses": {
+        "depth": 0.07606675557489508,
+        "semantic": 0.668499041069299,
+        "edge": 0.025546843116520904
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.019733683351975815,
+        "semantic": 0.0670245678707343,
+        "edge": 0.5183336869067586
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2284608619854247,
+        "semantic_object_miou": 0.13467390371629565,
+        "edge_mse": 0.025546843116520904
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_ds_r03/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_ds_r03/best.pt",
+      "readout_checkpoint_step": 5500,
+      "source": "results/round2_task_family/probe_ds_r03/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_ds_r03/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.033369190394700744,
+        "semantic": -0.04725615909700958,
+        "edge": 0.529574278915175
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07339104903719854,
+          "upper": 0.0788317133822129,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6296448385447846,
+          "upper": 0.7072999874499044,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.02514951819916023,
+          "upper": 0.02593596673786815,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.12324777221679686,
+        "upper": 0.1250610595703125,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "RGB_lambda0.3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "RGB",
+      "lambda_rate": 0.3,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.182718017578125,
+      "losses": {
+        "depth": 0.10667190936580301,
+        "semantic": 0.8301780027374626,
+        "edge": 0.0005457901748741279
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.2804605349808183,
+        "semantic": 0.30673878086339856,
+        "edge": -0.02941123330494774
+      },
+      "metrics": {
+        "depth_rmse_m": 1.403495407894494,
+        "semantic_object_miou": 0.05561502639578815,
+        "edge_mse": 0.0005457901748741279
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_rgb_r03/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_rgb_r03/best.pt",
+      "readout_checkpoint_step": 23500,
+      "source": "results/round2_task_family/probe_rgb_r03/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_rgb_r03/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.29377107404713065,
+        "semantic": 0.17508409229010397,
+        "edge": -0.02684755496873754
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.10344283440511208,
+          "upper": 0.10965953719343524,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8014760233834153,
+          "upper": 0.8614364892856683,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.0005382145521323765,
+          "upper": 0.0005531669338757637,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.18067030639648438,
+        "upper": 0.18470572509765623,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DS_lambda3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DS",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.03345556640625,
+      "losses": {
+        "depth": 0.0768788398078177,
+        "semantic": 0.6644403568925336,
+        "edge": 0.03262828302133858
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.02665186996701062,
+        "semantic": 0.06100693717110138,
+        "edge": 0.6734800619295084
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2568112950983945,
+        "semantic_object_miou": 0.13451249650637234,
+        "edge_mse": 0.03262828302133858
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_ds_r3/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_ds_r3/best.pt",
+      "readout_checkpoint_step": 17500,
+      "source": "results/round2_task_family/probe_ds_r3/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_ds_r3/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.04027875423424968,
+        "semantic": -0.0528376450915515,
+        "edge": 0.687178352134574
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07428892448029364,
+          "upper": 0.07963507573863608,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6279112924707007,
+          "upper": 0.7014048840397852,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.03215078961333474,
+          "upper": 0.033099532308527156,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.03315623779296875,
+        "upper": 0.033758575439453126,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "DE_lambda3",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DE",
+      "lambda_rate": 3.0,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.031422607421875,
+      "losses": {
+        "depth": 0.07702921862597577,
+        "semantic": 0.8763155802218243,
+        "edge": 0.0076905365608326975
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.027932954717568723,
+        "semantic": 0.3751449170850765,
+        "edge": 0.1271221154401623
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2597201161819562,
+        "semantic_object_miou": 0.036707358782606066,
+        "edge_mse": 0.0076905365608326975
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_de_r3/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_de_r3/best.pt",
+      "readout_checkpoint_step": 17500,
+      "source": "results/round2_task_family/probe_de_r3/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_de_r3/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.04155824225046147,
+        "semantic": 0.23853230144745774,
+        "edge": 0.13216546324251324
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07428618001854047,
+          "upper": 0.07977684011911042,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.8454602117069299,
+          "upper": 0.909944749863795,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.007564509188347801,
+          "upper": 0.007817792172448934,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.031234857177734377,
+        "upper": 0.03160181884765625,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "D_lambda30",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "D",
+      "lambda_rate": 30.0,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.00717529296875,
+      "losses": {
+        "depth": 0.08833378031547182,
+        "semantic": 1.055780183164403,
+        "edge": 0.0418332388419658
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": 0.12423708697198454,
+        "semantic": 0.6412291101708637,
+        "edge": 0.8751502797115291
+      },
+      "metrics": {
+        "depth_rmse_m": 1.3497462517042336,
+        "semantic_object_miou": 0.007726440460050735,
+        "edge_mse": 0.0418332388419658
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_d_r30/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_d_r30/best.pt",
+      "readout_checkpoint_step": 23000,
+      "source": "results/round2_task_family/probe_d_r30/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_d_r30/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.13774234176262856,
+        "semantic": 0.48533129447438195,
+        "edge": 0.8920432596442024
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.08531933647461701,
+          "upper": 0.09118899338053306,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.0234575135278983,
+          "upper": 1.0903755759355147,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.04125028478370514,
+          "upper": 0.04241867603354622,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.007163330078125,
+        "upper": 0.007187255859375,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": false,
+          "DSE": false
+        }
+      }
+    },
+    {
+      "setting": "DSE_lambda1",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DSE",
+      "lambda_rate": 1.0,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.09409619140625,
+      "losses": {
+        "depth": 0.07364393244031817,
+        "semantic": 0.6762084370898083,
+        "edge": 0.005528235855861567
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "normalized_excess": {
+        "depth": -0.0009064693571872647,
+        "semantic": 0.07845494681823252,
+        "edge": 0.07974854161979046
+      },
+      "metrics": {
+        "depth_rmse_m": 1.2080245479931726,
+        "semantic_object_miou": 0.1413165518005552,
+        "edge_mse": 0.005528235855861567
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_dse_r1/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_dse_r1/best.pt",
+      "readout_checkpoint_step": 17500,
+      "source": "results/round2_task_family/probe_dse_r1/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_dse_r1/coded_test2000/coded_rates.jsonl",
+      "fixed_validation_excess": {
+        "depth": 0.012754763415806107,
+        "semantic": -0.03665422900321701,
+        "edge": 0.0840414371674233
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07104888614203082,
+          "upper": 0.0762892941789003,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.6361353483320621,
+          "upper": 0.7186677913445164,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.005438450770815688,
+          "upper": 0.005623380771898519,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.09330636596679687,
+        "upper": 0.09491480712890625,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    },
+    {
+      "setting": "DE_lambda1",
+      "readout_profile": "matched_frozen",
+      "preservation_family": "DE",
+      "lambda_rate": 1,
+      "encoder_seed": 20260905,
+      "readout_seed": 20260905,
+      "readout_head_channels": 48,
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.063859619140625,
+      "losses": {
+        "depth": 0.07278276622761042,
+        "semantic": 0.8218348407710436,
+        "edge": 0.004069371561861772
+      },
+      "constant_losses": {
+        "depth": 0.19113431071788364,
+        "semantic": 1.2977587634921073,
+        "edge": 0.04753183029592037
+      },
+      "fixed_validation_excess": {
+        "depth": 0.0054275888667421985,
+        "semantic": 0.16361060984169296,
+        "edge": 0.051573046826034065
+      },
+      "metrics": {
+        "depth_rmse_m": 1.1926781083793059,
+        "semantic_object_miou": 0.04852058131684343,
+        "edge_mse": 0.004069371561861772
+      },
+      "encoder_checkpoint": "results/round2_task_family/codec_de_r1/best.pt",
+      "readout_checkpoint": "results/round2_task_family/probe_de_r1/best.pt",
+      "readout_checkpoint_step": 20000,
+      "source": "results/round2_task_family/probe_de_r1/coded_test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/probe_de_r1/coded_test2000/coded_rates.jsonl",
+      "normalized_excess": {
+        "depth": -0.008242787838133054,
+        "semantic": 0.2943687453064207,
+        "edge": 0.047786467535082304
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.07028763877876336,
+          "upper": 0.07528981860113562,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 0.7913034195672953,
+          "upper": 0.8539908047898324,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.004004222258154004,
+          "upper": 0.004137599996942299,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.06339085693359375,
+        "upper": 0.064287158203125,
+        "defined_replicates": 2000
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": true,
+          "DS": false,
+          "DE": true,
+          "DSE": false
+        },
+        "0.25": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        },
+        "0.5": {
+          "D": true,
+          "DS": true,
+          "DE": true,
+          "DSE": true
+        }
+      }
+    }
+  ],
+  "fixed_baselines": [
+    {
+      "setting": "Fixed_spatial_prior",
+      "readout_profile": "fixed_spatial_prior",
+      "split": "test",
+      "images": 2000,
+      "actual_bpp": 0.0,
+      "losses": {
+        "depth": 0.16744558820361272,
+        "semantic": 1.1506043719854206,
+        "edge": 0.04513854260090738
+      },
+      "constant_losses": {
+        "depth": 0.19113430943772255,
+        "semantic": 1.2977588105797768,
+        "edge": 0.04753183402121067
+      },
+      "loss_intervals_95": {
+        "depth": {
+          "lower": 0.1626465587315266,
+          "upper": 0.1727224554391345,
+          "defined_replicates": 2000
+        },
+        "semantic": {
+          "lower": 1.1072366212376392,
+          "upper": 1.198545791956596,
+          "defined_replicates": 2000
+        },
+        "edge": {
+          "lower": 0.044596015495620665,
+          "upper": 0.04569443091237917,
+          "defined_replicates": 2000
+        }
+      },
+      "rate_interval_95": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "defined_replicates": 2000
+      },
+      "metrics": {
+        "depth_rmse_m": 1.7695264963975892,
+        "semantic_object_miou": 0.0,
+        "edge_mse": 0.04513854260090738
+      },
+      "normalized_excess": {
+        "depth": 0.7981945759053835,
+        "semantic": 0.7818207218522368,
+        "edge": 0.9475657634890561
+      },
+      "fixed_validation_excess": {
+        "depth": 0.8108598151778768,
+        "semantic": 0.6157331337892353,
+        "edge": 0.9656058885217254
+      },
+      "point_feasibility": {
+        "0.1": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.25": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        },
+        "0.5": {
+          "D": false,
+          "DS": false,
+          "DE": false,
+          "DSE": false
+        }
+      },
+      "source": "results/round2_task_family/spatial_prior/test2000/evaluation.json",
+      "per_image_source": "results/round2_task_family/spatial_prior/test2000/image_metrics.jsonl"
+    }
+  ],
+  "normalization_definitions": {
+    "normalized_excess": "(current-split codec risk - current-split reference risk) / (current-split constant risk - current-split reference risk), descriptive",
+    "fixed_validation_excess": "(current-split codec risk - fixed validation reference risk) / (fixed validation constant risk - fixed validation reference risk), alpha is the fixed requirement"
+  },
+  "interval_scope": "fixed codec/readout seeds, paired image resampling conditional on the observed buildings"
+}

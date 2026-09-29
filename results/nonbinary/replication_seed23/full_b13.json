@@ -1,0 +1,101 @@
+{
+  "name": "full_b13",
+  "access": "full",
+  "bits": 13,
+  "length": 16,
+  "condition": "expanded",
+  "seed": 23,
+  "fit_seconds": 0.9435353809967637,
+  "history": [
+    {
+      "iteration": 0,
+      "training_objective": 0.49778792560100554,
+      "occupied_codewords": 8192
+    },
+    {
+      "iteration": 1,
+      "training_objective": 0.4974527907371521,
+      "occupied_codewords": 8192
+    },
+    {
+      "iteration": 2,
+      "training_objective": 0.49738688111305235,
+      "occupied_codewords": 8192
+    },
+    {
+      "iteration": 3,
+      "training_objective": 0.49737823367118833,
+      "occupied_codewords": 8192
+    }
+  ],
+  "development": {
+    "risks": [
+      0.25058555603027344,
+      0.4976511136690755
+    ],
+    "risk_se": [
+      0.0003851870062316589,
+      9.119867157116373e-05
+    ],
+    "prediction_frequency": [
+      0.3131122589111328,
+      0.3118171691894531,
+      0.37507057189941406
+    ],
+    "state_count": [
+      91782,
+      91620,
+      91551,
+      91955,
+      157380
+    ],
+    "state_error": [
+      0.4263907955808328,
+      0.12116350141890417,
+      0.42926893207064915,
+      0.12302756783209179,
+      0.19398907103825136
+    ],
+    "message_bytes": 53296,
+    "header_bytes": 48,
+    "transmitted_rate": 0.813232421875,
+    "index_bits": 13,
+    "used_codewords": 7861
+  },
+  "codebook_bytes": 31583,
+  "codebook_sha256": "b69f2ab7c2900c1877a2266782bc3a11220b83a77c48949c61d375a84e947e3a",
+  "assessment": {
+    "risks": [
+      0.2500985860824585,
+      0.4976419159139177
+    ],
+    "risk_se": [
+      4.86318206153368e-05,
+      1.1395698631976464e-05
+    ],
+    "prediction_frequency": [
+      0.3139497637748718,
+      0.3107926547527313,
+      0.37525758147239685
+    ],
+    "state_count": [
+      5876414,
+      5869268,
+      5872158,
+      5873803,
+      10062789
+    ],
+    "state_error": [
+      0.42437309556474406,
+      0.12086515729048325,
+      0.4295608190379074,
+      0.12476567566191785,
+      0.19213718979897124
+    ],
+    "message_bytes": 3407920,
+    "header_bytes": 48,
+    "transmitted_rate": 0.8125114440917969,
+    "index_bits": 13,
+    "used_codewords": 8192
+  }
+}

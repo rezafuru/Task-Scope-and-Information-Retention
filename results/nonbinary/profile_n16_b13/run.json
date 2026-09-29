@@ -1,0 +1,45 @@
+{
+  "output": "results/strengthening/mechanism/profile_n16_b13",
+  "length": 16,
+  "bits": [
+    13
+  ],
+  "access": [
+    "full",
+    "reduced"
+  ],
+  "condition": "expanded",
+  "seed": 17,
+  "rounds": 3,
+  "train_count": 131072,
+  "dev_count": 16384,
+  "assessment_count": 32768,
+  "primary_weight": 0.0,
+  "safety_margin": 0.001,
+  "device": "cuda:1",
+  "threads": 4,
+  "source_sha256": "570b26913db72cb393f6dde160d81c3626aa212d52016baf150f17efd5eaaf8a",
+  "interpreter": ".venv/bin/python",
+  "torch": "2.11.0+cu128",
+  "cuda": "12.8",
+  "split_seeds": {
+    "training": 100017,
+    "development": 200017,
+    "assessment": 300017
+  },
+  "prediction_tuples": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "model_accounting": "Codebooks are shared models. Every packet includes its 32-byte model hash."
+}

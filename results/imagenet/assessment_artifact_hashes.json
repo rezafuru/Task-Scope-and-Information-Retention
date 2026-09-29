@@ -1,0 +1,87 @@
+{
+  "selection_sha256": "8b8ce137da30bf02d941c656efd9c34f252f8b826de0a0aeb1a769003934ca75",
+  "mapping_sha256": "308a4e8456f95b15ba273ff90dc81c31c13a25ff4cc99275ea56f32fc2599cfd",
+  "test_used": true,
+  "assessments": [
+    {
+      "directory": "results/imagenet/assessment_added_fine_b0.3_s17",
+      "checkpoint_sha256": "dbc847a6e07a0a0353d4cd50065a3c745cf67bf8b1e5f65d7e1f8c3760bfb756",
+      "packet_sha256": "012c2c43fae61686225518ac7fca61707747e1086aeca1db8678d7ae73205bef",
+      "test_seal_sha256": "3e3f5d1976b62ac45a60849842cb8797f11ea7d86e53adbc66784e2a51867a05",
+      "test_summary_sha256": "48ac22d3ded33e3c23d42a540fd774a0baae015af391055a6a066c9df75289a5",
+      "predictions_sha256": "7e797b6da344a602b8488ed942b734f75d355ae52d16c46ea81b992692b8d8f8",
+      "adapted_prediction_sha256": {
+        "17": "41d1bd5a6a0d0df72178afe67004443bcf30cf2dcf29b892ac8767de31f255b4",
+        "23": "60436c0fa001f02f2a83ad92a5d9acc3d128f299f59eaca4631e723742123d65"
+      },
+      "primary_coarse_accuracy": 0.93,
+      "primary_fine_accuracy": 0.8571666666666666,
+      "actual_bpp": 0.26720758928571425,
+      "total_bytes": 10055556
+    },
+    {
+      "directory": "results/imagenet/assessment_added_fine_b0.3_s23",
+      "checkpoint_sha256": "8a92e43c6a9e1ba636e0db702f9a92bf337a8769502d7e67b56f8b87eaa93667",
+      "packet_sha256": "0199a6bb002812f7a746832a56cc52de8cc15d81175685ede155fce520c604b7",
+      "test_seal_sha256": "14789a9c4be11ce6cc5c4e1577ef1485bf0cb72ef046b60802136c5e95f271d0",
+      "test_summary_sha256": "76688ef9bd111a6036593bcb963fcffd6cf9a2e0c8edc45d1f579e9e7b25684b",
+      "predictions_sha256": "cf0ae99cf4042770a5ed32967ba48b3309e91d583b0a5194801e8bfd5980075f",
+      "adapted_prediction_sha256": {
+        "17": "e988d07562e0dfce0567753c6a3f3fa7cb4ab120051a78f08ebf10dafae0a34d",
+        "23": "ff05f95c39bd91305bbfe87891abc82536289252fdf7aec6445fec1bad99af77"
+      },
+      "primary_coarse_accuracy": 0.9295,
+      "primary_fine_accuracy": 0.8505,
+      "actual_bpp": 0.26714168792517007,
+      "total_bytes": 10053076
+    },
+    {
+      "directory": "results/imagenet/assessment_coarse_b0.3_s17",
+      "checkpoint_sha256": "874ced61f694cf166d53fc635831f02e8144a0eae79711de48937cf6386a4fc8",
+      "packet_sha256": "fc7fbc1ce397c6bd0b90ead9575b074de557fd83c6fecaae5cea6ace13a39d56",
+      "test_seal_sha256": "e40151ab5cb04a43b2c97571d6171681c3ed69777c8b003fb1d9fb13fbdb9e1d",
+      "test_summary_sha256": "7ecfd0ee6d8ab86bb171860d7272b1e7a3dbdfe80cec8f011b6f44fcdb9614a3",
+      "predictions_sha256": "86e833237b3a02b161aba53f8f4e1c2e6e77465bdac52d263420dab70786e04e",
+      "adapted_prediction_sha256": {
+        "17": "e2fc18d3b13152ca4be43e7f7b7605119edbbfbefe10a52333e005eca3334700",
+        "23": "f8a90c96e19596196d062f1303be7f1db8736ae42ef3f25c7da6443d07171cfe"
+      },
+      "primary_coarse_accuracy": 0.9201666666666667,
+      "primary_fine_accuracy": 0.8443333333333334,
+      "actual_bpp": 0.1974470663265306,
+      "total_bytes": 7430328
+    },
+    {
+      "directory": "results/imagenet/assessment_coarse_b0.3_s23",
+      "checkpoint_sha256": "96a0913b72b73eadcbaa09f357e3f9b8c70db293863088caa3e002835bd57f94",
+      "packet_sha256": "7ff23ea5239a3a345eba6bbe377239d5da64c146f60de6036b478e6e562558b2",
+      "test_seal_sha256": "50d158fa6b200ca2b09081cb70253fc857c8e018e553e846955617f0519121e9",
+      "test_summary_sha256": "b38e82831f1d95b3f08e4455ab6ef0536bfad5eadae6c2fdb24a71bb6c52ae0d",
+      "predictions_sha256": "ccbaf9dc8e9a7c525d27a01f8b75c06712c470021dd1d90970ee5de6a37d0475",
+      "adapted_prediction_sha256": {
+        "17": "c202f6e55a7ac4fde15e5d2ced4e0c00ed501413b124c3dcb75769310c2205ed",
+        "23": "7207c1f77fb2c7e7f8a9c2aac8b5d9f87f05248e6306b9feffe7e02cdb77f20e"
+      },
+      "primary_coarse_accuracy": 0.917,
+      "primary_fine_accuracy": 0.8365,
+      "actual_bpp": 0.19799936224489798,
+      "total_bytes": 7451112
+    },
+    {
+      "directory": "results/imagenet/assessment_raw",
+      "checkpoint_sha256": null,
+      "packet_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "test_seal_sha256": "50455f8337933d67d48867c36dc570ba085a30690932f91216f978108ff924f4",
+      "test_summary_sha256": "35283f18aa7a4a60f52fe2d44b3be6631c5c4286128ef075b564e3300896c187",
+      "predictions_sha256": "711f72bcf8218f04d48d4fae6d17a2146663fef008f7e66a6a287aa64719af0a",
+      "adapted_prediction_sha256": {
+        "17": "d3aaa0ae39261d47449e0435a1774454cdb7d7bd50aeaebbf59ed15fafe3e246",
+        "23": "3b23147eaebe9d24aac38d9429dde72019140e1740809322137d9ca4e8280c86"
+      },
+      "primary_coarse_accuracy": 0.9508333333333333,
+      "primary_fine_accuracy": 0.8913333333333333,
+      "actual_bpp": 0.0,
+      "total_bytes": 0
+    }
+  ]
+}

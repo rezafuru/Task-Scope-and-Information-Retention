@@ -1,0 +1,23 @@
+# Generated figures and run artefacts
+/figures/
+runs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Notebook state
+.ipynb_checkpoints/
+
+# Editor and platform
+.DS_Store
+.idea/
+.vscode/
+
+# Tooling caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
