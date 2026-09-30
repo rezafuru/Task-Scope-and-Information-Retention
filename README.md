@@ -40,4 +40,19 @@ Supply image datasets and trained study checkpoints separately. Recomputing
 CIFAR and Taskonomy confidence intervals requires external per-image records.
 Retained results and hashes are listed in [results/MANIFEST.json](results/MANIFEST.json).
 
+## Citation
+
+[[Preprint]](https://arxiv.org/abs/2609.37575v1)
+```bibtex
+@misc{furutanpey2026taskscopeinformationretention,
+      title={On Task Scope and Information Retention in Source Coding}, 
+      author={Alireza Furutanpey and Kerstin Bunte},
+      year={2026},
+      eprint={2609.37575},
+      archivePrefix={arXiv},
+      primaryClass={cs.IT},
+      url={https://arxiv.org/abs/2609.37575}, 
+}
+```
+
 MIT licence. See [LICENSE](LICENSE).
